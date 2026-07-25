@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA NEWS LIVE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f5f7fa; color: #222; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px 40px; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 18px 0 12px; border-bottom: 2px solid #e2e8f0; }
+        .logo h1 { font-size: 28px; font-weight: 800; color: #0a2540; }
+        .logo h1 span { color: #e63946; }
+        .logo small { display: block; font-size: 13px; color: #5a6b7c; }
+        .nav { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; }
+        .nav a { padding: 8px 18px; font-weight: 600; font-size: 15px; color: #1e293b; border-radius: 30px; text-decoration: none; }
+        .nav a:hover, .nav a.active { background: #e63946; color: #fff; }
+        .section-title { font-size: 22px; font-weight: 700; margin: 32px 0 18px; padding-left: 14px; border-left: 5px solid #e63946; }
+        .live-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; margin-bottom: 10px; }
+        .live-card { background: #fff; border-radius: 16px; padding: 16px 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid #edf2f7; }
+        .live-card .icon { font-size: 32px; display: block; margin-bottom: 8px; }
+        .live-card .name { font-weight: 600; font-size: 14px; }
+        .live-card .badge { display: inline-block; background: #e63946; color: #fff; font-size: 10px; padding: 2px 10px; border-radius: 30px; margin-top: 6px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 10px; }
+        .news-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #edf2f7; cursor: pointer; transition: 0.25s; }
+        .news-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.10); }
+        .news-card .thumb { position: relative; aspect-ratio: 16/9; background: #000; }
+        .news-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
+        .news-card .thumb .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.6); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; border: 2px solid rgba(255,255,255,0.7); }
+        .news-card .info { padding: 14px 16px 18px; }
+        .news-card .info h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; line-height: 1.4; }
+        .news-card .info .channel { font-size: 13px; color: #4a6a8b; }
+        .news-card .info .meta { display: flex; justify-content: space-between; margin-top: 10px; font-size: 12px; color: #7a8ba0; }
+        .uploads-list { background: #fff; border-radius: 20px; padding: 6px 0; border: 1px solid #edf2f7; margin-top: 8px; }
+        .upload-item { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-bottom: 1px solid #f1f5f9; flex-wrap: wrap; }
+        .upload-item:last-child { border-bottom: none; }
+        .upload-item .title { font-weight: 600; font-size: 15px; }
+        .upload-item .source { font-size: 13px; color: #4a6a8b; }
+        .upload-item .time { font-size: 12px; color: #94a3b8; background: #f1f5f9; padding: 2px 12px; border-radius: 30px; }
+        .footer { margin-top: 50px; border-top: 1px solid #e2e8f0; padding: 24px 0 20px; display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 14px; color: #4a6a8b; }
+        .footer .links { display: flex; gap: 20px; flex-wrap: wrap; }
+        .footer .links a { text-decoration: none; color: #4a6a8b; font-weight: 500; }
+        .footer .links a:hover { color: #e63946; }
+        .player-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; padding: 20px; }
+        .player-overlay.active { display: flex; }
+        .player-box { width: 100%; max-width: 1100px; background: #0b0f1a; border-radius: 28px; overflow: hidden; border: 1px solid #e63946; }
+        .player-box .player-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; background: #0a0a0a; color: #fff; }
+        .player-box .player-header h2 { font-size: 18px; font-weight: 600; flex: 1; margin-right: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .player-box .player-header .btn-close { background: #e63946; border: none; color: #fff; padding: 6px 18px; border-radius: 40px; font-weight: 700; cursor: pointer; }
+        .player-box .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+        .player-box .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .player-box .player-footer { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #0a0a0a; flex-wrap: wrap; gap: 10px; }
+        .player-box .player-footer .btn-youtube { background: #dc2626; border: none; color: #fff; padding: 6px 18px; border-radius: 40px; font-weight: 600; cursor: pointer; }
+        .loading-placeholder { text-align: center; padding: 60px 20px; color: #6b7a8f; }
+        @media (max-width: 700px) {
+            .news-grid { grid-template-columns: 1fr; }
+            .live-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <h1>GOA <span>NEWS</span> LIVE</h1>
+            <small>All Goa News, One Place</small>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="#" class="active">HOME</a>
+        <a href="#">LATEST</a>
+        <a href="#">LIVE</a>
+        <a href="#">POLITICS</a>
+        <a href="#">CRIME</a>
+        <a href="#">SPORTS</a>
+        <a href="#">TOURISM</a>
+    </nav>
+    <div class="section-title"><i class="fas fa-circle" style="color:#e63946;font-size:14px;margin-right:8px;"></i> LIVE NOW</div>
+    <div class="live-grid" id="liveGrid"></div>
+    <div class="section-title"><i class="fas fa-newspaper" style="margin-right:10px;"></i> Latest News From All Channels</div>
+    <div id="newsGrid" class="news-grid"><div class="loading-placeholder">Loading videos...</div></div>
+    <div class="section-title"><i class="fas fa-clock" style="margin-right:10px;"></i> Today's Uploads</div>
+    <div class="uploads-list" id="uploadsList"><div class="loading-placeholder">Loading...</div></div>
+    <footer class="footer">
+        <div class="links"><a href="#">Home</a><a href="#">Live TV</a><a href="#">Categories</a><a href="#">Search</a><a href="#">Bookmark</a></div>
+        <div>© 2026 Goa News Aggregator</div>
+    </footer>
+</div>
+<div id="playerOverlay" class="player-overlay">
+    <div class="player-box">
+        <div class="player-header">
+            <h2 id="playerTitle">Now Playing</h2>
+            <button class="btn-close" id="closePlayerBtn">✕ CLOSE</button>
+        </div>
+        <div class="video-wrap">
+            <iframe id="playerIframe" src="" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="player-footer">
+            <button class="btn-youtube" id="watchYoutubeBtn"><i class="fab fa-youtube"></i> Watch on YouTube</button>
+        </div>
+    </div>
+</div>
+<script>
+    const DATA_URL = 'data.json';
+    const liveGrid = document.getElementById('liveGrid');
+    const newsGrid = document.getElementById('newsGrid');
+    const uploadsList = document.getElementById('uploadsList');
+    const playerOverlay = document.getElementById('playerOverlay');
+    const playerIframe = document.getElementById('playerIframe');
+    const playerTitle = document.getElementById('playerTitle');
+    const closePlayerBtn = document.getElementById('closePlayerBtn');
+    const watchYoutubeBtn = document.getElementById('watchYoutubeBtn');
+    let currentVideoId = null;
+
+    function getVideoId(link) {
+        try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
+    }
+    function formatTime(iso) {
+        const d = new Date(iso);
+        return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+    }
+
+    function renderLiveNow() {
+        const channels = [
+            { name: 'Prudent Media', icon: '📺' },
+            { name: 'Goa News Hub', icon: '📡' },
+            { name: 'InGoa 24x7', icon: '🔴' },
+            { name: 'Goa 365', icon: '📹' },
+            { name: 'Gomantak TV', icon: '🎥' }
+        ];
+        liveGrid.innerHTML = channels.map(ch => `
+            <div class="live-card">
+                <span class="icon">${ch.icon}</span>
+                <div class="name">${ch.name}</div>
+                <span class="badge">LIVE</span>
+            </div>
+        `).join('');
+    }
+
+    function renderNews(videos) {
+        if (!videos || videos.length === 0) {
+            newsGrid.innerHTML = `<div class="loading-placeholder">No videos found.</div>`;
+            return;
+        }
+        newsGrid.innerHTML = videos.slice(0, 20).map(v => {
+            const vid = getVideoId(v.link);
+            const thumb = vid ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg` : '';
+            return `
+                <div class="news-card" data-video-id="${vid}" data-title="${v.title}" data-link="${v.link}">
+                    <div class="thumb">
+                        <img src="${thumb}" alt="${v.title}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22180%22%3E%3Crect fill=%22%231e293b%22 width=%22320%22 height=%22180%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2214%22%3ENo Thumbnail%3C/text%3E%3C/svg%3E'">
+                        <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="info">
+                        <h3>${v.title}</h3>
+                        <div class="channel">${v.channel}</div>
+                        <div class="meta"><span>${formatTime(v.published)}</span><span>👁️ 1.2K views</span></div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+        document.querySelectorAll('.news-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const vid = this.dataset.videoId;
+                const title = this.dataset.title;
+                if (vid) playVideo(vid, title);
+            });
+        });
+    }
+
+    function renderUploads(videos) {
+        if (!videos || videos.length === 0) {
+            uploadsList.innerHTML = `<div class="upload-item"><span class="title">No uploads today</span></div>`;
+            return;
+        }
+        const latest = videos.slice(0, 5);
+        uploadsList.innerHTML = latest.map(v => `
+            <div class="upload-item">
+                <span class="title">${v.title}</span>
+                <span class="source">${v.channel}</span>
+                <span class="time">${formatTime(v.published)}</span>
+            </div>
+        `).join('');
+    }
+
+    function playVideo(videoId, title) {
+        if (!videoId) return;
+        currentVideoId = videoId;
+        // Ad‑free embed using inv.nadeko.net (working instance)
+        const embedUrl = `https://inv.nadeko.net/embed/${videoId}?autoplay=1`;
+        playerIframe.src = embedUrl;
+        playerTitle.textContent = title || 'Now Playing';
+        playerOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closePlayer() {
+        playerIframe.src = '';
+        playerOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closePlayerBtn.addEventListener('click', closePlayer);
+    playerOverlay.addEventListener('click', (e) => { if (e.target === playerOverlay) closePlayer(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlayer(); });
+    watchYoutubeBtn.addEventListener('click', () => {
+        if (currentVideoId) window.open(`https://www.youtube.com/watch?v=${currentVideoId}`, '_blank');
+    });
+
+    async function loadData() {
+        try {
+            const response = await fetch(DATA_URL + '?t=' + Date.now());
+            if (!response.ok) throw new Error('Network error');
+            const data = await response.json();
+            renderNews(data);
+            renderUploads(data);
+        } catch (e) {
+            newsGrid.innerHTML = `<div class="loading-placeholder">⚠️ Could not load news. Please refresh.</div>`;
+        }
+    }
+
+    renderLiveNow();
+    loadData();
+</script>
+</body>
+</html>
