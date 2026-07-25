@@ -115,6 +115,21 @@
     const watchYoutubeBtn = document.getElementById('watchYoutubeBtn');
     let currentVideoId = null;
 
+    // --- LocalStorage for watched videos ---
+    const STORAGE_KEY = 'watched_videos';
+    function getWatched() {
+        try {
+            return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        } catch { return []; }
+    }
+    function markWatched(videoId) {
+        const watched = getWatched();
+        if (!watched.includes(videoId)) {
+            watched.push(videoId);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(watched));
+        }
+    }
+
     function getVideoId(link) {
         try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
     }
@@ -145,7 +160,27 @@
             newsGrid.innerHTML = `<div class="loading-placeholder">No videos found.</div>`;
             return;
         }
-        newsGrid.innerHTML = videos.slice(0, 20).map(v => {
+
+        // --- Filter out Shorts (portrait mode) ---
+        const isShort = (v) => {
+            const link = v.link || '';
+            const title = v.title || '';
+            return link.includes('/shorts/') || /#shorts/i.test(title);
+        };
+
+        // --- Filter out watched videos ---
+        const watched = getWatched();
+        const filtered = videos.filter(v => {
+            const vid = getVideoId(v.link);
+            return !isShort(v) && vid && !watched.includes(vid);
+        });
+
+        if (filtered.length === 0) {
+            newsGrid.innerHTML = `<div class="loading-placeholder">All caught up! New videos will appear soon.</div>`;
+            return;
+        }
+
+        newsGrid.innerHTML = filtered.slice(0, 20).map(v => {
             const vid = getVideoId(v.link);
             const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
             return `
@@ -162,11 +197,22 @@
                 </div>
             `;
         }).join('');
+
+        // Attach click events – mark as watched when clicked
         document.querySelectorAll('.news-card').forEach(card => {
             card.addEventListener('click', function() {
                 const vid = this.dataset.videoId;
                 const title = this.dataset.title;
-                if (vid) playVideo(vid, title);
+                if (vid) {
+                    markWatched(vid);
+                    playVideo(vid, title);
+                    // Remove the card from the grid immediately
+                    this.remove();
+                    // Re-check if grid is empty
+                    if (document.querySelectorAll('.news-card').length === 0) {
+                        newsGrid.innerHTML = `<div class="loading-placeholder">All caught up! New videos will appear soon.</div>`;
+                    }
+                }
             });
         });
     }
@@ -176,7 +222,19 @@
             uploadsList.innerHTML = `<div class="upload-item"><span class="title">No uploads today</span></div>`;
             return;
         }
-        const latest = videos.slice(0, 5);
+        // Also filter shorts and watched for today's uploads
+        const watched = getWatched();
+        const filtered = videos.filter(v => {
+            const link = v.link || '';
+            const title = v.title || '';
+            const vid = getVideoId(v.link);
+            return !(link.includes('/shorts/') || /#shorts/i.test(title)) && vid && !watched.includes(vid);
+        });
+        const latest = filtered.slice(0, 5);
+        if (latest.length === 0) {
+            uploadsList.innerHTML = `<div class="upload-item"><span class="title">All watched – check back later</span></div>`;
+            return;
+        }
         uploadsList.innerHTML = latest.map(v => `
             <div class="upload-item">
                 <span class="title">${v.title}</span>
@@ -189,7 +247,6 @@
     function playVideo(videoId, title) {
         if (!videoId) return;
         currentVideoId = videoId;
-        // Use the official YouTube embed – guaranteed to work (may show ads)
         const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
         playerIframe.src = embedUrl;
         playerTitle.textContent = title || 'Now Playing';
