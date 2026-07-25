@@ -5,32 +5,67 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write   # ← fixes the 403 error
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Install jq
-        run: sudo apt-get install -y jq
-      - name: Fetch and combine RSS feeds
+
+      - name: Install feedparser
+        run: pip install feedparser
+
+      - name: Fetch and combine RSS feeds (Python)
         run: |
-          feeds=(
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCE9AZSYybiCWNYKr9gbY1lA"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCJb1MeQClvGeSMeBSVLKnDQ"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCDFOkbaN9IuV6tjO8Aqo1ww"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UC-i0Rvr1-JtE2A8Z5RuVatg"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCUtU4cVsod9zzLHpL5xM0kQ"
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCETBxO93JjoGNkH1zRB0zwg"
+          python << 'EOF'
+          import feedparser
+          import json
+          from datetime import datetime
+          import re
+
+          feeds = [
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCE9AZSYybiCWNYKr9gbY1lA",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCJb1MeQClvGeSMeBSVLKnDQ",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCDFOkbaN9IuV6tjO8Aqo1ww",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UC-i0Rvr1-JtE2A8Z5RuVatg",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCUtU4cVsod9zzLHpL5xM0kQ",
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCETBxO93JjoGNkH1zRB0zwg",
             "https://www.youtube.com/feeds/videos.xml?channel_id=UCAYM7lIXVbOpCkXKSOBB44A"
-          )
-          echo '[]' > temp_all.json
-          for feed in "${feeds[@]}"; do
-            curl -s "$feed" | jq -r '.entry[] | {id:.id,title:.title,published:.published,channel:.author.name,link:.link."@href"}' | jq -s '.' >> temp_all.json
-          done
-          jq -s 'add | unique_by(.id) | sort_by(.published) | reverse' temp_all.json > data.json
-          rm temp_all.json
+          ]
+
+          all_videos = []
+          for feed_url in feeds:
+              feed = feedparser.parse(feed_url)
+              for entry in feed.entries:
+                  # Extract video ID from the link
+                  link = entry.link if hasattr(entry, 'link') else ''
+                  # Extract channel name from author_detail or author
+                  channel = entry.author_detail.name if hasattr(entry, 'author_detail') else entry.author
+                  all_videos.append({
+                      'id': entry.id,
+                      'title': entry.title,
+                      'published': entry.published,
+                      'channel': channel,
+                      'link': link
+                  })
+
+          # Sort by published date (newest first), remove duplicates by id
+          all_videos.sort(key=lambda x: x['published'], reverse=True)
+          seen = set()
+          unique = []
+          for v in all_videos:
+              if v['id'] not in seen:
+                  seen.add(v['id'])
+                  unique.append(v)
+
+          with open('data.json', 'w') as f:
+              json.dump(unique, f, indent=2)
+          EOF
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
