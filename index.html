@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Goa TV & News Live</title>
+    <title>GOA NEWS LIVE</title>
 
     <!-- HLS.js for m3u8 playback -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
-    <!-- Font Awesome for icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
-        /* ----- Global Reset & Colors ----- */
+        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +22,7 @@
             background: #0f172a;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #f1f5f9;
-            padding: 20px 16px 30px;
+            padding: 16px 14px 30px;
             min-height: 100vh;
         }
 
@@ -32,16 +31,17 @@
             margin: 0 auto;
         }
 
-        /* ----- Header ----- */
+        /* ===== HEADER ===== */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            margin-bottom: 24px;
-            padding-bottom: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
             border-bottom: 2px solid #334155;
         }
+
         .logo h1 {
             font-size: 28px;
             font-weight: 800;
@@ -56,68 +56,197 @@
             color: #94a3b8;
         }
 
-        /* ----- TV Channel Grid (Live Now) ----- */
-.channel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* was 150px */
-    gap: 24px;  /* was 20px */
-    margin-bottom: 10px;
-}
+        .header-right {
+            text-align: right;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .header-right .home-tag {
+            display: inline-block;
+            background: #facc15;
+            color: #0f172a;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .header-right .dev {
+            font-size: 11px;
+            color: #64748b;
+        }
 
-.channel-card {
-    background: #1e293b;
-    border-radius: 24px;  /* was 20px */
-    padding: 28px 16px 22px;  /* was 20px 12px 18px */
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all 0.2s ease;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    min-height: 180px;  /* added */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        /* ===== SECTION TITLE ===== */
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 28px 0 16px 0;
+            padding-left: 12px;
+            border-left: 5px solid #facc15;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-title .view-all {
+            font-size: 13px;
+            font-weight: 600;
+            color: #facc15;
+            cursor: pointer;
+            padding-right: 4px;
+        }
 
-.channel-card img {
-    width: 100px;  /* was 64px */
-    height: 100px;
-    object-fit: contain;
-    border-radius: 20px;
-    background: #0f172a;
-    padding: 8px;
-    margin-bottom: 14px;
-    display: block;
-}
+        /* ===== LIVE NOW — CHANNEL GRID ===== */
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 16px;
+            margin-bottom: 4px;
+        }
 
-.channel-card .name {
-    font-weight: 700;
-    font-size: 18px;  /* was 15px */
-    margin-top: 4px;
-    word-break: break-word;   /* ensures full name wraps */
-    overflow-wrap: break-word;
-    line-height: 1.3;
-    max-width: 100%;
-}
+        .channel-card {
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 22px 12px 18px;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .channel-card:hover {
+            transform: translateY(-4px);
+            border-color: #facc15;
+        }
+        .channel-card.active {
+            border-color: #facc15;
+            background: #1e293b;
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.25);
+        }
 
-.channel-card .live-indicator {
-    display: inline-block;
-    background: #ef4444;
-    padding: 4px 14px;  /* was 2px 10px */
-    border-radius: 30px;
-    font-size: 12px;  /* was 10px */
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-top: 8px;
-    color: white;
-    visibility: hidden;
-}
-.channel-card.active .live-indicator {
-    visibility: visible;
-}
+        .channel-card img {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            border-radius: 16px;
+            background: #0f172a;
+            padding: 6px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .channel-card .name {
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 2px;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.3;
+            max-width: 100%;
+        }
+        .channel-card .live-indicator {
+            display: inline-block;
+            background: #ef4444;
+            padding: 3px 12px;
+            border-radius: 30px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+            color: white;
+            visibility: hidden;
+        }
+        .channel-card.active .live-indicator {
+            visibility: visible;
+        }
 
-        /* ----- Player Overlay (same player for TV & YouTube) ----- */
+        /* ===== NEWS GRID (Latest News From All Channels) ===== */
+        .news-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 8px;
+        }
+
+        .news-item {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 16px 18px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid #334155;
+        }
+        .news-item:hover {
+            border-color: #facc15;
+            transform: translateX(4px);
+        }
+
+        .news-item .headline {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            line-height: 1.3;
+        }
+        .news-item .sub-headline {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .news-item .time-tag {
+            font-size: 13px;
+            color: #facc15;
+            font-weight: 600;
+        }
+        .news-item .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 6px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .news-item .meta .channel-name {
+            color: #94a3b8;
+        }
+        .news-item .meta .views {
+            color: #64748b;
+        }
+
+        /* ===== TODAY'S UPLOADS ===== */
+        .uploads-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .upload-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e293b;
+            padding: 14px 18px;
+            border-radius: 14px;
+            border: 1px solid #334155;
+        }
+        .upload-item .title {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .upload-item .time {
+            font-size: 13px;
+            color: #94a3b8;
+            background: #0f172a;
+            padding: 2px 12px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+
+        /* ===== PLAYER OVERLAY ===== */
         .player-overlay {
             display: none;
             position: fixed;
@@ -160,13 +289,13 @@
             gap: 12px;
         }
         .player-header .left .now-playing {
-            font-weight: 600;
-            font-size: 16px;
+            font-weight: 700;
+            font-size: 17px;
             color: #facc15;
         }
         .player-header .left .live-badge {
             background: #ef4444;
-            padding: 2px 12px;
+            padding: 4px 14px;
             border-radius: 30px;
             font-size: 12px;
             font-weight: 700;
@@ -191,6 +320,7 @@
             border-radius: 40px;
             font-weight: 700;
             cursor: pointer;
+            font-size: 13px;
         }
         .btn-back-tv {
             background: #1e293b;
@@ -200,6 +330,7 @@
             border-radius: 40px;
             font-weight: 700;
             cursor: pointer;
+            font-size: 13px;
         }
 
         .player-body {
@@ -217,153 +348,110 @@
             border: none;
             background: #000;
         }
-
-        /* ----- YouTube News Grid ----- */
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 20px;
-            margin-top: 16px;
-        }
-        .news-card {
-            background: #1e293b;
-            border-radius: 20px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: 0.2s;
-            border: 1px solid #334155;
-        }
-        .news-card:hover {
-            transform: translateY(-4px);
-            border-color: #facc15;
-        }
-        .news-card .thumb {
-            position: relative;
-            aspect-ratio: 16/9;
-            background: #000;
-        }
-        .news-card .thumb img {
+        .player-body iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-        }
-        .news-card .thumb .play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.7);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid #facc15;
-        }
-        .news-card .info {
-            padding: 14px 16px 18px;
-        }
-        .news-card .info h3 {
-            font-size: 15px;
-            font-weight: 700;
-            margin-bottom: 4px;
-            line-height: 1.4;
-        }
-        .news-card .info .channel-name {
-            font-size: 13px;
-            color: #94a3b8;
-        }
-        .news-card .info .meta {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            font-size: 12px;
-            color: #64748b;
+            border: none;
         }
 
-        /* ----- Search Bar ----- */
-        .search-box {
-            width: 100%;
-            padding: 12px 20px;
-            border-radius: 60px;
-            border: 1px solid #334155;
-            background: #1e293b;
-            color: #f1f5f9;
-            font-size: 16px;
-            margin: 16px 0 8px;
-            outline: none;
-        }
-        .search-box::placeholder {
-            color: #64748b;
-        }
-        .search-box:focus {
-            border-color: #facc15;
-        }
-
-        /* ----- Responsive ----- */
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 600px) {
-            .header h1 {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .header-right {
+                text-align: left;
+                width: 100%;
+            }
+            .logo h1 {
                 font-size: 22px;
             }
             .channel-grid {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
                 gap: 12px;
             }
             .channel-card {
-                padding: 14px 8px;
+                padding: 16px 8px 14px;
+                min-height: 120px;
             }
             .channel-card img {
-                width: 48px;
-                height: 48px;
+                width: 56px;
+                height: 56px;
             }
-            .news-grid {
-                grid-template-columns: 1fr;
+            .channel-card .name {
+                font-size: 13px;
+            }
+            .news-item .headline {
+                font-size: 15px;
+            }
+            .upload-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
             }
             .player-header .left .now-playing {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- ===== HEADER ===== -->
         <div class="header">
             <div class="logo">
                 <h1>GOA NEWS LIVE</h1>
                 <small>All Goa News, One Place</small>
             </div>
+            <div class="header-right">
+                <div class="home-tag">HOME</div>
+                <div class="dev">Developed by Vikrant Naik</div>
+            </div>
         </div>
 
-        <!-- ===== LIVE TV SECTION ===== -->
+        <!-- ===== LIVE NOW ===== -->
         <div class="section-title">
-            <i class="fas fa-tv" style="color:#facc15;"></i> LIVE TV
+            <span><i class="fas fa-circle" style="color:#ef4444; font-size:12px; margin-right:8px;"></i> LIVE NOW</span>
+            <span class="view-all">View All →</span>
         </div>
         <div class="channel-grid" id="channelGrid">
-            <!-- channels inserted by JavaScript -->
+            <!-- channels injected by JavaScript -->
         </div>
 
-        <!-- ===== YOUTUBE NEWS SECTION ===== -->
+        <!-- ===== LATEST NEWS FROM ALL CHANNELS ===== -->
         <div class="section-title">
-            <i class="fas fa-newspaper" style="color:#facc15;"></i> Latest News From All Channels
+            <span><i class="fas fa-newspaper" style="margin-right:10px;"></i> Latest News From All Channels</span>
+            <span class="view-all">View All →</span>
         </div>
-        <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search news videos..." />
         <div id="newsGrid" class="news-grid">
-            <div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b;">Loading news...</div>
+            <div style="text-align:center; padding:30px; color:#64748b;">Loading news...</div>
+        </div>
+
+        <!-- ===== TODAY'S UPLOADS ===== -->
+        <div class="section-title">
+            <span><i class="fas fa-clock" style="margin-right:10px;"></i> Today's Uploads</span>
+            <span class="view-all">View All →</span>
+        </div>
+        <div id="uploadsList" class="uploads-list">
+            <div style="text-align:center; padding:20px; color:#64748b;">Loading...</div>
         </div>
     </div>
 
-    <!-- ===== PLAYER OVERLAY (TV + YouTube) ===== -->
+    <!-- ===== PLAYER OVERLAY ===== -->
     <div id="playerOverlay" class="player-overlay">
         <div class="player-box">
             <div class="player-header">
                 <div class="left">
                     <span class="live-badge">● LIVE</span>
-                    <span class="now-playing" id="nowPlayingLabel">Prudent Media TV</span>
+                    <span class="now-playing" id="nowPlayingLabel">Prudent Media</span>
                 </div>
                 <div class="right">
-                    <button class="btn-back-tv" id="backToTvBtn"><i class="fas fa-arrow-left"></i> BACK TO TV</button>
+                    <button class="btn-back-tv" id="backToTvBtn"><i class="fas fa-arrow-left"></i> BACK</button>
                     <button class="btn-close-player" id="closePlayerBtn"><i class="fas fa-times"></i> CLOSE</button>
                 </div>
             </div>
@@ -375,43 +463,18 @@
 
     <script>
         // ================================================================
-        // 1. TV CHANNEL DATA (replace icon URLs with your actual icons)
+        // 1. TV CHANNELS DATA
         // ================================================================
         const channels = [
-            {
-                id: 'goa365',
-                name: 'Goa365 TV',
-                stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8',
-                icon: 'https://raw.githubusercontent.com/vikscan732-del/GOANEWS/main/icons/goa365.png' // <--- update with your actual icon URL
-            },
-            {
-                id: 'prudent',
-                name: 'Prudent Media',
-                stream: 'https://prudentmcdn.rixcast.com/prudentm.m3u8',
-                icon: 'https://raw.githubusercontent.com/vikscan732-del/GOANEWS/main/icons/prudent.png'
-            },
-            {
-                id: 'prime',
-                name: 'Prime TV Goa',
-                stream: 'https://primetvgoa.rixcast.com/primegoa.m3u8',
-                icon: 'https://raw.githubusercontent.com/vikscan732-del/GOANEWS/main/icons/prime.png'
-            },
-            {
-                id: 'rdx',
-                name: 'RDX Goa',
-                stream: 'https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8',
-                icon: 'https://raw.githubusercontent.com/vikscan732-del/GOANEWS/main/icons/rdx.png'
-            },
-            {
-                id: 'ddgoa',
-                name: 'DD Goa',
-                stream: 'https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/a556fd55-3d07-4069-9f3d-6cda1e3192f8/2.m3u8',
-                icon: 'https://raw.githubusercontent.com/vikscan732-del/GOANEWS/main/icons/ddgoa.png'
-            }
+            { id: 'prudent', name: 'Prudent Media', stream: 'https://prudentmcdn.rixcast.com/prudentm.m3u8', icon: 'icons/prudent.png' },
+            { id: 'goanewshub', name: 'Goa News Hub', stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8', icon: 'icons/goanewshub.png' },
+            { id: 'ingoa', name: 'InGoa 24x7', stream: 'https://primetvgoa.rixcast.com/primegoa.m3u8', icon: 'icons/ingoa.png' },
+            { id: 'goa365', name: 'Goa 365', stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8', icon: 'icons/goa365.png' },
+            { id: 'gomantak', name: 'GOMANTAK TV', stream: 'https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8', icon: 'icons/gomantak.png' }
         ];
 
         // ================================================================
-        // 2. RENDER CHANNEL CARDS
+        // 2. RENDER TV CHANNELS
         // ================================================================
         const channelGrid = document.getElementById('channelGrid');
         let activeChannelId = null;
@@ -419,26 +482,23 @@
         function renderChannels() {
             channelGrid.innerHTML = channels.map(ch => `
                 <div class="channel-card" data-channel-id="${ch.id}">
-                    <img src="${ch.icon}" alt="${ch.name}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22%3E%3Crect fill=%22%23334155%22 width=%2264%22 height=%2264%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2394a3b8%22 font-size=%2214%22%3E${ch.name.slice(0,4)}%3C/text%3E%3C/svg%3E'" />
+                    <img src="${ch.icon}" alt="${ch.name}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2272%22 height=%2272%22%3E%3Crect fill=%22%23334155%22 width=%2272%22 height=%2272%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2394a3b8%22 font-size=%2216%22%3E${ch.name.slice(0,3)}%3C/text%3E%3C/svg%3E'" />
                     <div class="name">${ch.name}</div>
                     <div class="live-indicator">● LIVE</div>
                 </div>
             `).join('');
 
-            // Add click listeners to each card
             document.querySelectorAll('.channel-card').forEach(card => {
                 card.addEventListener('click', function() {
                     const id = this.dataset.channelId;
                     const channel = channels.find(c => c.id === id);
-                    if (channel) {
-                        playTVChannel(channel);
-                    }
+                    if (channel) playTVChannel(channel);
                 });
             });
         }
 
         // ================================================================
-        // 3. PLAY TV CHANNEL (using HLS.js)
+        // 3. PLAY TV CHANNEL
         // ================================================================
         let hls = null;
         const playerOverlay = document.getElementById('playerOverlay');
@@ -448,32 +508,19 @@
         const closePlayerBtn = document.getElementById('closePlayerBtn');
 
         function playTVChannel(channel) {
-            // Update active state in grid
             document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
             const activeCard = document.querySelector(`.channel-card[data-channel-id="${channel.id}"]`);
             if (activeCard) activeCard.classList.add('active');
             activeChannelId = channel.id;
 
-            // Update label
             nowPlayingLabel.textContent = channel.name;
 
-            // Stop any previous HLS stream
-            if (hls) {
-                hls.destroy();
-                hls = null;
-            }
+            if (hls) { hls.destroy(); hls = null; }
 
-            // Show player
             playerOverlay.classList.add('active');
 
-            // Check if HLS is supported
             if (Hls.isSupported()) {
-                hls = new Hls({
-                    enableWorker: true,
-                    lowLatencyMode: true,
-                    backBufferLength: 30,
-                    maxBufferLength: 60,
-                });
+                hls = new Hls({ enableWorker: true, lowLatencyMode: true, maxBufferLength: 60 });
                 hls.loadSource(channel.stream);
                 hls.attachMedia(playerVideo);
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
@@ -486,7 +533,6 @@
                     }
                 });
             } else if (playerVideo.canPlayType('application/vnd.apple.mpegurl')) {
-                // Native HLS (Safari)
                 playerVideo.src = channel.stream;
                 playerVideo.play().catch(e => console.log(e));
             } else {
@@ -494,62 +540,30 @@
             }
         }
 
-        // ================================================================
-        // 4. CLOSE / BACK TO TV
-        // ================================================================
         function closePlayer() {
-            if (hls) {
-                hls.destroy();
-                hls = null;
-            }
+            if (hls) { hls.destroy(); hls = null; }
             playerVideo.pause();
             playerVideo.src = '';
             playerVideo.load();
             playerOverlay.classList.remove('active');
-            // Remove active state from cards
             document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
         }
 
         backToTvBtn.addEventListener('click', closePlayer);
         closePlayerBtn.addEventListener('click', closePlayer);
-        // Click on overlay background also closes
-        playerOverlay.addEventListener('click', (e) => {
-            if (e.target === playerOverlay) closePlayer();
-        });
-        // ESC key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closePlayer();
-        });
+        playerOverlay.addEventListener('click', (e) => { if (e.target === playerOverlay) closePlayer(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlayer(); });
 
         // ================================================================
-        // 5. AUTO-REFRESH TV STREAM (every 30 min)
-        // ================================================================
-        setInterval(() => {
-            if (playerOverlay.classList.contains('active') && activeChannelId) {
-                const channel = channels.find(c => c.id === activeChannelId);
-                if (channel) {
-                    console.log('Auto-refreshing stream:', channel.name);
-                    // Re-load the stream
-                    if (hls) {
-                        hls.loadSource(channel.stream);
-                    }
-                }
-            }
-        }, 30 * 60 * 1000); // 30 minutes
-
-        // ================================================================
-        // 6. YOUTUBE NEWS GRID (from data.json)
+        // 4. YOUTUBE NEWS GRID (from data.json)
         // ================================================================
         const DATA_URL = 'data.json';
         const newsGrid = document.getElementById('newsGrid');
-        const searchInput = document.getElementById('searchInput');
+        const uploadsList = document.getElementById('uploadsList');
         let allNews = [];
 
         function getVideoId(link) {
-            try {
-                const url = new URL(link);
-                return url.searchParams.get('v');
-            } catch { return null; }
+            try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
         }
 
         function formatTime(iso) {
@@ -559,140 +573,12 @@
 
         function renderNews(videos) {
             if (!videos || videos.length === 0) {
-                newsGrid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b;">No news videos found.</div>`;
+                newsGrid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:30px; color:#64748b;">No news videos found.</div>`;
                 return;
             }
-            // Filter out shorts (portrait mode)
+
+            // Filter out shorts and get top 8
             const filtered = videos.filter(v => {
                 const link = v.link || '';
                 const title = v.title || '';
-                return !(link.includes('/shorts/') || /#shorts/i.test(title));
-            });
-            if (filtered.length === 0) {
-                newsGrid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b;">No news videos available.</div>`;
-                return;
-            }
-            allNews = filtered;
-            newsGrid.innerHTML = filtered.slice(0, 20).map(v => {
-                const vid = getVideoId(v.link);
-                const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
-                return `
-                    <div class="news-card" data-video-id="${vid}" data-title="${v.title}">
-                        <div class="thumb">
-                            <img src="${thumb}" alt="${v.title}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22180%22%3E%3Crect fill=%22%231e293b%22 width=%22320%22 height=%22180%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2214%22%3ENo%20Thumb%3C/text%3E%3C/svg%3E'" />
-                            <div class="play-icon"><i class="fas fa-play" style="color:#facc15;"></i></div>
-                        </div>
-                        <div class="info">
-                            <h3>${v.title}</h3>
-                            <div class="channel-name">${v.channel}</div>
-                            <div class="meta"><span>${formatTime(v.published)}</span><span>👁️ 1.2K</span></div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-
-            // Add click listeners for YouTube videos
-            document.querySelectorAll('.news-card').forEach(card => {
-                card.addEventListener('click', function() {
-                    const vid = this.dataset.videoId;
-                    const title = this.dataset.title;
-                    if (vid) {
-                        // Play YouTube video in same player
-                        playYouTubeVideo(vid, title);
-                    }
-                });
-            });
-        }
-
-        // ================================================================
-        // 7. PLAY YOUTUBE VIDEO (in same player)
-        // ================================================================
-        function playYouTubeVideo(videoId, title) {
-            if (!videoId) return;
-            const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
-            // We use iframe for YouTube – replace video element with iframe
-            // Since we have a video element, we need to swap temporarily.
-            // Simpler: open YouTube in overlay using an iframe.
-            // But we want same player – let's use an iframe inside the player body.
-            const playerBody = document.querySelector('.player-body');
-            // Remove any existing iframe
-            const oldIframe = playerBody.querySelector('iframe');
-            if (oldIframe) oldIframe.remove();
-
-            // Hide video element, show iframe
-            playerVideo.style.display = 'none';
-            const iframe = document.createElement('iframe');
-            iframe.src = embedUrl;
-            iframe.allow = 'autoplay; encrypted-media; fullscreen';
-            iframe.allowFullscreen = true;
-            iframe.style.position = 'absolute';
-            iframe.style.top = '0';
-            iframe.style.left = '0';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.border = 'none';
-            playerBody.appendChild(iframe);
-
-            // Update label
-            nowPlayingLabel.textContent = title || 'YouTube Video';
-            playerOverlay.classList.add('active');
-            // Remove active state from TV cards
-            document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
-        }
-
-        // Override closePlayer to handle YouTube iframe cleanup
-        const originalClose = closePlayer;
-        closePlayer = function() {
-            // Remove any iframe
-            const playerBody = document.querySelector('.player-body');
-            const iframe = playerBody.querySelector('iframe');
-            if (iframe) iframe.remove();
-            playerVideo.style.display = 'block';
-            originalClose();
-        };
-        // Re-bind
-        backToTvBtn.onclick = closePlayer;
-        closePlayerBtn.onclick = closePlayer;
-        playerOverlay.onclick = (e) => { if (e.target === playerOverlay) closePlayer(); };
-        document.onkeydown = (e) => { if (e.key === 'Escape') closePlayer(); };
-
-        // ================================================================
-        // 8. SEARCH FILTER FOR NEWS
-        // ================================================================
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            if (!allNews.length) return;
-            const filtered = allNews.filter(v => 
-                v.title.toLowerCase().includes(query) || 
-                v.channel.toLowerCase().includes(query)
-            );
-            renderNews(filtered);
-        });
-
-        // ================================================================
-        // 9. LOAD DATA
-        // ================================================================
-        async function loadData() {
-            try {
-                const response = await fetch(DATA_URL + '?t=' + Date.now());
-                if (!response.ok) throw new Error('Network error');
-                const data = await response.json();
-                renderNews(data);
-            } catch (e) {
-                newsGrid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:#ef4444;">⚠️ Could not load news. Please refresh.</div>`;
-            }
-        }
-
-        // ================================================================
-        // 10. INIT
-        // ================================================================
-        renderChannels();
-        loadData();
-
-        // Auto-refresh news every 10 minutes (without reloading page)
-        setInterval(() => {
-            loadData();
-        }, 10 * 60 * 1000);
-    </script>
-</body>
-</html>
+                return !(link.includes('/shorts/') || /#shorts/i.test(title
