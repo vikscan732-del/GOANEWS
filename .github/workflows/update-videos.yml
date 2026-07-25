@@ -1,0 +1,40 @@
+name: Update Video Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install jq
+        run: sudo apt-get install -y jq
+      - name: Fetch and combine RSS feeds
+        run: |
+          feeds=(
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCE9AZSYybiCWNYKr9gbY1lA"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCJb1MeQClvGeSMeBSVLKnDQ"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCDFOkbaN9IuV6tjO8Aqo1ww"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UC-i0Rvr1-JtE2A8Z5RuVatg"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCUtU4cVsod9zzLHpL5xM0kQ"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCETBxO93JjoGNkH1zRB0zwg"
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UCAYM7lIXVbOpCkXKSOBB44A"
+          )
+          echo '[]' > temp_all.json
+          for feed in "${feeds[@]}"; do
+            curl -s "$feed" | jq -r '.entry[] | {id:.id,title:.title,published:.published,channel:.author.name,link:.link."@href"}' | jq -s '.' >> temp_all.json
+          done
+          jq -s 'add | unique_by(.id) | sort_by(.published) | reverse' temp_all.json > data.json
+          rm temp_all.json
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "Automated video data update" || echo "No changes"
+          git push
