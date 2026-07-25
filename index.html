@@ -52,6 +52,7 @@
         .player-box .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
         .player-box .player-footer { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #0a0a0a; flex-wrap: wrap; gap: 10px; }
         .player-box .player-footer .btn-youtube { background: #dc2626; border: none; color: #fff; padding: 6px 18px; border-radius: 40px; font-weight: 600; cursor: pointer; }
+        .ad-notice { font-size: 12px; color: #facc15; background: #1e293b; padding: 4px 12px; border-radius: 30px; }
         .loading-placeholder { text-align: center; padding: 60px 20px; color: #6b7a8f; }
         @media (max-width: 700px) {
             .news-grid { grid-template-columns: 1fr; }
@@ -97,6 +98,7 @@
             <iframe id="playerIframe" src="" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
         </div>
         <div class="player-footer">
+            <span class="ad-notice"><i class="fas fa-ad"></i> Ads may appear</span>
             <button class="btn-youtube" id="watchYoutubeBtn"><i class="fab fa-youtube"></i> Watch on YouTube</button>
         </div>
     </div>
@@ -145,7 +147,7 @@
         }
         newsGrid.innerHTML = videos.slice(0, 20).map(v => {
             const vid = getVideoId(v.link);
-            const thumb = vid ? `https://img.youtube.com/vi/${vid}/mqdefault.jpg` : '';
+            const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
             return `
                 <div class="news-card" data-video-id="${vid}" data-title="${v.title}" data-link="${v.link}">
                     <div class="thumb">
@@ -187,8 +189,8 @@
     function playVideo(videoId, title) {
         if (!videoId) return;
         currentVideoId = videoId;
-        // Ad‑free embed using inv.nadeko.net (working instance)
-        const embedUrl = `https://yewtu.be/embed/${videoId}?autoplay=1`;
+        // Use the official YouTube embed – guaranteed to work (may show ads)
+        const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
         playerIframe.src = embedUrl;
         playerTitle.textContent = title || 'Now Playing';
         playerOverlay.classList.add('active');
