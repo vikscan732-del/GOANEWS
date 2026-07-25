@@ -34,7 +34,7 @@
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
         }
 
-        /* ===== HEADER ===== */
+        /* ===== HEADER WITH LOGO ===== */
         .header {
             display: flex;
             justify-content: space-between;
@@ -45,18 +45,17 @@
             border-bottom: 2px solid #e2e8f0;
         }
 
-        .logo h1 {
-            font-size: 26px;
-            font-weight: 800;
-            color: #0f172a;
+        .logo {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
         }
-        .logo h1 span {
-            color: #e63946;
-        }
-        .logo small {
+
+        .header-logo {
+            max-height: 80px;
+            width: auto;
+            height: auto;
             display: block;
-            font-size: 12px;
-            color: #64748b;
         }
 
         .header-right {
@@ -377,8 +376,8 @@
                 text-align: left;
                 width: 100%;
             }
-            .logo h1 {
-                font-size: 22px;
+            .header-logo {
+                max-height: 60px;
             }
             .news-block .headline {
                 font-size: 16px;
@@ -395,11 +394,10 @@
 </head>
 <body>
     <div class="container">
-        <!-- ===== HEADER ===== -->
+        <!-- ===== HEADER WITH LOGO ===== -->
         <div class="header">
             <div class="logo">
-                <h1>GOA <span>NEWS</span> LIVE</h1>
-                <small>All Goa News, One Place</small>
+                <img src="goa-news-logo.png" alt="GOA NEWS LIVE" class="header-logo" />
             </div>
             <div class="header-right">
                 <div class="home-tag">HOME</div>
