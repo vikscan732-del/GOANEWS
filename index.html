@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>GOA NEWS LIVE</title>
-    <!-- HLS.js for m3u8 playback -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
@@ -34,7 +32,7 @@
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
         }
 
-        /* ===== HEADER WITH LOGO ===== */
+        /* ===== HEADER ===== */
         .header {
             display: flex;
             justify-content: space-between;
@@ -52,7 +50,7 @@
         }
 
         .header-logo {
-            max-height: 300px;
+            max-height: 80px;
             width: auto;
             height: auto;
             display: block;
@@ -60,20 +58,14 @@
 
         .header-right {
             text-align: right;
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.4;
         }
-        .home-tag {
-            display: inline-block;
-            background: #facc15;
+        .header-right .datetime {
+            font-weight: 600;
             color: #0f172a;
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-        .dev {
-            font-size: 11px;
-            color: #64748b;
+            font-size: 14px;
         }
 
         /* ===== SECTION TITLE ===== */
@@ -136,7 +128,7 @@
             color: white;
         }
 
-        /* ===== NEWS LIST WITH THUMBNAILS ===== */
+        /* ===== NEWS LIST ===== */
         .news-list {
             display: flex;
             flex-direction: column;
@@ -221,6 +213,29 @@
         }
         .news-block .news-detail .content .meta .views {
             color: #94a3b8;
+        }
+
+        /* ===== LOAD MORE BUTTON ===== */
+        .load-more-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background: #e63946;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align: center;
+        }
+        .load-more-btn:hover {
+            background: #c62836;
+        }
+        .load-more-btn.hidden {
+            display: none;
         }
 
         /* ===== TODAY'S UPLOADS ===== */
@@ -394,13 +409,13 @@
 </head>
 <body>
     <div class="container">
-        <!-- ===== HEADER WITH LOGO ===== -->
+        <!-- ===== HEADER ===== -->
         <div class="header">
             <div class="logo">
                 <img src="goa-news-logo.png" alt="GOA NEWS LIVE" class="header-logo" />
             </div>
             <div class="header-right">
-                <div class="home-tag">HOME</div>
+                <div class="datetime" id="currentDateTime"></div>
                 <div class="dev">Developed by Vikrant Naik</div>
             </div>
         </div>
@@ -422,6 +437,7 @@
         <div id="newsContainer" class="news-list">
             <div class="loading-text">Loading news...</div>
         </div>
+        <button id="loadMoreBtn" class="load-more-btn">Load More Videos →</button>
 
         <!-- ===== TODAY'S UPLOADS ===== -->
         <div class="section-title">
@@ -453,6 +469,18 @@
     </div>
 
     <script>
+        // ================================================================
+        // 0. DISPLAY CURRENT DATE & TIME
+        // ================================================================
+        function updateDateTime() {
+            const now = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+            const formatted = now.toLocaleDateString('en-IN', options);
+            document.getElementById('currentDateTime').textContent = formatted;
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 60000); // update every minute
+
         // ================================================================
         // 1. TV CHANNELS
         // ================================================================
@@ -533,11 +561,16 @@
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlayer(); });
 
         // ================================================================
-        // 3. YOUTUBE NEWS + THUMBNAILS
+        // 3. YOUTUBE NEWS – WITH LOAD MORE
         // ================================================================
         const DATA_URL = 'data.json';
         const newsContainer = document.getElementById('newsContainer');
         const uploadsContainer = document.getElementById('uploadsContainer');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+        let allFilteredNews = [];
+        let displayCount = 20; // initial videos shown
+        const STEP = 10; // load 10 more each time
 
         function getVideoId(link) {
             try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
@@ -559,12 +592,14 @@
             'महापालिका निवडणूक जाहीर'
         ];
 
-        function renderNews(videos) {
+        function renderNews(videos, reset = true) {
             if (!videos || videos.length === 0) {
                 newsContainer.innerHTML = `<div class="loading-text">No news videos found.</div>`;
+                loadMoreBtn.classList.add('hidden');
                 return;
             }
 
+            // Filter shorts
             const filtered = videos.filter(v => {
                 const link = v.link || '';
                 const title = v.title || '';
@@ -573,11 +608,20 @@
 
             if (filtered.length === 0) {
                 newsContainer.innerHTML = `<div class="loading-text">No news available.</div>`;
+                loadMoreBtn.classList.add('hidden');
                 return;
             }
 
-            const topNews = filtered.slice(0, 8);
-            newsContainer.innerHTML = topNews.map((v, index) => {
+            if (reset) {
+                allFilteredNews = filtered;
+                displayCount = Math.min(20, allFilteredNews.length);
+            }
+
+            const total = allFilteredNews.length;
+            const toShow = allFilteredNews.slice(0, displayCount);
+
+            // Build HTML for visible items
+            let html = toShow.map((v, index) => {
                 const vid = getVideoId(v.link);
                 const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
                 const marathi = marathiHeadlines[index % marathiHeadlines.length];
@@ -606,6 +650,9 @@
                 `;
             }).join('');
 
+            newsContainer.innerHTML = html;
+
+            // Attach click listeners
             document.querySelectorAll('.news-block').forEach(block => {
                 block.addEventListener('click', function() {
                     const vid = this.dataset.videoId;
@@ -613,10 +660,28 @@
                     if (vid) playYouTubeVideo(vid, title);
                 });
             });
+
+            // Show/hide load more button
+            if (displayCount < total) {
+                loadMoreBtn.classList.remove('hidden');
+                loadMoreBtn.textContent = `Load More (${displayCount}/${total}) →`;
+            } else {
+                loadMoreBtn.classList.add('hidden');
+            }
         }
 
         // ================================================================
-        // 4. PLAY YOUTUBE VIDEO
+        // 4. LOAD MORE FUNCTIONALITY
+        // ================================================================
+        loadMoreBtn.addEventListener('click', function() {
+            const total = allFilteredNews.length;
+            const newCount = Math.min(displayCount + STEP, total);
+            displayCount = newCount;
+            renderNews(allFilteredNews, false); // false = don't reset allFilteredNews
+        });
+
+        // ================================================================
+        // 5. PLAY YOUTUBE VIDEO
         // ================================================================
         function playYouTubeVideo(videoId, title) {
             if (!videoId) return;
@@ -656,7 +721,7 @@
         document.onkeydown = (e) => { if (e.key === 'Escape') closePlayer(); };
 
         // ================================================================
-        // 5. TODAY'S UPLOADS
+        // 6. TODAY'S UPLOADS
         // ================================================================
         function renderUploads(videos) {
             if (!videos || videos.length === 0) {
@@ -685,26 +750,27 @@
         }
 
         // ================================================================
-        // 6. LOAD DATA
+        // 7. LOAD DATA
         // ================================================================
         async function loadData() {
             try {
                 const response = await fetch(DATA_URL + '?t=' + Date.now());
                 if (!response.ok) throw new Error('Network error');
                 const data = await response.json();
-                renderNews(data);
+                renderNews(data, true);
                 renderUploads(data);
             } catch (e) {
                 newsContainer.innerHTML = `<div class="loading-text">⚠️ Could not load news. Please refresh.</div>`;
+                loadMoreBtn.classList.add('hidden');
             }
         }
 
         // ================================================================
-        // 7. INIT
+        // 8. INIT
         // ================================================================
         renderChannels();
         loadData();
-        setInterval(loadData, 10 * 60 * 1000);
+        setInterval(loadData, 10 * 60 * 1000); // refresh every 10 min
     </script>
 </body>
 </html>
