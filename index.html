@@ -4,39 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    
-<!-- SEO Meta Tags -->
-<title>GOA NEWS LIVE – Latest Goa News, Live TV & Updates</title>
-<meta name="description" content="Watch Goa news live, latest updates from Prudent Media, Goa News Hub, InGoa 24x7, Goa 365, and Gomantak TV. All Goa news in one place." />
-<meta name="keywords" content="Goa news, live TV Goa, Prudent Media, Goa News Hub, Gomantak TV, Goa latest news" />
-<link rel="canonical" href="https://tvgoa.online/" />
+    <!-- ===== SEO META TAGS ===== -->
+    <title>GOA NEWS LIVE – Latest Goa News, Live TV & Updates</title>
+    <meta name="description" content="Watch Goa news live, latest updates from Prudent Media, Goa News Hub, InGoa 24x7, Goa 365, and Gomantak TV. All Goa news in one place." />
+    <meta name="keywords" content="Goa news, live TV Goa, Prudent Media, Goa News Hub, Gomantak TV, Goa latest news" />
+    <link rel="canonical" href="https://tvgoa.online/" />
 
-<!-- Open Graph (For Social Sharing) -->
-<meta property="og:title" content="GOA NEWS LIVE – Latest Goa News, Live TV & Updates" />
-<meta property="og:description" content="Watch Goa news live, latest updates from all Goa news channels in one place." />
-<meta property="og:image" content="https://tvgoa.online/goa-news-logo.png" />
-<meta property="og:url" content="https://tvgoa.online/" />
-<meta property="og:type" content="website" />
+    <!-- ===== OPEN GRAPH (For WhatsApp, Facebook, Telegram) ===== -->
+    <meta property="og:title" content="GOA NEWS LIVE – Latest Goa News, Live TV & Updates" />
+    <meta property="og:description" content="Watch Goa news live, latest updates from all Goa news channels in one place." />
+    <meta property="og:image" content="https://tvgoa.online/goa-news-logo.png" />
+    <meta property="og:url" content="https://tvgoa.online/" />
+    <meta property="og:type" content="website" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="GOA NEWS LIVE – Latest Goa News" />
-<meta name="twitter:description" content="All Goa news, live TV, and updates in one place." />
-<meta name="twitter:image" content="https://tvgoa.online/goa-news-logo.png" />
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GOA NEWS LIVE – Latest Goa News" />
+    <meta name="twitter:description" content="All Goa news, live TV, and updates in one place." />
+    <meta name="twitter:image" content="https://tvgoa.online/goa-news-logo.png" />
 
-    
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-36W6F31EYJ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <!-- ===== GOOGLE ANALYTICS ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36W6F31EYJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-36W6F31EYJ');
+    </script>
 
-gtag('config', 'G-36W6F31EYJ');
-</script>
-    
-    
-    <title>GOA NEWS LIVE</title>
+    <!-- ===== LIBRARIES ===== -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
@@ -430,7 +426,7 @@ gtag('config', 'G-36W6F31EYJ');
         <!-- ===== HEADER ===== -->
         <div class="header">
             <div class="logo">
-                <img src="goa-news-logo.png" alt="GOA NEWS LIVE" class="header-logo" />
+                <img src="https://tvgoa.online/goa-news-logo.png" alt="GOA NEWS LIVE" class="header-logo" />
             </div>
             <div class="header-right">
                 <div class="datetime" id="currentDateTime"></div>
@@ -497,7 +493,7 @@ gtag('config', 'G-36W6F31EYJ');
             document.getElementById('currentDateTime').textContent = formatted;
         }
         updateDateTime();
-        setInterval(updateDateTime, 60000); // update every minute
+        setInterval(updateDateTime, 60000);
 
         // ================================================================
         // 1. TV CHANNELS
@@ -587,8 +583,8 @@ gtag('config', 'G-36W6F31EYJ');
         const loadMoreBtn = document.getElementById('loadMoreBtn');
 
         let allFilteredNews = [];
-        let displayCount = 20; // initial videos shown
-        const STEP = 10; // load 10 more each time
+        let displayCount = 20;
+        const STEP = 10;
 
         function getVideoId(link) {
             try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
@@ -617,7 +613,6 @@ gtag('config', 'G-36W6F31EYJ');
                 return;
             }
 
-            // Filter shorts
             const filtered = videos.filter(v => {
                 const link = v.link || '';
                 const title = v.title || '';
@@ -638,7 +633,6 @@ gtag('config', 'G-36W6F31EYJ');
             const total = allFilteredNews.length;
             const toShow = allFilteredNews.slice(0, displayCount);
 
-            // Build HTML for visible items
             let html = toShow.map((v, index) => {
                 const vid = getVideoId(v.link);
                 const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
@@ -670,7 +664,6 @@ gtag('config', 'G-36W6F31EYJ');
 
             newsContainer.innerHTML = html;
 
-            // Attach click listeners
             document.querySelectorAll('.news-block').forEach(block => {
                 block.addEventListener('click', function() {
                     const vid = this.dataset.videoId;
@@ -679,7 +672,6 @@ gtag('config', 'G-36W6F31EYJ');
                 });
             });
 
-            // Show/hide load more button
             if (displayCount < total) {
                 loadMoreBtn.classList.remove('hidden');
                 loadMoreBtn.textContent = `Load More (${displayCount}/${total}) →`;
@@ -688,18 +680,15 @@ gtag('config', 'G-36W6F31EYJ');
             }
         }
 
-        // ================================================================
-        // 4. LOAD MORE FUNCTIONALITY
-        // ================================================================
         loadMoreBtn.addEventListener('click', function() {
             const total = allFilteredNews.length;
             const newCount = Math.min(displayCount + STEP, total);
             displayCount = newCount;
-            renderNews(allFilteredNews, false); // false = don't reset allFilteredNews
+            renderNews(allFilteredNews, false);
         });
 
         // ================================================================
-        // 5. PLAY YOUTUBE VIDEO
+        // 4. PLAY YOUTUBE VIDEO
         // ================================================================
         function playYouTubeVideo(videoId, title) {
             if (!videoId) return;
@@ -739,7 +728,7 @@ gtag('config', 'G-36W6F31EYJ');
         document.onkeydown = (e) => { if (e.key === 'Escape') closePlayer(); };
 
         // ================================================================
-        // 6. TODAY'S UPLOADS
+        // 5. TODAY'S UPLOADS
         // ================================================================
         function renderUploads(videos) {
             if (!videos || videos.length === 0) {
@@ -768,7 +757,7 @@ gtag('config', 'G-36W6F31EYJ');
         }
 
         // ================================================================
-        // 7. LOAD DATA
+        // 6. LOAD DATA
         // ================================================================
         async function loadData() {
             try {
@@ -784,11 +773,11 @@ gtag('config', 'G-36W6F31EYJ');
         }
 
         // ================================================================
-        // 8. INIT
+        // 7. INIT
         // ================================================================
         renderChannels();
         loadData();
-        setInterval(loadData, 10 * 60 * 1000); // refresh every 10 min
+        setInterval(loadData, 10 * 60 * 1000);
     </script>
 </body>
 </html>
