@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- ===== SEO META TAGS ===== -->
-    <title>GOA NEWS LIVE – Latest Goa News, Live TV & Updates</title>
+    <title>GOA TV – Latest Goa News, Live TV & Updates</title>
     <meta name="description" content="Watch Goa news live, latest updates from Prudent Media, Goa News Hub, InGoa 24x7, Goa 365, and Gomantak TV. All Goa news in one place." />
     <meta name="keywords" content="Goa news, live TV Goa, Prudent Media, Goa News Hub, Gomantak TV, Goa latest news" />
     <link rel="canonical" href="https://tvgoa.online/" />
 
-    <!-- ===== OPEN GRAPH (For WhatsApp, Facebook, Telegram) ===== -->
-    <meta property="og:title" content="GOA NEWS LIVE – Latest Goa News, Live TV & Updates" />
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:title" content="GOA TV – Latest Goa News, Live TV & Updates" />
     <meta property="og:description" content="Watch Goa news live, latest updates from all Goa news channels in one place." />
     <meta property="og:image" content="https://tvgoa.online/google-logo.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
     <meta property="og:url" content="https://tvgoa.online/" />
     <meta property="og:type" content="website" />
 
     <!-- ===== TWITTER CARD ===== -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="GOA NEWS LIVE – Latest Goa News" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GOA TV – Latest Goa News" />
     <meta name="twitter:description" content="All Goa news, live TV, and updates in one place." />
-    <meta name="twitter:image" content="https://tvgoa.online/goa-news-logo.png" />
+    <meta name="twitter:image" content="https://tvgoa.online/google-logo.png" />
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="https://tvgoa.online/goa-news-logo.png" type="image/png" />
 
     <!-- ===== GOOGLE ANALYTICS ===== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-36W6F31EYJ"></script>
@@ -61,7 +66,7 @@
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
         }
 
-        /* ===== HEADER — CENTERED & STACKED ===== */
+        /* ===== HEADER ===== */
         .header {
             display: block;
             text-align: center;
@@ -71,7 +76,6 @@
             border-bottom: 1px solid #e2e8f0;
         }
 
-        /* ===== LOGO — FULL WIDTH, RESPONSIVE ===== */
         .header-logo {
             width: 100%;
             max-width: 720px;
@@ -80,7 +84,6 @@
             margin: 0 auto;
         }
 
-        /* ===== HEADER RIGHT — CENTERED ===== */
         .header-right {
             text-align: center;
             margin-top: 10px;
@@ -147,6 +150,154 @@
             font-size: 10px;
             font-weight: 700;
             color: white;
+        }
+
+        /* ===== RADIO SECTION ===== */
+        .radio-section {
+            margin-top: 10px;
+        }
+
+        .radio-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.2s;
+        }
+        .radio-item:hover {
+            background: #f1f5f9;
+        }
+        .radio-item .name {
+            font-weight: 600;
+            font-size: 16px;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .radio-item .name i {
+            color: #22c55e;
+            font-size: 20px;
+        }
+        .radio-item .radio-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .radio-item .radio-controls .play-btn {
+            background: #22c55e;
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+        .radio-item .radio-controls .play-btn:hover {
+            transform: scale(1.05);
+            background: #16a34a;
+        }
+        .radio-item .radio-controls .play-btn.playing {
+            background: #e63946;
+        }
+        .radio-item .radio-controls .play-btn.playing:hover {
+            background: #c62836;
+        }
+        .radio-item .radio-controls .seeker {
+            width: 120px;
+            height: 4px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: #e2e8f0;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+        }
+        .radio-item .radio-controls .seeker::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #22c55e;
+            cursor: pointer;
+        }
+        .radio-item .radio-controls .seeker::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #22c55e;
+            cursor: pointer;
+            border: none;
+        }
+        .radio-item .radio-controls .time-display {
+            font-size: 12px;
+            color: #64748b;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        /* ===== MUSIC BAR BEATS ANIMATION ===== */
+        .radio-dots {
+            display: none;
+            align-items: center;
+            gap: 3px;
+            height: 24px;
+        }
+        .radio-dots.active {
+            display: flex;
+        }
+        .radio-dots .bar {
+            width: 4px;
+            height: 20px;
+            background: #22c55e;
+            border-radius: 2px;
+            display: inline-block;
+            animation: beat 0.8s infinite ease-in-out;
+            transform-origin: bottom;
+        }
+        .radio-dots .bar:nth-child(1) { animation-delay: 0s; height: 12px; }
+        .radio-dots .bar:nth-child(2) { animation-delay: 0.15s; height: 24px; }
+        .radio-dots .bar:nth-child(3) { animation-delay: 0.3s; height: 8px; }
+        .radio-dots .bar:nth-child(4) { animation-delay: 0.45s; height: 20px; }
+        .radio-dots .bar:nth-child(5) { animation-delay: 0.6s; height: 14px; }
+        .radio-dots .bar:nth-child(6) { animation-delay: 0.75s; height: 22px; }
+        .radio-dots .bar:nth-child(7) { animation-delay: 0.9s; height: 10px; }
+
+        @keyframes beat {
+            0%, 100% { transform: scaleY(0.3); opacity: 0.4; }
+            50% { transform: scaleY(1); opacity: 1; }
+        }
+
+        .radio-item .radio-status {
+            font-size: 11px;
+            font-weight: 600;
+            color: #22c55e;
+            min-width: 60px;
+            text-align: right;
+        }
+        .radio-item .radio-status.playing {
+            color: #e63946;
+            animation: pulse-text 1s infinite;
+        }
+        @keyframes pulse-text {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .radio-item.playing .radio-dots {
+            display: flex;
+        }
+        .radio-item.playing .radio-status {
+            color: #e63946;
         }
 
         /* ===== NEWS LIST ===== */
@@ -289,7 +440,7 @@
             font-weight: 500;
         }
 
-        /* ===== PLAYER OVERLAY ===== */
+        /* ===== PLAYER OVERLAY (for TV only) ===== */
         .player-overlay {
             display: none;
             position: fixed;
@@ -418,6 +569,13 @@
                 width: 100%;
                 height: 140px;
             }
+            .radio-item {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .radio-item .radio-controls .seeker {
+                width: 80px;
+            }
         }
     </style>
 </head>
@@ -426,7 +584,7 @@
         <!-- ===== HEADER ===== -->
         <div class="header">
             <div class="logo">
-                <img src="https://tvgoa.online/goa-news-logo.png" alt="GOA NEWS LIVE" class="header-logo" />
+                <img src="https://tvgoa.online/goa-news-logo.png" alt="GOA TV" class="header-logo" />
             </div>
             <div class="header-right">
                 <div class="datetime" id="currentDateTime"></div>
@@ -440,6 +598,15 @@
             <span class="view-all">View All →</span>
         </div>
         <div class="channel-list" id="channelList">
+            <!-- injected by JS -->
+        </div>
+
+        <!-- ===== RADIO SECTION ===== -->
+        <div class="section-title" style="border-left-color: #22c55e;">
+            <span><i class="fas fa-radio" style="color:#22c55e; margin-right:8px;"></i> RADIO</span>
+            <span class="view-all">Listen Live →</span>
+        </div>
+        <div class="radio-section" id="radioList">
             <!-- injected by JS -->
         </div>
 
@@ -463,12 +630,31 @@
         </div>
     </div>
 
-    <!-- ===== PLAYER OVERLAY ===== -->
+    <!-- ===== FOOTER ===== -->
+    <footer style="border-top:1px solid #e2e8f0; padding:24px 0 10px; margin:0 auto; max-width:900px; font-size:13px; color:#94a3b8; text-align:center;">
+        <p style="margin-bottom:6px;">
+            <span style="font-weight:700; color:#0f172a;">GOA TV</span> © 2026 – All Rights Reserved.
+        </p>
+        <p style="margin-bottom:6px; font-size:12px; color:#94a3b8;">
+            All video content is sourced from publicly available platforms.<br />
+            GOA TV does not host any copyrighted content and acts only as a news aggregator.
+        </p>
+        <p style="margin-bottom:6px;">
+            <strong>📧 Report & Suggestions:</strong>  
+            <a href="codex002@yahoo.com" style="color:#e63946; text-decoration:none; font-weight:600;">codex002@yahoo.com</a>
+        </p>
+        <p style="font-size:11px; color:#94a3b8;">
+            All content is used under  
+            <a href="https://en.wikipedia.org/wiki/Fair_use" target="_blank" style="color:#64748b; text-decoration:underline;">fair use</a> guidelines.
+        </p>
+    </footer>
+
+    <!-- ===== PLAYER OVERLAY (for TV only) ===== -->
     <div id="playerOverlay" class="player-overlay">
         <div class="player-box">
             <div class="player-header">
                 <div class="left">
-                    <span class="live-badge">● LIVE</span>
+                    <span class="live-badge" id="playerTypeBadge">● LIVE</span>
                     <span class="now-playing" id="nowPlayingLabel">Select a channel</span>
                 </div>
                 <div class="right">
@@ -499,13 +685,22 @@
         // 1. TV CHANNELS
         // ================================================================
         const channels = [
-            { id: 'prudent', name: 'Prudent Media', stream: 'https://prudentmcdn.rixcast.com/prudentm.m3u8' },
-            { id: 'goanewshub', name: 'Goa 365', stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8' },
-            { id: 'ingoa', name: 'Prime', stream: 'https://primetvgoa.rixcast.com/primegoa.m3u8' },
-            { id: 'DD Goa', name: 'DD Goa', stream: 'https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/a556fd55-3d07-4069-9f3d-6cda1e3192f8/2.m3u8' },
-            { id: 'rdxgoa', name: 'RDX GOA', stream: 'https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8' }
+            { id: 'prudent', name: 'Prudent Media', stream: 'https://prudentmcdn.rixcast.com/prudentm.m3u8', type: 'tv' },
+            { id: 'goanewshub', name: 'Goa 365', stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8', type: 'tv' },
+            { id: 'ingoa', name: 'Prime', stream: 'https://primetvgoa.rixcast.com/primegoa.m3u8', type: 'tv' },
+            { id: 'DD Goa', name: 'DD Goa', stream: 'https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/a556fd55-3d07-4069-9f3d-6cda1e3192f8/2.m3u8', type: 'tv' },
+            { id: 'rdxgoa', name: 'RDX GOA', stream: 'https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8', type: 'tv' }
         ];
 
+        // ===== RADIO STATIONS =====
+        const radioStations = [
+            { id: 'radio1', name: 'Mhadei Radio', stream: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio049/chunklist.m3u8' },
+            { id: 'radio2', name: 'FM Rainbow Goa', stream: 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio048/chunklist.m3u8' }
+        ];
+
+        // ================================================================
+        // 2. RENDER TV CHANNELS
+        // ================================================================
         const channelList = document.getElementById('channelList');
 
         function renderChannels() {
@@ -526,16 +721,227 @@
         }
 
         // ================================================================
-        // 2. PLAY TV CHANNEL
+        // 3. RENDER RADIO (with music bar beats)
+        // ================================================================
+        const radioList = document.getElementById('radioList');
+
+        function renderRadio() {
+            radioList.innerHTML = radioStations.map(r => `
+                <div class="radio-item" data-radio-id="${r.id}">
+                    <span class="name"><i class="fas fa-radio"></i> ${r.name}</span>
+                    <div class="radio-controls">
+                        <button class="play-btn" data-radio-id="${r.id}">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <input type="range" class="seeker" min="0" max="100" value="0" step="0.1" />
+                        <span class="time-display">0:00</span>
+                        <div class="radio-dots">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <span class="radio-status">● Live</span>
+                    </div>
+                </div>
+            `).join('');
+
+            // Attach play/pause events
+            document.querySelectorAll('.play-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const id = this.dataset.radioId;
+                    const radio = radioStations.find(r => r.id === id);
+                    if (radio) toggleRadio(radio, this);
+                });
+            });
+
+            // Attach seeker events
+            document.querySelectorAll('.radio-item').forEach(item => {
+                const seeker = item.querySelector('.seeker');
+                const timeDisplay = item.querySelector('.time-display');
+                const radioId = item.dataset.radioId;
+                const radio = radioStations.find(r => r.id === radioId);
+
+                seeker.addEventListener('input', function() {
+                    if (radio && radio.audio) {
+                        const duration = radio.audio.duration || 100;
+                        const seekTime = (this.value / 100) * duration;
+                        radio.audio.currentTime = seekTime;
+                    }
+                });
+            });
+        }
+
+// ================================================================
+// 4. RADIO PLAY/PAUSE (HLS.js with per-station elements)
+// ================================================================
+let activeRadioId = null;
+let radioHlsInstances = {}; // Store HLS instance per station
+
+function toggleRadio(radio, btnElement) {
+    const radioItem = btnElement.closest('.radio-item');
+    const seeker = radioItem.querySelector('.seeker');
+    const timeDisplay = radioItem.querySelector('.time-display');
+    const statusSpan = radioItem.querySelector('.radio-status');
+    const dots = radioItem.querySelector('.radio-dots');
+
+    // Get or create a dedicated audio element for this station
+    let audioEl = document.getElementById('radio_audio_' + radio.id);
+    if (!audioEl) {
+        audioEl = document.createElement('audio');
+        audioEl.id = 'radio_audio_' + radio.id;
+        audioEl.setAttribute('playsinline', '');
+        audioEl.style.display = 'none';
+        document.body.appendChild(audioEl);
+    }
+
+    // If this station is already playing, pause it
+    if (activeRadioId === radio.id && radioHlsInstances[radio.id] && !audioEl.paused) {
+        audioEl.pause();
+        btnElement.innerHTML = '<i class="fas fa-play"></i>';
+        btnElement.classList.remove('playing');
+        radioItem.classList.remove('playing');
+        statusSpan.textContent = '● Paused';
+        statusSpan.classList.remove('playing');
+        dots.classList.remove('active');
+        return;
+    }
+
+    // Pause all other stations
+    document.querySelectorAll('.radio-item').forEach(el => {
+        const playBtn = el.querySelector('.play-btn');
+        const status = el.querySelector('.radio-status');
+        const dotEl = el.querySelector('.radio-dots');
+        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        playBtn.classList.remove('playing');
+        el.classList.remove('playing');
+        status.textContent = '● Live';
+        status.classList.remove('playing');
+        if (dotEl) dotEl.classList.remove('active');
+    });
+
+    // Stop all other HLS instances
+    Object.keys(radioHlsInstances).forEach(key => {
+        if (key !== radio.id) {
+            try {
+                radioHlsInstances[key].destroy();
+                delete radioHlsInstances[key];
+            } catch(e) {}
+        }
+    });
+
+    // Pause all other audio elements
+    document.querySelectorAll('audio[id^="radio_audio_"]').forEach(el => {
+        if (el.id !== 'radio_audio_' + radio.id) {
+            el.pause();
+        }
+    });
+
+    // Destroy existing HLS for this station if any
+    if (radioHlsInstances[radio.id]) {
+        radioHlsInstances[radio.id].destroy();
+        delete radioHlsInstances[radio.id];
+    }
+
+    // Clear old audio element
+    audioEl.pause();
+    audioEl.src = '';
+
+    // Create new HLS instance
+    if (Hls.isSupported()) {
+        const hls = new Hls({
+            enableWorker: true,
+            lowLatencyMode: true,
+            maxBufferLength: 60,
+        });
+        radioHlsInstances[radio.id] = hls;
+
+        hls.loadSource(radio.stream);
+        hls.attachMedia(audioEl);
+
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+            audioEl.play().catch(e => console.log('Auto-play blocked:', e));
+        });
+
+        hls.on(Hls.Events.ERROR, (event, data) => {
+            if (data.fatal) {
+                console.error('HLS error:', data);
+                statusSpan.textContent = '⚠️ Error';
+                btnElement.innerHTML = '<i class="fas fa-play"></i>';
+                btnElement.classList.remove('playing');
+                radioItem.classList.remove('playing');
+                dots.classList.remove('active');
+                activeRadioId = null;
+            }
+        });
+
+        // Update UI on play
+        audioEl.addEventListener('play', () => {
+            btnElement.innerHTML = '<i class="fas fa-pause"></i>';
+            btnElement.classList.add('playing');
+            radioItem.classList.add('playing');
+            statusSpan.textContent = '● Playing';
+            statusSpan.classList.add('playing');
+            dots.classList.add('active');
+            activeRadioId = radio.id;
+        });
+
+        // Update UI on pause
+        audioEl.addEventListener('pause', () => {
+            btnElement.innerHTML = '<i class="fas fa-play"></i>';
+            btnElement.classList.remove('playing');
+            radioItem.classList.remove('playing');
+            statusSpan.textContent = '● Paused';
+            statusSpan.classList.remove('playing');
+            dots.classList.remove('active');
+        });
+
+        // Update seeker and time display
+        audioEl.addEventListener('timeupdate', () => {
+            if (!isNaN(audioEl.duration) && audioEl.duration > 0) {
+                const progress = (audioEl.currentTime / audioEl.duration) * 100;
+                seeker.value = progress;
+                const mins = Math.floor(audioEl.currentTime / 60);
+                const secs = Math.floor(audioEl.currentTime % 60);
+                timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+        });
+
+        // When stream ends, auto-restart (for live streams)
+        audioEl.addEventListener('ended', () => {
+            if (activeRadioId === radio.id) {
+                // For live streams, reload
+                hls.loadSource(radio.stream);
+                audioEl.play().catch(e => console.log(e));
+            }
+        });
+
+    } else {
+        // Fallback to native audio for Safari
+        audioEl.src = radio.stream;
+        audioEl.play().catch(e => console.log(e));
+        // Native fallback may still have issues
+    }
+}
+
+        // ================================================================
+        // 5. PLAY TV CHANNEL
         // ================================================================
         let hls = null;
         const playerOverlay = document.getElementById('playerOverlay');
         const playerVideo = document.getElementById('playerVideo');
         const nowPlayingLabel = document.getElementById('nowPlayingLabel');
+        const playerTypeBadge = document.getElementById('playerTypeBadge');
         const backToTvBtn = document.getElementById('backToTvBtn');
         const closePlayerBtn = document.getElementById('closePlayerBtn');
 
         function playTVChannel(channel) {
+            playerTypeBadge.textContent = '● TV';
+            playerTypeBadge.style.background = '#e63946';
             nowPlayingLabel.textContent = channel.name;
             if (hls) { hls.destroy(); hls = null; }
             playerOverlay.classList.add('active');
@@ -561,6 +967,9 @@
             }
         }
 
+        // ================================================================
+        // 6. CLOSE PLAYER
+        // ================================================================
         function closePlayer() {
             if (hls) { hls.destroy(); hls = null; }
             playerVideo.pause();
@@ -575,7 +984,7 @@
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlayer(); });
 
         // ================================================================
-        // 3. YOUTUBE NEWS – WITH LOAD MORE
+        // 7. YOUTUBE NEWS – WITH LOAD MORE
         // ================================================================
         const DATA_URL = 'data.json';
         const newsContainer = document.getElementById('newsContainer');
@@ -688,10 +1097,12 @@
         });
 
         // ================================================================
-        // 4. PLAY YOUTUBE VIDEO
+        // 8. PLAY YOUTUBE VIDEO
         // ================================================================
         function playYouTubeVideo(videoId, title) {
             if (!videoId) return;
+            playerTypeBadge.textContent = '▶ YOUTUBE';
+            playerTypeBadge.style.background = '#e63946';
             const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
             const playerBody = document.querySelector('.player-body');
             const oldIframe = playerBody.querySelector('iframe');
@@ -728,7 +1139,7 @@
         document.onkeydown = (e) => { if (e.key === 'Escape') closePlayer(); };
 
         // ================================================================
-        // 5. TODAY'S UPLOADS
+        // 9. TODAY'S UPLOADS
         // ================================================================
         function renderUploads(videos) {
             if (!videos || videos.length === 0) {
@@ -757,7 +1168,7 @@
         }
 
         // ================================================================
-        // 6. LOAD DATA
+        // 10. LOAD DATA
         // ================================================================
         async function loadData() {
             try {
@@ -773,9 +1184,10 @@
         }
 
         // ================================================================
-        // 7. INIT
+        // 11. INIT
         // ================================================================
         renderChannels();
+        renderRadio();
         loadData();
         setInterval(loadData, 10 * 60 * 1000);
     </script>
