@@ -1,10 +1,633 @@
 [
   {
-    "id": "yt:video:LX58eWHymGk",
-    "title": "\"ST Reservation Notification Is the Result of 23 Years of Hardship\" : UTAA President Prakash Velip",
-    "published": "2026-08-07T07:17:04+00:00",
+    "id": "yt:video:3QTMFygpOpc",
+    "title": "Darrick Vales Builds Culvert at Own Cost to Fulfil Long-Pending Public Demand",
+    "published": "2026-08-07T12:58:09+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=3QTMFygpOpc"
+  },
+  {
+    "id": "yt:video:fnbIhzB_hDM",
+    "title": "'My Product, My Pride': CM Pushes Local Handloom in Goa",
+    "published": "2026-08-07T12:57:57+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/fnbIhzB_hDM"
+  },
+  {
+    "id": "yt:video:yoImb2vzsYA",
+    "title": "Goa to Scale Up Handloom and Coir Training",
+    "published": "2026-08-07T12:55:34+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/yoImb2vzsYA"
+  },
+  {
+    "id": "yt:video:Uutl_NmjcU8",
+    "title": "Monsoon Rain Shifting?",
+    "published": "2026-08-07T12:54:13+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/Uutl_NmjcU8"
+  },
+  {
+    "id": "yt:video:CuXFKQzt6DA",
+    "title": "BJP Kept Its Promise on ST Reservation; Congress Needn't Lecture Us: Damu Naik",
+    "published": "2026-08-07T12:34:18+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=CuXFKQzt6DA"
+  },
+  {
+    "id": "yt:video:IZ6zwTHEIFg",
+    "title": "\"This Anger is totally justified\" - Sujay Gupta",
+    "published": "2026-08-07T12:30:17+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/shorts/IZ6zwTHEIFg"
+  },
+  {
+    "id": "yt:video:Ut1Uggyz1Bk",
+    "title": "GOA\u2019S KUNBI WEAVE GETS A MODERN MAKEOVER!",
+    "published": "2026-08-07T12:28:52+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/Ut1Uggyz1Bk"
+  },
+  {
+    "id": "yt:video:ShauxLYM8h4",
+    "title": "'Why Buy Kashmiri Shawls Choose Goan Made' CM Sawant",
+    "published": "2026-08-07T12:25:32+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/ShauxLYM8h4"
+  },
+  {
+    "id": "yt:video:KQOW8saUgWw",
+    "title": "ST Reservation Process to Be Completed Within Two Months: Ramesh Tawadkar",
+    "published": "2026-08-07T12:24:56+00:00",
+    "channel": "RDXGOA GOA NEWS",
+    "link": "https://www.youtube.com/watch?v=KQOW8saUgWw"
+  },
+  {
+    "id": "yt:video:9UlZjdteUV0",
+    "title": "Goa 360\u00b0 Prime Time | Editor | Prudent | 070826",
+    "published": "2026-08-07T12:21:24+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=9UlZjdteUV0"
+  },
+  {
+    "id": "yt:video:UwHxkb6Im7s",
+    "title": "Felicitation of Newly Elected Committee of SS Dempo by BJP President Damu Naik | Gomantak TV",
+    "published": "2026-08-07T12:19:06+00:00",
     "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=LX58eWHymGk"
+    "link": "https://www.youtube.com/watch?v=UwHxkb6Im7s"
+  },
+  {
+    "id": "yt:video:5jJu52-RUlI",
+    "title": "\u2018Yes, You Can Do Something\u2019: CM Hails Women Artisans\u2019 Success#Goa #Goanews #Artisan #Success",
+    "published": "2026-08-07T12:14:38+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/5jJu52-RUlI"
+  },
+  {
+    "id": "yt:video:UW2D07vhxLw",
+    "title": "ST Reservation Victory Only After EC Finalises Four Constituencies: Govind Shirodkar",
+    "published": "2026-08-07T12:11:46+00:00",
+    "channel": "RDXGOA GOA NEWS",
+    "link": "https://www.youtube.com/watch?v=UW2D07vhxLw"
+  },
+  {
+    "id": "yt:video:1n8qCeIKH8E",
+    "title": "ST Reservation Act Notified; What Are The Next Steps For Goa?",
+    "published": "2026-08-07T12:08:41+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=1n8qCeIKH8E"
+  },
+  {
+    "id": "yt:video:yrxKJo1woG8",
+    "title": "Goa Water Metro DPR Work Begins; Nine River Corridors Under Study",
+    "published": "2026-08-07T12:02:09+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/yrxKJo1woG8"
+  },
+  {
+    "id": "yt:video:VVcxwZ-cBSM",
+    "title": "ST Reservation Process To Be Completed In Two Months: Ramesh Tawadkar",
+    "published": "2026-08-07T12:01:36+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=VVcxwZ-cBSM"
+  },
+  {
+    "id": "yt:video:NmFItSaKKPo",
+    "title": "HC Orders Preservation Of Valpoi Police Station CCTV In Custodial Assault Plea",
+    "published": "2026-08-07T11:58:01+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/NmFItSaKKPo"
+  },
+  {
+    "id": "yt:video:QrOZq9_wVSk",
+    "title": "Kejriwal Slams E20 Fuel Policy, Asks Goans To Vote Out BJP",
+    "published": "2026-08-07T11:56:44+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=QrOZq9_wVSk"
+  },
+  {
+    "id": "yt:video:wWCzu81Kb9g",
+    "title": "ST Reservation a Historic Milestone, Final Victory Awaits EC Notification: Govind Gaude",
+    "published": "2026-08-07T11:56:36+00:00",
+    "channel": "RDXGOA GOA NEWS",
+    "link": "https://www.youtube.com/watch?v=wWCzu81Kb9g"
+  },
+  {
+    "id": "yt:video:UUdCXzFwM7E",
+    "title": "ST Reservation Achieved Years of Struggle: Damu Credits Modi-Sawant Governments, Targets Congress",
+    "published": "2026-08-07T11:56:23+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=UUdCXzFwM7E"
+  },
+  {
+    "id": "yt:video:acyZgTvEikw",
+    "title": "Dino | Lea indica | Jungle Book | Prudent |  Shorts",
+    "published": "2026-08-07T11:45:11+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/shorts/acyZgTvEikw"
+  },
+  {
+    "id": "yt:video:oRlQu9PgwIc",
+    "title": "Dengue Alert at South Goa Police HQ After Three Suspected Cases",
+    "published": "2026-08-07T11:44:23+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/oRlQu9PgwIc"
+  },
+  {
+    "id": "yt:video:U1e2xc_FGMc",
+    "title": "Sanguem Congress Raises School Transport Issues, Seeks Action Within 15 Days",
+    "published": "2026-08-07T11:43:48+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=U1e2xc_FGMc"
+  },
+  {
+    "id": "yt:video:6W5eGjTYmvA",
+    "title": "Today's identity lives beyond the mirror. It lives online.",
+    "published": "2026-08-07T11:43:34+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/shorts/6W5eGjTYmvA"
+  },
+  {
+    "id": "yt:video:MkOcla3KPgQ",
+    "title": "\u092b\u094b\u0902\u0921\u0947\u0902 \u092a\u093e\u0932\u093f\u0915\u0947\u091a\u094b \u0915\u094b\u092f\u0930 \u092a\u094d\u0930\u0915\u0932\u094d\u092a \u092b\u0941\u0921\u0932\u094d\u092f\u093e 3-4 \u092e\u094d\u0939\u092f\u0928\u094d\u092f\u093e\u0902\u0924 \u092a\u0941\u0930\u093e\u092f \u2013 \u0928\u0917\u0930\u093e\u0927\u094d\u092f\u0915\u094d\u0937 \u0935\u093f\u0930\u0947\u0902\u0926\u094d\u0930 \u0922\u0935\u0933\u0940\u0915\u093e\u0930",
+    "published": "2026-08-07T11:43:23+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=MkOcla3KPgQ"
+  },
+  {
+    "id": "yt:video:LMqf8nw3o04",
+    "title": "Deepvihar Student Dies At Sattari Waterfall During School Trekking Trip",
+    "published": "2026-08-07T11:39:20+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/LMqf8nw3o04"
+  },
+  {
+    "id": "yt:video:coHjDPaOr-k",
+    "title": "ST Political Reservation Notification Welcomed by Adv  Joao Fernandes",
+    "published": "2026-08-07T11:35:57+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/coHjDPaOr-k"
+  },
+  {
+    "id": "yt:video:AT9TAjhf2KE",
+    "title": "\u2018Ponda Is A BJP Stronghold, And Will Remain So\u2019: Sawaikar",
+    "published": "2026-08-07T11:34:03+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=AT9TAjhf2KE"
+  },
+  {
+    "id": "yt:video:FVSTvB9L20c",
+    "title": "Live | GHRSSIDC on Swayampurna Goa | Press Conference",
+    "published": "2026-08-07T11:30:01+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=FVSTvB9L20c"
+  },
+  {
+    "id": "yt:video:DujwDVMoxoA",
+    "title": "Woman Accused in Kidnapping Case Granted Conditional Bail",
+    "published": "2026-08-07T11:27:59+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/DujwDVMoxoA"
+  },
+  {
+    "id": "yt:video:fdYv1Mk4TIc",
+    "title": "Mumbai-Madgaon Special Trains Announced For Independence Day Weekend Rush",
+    "published": "2026-08-07T11:27:43+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/fdYv1Mk4TIc"
+  },
+  {
+    "id": "yt:video:GnPhnrYTjuU",
+    "title": "India Celebrates National Handloom Day | Gomantak Tv",
+    "published": "2026-08-07T11:26:48+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=GnPhnrYTjuU"
+  },
+  {
+    "id": "yt:video:P-C3PyXBPiM",
+    "title": "Marmics: Watch Goa 360 @ 7 pm Today",
+    "published": "2026-08-07T11:26:37+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/shorts/P-C3PyXBPiM"
+  },
+  {
+    "id": "yt:video:DZrJtl-UdwE",
+    "title": "College Student Feared Drowned in Sattari River | Gomantak Tv",
+    "published": "2026-08-07T11:21:25+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=DZrJtl-UdwE"
+  },
+  {
+    "id": "yt:video:eeC_yx4hX3k",
+    "title": "GOA THIS WEEK | 7th AUG 2026 || GOA365 TV",
+    "published": "2026-08-07T11:18:48+00:00",
+    "channel": "Goa 365 TV",
+    "link": "https://www.youtube.com/watch?v=eeC_yx4hX3k"
+  },
+  {
+    "id": "yt:video:Aw2UHva-rV4",
+    "title": "Shenoi Goembab Kathamala Expands Across Twenty Goa Centres | Gomantak Tv",
+    "published": "2026-08-07T11:18:01+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=Aw2UHva-rV4"
+  },
+  {
+    "id": "yt:video:4kIjgAVzokM",
+    "title": "ST Reservation Victory Only After EC Finalises 4 Constituencies: Govind Shirodkar",
+    "published": "2026-08-07T11:14:02+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=4kIjgAVzokM"
+  },
+  {
+    "id": "yt:video:1VypV4O9HgE",
+    "title": "Quepem St Leader Adv.Joao Fernandes Reaction On St. Political Reservation Notification | Gomantak TV",
+    "published": "2026-08-07T11:12:47+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=1VypV4O9HgE"
+  },
+  {
+    "id": "yt:video:LxIGAowdvq0",
+    "title": "Sanguem Congress Demands Urgent Repairs Of Damaged Bamonsai Bridge",
+    "published": "2026-08-07T11:10:56+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=LxIGAowdvq0"
+  },
+  {
+    "id": "yt:video:fJYAq9kgZ4g",
+    "title": "Kejriwal Appeals for Change, Asks Goans Not to Back BJP",
+    "published": "2026-08-07T11:07:06+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/shorts/fJYAq9kgZ4g"
+  },
+  {
+    "id": "yt:video:6V7cl1tsPoE",
+    "title": "Sadanand Tanavade Presents Two Commerce Panel Reports In Rajya Sabha",
+    "published": "2026-08-07T11:05:40+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=6V7cl1tsPoE"
+  },
+  {
+    "id": "yt:video:faSPORZY3Qs",
+    "title": "PRESS CONFERENCE BY STATE PRESIDENT DAMU NAIK IN PRESENCE OF OTHER LEADERS | 07/08/2026 |\ud83d\udd34GNH_ LIVE",
+    "published": "2026-08-07T11:03:37+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/watch?v=faSPORZY3Qs"
+  },
+  {
+    "id": "yt:video:53Sy5QmE_gE",
+    "title": "\"Unity Brings Victory\": Prakash Velip On ST Reservation Movement, Future Fight",
+    "published": "2026-08-07T11:02:38+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=53Sy5QmE_gE"
+  },
+  {
+    "id": "yt:video:CZUJqx9JFBQ",
+    "title": "Goa Under Yellow Alert || GOA365 TV",
+    "published": "2026-08-07T11:01:02+00:00",
+    "channel": "Goa 365 TV",
+    "link": "https://www.youtube.com/watch?v=CZUJqx9JFBQ"
+  },
+  {
+    "id": "yt:video:DeHvtSNcoQo",
+    "title": "ST Political Reservation Process to Be Completed by November: Ramesh Tawadkar",
+    "published": "2026-08-07T10:57:42+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=DeHvtSNcoQo"
+  },
+  {
+    "id": "yt:video:xb8k5c5da1o",
+    "title": "PRESS CONFERENCE BY STATE PRESIDENT DAMU NAIK IN PRESENCE OF OTHER LEADERS | 07/08/2026 |\ud83d\udd34GNH_ LIVE",
+    "published": "2026-08-07T10:57:09+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/watch?v=xb8k5c5da1o"
+  },
+  {
+    "id": "yt:video:TRtdVI_Kp2E",
+    "title": "CM Sawant Highlights \u2018Made in Goa\u2019 Vision on National Handloom Day",
+    "published": "2026-08-07T10:36:35+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/watch?v=TRtdVI_Kp2E"
+  },
+  {
+    "id": "yt:video:sqVNtYUa2fY",
+    "title": "Goa Govt Launches Free Door-to-Door Waste Collection in Saligao, Pilerne",
+    "published": "2026-08-07T10:33:48+00:00",
+    "channel": "Goemkarponn TV",
+    "link": "https://www.youtube.com/shorts/sqVNtYUa2fY"
+  },
+  {
+    "id": "yt:video:n3cEKmFgkV8",
+    "title": "BJP Goa | Press Confrence | Damu Naik | Live | Prudent | 070826",
+    "published": "2026-08-07T10:28:12+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=n3cEKmFgkV8"
+  },
+  {
+    "id": "yt:video:xcVXCIpWhrE",
+    "title": "TEA TIME BULLETIN LIVE | 07-08-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV",
+    "published": "2026-08-07T10:21:08+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=xcVXCIpWhrE"
+  },
+  {
+    "id": "yt:video:cUzbwcj_jUM",
+    "title": "Mumbai\u2013Goa Special Trains for Independence Day Rush",
+    "published": "2026-08-07T10:06:37+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/cUzbwcj_jUM"
+  },
+  {
+    "id": "yt:video:_vs0Za2q3s4",
+    "title": "#SuccessStory | Free Skill Training, Better Careers, Brighter Futures \ud83c\udf1f",
+    "published": "2026-08-07T10:06:27+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=_vs0Za2q3s4"
+  },
+  {
+    "id": "yt:video:9KVI9Tm5apc",
+    "title": "Goa Notifies ST Political Reservation; Opposition Alleges UTTA Pressure | Gomantak Tv",
+    "published": "2026-08-07T10:06:18+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=9KVI9Tm5apc"
+  },
+  {
+    "id": "yt:video:__VoTJf5RJA",
+    "title": "Premendra Shet Warns Against Sale of POP Idols",
+    "published": "2026-08-07T10:04:20+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/__VoTJf5RJA"
+  },
+  {
+    "id": "yt:video:mYtHexuxxbw",
+    "title": "Raan bhaji special | Kaddu takala bhaji | Alu bhaji | Panch Pakwan | Prudent | 070826",
+    "published": "2026-08-07T10:02:01+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=mYtHexuxxbw"
+  },
+  {
+    "id": "yt:video:3SFs2p-Z2rw",
+    "title": "ST Reservation Notified Only After UTAA Pressure: Adv. Cleofato Coutinho | Gomantak TV",
+    "published": "2026-08-07T09:51:27+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=3SFs2p-Z2rw"
+  },
+  {
+    "id": "yt:video:FZ9kV5XaTDo",
+    "title": "Rs 100 crore party ?",
+    "published": "2026-08-07T09:49:17+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/FZ9kV5XaTDo"
+  },
+  {
+    "id": "yt:video:MXETiltLh9g",
+    "title": "A Historic Milestone For Goa's St Community; Mla Vijai | Gomantak Tv",
+    "published": "2026-08-07T09:48:59+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=MXETiltLh9g"
+  },
+  {
+    "id": "yt:video:_HlCgsFUaao",
+    "title": "MARRIAGE CERTIFICATE FROM HOME!",
+    "published": "2026-08-07T09:36:29+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/_HlCgsFUaao"
+  },
+  {
+    "id": "yt:video:vwTYFOs41EE",
+    "title": "Centre Clears Path for ST Representation in Goa Assembly||GOA365 TV",
+    "published": "2026-08-07T09:36:06+00:00",
+    "channel": "Goa 365 TV",
+    "link": "https://www.youtube.com/watch?v=vwTYFOs41EE"
+  },
+  {
+    "id": "yt:video:SFAA1CohKcg",
+    "title": "#shorts If AAP Wanted an Alliance, Why Was Palekar Removed?",
+    "published": "2026-08-07T09:29:37+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/shorts/SFAA1CohKcg"
+  },
+  {
+    "id": "yt:video:wcikFjinJgw",
+    "title": "\u201cST Reservation Final Process Likely to Complete in 2-3 Months\u201d: Minister Ramesh Tawadkar",
+    "published": "2026-08-07T09:23:55+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=wcikFjinJgw"
+  },
+  {
+    "id": "yt:video:BT40YLZEbmc",
+    "title": "23-Year ST Struggle Nears Victory, Says Govind Gaude",
+    "published": "2026-08-07T09:19:37+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=BT40YLZEbmc"
+  },
+  {
+    "id": "yt:video:gLfTPWlDr-Q",
+    "title": "\u201cST Reservation Notification Is Not Victory Yet, Final Step Still Pending: Govind Shirodkar\u201d",
+    "published": "2026-08-07T09:13:53+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=gLfTPWlDr-Q"
+  },
+  {
+    "id": "yt:video:-4B25tl8HjE",
+    "title": "Goa Food Safety Drive; 3 Establishments Face Action | Gomantak Tv",
+    "published": "2026-08-07T09:07:21+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=-4B25tl8HjE"
+  },
+  {
+    "id": "yt:video:jmrr-wthjgQ",
+    "title": "Unity Made ST Notification Possible | TVG LIVE",
+    "published": "2026-08-07T08:58:24+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=jmrr-wthjgQ"
+  },
+  {
+    "id": "yt:video:9oTWDb305GY",
+    "title": "Live | BJP State President Damu Naik | Press Conference",
+    "published": "2026-08-07T08:57:04+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=9oTWDb305GY"
+  },
+  {
+    "id": "yt:video:S7TzUlCtHnA",
+    "title": "Kejriwal: Give AAP One Chance, We'll Scrap Ethanol-Blended Fuel",
+    "published": "2026-08-07T08:55:39+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/S7TzUlCtHnA"
+  },
+  {
+    "id": "yt:video:LZASn4dLJV0",
+    "title": "\u201cAfter 13 Years, Justice Served to Victim\u201d : CM Sawant on Tarun Tejpal Case",
+    "published": "2026-08-07T08:54:57+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=LZASn4dLJV0"
+  },
+  {
+    "id": "yt:video:jmzWr1eT0hw",
+    "title": "Vijai Sardesai Demands ST Reservation Before Next Elections",
+    "published": "2026-08-07T08:52:04+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/watch?v=jmzWr1eT0hw"
+  },
+  {
+    "id": "yt:video:4Qlj2ZHGEOs",
+    "title": "Fast-Track ST Reservation: Leaders | TVG LIVE",
+    "published": "2026-08-07T08:45:53+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=4Qlj2ZHGEOs"
+  },
+  {
+    "id": "yt:video:rkg-VLNL_R0",
+    "title": "Ramesh Tawadkar | ST leaders meet CM | Live | Prudent | 070826",
+    "published": "2026-08-07T08:41:51+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=rkg-VLNL_R0"
+  },
+  {
+    "id": "yt:video:pR5wdvRcBPY",
+    "title": "GOVIND GAUDE ON \"ST RESERVATION\"| EXCLUSIVE | 07/08/2026 |\ud83d\udd34GNH_ LIVE",
+    "published": "2026-08-07T08:35:57+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/watch?v=pR5wdvRcBPY"
+  },
+  {
+    "id": "yt:video:DUgx3JGWJ4E",
+    "title": "Ganesh Idol Workshops Gear Up As Chaturthi Nears | Gomantak Tv",
+    "published": "2026-08-07T08:25:19+00:00",
+    "channel": "Gomantak TV",
+    "link": "https://www.youtube.com/watch?v=DUgx3JGWJ4E"
+  },
+  {
+    "id": "yt:video:EpF1HniiX0U",
+    "title": "ST leaders meet CM | live | Prudent | 070826",
+    "published": "2026-08-07T08:23:34+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=EpF1HniiX0U"
+  },
+  {
+    "id": "yt:video:5Zqpmhpc5PI",
+    "title": "'Trump Pressuring Modi on E20': Kejriwal #Goa #Goanews #e20Petrol #Fuel #Modi #Trump",
+    "published": "2026-08-07T08:21:39+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/5Zqpmhpc5PI"
+  },
+  {
+    "id": "yt:video:BAAw8-tgh_4",
+    "title": "Honour the Tricolour, Celebrate the Spirit of India",
+    "published": "2026-08-07T08:13:04+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/shorts/BAAw8-tgh_4"
+  },
+  {
+    "id": "yt:video:ZQHJDwmYHrQ",
+    "title": "\"Justice Prevails After 13 Years\" - CM Pramod Sawant on Tarun Tejpal Case",
+    "published": "2026-08-07T08:09:48+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=ZQHJDwmYHrQ"
+  },
+  {
+    "id": "yt:video:fs5Aaxv6aqM",
+    "title": "Goans Fed Up With E20 Fuel: Kejriwal#Goa #Goanews #e20Petrol #Fuel",
+    "published": "2026-08-07T08:08:18+00:00",
+    "channel": "In Goa 24x7",
+    "link": "https://www.youtube.com/shorts/fs5Aaxv6aqM"
+  },
+  {
+    "id": "yt:video:8RiBL_nVRTk",
+    "title": "Tarun Tejpal Verdict Is Victory of Truth, Victim Gets Justice After 13 Years: CM Sawant",
+    "published": "2026-08-07T08:07:56+00:00",
+    "channel": "RDXGOA GOA NEWS",
+    "link": "https://www.youtube.com/watch?v=8RiBL_nVRTk"
+  },
+  {
+    "id": "yt:video:ktNWxR6y9_M",
+    "title": "\u0915\u094b\u0902\u0915\u0923\u0940 \u092d\u093e\u0936\u093e \u092e\u0902\u0921\u0933 \u0906\u092f\u094b\u091c\u0940\u0924 \u0936\u0923\u0948 \u0917\u094b\u0902\u092f\u092c\u093e\u092c \u0915\u0925\u093e\u092e\u093e\u0933 8 \u0911\u0917\u0938\u094d\u091f\u093e\u0915",
+    "published": "2026-08-07T07:59:45+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=ktNWxR6y9_M"
+  },
+  {
+    "id": "yt:video:UFjAhqI6NDE",
+    "title": "SALIGAO-PILERNE GET FREE DAILY WASTE COLLECTION",
+    "published": "2026-08-07T07:58:05+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/UFjAhqI6NDE"
+  },
+  {
+    "id": "yt:video:nv-efqDwXko",
+    "title": "Where There\u2019s a will There\u2019s a Way- MLA Govind Gaude | TVG LIVE",
+    "published": "2026-08-07T07:51:54+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=nv-efqDwXko"
+  },
+  {
+    "id": "yt:video:VFWN7DMDADY",
+    "title": "Election Preparations Begin in Goa Ahead of Assembly Polls",
+    "published": "2026-08-07T07:40:18+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=VFWN7DMDADY"
+  },
+  {
+    "id": "yt:video:HuDQSXAZXlE",
+    "title": "WATER METRO MISCONCEPTIONS CLEARED",
+    "published": "2026-08-07T07:33:13+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/HuDQSXAZXlE"
+  },
+  {
+    "id": "yt:video:YiWrfuZziL8",
+    "title": "Kejriwal on Goa Opposition alliance.",
+    "published": "2026-08-07T07:25:11+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/YiWrfuZziL8"
+  },
+  {
+    "id": "yt:video:9VffJfm7Gig",
+    "title": "Kejriwal Urges People Not to Buy Petrol, Diesel Vehicles; Suggests Electric Alternative",
+    "published": "2026-08-07T07:24:01+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/9VffJfm7Gig"
+  },
+  {
+    "id": "yt:video:HVS-Hnm5z3s",
+    "title": "AAP CONVENOR ARVIND KEJRIWAL PRESS CONFERENCE | TVG LIVE",
+    "published": "2026-08-07T07:22:16+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/watch?v=HVS-Hnm5z3s"
+  },
+  {
+    "id": "yt:video:xupvV9x6rVw",
+    "title": "\u090f\u0938\u091f\u0940 \u0930\u093e\u091c\u0915\u0940 \u0906\u0930\u0915\u094d\u0937\u0923 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u0938\u0941\u0930\u0942 \u0915\u0930\u092a\u093e\u0915 \u0905\u0927\u093f\u0938\u0941\u091a\u094b\u0935\u0923\u0940 \u091c\u093e\u0930\u0940 \u2013 \u092e\u0941\u0916\u094d\u092f\u092e\u0902\u0924\u094d\u0930\u0940",
+    "published": "2026-08-07T07:18:34+00:00",
+    "channel": "The Voice for Goem",
+    "link": "https://www.youtube.com/shorts/xupvV9x6rVw"
+  },
+  {
+    "id": "yt:video:ca1WUxdErGI",
+    "title": "E20 is going to be a big Disaster: MLA Venzy Viegas",
+    "published": "2026-08-07T07:18:22+00:00",
+    "channel": "Goa News Hub",
+    "link": "https://www.youtube.com/shorts/ca1WUxdErGI"
   },
   {
     "id": "yt:video:tn2-LX3y5jE",
@@ -14,11 +637,11 @@
     "link": "https://www.youtube.com/shorts/tn2-LX3y5jE"
   },
   {
-    "id": "yt:video:46IU5OPBILc",
-    "title": "\u2018Our Long Wait Is Over\u2019: Prakash Velip#Goa #Goanews #StReservation #Motion",
-    "published": "2026-08-07T07:14:50+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/46IU5OPBILc"
+    "id": "yt:video:5E_fi47zR8A",
+    "title": "Advt: Panchamrutha",
+    "published": "2026-08-07T07:15:23+00:00",
+    "channel": "Prudent Media Goa",
+    "link": "https://www.youtube.com/watch?v=5E_fi47zR8A"
   },
   {
     "id": "yt:video:BfxEfrgGUeE",
@@ -28,74 +651,11 @@
     "link": "https://www.youtube.com/shorts/BfxEfrgGUeE"
   },
   {
-    "id": "yt:video:peBxIIFqO8c",
-    "title": "PRESS CONFERENCE BY AAP NATIONAL CONVENOR ARVIND KEJRIWAL | 07/08/2026 |\ud83d\udd34GNH_ LIVE",
-    "published": "2026-08-07T07:12:50+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=peBxIIFqO8c"
-  },
-  {
-    "id": "yt:video:vGZfI6IedJI",
-    "title": "Parents, Pope John School Raise Safety Concerns Over Incomplete WRD Work | Gomantak Tv",
-    "published": "2026-08-07T07:12:25+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=vGZfI6IedJI"
-  },
-  {
-    "id": "yt:video:7K4GEx2XlyU",
-    "title": "St Assembly Representation Act Comes Into Force | Gomantak Tv",
-    "published": "2026-08-07T07:10:31+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=7K4GEx2XlyU"
-  },
-  {
-    "id": "yt:video:ccdDdkS32co",
-    "title": "CM Sawant: ST Reservation Process Officially Begins In Goa",
-    "published": "2026-08-07T07:08:37+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/ccdDdkS32co"
-  },
-  {
-    "id": "yt:video:QPEzdDGVy3M",
-    "title": "#Shorts Anyone Who Wants to Rejoin AAP Is Free to Do So : Valmiki",
-    "published": "2026-08-07T07:07:02+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/shorts/QPEzdDGVy3M"
-  },
-  {
     "id": "yt:video:D3FlYFvGviI",
     "title": "Goa 360\u00b0 @ 12 pm | Editor | Prudent | 070826",
     "published": "2026-08-07T07:06:46+00:00",
     "channel": "Prudent Media Goa",
     "link": "https://www.youtube.com/watch?v=D3FlYFvGviI"
-  },
-  {
-    "id": "yt:video:rKs8uRm-Cco",
-    "title": "ST Reservation Process Set In Motion#Goa #Goanews #StReservation #Motion",
-    "published": "2026-08-07T07:04:50+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/rKs8uRm-Cco"
-  },
-  {
-    "id": "yt:video:jqSBVydf-Sw",
-    "title": "\"It Is My Challenge to Make the Any Congress ST Candidate Win In Quepem\" : Altone D'costa, MLA",
-    "published": "2026-08-07T07:04:41+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=jqSBVydf-Sw"
-  },
-  {
-    "id": "yt:video:UR7k_A_vw60",
-    "title": "Konkani Bhasha Mandal Announces Shenoi Goembab Kathamaal Programme",
-    "published": "2026-08-07T07:03:23+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/watch?v=UR7k_A_vw60"
-  },
-  {
-    "id": "yt:video:reKJ5MGNwZ8",
-    "title": "LUNCH TIME BULLETIN LIVE | 07-08-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV",
-    "published": "2026-08-07T07:01:39+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=reKJ5MGNwZ8"
   },
   {
     "id": "yt:video:-9nVCMnUgXg",
@@ -105,109 +665,11 @@
     "link": "https://www.youtube.com/watch?v=-9nVCMnUgXg"
   },
   {
-    "id": "yt:video:TLfJkQKzK1g",
-    "title": "Muddy Path, Potholes, Cracked Wall: Safety Concerns Raised At Pope John School",
-    "published": "2026-08-07T06:59:28+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=TLfJkQKzK1g"
-  },
-  {
-    "id": "yt:video:_rsfCFrez00",
-    "title": "Damaged Bus Stop in Bhati Raises Safety Concerns",
-    "published": "2026-08-07T06:52:52+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/_rsfCFrez00"
-  },
-  {
-    "id": "yt:video:V6BQ0Fz57Jc",
-    "title": "\u0936\u093f\u0915\u0947\u0930\u0940 \u0917\u094c\u0936\u093e\u0933\u0947\u0902\u0924 \u0936\u0947\u0924\u0915\u0940 \u0924\u0902\u0924\u094d\u0930\u091c\u094d\u091e\u093e\u0928 \u0935\u0947\u0935\u0938\u094d\u0925\u093e\u092a\u0928 \u090f\u091c\u0928\u094d\u0938\u0940 \u0935\u0924\u0940\u0928 \u090f\u0915\u093e \u0926\u093f\u0938\u093e\u091a\u0940 \u0938\u0947\u0902\u0926\u094d\u0930\u0940\u092f \u0936\u0947\u0924\u0940 \u0915\u093e\u0930\u094d\u092f\u0936\u093e\u0933\u093e \u0906\u092f\u094b\u091c\u0940\u0924",
-    "published": "2026-08-07T06:50:06+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/shorts/V6BQ0Fz57Jc"
-  },
-  {
-    "id": "yt:video:YldlQ56JnGg",
-    "title": "\"Whatever Party Gives Me a Role I'll Work For That\u201d : Minister Subhash Phal Dessai",
-    "published": "2026-08-07T06:45:49+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=YldlQ56JnGg"
-  },
-  {
-    "id": "yt:video:4bA2hEROgKY",
-    "title": "PM Modi Urges Citizens to Promote India\u2019s Handloom Diversity",
-    "published": "2026-08-07T06:43:49+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/4bA2hEROgKY"
-  },
-  {
     "id": "yt:video:iiRFfGKqfdY",
     "title": "Volvo Bus Crashes on NH17 After Oil Spill; Four Passengers Injured || GOA365 TV",
     "published": "2026-08-07T06:42:08+00:00",
     "channel": "Goa 365 TV",
     "link": "https://www.youtube.com/watch?v=iiRFfGKqfdY"
-  },
-  {
-    "id": "yt:video:zBexPLFiwow",
-    "title": "ST Political Reservation Law Comes Into Force In Goa, Historic Step For Tribals",
-    "published": "2026-08-07T06:39:19+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/zBexPLFiwow"
-  },
-  {
-    "id": "yt:video:HVS-Hnm5z3s",
-    "title": "AAP CONVENOR ARVIND KEJRIWAL PRESS CONFERENCE | TVG LIVE",
-    "published": "2026-08-07T06:35:03+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=HVS-Hnm5z3s"
-  },
-  {
-    "id": "yt:video:7PyUj5w2_yo",
-    "title": "Oil Spill Near Balli-Padi Turn Makes Road Slippery, Vehicles Advised Caution",
-    "published": "2026-08-07T06:23:14+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/7PyUj5w2_yo"
-  },
-  {
-    "id": "yt:video:KFvmUfmP-Ik",
-    "title": "\u092e\u0921\u0917\u093e\u0902\u0935\u093e\u0902 \u092a\u0941\u0932\u0940\u0938 \u0938\u094d\u091f\u0947\u0936\u0928\u093e\u0902\u0924 \u092a\u093e\u0902\u091a \u0921\u0947\u0902\u0917\u094d\u092f\u0942 \u0926\u0941\u092f\u0947\u0902\u0924\u0940 \u0938\u093e\u0902\u092a\u0921\u0932\u0947",
-    "published": "2026-08-07T06:22:54+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/shorts/KFvmUfmP-Ik"
-  },
-  {
-    "id": "yt:video:lGD95T20gIQ",
-    "title": "Goa Celebrates National Handloom Day, Promotes \u2018Made in Goa\u2019 Handloom Products",
-    "published": "2026-08-07T06:21:42+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/watch?v=lGD95T20gIQ"
-  },
-  {
-    "id": "yt:video:Q8Srf_ZQsW8",
-    "title": "Gomantak Launches Savorde Gram Book Showcasing Rural Progress | Gomantak Tv",
-    "published": "2026-08-07T06:19:56+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=Q8Srf_ZQsW8"
-  },
-  {
-    "id": "yt:video:EsPgZPJ3TV4",
-    "title": "#shorts  Fishing On 18th June Road | Gomantak Tv",
-    "published": "2026-08-07T06:16:26+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/shorts/EsPgZPJ3TV4"
-  },
-  {
-    "id": "yt:video:QgT-8uI_NMw",
-    "title": "Handlooms to Be Allotted to Women's Groups: Director",
-    "published": "2026-08-07T06:13:41+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=QgT-8uI_NMw"
-  },
-  {
-    "id": "yt:video:DXe5F94cFmE",
-    "title": "AWAZ GOYCHO BULLETIN LIVE | 07-08-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV",
-    "published": "2026-08-07T06:10:54+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=DXe5F94cFmE"
   },
   {
     "id": "yt:video:ScCTfEUk_Wk",
@@ -217,74 +679,11 @@
     "link": "https://www.youtube.com/watch?v=ScCTfEUk_Wk"
   },
   {
-    "id": "yt:video:N-H67Wsa1Zc",
-    "title": "Bombay HC Orders Premature Release of Three Convicts in 2006 Mandar Surlakar Murder Case",
-    "published": "2026-08-07T05:52:03+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/N-H67Wsa1Zc"
-  },
-  {
-    "id": "yt:video:T-tQfWDmhps",
-    "title": "Minister Ramesh Tawadkar welcomes the decision on ST political reservation.",
-    "published": "2026-08-07T05:48:21+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=T-tQfWDmhps"
-  },
-  {
-    "id": "yt:video:FhQYG3Nm2rk",
-    "title": "#Shorts Why Does Kejriwal Keep Coming to Goa?",
-    "published": "2026-08-07T05:32:48+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/shorts/FhQYG3Nm2rk"
-  },
-  {
-    "id": "yt:video:-eedWcoGfYY",
-    "title": "Oil Spill Triggers Bus Crash on NH 17; Four Injured | Gomantak Tv",
-    "published": "2026-08-07T05:18:46+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=-eedWcoGfYY"
-  },
-  {
-    "id": "yt:video:suhuRDTAn9g",
-    "title": "AWAZ GOYCHO BULLETIN LIVE | 07-08-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV",
-    "published": "2026-08-07T05:14:40+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=suhuRDTAn9g"
-  },
-  {
-    "id": "yt:video:Ht8Goen1vN4",
-    "title": "Special Feature | \u0930\u094b\u091c\u0917\u093e\u0930\u093e\u091a\u094b \u0939\u093e\u0924, \u0906\u0924\u094d\u092e\u0928\u093f\u0930\u094d\u092d\u0930\u0924\u0947\u091a\u0940 \u0935\u093e\u091f! | Ft. Sangeeta Nair & Group",
-    "published": "2026-08-07T04:59:49+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=Ht8Goen1vN4"
-  },
-  {
-    "id": "yt:video:GdeVra_VOfg",
-    "title": "ADVT: NANDINI MILK",
-    "published": "2026-08-07T04:57:20+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/shorts/GdeVra_VOfg"
-  },
-  {
     "id": "yt:video:wz2vYtFJmbA",
     "title": "12th National Handloom Day | Dr Pramod Sawant | Live | Prudent | 070826",
     "published": "2026-08-07T04:46:32+00:00",
     "channel": "Prudent Media Goa",
     "link": "https://www.youtube.com/watch?v=wz2vYtFJmbA"
-  },
-  {
-    "id": "yt:video:W41EvAYaS-c",
-    "title": "Cafe Mira's biggest challenges | Radhika Shah-Timblo | Taste Buds | Shorts",
-    "published": "2026-08-07T04:45:11+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/shorts/W41EvAYaS-c"
-  },
-  {
-    "id": "yt:video:pnzw0rfQFa0",
-    "title": "Bonkalo | Crepe Ginger | Cheilocostus speciosus | Jungle Book | Prudent |  Shorts",
-    "published": "2026-08-07T04:45:11+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/shorts/pnzw0rfQFa0"
   },
   {
     "id": "yt:video:Z1HB_6UW7IY",
@@ -294,144 +693,11 @@
     "link": "https://www.youtube.com/watch?v=Z1HB_6UW7IY"
   },
   {
-    "id": "yt:video:-PgF0ewz9Mg",
-    "title": "Canacona Hosts Tenth Chaturmasya Vrata Of Swamiji | Gomantak Tv",
-    "published": "2026-08-07T04:27:51+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=-PgF0ewz9Mg"
-  },
-  {
-    "id": "yt:video:GQxlgJVu17c",
-    "title": "10 AM BULLETIN LIVE | 07-08-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV",
-    "published": "2026-08-07T04:06:00+00:00",
-    "channel": "Gomantak TV",
-    "link": "https://www.youtube.com/watch?v=GQxlgJVu17c"
-  },
-  {
-    "id": "yt:video:5gW5-qoHLJY",
-    "title": "Konkani Prime News 060826",
-    "published": "2026-08-07T03:12:28+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=5gW5-qoHLJY"
-  },
-  {
-    "id": "yt:video:LNjo3ayn4yk",
-    "title": "In Goa 24x7 Impact: Quick Action Averts Disaster as Authorities Clear Dangerous Highway Landslide",
-    "published": "2026-08-07T02:45:17+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=LNjo3ayn4yk"
-  },
-  {
     "id": "yt:video:vnoR4DYXjts",
     "title": "Why Fortified Rice Is the Smarter Choice for Your Family   Panchamrutha Fortified Rice",
     "published": "2026-08-07T02:30:14+00:00",
     "channel": "Goa 365 TV",
     "link": "https://www.youtube.com/shorts/vnoR4DYXjts"
-  },
-  {
-    "id": "yt:video:nOFjo6I3B3w",
-    "title": "Goa 360\u00b0 Prime Time | Editor | Prudent | 060826",
-    "published": "2026-08-07T02:05:19+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=nOFjo6I3B3w"
-  },
-  {
-    "id": "yt:video:kUryePlw1-Y",
-    "title": "Top 10 Headlines at 7 am",
-    "published": "2026-08-07T01:30:14+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=kUryePlw1-Y"
-  },
-  {
-    "id": "yt:video:eD_-cIrQLYE",
-    "title": "Visit of SP Cyber Crime | Raju Raut Dessai | Margao Police Station | Live | Prudent | 060826",
-    "published": "2026-08-07T00:08:34+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=eD_-cIrQLYE"
-  },
-  {
-    "id": "yt:video:tZp5ha9xPVA",
-    "title": "LIVE | PRESS CONFERENCE | PRIORITY GOA",
-    "published": "2026-08-06T22:57:23+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=tZp5ha9xPVA"
-  },
-  {
-    "id": "yt:video:udUgFVdk_w8",
-    "title": "Happening Now | Tarun Tejpal Verdict | 10 Years Rigorous Imprisonment |  Live | Prudent | 060826",
-    "published": "2026-08-06T22:04:21+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=udUgFVdk_w8"
-  },
-  {
-    "id": "yt:video:2VP1zqJBuVw",
-    "title": "TARUN TEJPAL CONVICTED | 06/08/2026 |\ud83d\udd34GNH_ LIVE",
-    "published": "2026-08-06T22:01:55+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=2VP1zqJBuVw"
-  },
-  {
-    "id": "yt:video:Oy9KCUuFhI4",
-    "title": "Goa 360\u00b0 @ 12 pm | Editor | Prudent | 060826",
-    "published": "2026-08-06T19:06:02+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=Oy9KCUuFhI4"
-  },
-  {
-    "id": "yt:video:a0fBAH5LaXA",
-    "title": "Anton Vaz Says ST Notification Is First Step, Seeks 2027 Implementation",
-    "published": "2026-08-06T18:49:10+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=a0fBAH5LaXA"
-  },
-  {
-    "id": "yt:video:pvZjbrE56Eg",
-    "title": "Dhavalikar Trust Office Inaugurated in Ponda During Birth Centenary Year",
-    "published": "2026-08-06T18:46:13+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=pvZjbrE56Eg"
-  },
-  {
-    "id": "yt:video:21bSq35h-YQ",
-    "title": "UTAA Welcomes ST Reservation Notification, Maha Melava Decision Awaited",
-    "published": "2026-08-06T18:29:57+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=21bSq35h-YQ"
-  },
-  {
-    "id": "yt:video:Bn0JtrWOqmw",
-    "title": "TARUN TEJPAL CONVICTED | 06/08/2026 |\ud83d\udd34GNH_ LIVE",
-    "published": "2026-08-06T18:27:43+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=Bn0JtrWOqmw"
-  },
-  {
-    "id": "yt:video:cQCPPd_xq2E",
-    "title": "ADVOCATE GENERAL DEVIDAS PANGAM ON TARUN TEJPAL CASE | TVG LIVE",
-    "published": "2026-08-06T18:25:42+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=cQCPPd_xq2E"
-  },
-  {
-    "id": "yt:video:nov1rKp7VEM",
-    "title": "\u090f\u0938\u091f\u0940 \u0906\u0930\u0915\u094d\u0937\u0923\u093e\u0915 \u092f\u0947\u0935\u0915\u093e\u0930, \u092a\u094d\u0930\u093f\u092f\u094b\u0933\u091a\u0947\u0930 \u092e\u0917\u094b\u091a\u094b \u0926\u093e\u0935\u094b \u0915\u093e\u092f\u092e- \u0922\u0935\u0933\u0940\u0915\u093e\u0930",
-    "published": "2026-08-06T18:08:24+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=nov1rKp7VEM"
-  },
-  {
-    "id": "yt:video:jeiEGND7zvQ",
-    "title": "Tarun Tejpal Verdict Live | Prudent | 060826",
-    "published": "2026-08-06T17:56:23+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=jeiEGND7zvQ"
-  },
-  {
-    "id": "yt:video:lHwr6wfi40c",
-    "title": "\u090f\u0938\u091f\u0940\u0902\u0915 \u0930\u093e\u091c\u0915\u0940 \u0906\u0930\u0915\u094d\u0937\u0923, \u0938\u0902\u0915\u0947\u0924 \u0906\u0930\u094d\u0938\u0947\u0915\u093e\u0930\u093e\u091a\u0940 \u092e\u094b\u0920\u0940 \u0918\u094b\u0936\u0923\u093e",
-    "published": "2026-08-06T17:50:04+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=lHwr6wfi40c"
   },
   {
     "id": "yt:video:gSY52fgqkOg",
@@ -441,158 +707,11 @@
     "link": "https://www.youtube.com/watch?v=gSY52fgqkOg"
   },
   {
-    "id": "yt:video:5OprBcsTLCo",
-    "title": "Dhavalikar Breaks Down the Logic of Defection",
-    "published": "2026-08-06T17:26:34+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/5OprBcsTLCo"
-  },
-  {
-    "id": "yt:video:WERCSfqNDaY",
-    "title": "EXCLUSIVE | \u090f\u0938\u091f\u0940\u0902\u0915 \u0917\u094b\u0902\u092f\u093e\u0902\u0924 \u0930\u093e\u091c\u0915\u0940 \u0906\u0930\u0915\u094d\u0937\u0923 \u092e\u0902\u091c\u0942\u0930! \u092e\u0941\u0916\u094d\u092f\u092e\u0902\u0924\u094d\u0930\u094d\u092f\u093e\u091a\u0940 \u092a\u092f\u0932\u0940 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e",
-    "published": "2026-08-06T17:15:28+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=WERCSfqNDaY"
-  },
-  {
-    "id": "yt:video:7Qo9YX4N77w",
-    "title": "Dhavalikar Urges Parties to Choose People-Backed Candidates Over Imposed Faces",
-    "published": "2026-08-06T17:00:44+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/7Qo9YX4N77w"
-  },
-  {
-    "id": "yt:video:uR-wxbLehyA",
-    "title": "Sudin Dhavalikar Urges Gen Z to Judge Goa Governments on Performance",
-    "published": "2026-08-06T16:49:28+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/uR-wxbLehyA"
-  },
-  {
-    "id": "yt:video:QGrPPdPDxiE",
-    "title": "Goa ST Reservation Act Notified; CM Says 'Promise Kept'",
-    "published": "2026-08-06T16:48:29+00:00",
-    "channel": "Prudent Media Goa",
-    "link": "https://www.youtube.com/watch?v=QGrPPdPDxiE"
-  },
-  {
-    "id": "yt:video:ciQvOPf4ljo",
-    "title": "Ponda Traditionally an MGP Bastion, Alliance Will Decide Seat: Sudin Dhavalikar",
-    "published": "2026-08-06T16:36:21+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/ciQvOPf4ljo"
-  },
-  {
-    "id": "yt:video:VYai2O2TYFc",
-    "title": "Mapusa Court Sends Santosh Lamani to 2-Day Police Custody",
-    "published": "2026-08-06T16:13:03+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/VYai2O2TYFc"
-  },
-  {
-    "id": "yt:video:lQ4zStgGpSg",
-    "title": "Moira Stabbing Case: Main Accused Ravi Naik Arrested",
-    "published": "2026-08-06T16:08:58+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/lQ4zStgGpSg"
-  },
-  {
-    "id": "yt:video:2ZyX5pPACyw",
-    "title": "Carpenter by Profession, Artist by Passion Rajesh Chari's Inspiring Journey",
-    "published": "2026-08-06T15:29:36+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=2ZyX5pPACyw"
-  },
-  {
-    "id": "yt:video:F3IPyyrhej4",
-    "title": "SPECIAL REPORT | \u092b\u094b\u0902\u0921\u0947\u0902 \u0916\u093e\u0924\u0940\u0930 6 \u0911\u0917\u0938\u094d\u091f '\u0915\u093e\u0933\u094b \u0926\u0940\u0938'! \u0924\u0947 \u0905\u092a\u0918\u093e\u0924 \u0915\u094d\u0937\u0947\u0924\u094d\u0930\u093e\u0902\u091a\u0940 \u0938\u094d\u0925\u093f\u0924\u0940 \u0905\u091c\u0942\u0928 '\u091c\u0948\u0938\u0947 \u0925\u0947'",
-    "published": "2026-08-06T15:26:51+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=F3IPyyrhej4"
-  },
-  {
-    "id": "yt:video:OTIuUdofVSE",
-    "title": "Oil Spill Triggers Bus Accident at Padi, Balli; Five Injured",
-    "published": "2026-08-06T15:09:41+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/OTIuUdofVSE"
-  },
-  {
-    "id": "yt:video:gI563haDiFU",
-    "title": "\u201cMGP Has Its Own Identity, Alliance Decisions Will Be Taken by Party\u201d: Deepak Dhavlikar",
-    "published": "2026-08-06T14:48:40+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/gI563haDiFU"
-  },
-  {
-    "id": "yt:video:xL4C6AXiMMg",
-    "title": "LAND DEALS NEAR MOPA UNDER LENS",
-    "published": "2026-08-06T14:37:54+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/xL4C6AXiMMg"
-  },
-  {
-    "id": "yt:video:oHy6APSMx78",
-    "title": "\u201cAnyone Can Contest, We Welcome Competition\u201d: Deepak Dhavlikar on Remarks",
-    "published": "2026-08-06T14:34:07+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/oHy6APSMx78"
-  },
-  {
-    "id": "yt:video:EbIJ9paTes4",
-    "title": "MGP Will Give Ticket to Jeet Arolkar for 2027 Polls: Deepak Dhavlikar",
-    "published": "2026-08-06T14:31:46+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/EbIJ9paTes4"
-  },
-  {
     "id": "yt:video:hu7NU2kZye8",
     "title": "GOA365 KONKANI KHOBRO || 6th AUG 2026",
     "published": "2026-08-06T14:30:06+00:00",
     "channel": "Goa 365 TV",
     "link": "https://www.youtube.com/watch?v=hu7NU2kZye8"
-  },
-  {
-    "id": "yt:video:RSsqTqnj9DU",
-    "title": "MISTAKE THAT DELAYED GOA ST RESERVATION | EDITOR SPEAKS | 06/08/2026 | GNH",
-    "published": "2026-08-06T14:30:01+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=RSsqTqnj9DU"
-  },
-  {
-    "id": "yt:video:RG8vRJTP3M0",
-    "title": "Zuarinagar Residents Threaten to Halt Highway Work Over Access Issue",
-    "published": "2026-08-06T14:30:01+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=RG8vRJTP3M0"
-  },
-  {
-    "id": "yt:video:fOiNrZjeUOM",
-    "title": "MGP General Body to Take Final Call on Alliance: Deepak Dhavlikar",
-    "published": "2026-08-06T14:10:24+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/fOiNrZjeUOM"
-  },
-  {
-    "id": "yt:video:f2rSSVpvh44",
-    "title": "Deepak Dhavlikar on MGP Leader Mithil: Contest Decision Should Be His",
-    "published": "2026-08-06T14:02:17+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/watch?v=f2rSSVpvh44"
-  },
-  {
-    "id": "yt:video:9yUmfG9iCu4",
-    "title": "Why Did 18th June Road Flood? CCP Workers Dig Up Drains to Find Answers",
-    "published": "2026-08-06T13:38:38+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/watch?v=9yUmfG9iCu4"
-  },
-  {
-    "id": "yt:video:Ywuo3GCL4cA",
-    "title": "Sudin Dhavalikar Announces Aid for Ponda Fire Victims, Ambulance Service Revival",
-    "published": "2026-08-06T13:38:38+00:00",
-    "channel": "In Goa 24x7",
-    "link": "https://www.youtube.com/shorts/Ywuo3GCL4cA"
   },
   {
     "id": "yt:video:h-LUsKX1jZY",
@@ -607,20 +726,6 @@
     "published": "2026-08-06T13:00:21+00:00",
     "channel": "Goa 365 TV",
     "link": "https://www.youtube.com/watch?v=ipb2XNjinPA"
-  },
-  {
-    "id": "yt:video:-zBl-d58HXs",
-    "title": "Digambar Kamat Reviews Dengue Situation Among Margao Police Personnel",
-    "published": "2026-08-06T13:00:17+00:00",
-    "channel": "Goemkarponn TV",
-    "link": "https://www.youtube.com/shorts/-zBl-d58HXs"
-  },
-  {
-    "id": "yt:video:Y0B6po9LXZs",
-    "title": "Goa gears up for an electric future!",
-    "published": "2026-08-06T12:57:06+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/Y0B6po9LXZs"
   },
   {
     "id": "yt:video:EUtf9IfPj9I",
@@ -644,13 +749,6 @@
     "link": "https://www.youtube.com/watch?v=jachaA8xp8M"
   },
   {
-    "id": "yt:video:HZtll0IEamU",
-    "title": "\u092a\u093f\u0917 \u092b\u093e\u0930\u094d\u092e \u092a\u094d\u0930\u0915\u0930\u0923\u093e\u0902\u0924 \u0905\u092e\u0930 \u0928\u093e\u092f\u0915\u093e\u0915 \u092a\u0902\u091a\u093e\u092f\u0924\u0940\u0928 \u0926\u093f\u0932\u094b \u0924\u0947\u0902\u0915\u094b",
-    "published": "2026-08-06T12:18:05+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=HZtll0IEamU"
-  },
-  {
     "id": "yt:video:y_J_guhyqE4",
     "title": "Tarun Tejpal Sentenced to 10 Years' RI, \u20b95 Lakh Fine in 2013 Rape Case : AG",
     "published": "2026-08-06T12:17:31+00:00",
@@ -658,32 +756,11 @@
     "link": "https://www.youtube.com/watch?v=y_J_guhyqE4"
   },
   {
-    "id": "yt:video:r2nq0vhbLYM",
-    "title": "Goan Fish Lovers, Wait a Little Longer!",
-    "published": "2026-08-06T12:14:29+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/r2nq0vhbLYM"
-  },
-  {
-    "id": "yt:video:2bTaUsW_5DI",
-    "title": "\u0938\u093e\u0902\u0917\u094d\u092f\u093e\u0930 \u092d\u093e\u091c\u092a\u093e\u091a\u094b \u092d\u0935\u094d\u092f \u092e\u0947\u0933\u093e\u0935\u094b; \u0915\u093e\u0930\u094d\u092f\u0915\u0930\u094d\u0924\u094d\u092f\u093e\u0902\u091a\u094b \u092e\u094b\u0920\u094b \u092a\u094d\u0930\u0924\u093f\u0938\u093e\u0926",
-    "published": "2026-08-06T12:11:06+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/shorts/2bTaUsW_5DI"
-  },
-  {
     "id": "yt:video:4StEOtyJlx0",
     "title": "Tourist Seen Urinating in Public Near Kala Academy",
     "published": "2026-08-06T12:10:45+00:00",
     "channel": "RDXGOA GOA NEWS",
     "link": "https://www.youtube.com/shorts/4StEOtyJlx0"
-  },
-  {
-    "id": "yt:video:StSUV4gajX8",
-    "title": "7 \u0935\u0930\u094d\u0938\u093e\u0902, \u0926\u094b\u0928 \u0906\u092e\u0926\u093e\u0930- \u0924\u0930\u0940\u092f \u0926\u093f\u0935\u091a\u0932\u0947 \u0909\u091c\u094b \u092a\u093e\u0932\u094b\u0935\u092a\u0940 \u0926\u0933\u093e\u091a\u094d\u092f\u093e \u0907\u092e\u093e\u0930\u0924\u0940\u091a\u0947 \u0915\u093e\u092e \u0905\u0930\u094d\u0926\u0915\u0941\u091f\u0947\u0902",
-    "published": "2026-08-06T12:06:54+00:00",
-    "channel": "The Voice for Goem",
-    "link": "https://www.youtube.com/watch?v=StSUV4gajX8"
   },
   {
     "id": "yt:video:hc4WsF25HpI",
@@ -721,13 +798,6 @@
     "link": "https://www.youtube.com/watch?v=rCg5do1AndI"
   },
   {
-    "id": "yt:video:Jk7LUPFMULQ",
-    "title": "GOA'S CANCER CRISIS GROWS",
-    "published": "2026-08-06T11:30:59+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/Jk7LUPFMULQ"
-  },
-  {
     "id": "yt:video:fP4_nnGP48A",
     "title": "Guard Dies after Tree Collapses On Security Cabin in Miramar||GOA365 TV",
     "published": "2026-08-06T11:25:47+00:00",
@@ -749,27 +819,6 @@
     "link": "https://www.youtube.com/watch?v=s54d9Hb-NgU"
   },
   {
-    "id": "yt:video:xwFdytoyXyA",
-    "title": "Accident Reported on Atal Setu; Car Overturns",
-    "published": "2026-08-06T11:10:30+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/xwFdytoyXyA"
-  },
-  {
-    "id": "yt:video:ImaYjSHjDvc",
-    "title": "No-Detention Policy Under Review",
-    "published": "2026-08-06T11:01:21+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/shorts/ImaYjSHjDvc"
-  },
-  {
-    "id": "yt:video:0Hte-aA3ZU8",
-    "title": "TEJPAL CASE EXPLAINED",
-    "published": "2026-08-06T10:57:31+00:00",
-    "channel": "Goa News Hub",
-    "link": "https://www.youtube.com/watch?v=0Hte-aA3ZU8"
-  },
-  {
     "id": "yt:video:GJterQh7BJk",
     "title": "'I Am a Political Victim': Tejpal Responds After High Court Verdict",
     "published": "2026-08-06T10:53:27+00:00",
@@ -784,59 +833,10 @@
     "link": "https://www.youtube.com/watch?v=nlZwwIMBhgY"
   },
   {
-    "id": "yt:video:kb--VHf0_zw",
-    "title": "Blocked home roads spark anger, residents vow to stop expansion works || GOA365 TV",
-    "published": "2026-08-06T10:31:47+00:00",
-    "channel": "Goa 365 TV",
-    "link": "https://www.youtube.com/watch?v=kb--VHf0_zw"
-  },
-  {
-    "id": "yt:video:WSZ-8-K5jwA",
-    "title": "Sacred Chaturmasya Vrata Begins At Partagali Math In Canacona||GOA365 TV",
-    "published": "2026-08-06T10:29:26+00:00",
-    "channel": "Goa 365 TV",
-    "link": "https://www.youtube.com/watch?v=WSZ-8-K5jwA"
-  },
-  {
     "id": "yt:video:-jCEypH8dQg",
     "title": "Stop Playing with Mhadei's Survival; Centre Must Intervene Immediately:  Rajendra Kerkar",
     "published": "2026-08-06T09:49:36+00:00",
     "channel": "RDXGOA GOA NEWS",
     "link": "https://www.youtube.com/watch?v=-jCEypH8dQg"
-  },
-  {
-    "id": "yt:video:69XInQxmQNw",
-    "title": "Vasco Man Detained For Remarks On Swami Samarth Statue||GOA365 TV",
-    "published": "2026-08-06T09:46:02+00:00",
-    "channel": "Goa 365 TV",
-    "link": "https://www.youtube.com/watch?v=69XInQxmQNw"
-  },
-  {
-    "id": "yt:video:cVnBN4qP98U",
-    "title": "Tarun Tejpal Arrives at High Court as Sentence to Be Pronounced, Says He Will Move Supreme Court",
-    "published": "2026-08-06T09:06:46+00:00",
-    "channel": "RDXGOA GOA NEWS",
-    "link": "https://www.youtube.com/watch?v=cVnBN4qP98U"
-  },
-  {
-    "id": "yt:video:xTb-kqrFamI",
-    "title": "Goa Forward to Strengthen Organisation Across All 40 Constituencies",
-    "published": "2026-08-06T08:53:41+00:00",
-    "channel": "RDXGOA GOA NEWS",
-    "link": "https://www.youtube.com/watch?v=xTb-kqrFamI"
-  },
-  {
-    "id": "yt:video:d4eklwrIPN4",
-    "title": "New Marcel Police Outpost Premises Inaugurated At KTC Bus Stand",
-    "published": "2026-08-06T07:58:56+00:00",
-    "channel": "RDXGOA GOA NEWS",
-    "link": "https://www.youtube.com/watch?v=d4eklwrIPN4"
-  },
-  {
-    "id": "yt:video:20rYsnz7I0E",
-    "title": "Security Guard Feared Dead After Tree Collapses on Cabin Near Kamat Kinara #breakingnews #goanews",
-    "published": "2026-08-06T07:41:00+00:00",
-    "channel": "RDXGOA GOA NEWS",
-    "link": "https://www.youtube.com/shorts/20rYsnz7I0E"
   }
 ]
