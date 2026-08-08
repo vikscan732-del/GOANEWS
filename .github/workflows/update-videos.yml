@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # ← fixes the 403 error
+  contents: write
 
 jobs:
   update-data:
@@ -18,13 +18,11 @@ jobs:
       - name: Install feedparser
         run: pip install feedparser
 
-      - name: Fetch and combine RSS feeds (Python)
+      - name: Fetch and combine RSS feeds
         run: |
           python << 'EOF'
           import feedparser
           import json
-          from datetime import datetime
-          import re
 
           feeds = [
             "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
@@ -41,19 +39,14 @@ jobs:
           for feed_url in feeds:
               feed = feedparser.parse(feed_url)
               for entry in feed.entries:
-                  # Extract video ID from the link
-                  link = entry.link if hasattr(entry, 'link') else ''
-                  # Extract channel name from author_detail or author
-                  channel = entry.author_detail.name if hasattr(entry, 'author_detail') else entry.author
                   all_videos.append({
                       'id': entry.id,
                       'title': entry.title,
                       'published': entry.published,
-                      'channel': channel,
-                      'link': link
+                      'channel': entry.author_detail.name if hasattr(entry, 'author_detail') else entry.author,
+                      'link': entry.link
                   })
 
-          # Sort by published date (newest first), remove duplicates by id
           all_videos.sort(key=lambda x: x['published'], reverse=True)
           seen = set()
           unique = []
@@ -64,6 +57,7 @@ jobs:
 
           with open('data.json', 'w') as f:
               json.dump(unique, f, indent=2)
+          print(f"✅ Fetched {len(unique)} videos")
           EOF
 
       - name: Commit and push
