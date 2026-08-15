@@ -11,6 +11,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,47 +24,99 @@ jobs:
           python << 'EOF'
           import feedparser
           import json
+          import sys
 
           feeds = [
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCE9AZSYybiCWNYKr9gbY1lA",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCJb1MeQClvGeSMeBSVLKnDQ",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCDFOkbaN9IuV6tjO8Aqo1ww",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UC-i0Rvr1-JtE2A8Z5RuVatg",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCUtU4cVsod9zzLHpL5xM0kQ",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCETBxO93JjoGNkH1zRB0zwg",
-            "https://www.youtube.com/feeds/videos.xml?channel_id=UCAYM7lIXVbOpCkXKSOBB44A"
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCE9AZSYybiCWNYKr9gbY1lA",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCJb1MeQClvGeSMeBSVLKnDQ",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCDFOkbaN9IuV6tjO8Aqo1ww",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UC-i0Rvr1-JtE2A8Z5RuVatg",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCUtU4cVsod9zzLHpL5xM0kQ",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCETBxO93JjoGNkH1zRB0zwg",
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCAYM7lIXVbOpCkXKSOBB44A"
           ]
 
           all_videos = []
-          for feed_url in feeds:
-              feed = feedparser.parse(feed_url)
-              for entry in feed.entries:
-                  all_videos.append({
-                      'id': entry.id,
-                      'title': entry.title,
-                      'published': entry.published,
-                      'channel': entry.author_detail.name if hasattr(entry, 'author_detail') else entry.author,
-                      'link': entry.link
-                  })
 
-          all_videos.sort(key=lambda x: x['published'], reverse=True)
+          for i, feed_url in enumerate(feeds, 1):
+              print(f"\nChecking feed {i}...")
+              
+              try:
+                  feed = feedparser.parse(feed_url)
+
+                  status = getattr(feed, "status", "unknown")
+                  entries = len(feed.entries)
+
+                  print(f"HTTP status: {status}")
+                  print(f"Videos found: {entries}")
+
+                  if entries == 0:
+                      print("⚠️ No videos returned from this feed")
+                      continue
+
+                  for entry in feed.entries:
+                      channel = entry.get("author", "Unknown")
+
+                      all_videos.append({
+                          "id": entry.get("id", ""),
+                          "title": entry.get("title", ""),
+                          "published": entry.get("published", ""),
+                          "channel": channel,
+                          "link": entry.get("link", "")
+                      })
+
+              except Exception as e:
+                  print(f"❌ Feed error: {e}")
+
+          print("\n==============================")
+          print(f"Total videos fetched: {len(all_videos)}")
+          print("==============================")
+
+          # IMPORTANT:
+          # Never replace working data.json with [].
+          if len(all_videos) == 0:
+              print("❌ No videos were fetched from any feed.")
+              print("Keeping existing data.json.")
+              sys.exit(1)
+
+          # Sort newest first
+          all_videos.sort(
+              key=lambda x: x["published"],
+              reverse=True
+          )
+
+          # Remove duplicate videos
           seen = set()
           unique = []
-          for v in all_videos:
-              if v['id'] not in seen:
-                  seen.add(v['id'])
-                  unique.append(v)
 
-          with open('data.json', 'w') as f:
-              json.dump(unique, f, indent=2)
-          print(f"✅ Fetched {len(unique)} videos")
+          for video in all_videos:
+              video_id = video["id"]
+
+              if video_id and video_id not in seen:
+                  seen.add(video_id)
+                  unique.append(video)
+
+          # Save only when valid data exists
+          with open("data.json", "w", encoding="utf-8") as f:
+              json.dump(
+                  unique,
+                  f,
+                  indent=2,
+                  ensure_ascii=False
+              )
+
+          print(f"✅ Successfully saved {len(unique)} videos")
           EOF
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add data.json
-          git commit -m "Automated video data update" || echo "No changes"
+
+          git diff --cached --quiet || \
+            git commit -m "Automated video data update"
+
           git push
