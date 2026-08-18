@@ -92,6 +92,86 @@
             line-height: 1.5;
         }
 
+        /* ===== ANIMATED BREAKING NEWS BANNER ===== */
+        .breaking-banner-container {
+            margin: 16px 0 20px 0;
+        }
+
+        .breaking-news-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 16px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+            animation: gentle-glow 2.5s infinite ease-in-out;
+        }
+
+        .breaking-news-btn:active {
+            transform: scale(0.98);
+        }
+
+        .breaking-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .breaking-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.22);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background-color: #fde047;
+            border-radius: 50%;
+            animation: flash 1.2s infinite ease-in-out;
+        }
+
+        .breaking-title {
+            font-size: 0.96rem;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+        }
+
+        .breaking-arrow {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        @keyframes flash {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.75); }
+        }
+
+        @keyframes gentle-glow {
+            0%, 100% {
+                box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(220, 38, 38, 0.65);
+            }
+        }
+
         /* ===== SECTION TITLE ===== */
         .section-title {
             font-size: 20px;
@@ -592,6 +672,24 @@
             </div>
         </div>
 
+        <!-- ===== ANIMATED BREAKING NEWS BANNER (TOP 50 GOA NEWS) ===== -->
+        <div class="breaking-banner-container">
+            <a href="https://vikygoa.github.io/goa-news/" class="breaking-news-btn">
+                <div class="breaking-left">
+                    <span class="breaking-pill">
+                        <span class="pulse-dot"></span>
+                        BREAKING
+                    </span>
+                    <span class="breaking-title">Top 50 News Goa (Read Now)</span>
+                </div>
+                <div class="breaking-arrow">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
         <!-- ===== LIVE NOW ===== -->
         <div class="section-title">
             <span><span class="red-dot">●</span> LIVE NOW</span>
@@ -641,7 +739,7 @@
         </p>
         <p style="margin-bottom:6px;">
             <strong>📧 Report & Suggestions:</strong>  
-            <a href="codex002@yahoo.com" style="color:#e63946; text-decoration:none; font-weight:600;">codex002@yahoo.com</a>
+            <a href="mailto:codex002@yahoo.com" style="color:#e63946; text-decoration:none; font-weight:600;">codex002@yahoo.com</a>
         </p>
         <p style="font-size:11px; color:#94a3b8;">
             All content is used under  
@@ -749,7 +847,6 @@
                 </div>
             `).join('');
 
-            // Attach play/pause events
             document.querySelectorAll('.play-btn').forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.stopPropagation();
@@ -759,7 +856,6 @@
                 });
             });
 
-            // Attach seeker events
             document.querySelectorAll('.radio-item').forEach(item => {
                 const seeker = item.querySelector('.seeker');
                 const timeDisplay = item.querySelector('.time-display');
@@ -776,157 +872,142 @@
             });
         }
 
-// ================================================================
-// 4. RADIO PLAY/PAUSE (HLS.js with per-station elements)
-// ================================================================
-let activeRadioId = null;
-let radioHlsInstances = {}; // Store HLS instance per station
+        // ================================================================
+        // 4. RADIO PLAY/PAUSE (HLS.js with per-station elements)
+        // ================================================================
+        let activeRadioId = null;
+        let radioHlsInstances = {};
 
-function toggleRadio(radio, btnElement) {
-    const radioItem = btnElement.closest('.radio-item');
-    const seeker = radioItem.querySelector('.seeker');
-    const timeDisplay = radioItem.querySelector('.time-display');
-    const statusSpan = radioItem.querySelector('.radio-status');
-    const dots = radioItem.querySelector('.radio-dots');
+        function toggleRadio(radio, btnElement) {
+            const radioItem = btnElement.closest('.radio-item');
+            const seeker = radioItem.querySelector('.seeker');
+            const timeDisplay = radioItem.querySelector('.time-display');
+            const statusSpan = radioItem.querySelector('.radio-status');
+            const dots = radioItem.querySelector('.radio-dots');
 
-    // Get or create a dedicated audio element for this station
-    let audioEl = document.getElementById('radio_audio_' + radio.id);
-    if (!audioEl) {
-        audioEl = document.createElement('audio');
-        audioEl.id = 'radio_audio_' + radio.id;
-        audioEl.setAttribute('playsinline', '');
-        audioEl.style.display = 'none';
-        document.body.appendChild(audioEl);
-    }
+            let audioEl = document.getElementById('radio_audio_' + radio.id);
+            if (!audioEl) {
+                audioEl = document.createElement('audio');
+                audioEl.id = 'radio_audio_' + radio.id;
+                audioEl.setAttribute('playsinline', '');
+                audioEl.style.display = 'none';
+                document.body.appendChild(audioEl);
+            }
 
-    // If this station is already playing, pause it
-    if (activeRadioId === radio.id && radioHlsInstances[radio.id] && !audioEl.paused) {
-        audioEl.pause();
-        btnElement.innerHTML = '<i class="fas fa-play"></i>';
-        btnElement.classList.remove('playing');
-        radioItem.classList.remove('playing');
-        statusSpan.textContent = '● Paused';
-        statusSpan.classList.remove('playing');
-        dots.classList.remove('active');
-        return;
-    }
-
-    // Pause all other stations
-    document.querySelectorAll('.radio-item').forEach(el => {
-        const playBtn = el.querySelector('.play-btn');
-        const status = el.querySelector('.radio-status');
-        const dotEl = el.querySelector('.radio-dots');
-        playBtn.innerHTML = '<i class="fas fa-play"></i>';
-        playBtn.classList.remove('playing');
-        el.classList.remove('playing');
-        status.textContent = '● Live';
-        status.classList.remove('playing');
-        if (dotEl) dotEl.classList.remove('active');
-    });
-
-    // Stop all other HLS instances
-    Object.keys(radioHlsInstances).forEach(key => {
-        if (key !== radio.id) {
-            try {
-                radioHlsInstances[key].destroy();
-                delete radioHlsInstances[key];
-            } catch(e) {}
-        }
-    });
-
-    // Pause all other audio elements
-    document.querySelectorAll('audio[id^="radio_audio_"]').forEach(el => {
-        if (el.id !== 'radio_audio_' + radio.id) {
-            el.pause();
-        }
-    });
-
-    // Destroy existing HLS for this station if any
-    if (radioHlsInstances[radio.id]) {
-        radioHlsInstances[radio.id].destroy();
-        delete radioHlsInstances[radio.id];
-    }
-
-    // Clear old audio element
-    audioEl.pause();
-    audioEl.src = '';
-
-    // Create new HLS instance
-    if (Hls.isSupported()) {
-        const hls = new Hls({
-            enableWorker: true,
-            lowLatencyMode: true,
-            maxBufferLength: 60,
-        });
-        radioHlsInstances[radio.id] = hls;
-
-        hls.loadSource(radio.stream);
-        hls.attachMedia(audioEl);
-
-        hls.on(Hls.Events.MANIFEST_PARSED, () => {
-            audioEl.play().catch(e => console.log('Auto-play blocked:', e));
-        });
-
-        hls.on(Hls.Events.ERROR, (event, data) => {
-            if (data.fatal) {
-                console.error('HLS error:', data);
-                statusSpan.textContent = '⚠️ Error';
+            if (activeRadioId === radio.id && radioHlsInstances[radio.id] && !audioEl.paused) {
+                audioEl.pause();
                 btnElement.innerHTML = '<i class="fas fa-play"></i>';
                 btnElement.classList.remove('playing');
                 radioItem.classList.remove('playing');
+                statusSpan.textContent = '● Paused';
+                statusSpan.classList.remove('playing');
                 dots.classList.remove('active');
-                activeRadioId = null;
+                return;
             }
-        });
 
-        // Update UI on play
-        audioEl.addEventListener('play', () => {
-            btnElement.innerHTML = '<i class="fas fa-pause"></i>';
-            btnElement.classList.add('playing');
-            radioItem.classList.add('playing');
-            statusSpan.textContent = '● Playing';
-            statusSpan.classList.add('playing');
-            dots.classList.add('active');
-            activeRadioId = radio.id;
-        });
+            document.querySelectorAll('.radio-item').forEach(el => {
+                const playBtn = el.querySelector('.play-btn');
+                const status = el.querySelector('.radio-status');
+                const dotEl = el.querySelector('.radio-dots');
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                playBtn.classList.remove('playing');
+                el.classList.remove('playing');
+                status.textContent = '● Live';
+                status.classList.remove('playing');
+                if (dotEl) dotEl.classList.remove('active');
+            });
 
-        // Update UI on pause
-        audioEl.addEventListener('pause', () => {
-            btnElement.innerHTML = '<i class="fas fa-play"></i>';
-            btnElement.classList.remove('playing');
-            radioItem.classList.remove('playing');
-            statusSpan.textContent = '● Paused';
-            statusSpan.classList.remove('playing');
-            dots.classList.remove('active');
-        });
+            Object.keys(radioHlsInstances).forEach(key => {
+                if (key !== radio.id) {
+                    try {
+                        radioHlsInstances[key].destroy();
+                        delete radioHlsInstances[key];
+                    } catch(e) {}
+                }
+            });
 
-        // Update seeker and time display
-        audioEl.addEventListener('timeupdate', () => {
-            if (!isNaN(audioEl.duration) && audioEl.duration > 0) {
-                const progress = (audioEl.currentTime / audioEl.duration) * 100;
-                seeker.value = progress;
-                const mins = Math.floor(audioEl.currentTime / 60);
-                const secs = Math.floor(audioEl.currentTime % 60);
-                timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+            document.querySelectorAll('audio[id^="radio_audio_"]').forEach(el => {
+                if (el.id !== 'radio_audio_' + radio.id) {
+                    el.pause();
+                }
+            });
+
+            if (radioHlsInstances[radio.id]) {
+                radioHlsInstances[radio.id].destroy();
+                delete radioHlsInstances[radio.id];
             }
-        });
 
-        // When stream ends, auto-restart (for live streams)
-        audioEl.addEventListener('ended', () => {
-            if (activeRadioId === radio.id) {
-                // For live streams, reload
+            audioEl.pause();
+            audioEl.src = '';
+
+            if (Hls.isSupported()) {
+                const hls = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: true,
+                    maxBufferLength: 60,
+                });
+                radioHlsInstances[radio.id] = hls;
+
                 hls.loadSource(radio.stream);
+                hls.attachMedia(audioEl);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    audioEl.play().catch(e => console.log('Auto-play blocked:', e));
+                });
+
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.error('HLS error:', data);
+                        statusSpan.textContent = '⚠️ Error';
+                        btnElement.innerHTML = '<i class="fas fa-play"></i>';
+                        btnElement.classList.remove('playing');
+                        radioItem.classList.remove('playing');
+                        dots.classList.remove('active');
+                        activeRadioId = null;
+                    }
+                });
+
+                audioEl.addEventListener('play', () => {
+                    btnElement.innerHTML = '<i class="fas fa-pause"></i>';
+                    btnElement.classList.add('playing');
+                    radioItem.classList.add('playing');
+                    statusSpan.textContent = '● Playing';
+                    statusSpan.classList.add('playing');
+                    dots.classList.add('active');
+                    activeRadioId = radio.id;
+                });
+
+                audioEl.addEventListener('pause', () => {
+                    btnElement.innerHTML = '<i class="fas fa-play"></i>';
+                    btnElement.classList.remove('playing');
+                    radioItem.classList.remove('playing');
+                    statusSpan.textContent = '● Paused';
+                    statusSpan.classList.remove('playing');
+                    dots.classList.remove('active');
+                });
+
+                audioEl.addEventListener('timeupdate', () => {
+                    if (!isNaN(audioEl.duration) && audioEl.duration > 0) {
+                        const progress = (audioEl.currentTime / audioEl.duration) * 100;
+                        seeker.value = progress;
+                        const mins = Math.floor(audioEl.currentTime / 60);
+                        const secs = Math.floor(audioEl.currentTime % 60);
+                        timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+                    }
+                });
+
+                audioEl.addEventListener('ended', () => {
+                    if (activeRadioId === radio.id) {
+                        hls.loadSource(radio.stream);
+                        audioEl.play().catch(e => console.log(e));
+                    }
+                });
+
+            } else {
+                audioEl.src = radio.stream;
                 audioEl.play().catch(e => console.log(e));
             }
-        });
-
-    } else {
-        // Fallback to native audio for Safari
-        audioEl.src = radio.stream;
-        audioEl.play().catch(e => console.log(e));
-        // Native fallback may still have issues
-    }
-}
+        }
 
         // ================================================================
         // 5. PLAY TV CHANNEL
