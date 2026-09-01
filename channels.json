@@ -41,8 +41,8 @@
   "radio": [
     {
       "id": "mhadei-radio",
-      "name": "Mhadei Radio",
-      "stream": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio004/hlspbaudio00464kbps.m3u8",
+      "name": "91.9 FM Radio",
+      "stream": "https://a2.asurahosting.com/hls/office_radio/aac_midfi.m3u8",
       "type": "radio",
       "enabled": true
     },
