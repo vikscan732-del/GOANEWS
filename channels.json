@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "updated": "2026-09-01",
+  "tv": [
+    {
+      "id": "prudent",
+      "name": "Prudent Media",
+      "stream": "https://prudentmcdn.rixcast.com/prudentm.m3u8",
+      "type": "tv",
+      "enabled": true
+    },
+    {
+      "id": "goa365",
+      "name": "Goa 365",
+      "stream": "https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8",
+      "type": "tv",
+      "enabled": true
+    },
+    {
+      "id": "prime",
+      "name": "Prime",
+      "stream": "https://primetvgoa.rixcast.com/primegoa.m3u8",
+      "type": "tv",
+      "enabled": true
+    },
+    {
+      "id": "dd-goa",
+      "name": "DD Goa",
+      "stream": "https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/a556fd55-3d07-4069-9f3d-6cda1e3192f8/2.m3u8",
+      "type": "tv",
+      "enabled": true
+    },
+    {
+      "id": "rdx-goa",
+      "name": "RDX GOA",
+      "stream": "https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8",
+      "type": "tv",
+      "enabled": true
+    }
+  ],
+  "radio": [
+    {
+      "id": "mhadei-radio",
+      "name": "Mhadei Radio",
+      "stream": "https://d1cvqgmbcpg5yn.cloudfront.net/029a89eb18474dbd/029a89eb18474dbd.m3u8",
+      "type": "radio",
+      "enabled": true
+    },
+    {
+      "id": "fm-rainbow-goa",
+      "name": "FM Rainbow Goa",
+      "stream": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio004/hlspbaudio00464kbps.m3u8",
+      "type": "radio",
+      "enabled": true
+    }
+  ]
+}
