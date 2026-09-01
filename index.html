@@ -1,1276 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>GOA TV – Latest Goa News, Live TV & Updates</title>
+<meta name="description" content="Watch Goa news live and get the latest Goa updates in one place.">
+<link rel="icon" href="goa-news-logo.png" type="image/png">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- ===== SEO META TAGS ===== -->
-    <title>GOA TV – Latest Goa News, Live TV & Updates</title>
-    <meta name="description" content="Watch Goa news live, latest updates from Prudent Media, Goa News Hub, InGoa 24x7, Goa 365, and Gomantak TV. All Goa news in one place." />
-    <meta name="keywords" content="Goa news, live TV Goa, Prudent Media, Goa News Hub, Gomantak TV, Goa latest news" />
-    <link rel="canonical" href="https://tvgoa.online/" />
-
-    <!-- ===== OPEN GRAPH ===== -->
-    <meta property="og:title" content="GOA TV – Latest Goa News, Live TV & Updates" />
-    <meta property="og:description" content="Watch Goa news live, latest updates from all Goa news channels in one place." />
-    <meta property="og:image" content="https://tvgoa.online/google-logo.png" />
-    <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="200" />
-    <meta property="og:url" content="https://tvgoa.online/" />
-    <meta property="og:type" content="website" />
-
-    <!-- ===== TWITTER CARD ===== -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="GOA TV – Latest Goa News" />
-    <meta name="twitter:description" content="All Goa news, live TV, and updates in one place." />
-    <meta name="twitter:image" content="https://tvgoa.online/google-logo.png" />
-
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" href="https://tvgoa.online/goa-news-logo.png" type="image/png" />
-
-    <!-- ===== GOOGLE ANALYTICS ===== -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36W6F31EYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-36W6F31EYJ');
-    </script>
-
-    <!-- ===== LIBRARIES ===== -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-    <style>
-        /* ===== RESET ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #f1f5f9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #0f172a;
-            padding: 16px 14px 30px;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 20px 18px 30px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        /* ===== HEADER ===== */
-        .header {
-            display: block;
-            text-align: center;
-            padding-top: 12px;
-            padding-bottom: 16px;
-            margin-bottom: 18px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .header-logo {
-            width: 100%;
-            max-width: 720px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .header-right {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 13px;
-            color: #475569;
-            line-height: 1.5;
-        }
-
-        /* ===== ANIMATED BREAKING NEWS BANNER ===== */
-        .breaking-banner-container {
-            margin: 16px 0 20px 0;
-        }
-
-        .breaking-news-btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 12px 16px;
-            border-radius: 14px;
-            box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.2s ease;
-            animation: gentle-glow 2.5s infinite ease-in-out;
-        }
-
-        .breaking-news-btn:active {
-            transform: scale(0.98);
-        }
-
-        .breaking-left {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .breaking-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            background: rgba(255, 255, 255, 0.22);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 3px 8px;
-            border-radius: 6px;
-            font-size: 0.7rem;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .pulse-dot {
-            width: 7px;
-            height: 7px;
-            background-color: #fde047;
-            border-radius: 50%;
-            animation: flash 1.2s infinite ease-in-out;
-        }
-
-        .breaking-title {
-            font-size: 0.96rem;
-            font-weight: 800;
-            letter-spacing: -0.2px;
-        }
-
-        .breaking-arrow {
-            display: flex;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            padding: 5px;
-        }
-
-        @keyframes flash {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.3; transform: scale(0.75); }
-        }
-
-        @keyframes gentle-glow {
-            0%, 100% {
-                box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
-            }
-            50% {
-                box-shadow: 0 6px 20px rgba(220, 38, 38, 0.65);
-            }
-        }
-
-        /* ===== SECTION TITLE ===== */
-        .section-title {
-            font-size: 20px;
-            font-weight: 700;
-            margin: 28px 0 14px 0;
-            padding-left: 12px;
-            border-left: 5px solid #e63946;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .section-title .view-all {
-            font-size: 13px;
-            font-weight: 600;
-            color: #e63946;
-            cursor: pointer;
-        }
-        .red-dot {
-            color: #e63946;
-            font-size: 14px;
-            margin-right: 6px;
-        }
-
-        /* ===== LIVE NOW — CHANNEL LIST ===== */
-        .channel-list {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-top: 6px;
-        }
-
-        .channel-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-            background: #f8fafc;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .channel-item:hover {
-            background: #f1f5f9;
-            border-color: #e63946;
-        }
-        .channel-item .name {
-            font-weight: 600;
-            font-size: 16px;
-            color: #0f172a;
-        }
-        .channel-item .live-badge {
-            background: #e63946;
-            padding: 2px 12px;
-            border-radius: 30px;
-            font-size: 10px;
-            font-weight: 700;
-            color: white;
-        }
-
-        /* ===== RADIO SECTION ===== */
-        .radio-section {
-            margin-top: 10px;
-        }
-
-        .radio-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-            background: #f8fafc;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: 0.2s;
-        }
-        .radio-item:hover {
-            background: #f1f5f9;
-        }
-        .radio-item .name {
-            font-weight: 600;
-            font-size: 16px;
-            color: #0f172a;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .radio-item .name i {
-            color: #22c55e;
-            font-size: 20px;
-        }
-        .radio-item .radio-controls {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .radio-item .radio-controls .play-btn {
-            background: #22c55e;
-            border: none;
-            color: white;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.2s;
-        }
-        .radio-item .radio-controls .play-btn:hover {
-            transform: scale(1.05);
-            background: #16a34a;
-        }
-        .radio-item .radio-controls .play-btn.playing {
-            background: #e63946;
-        }
-        .radio-item .radio-controls .play-btn.playing:hover {
-            background: #c62836;
-        }
-        .radio-item .radio-controls .seeker {
-            width: 120px;
-            height: 4px;
-            -webkit-appearance: none;
-            appearance: none;
-            background: #e2e8f0;
-            border-radius: 4px;
-            outline: none;
-            cursor: pointer;
-        }
-        .radio-item .radio-controls .seeker::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: #22c55e;
-            cursor: pointer;
-        }
-        .radio-item .radio-controls .seeker::-moz-range-thumb {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: #22c55e;
-            cursor: pointer;
-            border: none;
-        }
-        .radio-item .radio-controls .time-display {
-            font-size: 12px;
-            color: #64748b;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        /* ===== MUSIC BAR BEATS ANIMATION ===== */
-        .radio-dots {
-            display: none;
-            align-items: center;
-            gap: 3px;
-            height: 24px;
-        }
-        .radio-dots.active {
-            display: flex;
-        }
-        .radio-dots .bar {
-            width: 4px;
-            height: 20px;
-            background: #22c55e;
-            border-radius: 2px;
-            display: inline-block;
-            animation: beat 0.8s infinite ease-in-out;
-            transform-origin: bottom;
-        }
-        .radio-dots .bar:nth-child(1) { animation-delay: 0s; height: 12px; }
-        .radio-dots .bar:nth-child(2) { animation-delay: 0.15s; height: 24px; }
-        .radio-dots .bar:nth-child(3) { animation-delay: 0.3s; height: 8px; }
-        .radio-dots .bar:nth-child(4) { animation-delay: 0.45s; height: 20px; }
-        .radio-dots .bar:nth-child(5) { animation-delay: 0.6s; height: 14px; }
-        .radio-dots .bar:nth-child(6) { animation-delay: 0.75s; height: 22px; }
-        .radio-dots .bar:nth-child(7) { animation-delay: 0.9s; height: 10px; }
-
-        @keyframes beat {
-            0%, 100% { transform: scaleY(0.3); opacity: 0.4; }
-            50% { transform: scaleY(1); opacity: 1; }
-        }
-
-        .radio-item .radio-status {
-            font-size: 11px;
-            font-weight: 600;
-            color: #22c55e;
-            min-width: 60px;
-            text-align: right;
-        }
-        .radio-item .radio-status.playing {
-            color: #e63946;
-            animation: pulse-text 1s infinite;
-        }
-        @keyframes pulse-text {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .radio-item.playing .radio-dots {
-            display: flex;
-        }
-        .radio-item.playing .radio-status {
-            color: #e63946;
-        }
-
-        /* ===== NEWS LIST ===== */
-        .news-list {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            margin-top: 10px;
-        }
-
-        .news-block {
-            background: #f8fafc;
-            border-radius: 16px;
-            padding: 16px 18px;
-            border: 1px solid #e2e8f0;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .news-block:hover {
-            border-color: #e63946;
-            background: #f1f5f9;
-        }
-
-        .news-block .headline {
-            font-size: 18px;
-            font-weight: 700;
-            color: #0f172a;
-        }
-        .news-block .sub-headline {
-            font-size: 14px;
-            color: #475569;
-            margin: 2px 0 6px 0;
-            font-weight: 500;
-        }
-        .news-block .time-tag {
-            font-size: 13px;
-            color: #e63946;
-            font-weight: 600;
-            margin-bottom: 8px;
-            display: inline-block;
-        }
-
-        .news-block .news-detail {
-            display: flex;
-            gap: 14px;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 12px;
-            margin-top: 4px;
-            align-items: flex-start;
-        }
-        .news-block .news-detail .thumbnail {
-            width: 120px;
-            min-height: 68px;
-            background: #e2e8f0;
-            border-radius: 10px;
-            flex-shrink: 0;
-            overflow: hidden;
-        }
-        .news-block .news-detail .thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .news-block .news-detail .content {
-            flex: 1;
-        }
-        .news-block .news-detail .content .title {
-            font-weight: 600;
-            font-size: 15px;
-            color: #0f172a;
-        }
-        .news-block .news-detail .content .meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 4px;
-            font-size: 13px;
-            color: #64748b;
-            flex-wrap: wrap;
-            gap: 4px;
-        }
-        .news-block .news-detail .content .meta .channel {
-            font-weight: 500;
-            color: #334155;
-        }
-        .news-block .news-detail .content .meta .views {
-            color: #94a3b8;
-        }
-
-        /* ===== LOAD MORE BUTTON ===== */
-        .load-more-btn {
-            display: block;
-            width: 100%;
-            padding: 14px;
-            margin-top: 20px;
-            background: #e63946;
-            color: white;
-            font-weight: 700;
-            font-size: 16px;
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-            transition: 0.2s;
-            text-align: center;
-        }
-        .load-more-btn:hover {
-            background: #c62836;
-        }
-        .load-more-btn.hidden {
-            display: none;
-        }
-
-        /* ===== TODAY'S UPLOADS ===== */
-        .uploads-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 8px;
-        }
-        .upload-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #f8fafc;
-            padding: 12px 18px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-        }
-        .upload-item .title {
-            font-weight: 600;
-            font-size: 15px;
-            color: #0f172a;
-        }
-        .upload-item .time {
-            font-size: 13px;
-            color: #64748b;
-            background: #f1f5f9;
-            padding: 2px 12px;
-            border-radius: 30px;
-            font-weight: 500;
-        }
-
-        /* ===== PLAYER OVERLAY (for TV only) ===== */
-        .player-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.92);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .player-overlay.active {
-            display: flex;
-        }
-        .player-box {
-            width: 100%;
-            max-width: 1100px;
-            background: #0b0f1a;
-            border-radius: 28px;
-            overflow: hidden;
-            border: 2px solid #e63946;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
-        }
-        .player-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 20px;
-            background: #020617;
-            border-bottom: 1px solid #334155;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .player-header .left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .player-header .left .now-playing {
-            font-weight: 700;
-            font-size: 17px;
-            color: #facc15;
-        }
-        .player-header .left .live-badge {
-            background: #e63946;
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 700;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 0.6; }
-            50% { opacity: 1; }
-            100% { opacity: 0.6; }
-        }
-        .player-header .right {
-            display: flex;
-            gap: 10px;
-        }
-        .btn-close-player {
-            background: #e63946;
-            border: none;
-            color: white;
-            padding: 6px 18px;
-            border-radius: 40px;
-            font-weight: 700;
-            cursor: pointer;
-            font-size: 13px;
-        }
-        .btn-back-tv {
-            background: #1e293b;
-            border: 1px solid #facc15;
-            color: #facc15;
-            padding: 6px 18px;
-            border-radius: 40px;
-            font-weight: 700;
-            cursor: pointer;
-            font-size: 13px;
-        }
-        .player-body {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            background: #000;
-        }
-        .player-body video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            background: #000;
-        }
-        .player-body iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .loading-text {
-            text-align: center;
-            padding: 30px;
-            color: #94a3b8;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 600px) {
-            .header-logo {
-                width: 100%;
-                height: auto;
-            }
-            .news-block .headline {
-                font-size: 16px;
-            }
-            .news-block .news-detail {
-                flex-direction: column;
-            }
-            .news-block .news-detail .thumbnail {
-                width: 100%;
-                height: 140px;
-            }
-            .radio-item {
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-            .radio-item .radio-controls .seeker {
-                width: 80px;
-            }
-        }
-    </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#0f172a;padding:16px 14px 30px;min-height:100vh}
+.container{max-width:900px;margin:0 auto;background:#fff;border-radius:24px;padding:20px 18px 30px;box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.header{text-align:center;padding:12px 0 16px;margin-bottom:18px;border-bottom:1px solid #e2e8f0}
+.header-logo{width:100%;max-width:720px;height:auto;display:block;margin:auto}
+.header-right{text-align:center;margin-top:10px;font-size:13px;color:#475569;line-height:1.5}
+.breaking-banner-container{margin:16px 0 20px}
+.breaking-news-btn{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;text-decoration:none;padding:12px 16px;border-radius:14px;box-shadow:0 4px 14px rgba(220,38,38,.35);border:1px solid rgba(255,255,255,.2);transition:.2s;animation:glow 2.5s infinite ease-in-out}
+.breaking-news-btn:active{transform:scale(.98)}
+.breaking-left{display:flex;align-items:center;gap:10px}
+.breaking-pill{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);padding:3px 8px;border-radius:6px;font-size:.7rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+.pulse-dot{width:7px;height:7px;background:#fde047;border-radius:50%;animation:flash 1.2s infinite}
+.breaking-title{font-size:.96rem;font-weight:800}
+.breaking-arrow{display:flex;align-items:center;background:rgba(255,255,255,.2);border-radius:50%;padding:5px}
+@keyframes flash{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+@keyframes glow{0%,100%{box-shadow:0 4px 14px rgba(220,38,38,.35)}50%{box-shadow:0 6px 20px rgba(220,38,38,.65)}}
+.section-title{font-size:20px;font-weight:700;margin:28px 0 14px;padding-left:12px;border-left:5px solid #e63946;display:flex;align-items:center;justify-content:space-between}
+.view-all{font-size:13px;font-weight:600;color:#e63946;cursor:pointer}.red-dot{color:#e63946;font-size:14px;margin-right:6px}
+.channel-list,.uploads-list,.news-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.channel-item,.radio-item,.upload-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;transition:.2s}
+.channel-item{cursor:pointer}.channel-item:hover,.radio-item:hover{background:#f1f5f9;border-color:#e63946}
+.channel-item .name,.radio-item .name{font-weight:600;font-size:16px;color:#0f172a}
+.live-badge{background:#e63946;padding:3px 12px;border-radius:30px;font-size:10px;font-weight:700;color:#fff}
+.radio-section{margin-top:10px}.radio-item .name{display:flex;align-items:center;gap:10px}.radio-item .name i{color:#22c55e;font-size:20px}
+.radio-controls{display:flex;align-items:center;gap:12px}.play-btn{background:#22c55e;border:0;color:#fff;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
+.play-btn.playing{background:#e63946}.seeker{width:120px;height:4px;appearance:none;background:#e2e8f0;border-radius:4px;outline:none}.seeker::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background:#22c55e}
+.time-display{font-size:12px;color:#64748b;min-width:40px;text-align:center}.radio-dots{display:none;align-items:center;gap:3px;height:24px}.radio-item.playing .radio-dots{display:flex}
+.radio-dots .bar{width:4px;height:20px;background:#22c55e;border-radius:2px;animation:beat .8s infinite ease-in-out;transform-origin:bottom}
+.radio-dots .bar:nth-child(1){height:12px}.radio-dots .bar:nth-child(2){height:24px;animation-delay:.15s}.radio-dots .bar:nth-child(3){height:8px;animation-delay:.3s}.radio-dots .bar:nth-child(4){height:20px;animation-delay:.45s}.radio-dots .bar:nth-child(5){height:14px;animation-delay:.6s}.radio-dots .bar:nth-child(6){height:22px;animation-delay:.75s}.radio-dots .bar:nth-child(7){height:10px;animation-delay:.9s}
+@keyframes beat{0%,100%{transform:scaleY(.3);opacity:.4}50%{transform:scaleY(1);opacity:1}}
+.radio-status{font-size:11px;font-weight:600;color:#22c55e;min-width:60px;text-align:right}.radio-status.playing{color:#e63946;animation:pulseText 1s infinite}
+@keyframes pulseText{0%,100%{opacity:1}50%{opacity:.5}}
+.news-block{background:#f8fafc;border-radius:16px;padding:16px 18px;border:1px solid #e2e8f0;cursor:pointer;transition:.2s}
+.news-block:hover{border-color:#e63946;background:#f1f5f9}.headline{font-size:18px;font-weight:700;color:#0f172a}.sub-headline{font-size:14px;color:#475569;margin:2px 0 6px;font-weight:500}.time-tag{font-size:13px;color:#e63946;font-weight:600;margin-bottom:8px;display:inline-block}
+.news-detail{display:flex;gap:14px;border-top:1px solid #e2e8f0;padding-top:12px;margin-top:4px;align-items:flex-start}.thumbnail{width:120px;min-height:68px;background:#e2e8f0;border-radius:10px;flex-shrink:0;overflow:hidden}.thumbnail img{width:100%;height:100%;object-fit:cover}.content{flex:1}.content .title{font-weight:600;font-size:15px}.meta{display:flex;justify-content:space-between;align-items:center;margin-top:4px;font-size:13px;color:#64748b;flex-wrap:wrap;gap:4px}
+.channel{font-weight:500;color:#334155}.views{color:#94a3b8}.load-more-btn{display:block;width:100%;padding:14px;margin-top:20px;background:#e63946;color:#fff;font-weight:700;font-size:16px;border:0;border-radius:40px;cursor:pointer}.load-more-btn.hidden{display:none}
+.upload-item .title{font-weight:600;font-size:15px}.upload-item .time{font-size:13px;color:#64748b;background:#f1f5f9;padding:2px 12px;border-radius:30px}
+.player-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;align-items:center;justify-content:center;padding:20px}.player-overlay.active{display:flex}
+.player-box{width:100%;max-width:1100px;background:#0b0f1a;border-radius:28px;overflow:hidden;border:2px solid #e63946;box-shadow:0 30px 60px rgba(0,0,0,.8)}
+.player-header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#020617;border-bottom:1px solid #334155;flex-wrap:wrap;gap:8px}.player-header .left{display:flex;align-items:center;gap:12px}.now-playing{font-weight:700;font-size:17px;color:#facc15}
+.player-header .live-badge{animation:pulse 1.5s infinite}@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+.player-header .right{display:flex;gap:10px}.btn-close-player,.btn-back-tv{padding:6px 18px;border-radius:40px;font-weight:700;cursor:pointer;font-size:13px}.btn-close-player{background:#e63946;border:0;color:#fff}.btn-back-tv{background:#1e293b;border:1px solid #facc15;color:#facc15}
+.player-body{position:relative;padding-bottom:56.25%;height:0;background:#000}.player-body video,.player-body iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}.loading-text{text-align:center;padding:30px;color:#94a3b8}
+@media(max-width:600px){.news-block .headline{font-size:16px}.news-detail{flex-direction:column}.thumbnail{width:100%;height:140px}.radio-item{flex-wrap:wrap;gap:8px}.seeker{width:80px}}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- ===== HEADER ===== -->
-        <div class="header">
-            <div class="logo">
-                <img src="https://tvgoa.online/goa-news-logo.png" alt="GOA TV" class="header-logo" />
-            </div>
-            <div class="header-right">
-                <div class="datetime" id="currentDateTime"></div>
-                <div class="dev">Developed by Vikrant Naik</div>
-            </div>
-        </div>
-
-        <!-- ===== ANIMATED BREAKING NEWS BANNER (TOP 50 GOA NEWS) ===== -->
-        <div class="breaking-banner-container">
-            <a href="https://vikygoa.github.io/goa-news/" class="breaking-news-btn">
-                <div class="breaking-left">
-                    <span class="breaking-pill">
-                        <span class="pulse-dot"></span>
-                        BREAKING
-                    </span>
-                    <span class="breaking-title">Top 50 Goa News<br><small>Read Now →</small></span>
-                </div>
-                <div class="breaking-arrow">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </div>
-            </a>
-        </div>
-
-        <!-- ===== LIVE NOW ===== -->
-        <div class="section-title">
-            <span><span class="red-dot">●</span> LIVE NOW</span>
-            <span class="view-all">View All →</span>
-        </div>
-        <div class="channel-list" id="channelList">
-            <!-- injected by JS -->
-        </div>
-
-        <!-- ===== RADIO SECTION ===== -->
-        <div class="section-title" style="border-left-color: #22c55e;">
-            <span><i class="fas fa-radio" style="color:#22c55e; margin-right:8px;"></i> RADIO</span>
-            <span class="view-all">Listen Live →</span>
-        </div>
-        <div class="radio-section" id="radioList">
-            <!-- injected by JS -->
-        </div>
-
-        <!-- ===== LATEST NEWS ===== -->
-        <div class="section-title">
-            <span><i class="fas fa-newspaper" style="margin-right:8px; color:#e63946;"></i> Latest News From All Channels</span>
-            <span class="view-all">View All →</span>
-        </div>
-        <div id="newsContainer" class="news-list">
-            <div class="loading-text">Loading news...</div>
-        </div>
-        <button id="loadMoreBtn" class="load-more-btn">Load More Videos →</button>
-
-        <!-- ===== TODAY'S UPLOADS ===== -->
-        <div class="section-title">
-            <span><i class="fas fa-clock" style="margin-right:8px; color:#e63946;"></i> Today's Uploads</span>
-            <span class="view-all">View All →</span>
-        </div>
-        <div id="uploadsContainer" class="uploads-list">
-            <div class="loading-text">Loading...</div>
-        </div>
-    </div>
-
-    <!-- ===== FOOTER ===== -->
-    <footer style="border-top:1px solid #e2e8f0; padding:24px 0 10px; margin:0 auto; max-width:900px; font-size:13px; color:#94a3b8; text-align:center;">
-        <p style="margin-bottom:6px;">
-            <span style="font-weight:700; color:#0f172a;">GOA TV</span> © 2026 – All Rights Reserved.
-        </p>
-        <p style="margin-bottom:6px; font-size:12px; color:#94a3b8;">
-            All video content is sourced from publicly available platforms.<br />
-            GOA TV does not host any copyrighted content and acts only as a news aggregator.
-        </p>
-        <p style="margin-bottom:6px;">
-            <strong>📧 Report & Suggestions:</strong>  
-            <a href="mailto:codex002@yahoo.com" style="color:#e63946; text-decoration:none; font-weight:600;">codex002@yahoo.com</a>
-        </p>
-        <p style="font-size:11px; color:#94a3b8;">
-            All content is used under  
-            <a href="https://en.wikipedia.org/wiki/Fair_use" target="_blank" style="color:#64748b; text-decoration:underline;">fair use</a> guidelines.
-        </p>
-    </footer>
-
-    <!-- ===== PLAYER OVERLAY (for TV only) ===== -->
-    <div id="playerOverlay" class="player-overlay">
-        <div class="player-box">
-            <div class="player-header">
-                <div class="left">
-                    <span class="live-badge" id="playerTypeBadge">● LIVE</span>
-                    <span class="now-playing" id="nowPlayingLabel">Select a channel</span>
-                </div>
-                <div class="right">
-                    <button class="btn-back-tv" id="backToTvBtn"><i class="fas fa-arrow-left"></i> BACK</button>
-                    <button class="btn-close-player" id="closePlayerBtn"><i class="fas fa-times"></i> CLOSE</button>
-                </div>
-            </div>
-            <div class="player-body">
-                <video id="playerVideo" playsinline controls></video>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // ================================================================
-        // 0. DISPLAY CURRENT DATE & TIME
-        // ================================================================
-        function updateDateTime() {
-            const now = new Date();
-            const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
-            const formatted = now.toLocaleDateString('en-IN', options);
-            document.getElementById('currentDateTime').textContent = formatted;
-        }
-        updateDateTime();
-        setInterval(updateDateTime, 60000);
-
-        // ================================================================
-        // 1. TV CHANNELS
-        // ================================================================
-        const channels = [
-            { id: 'prudent', name: 'Prudent Media', stream: 'https://prudentmcdn.rixcast.com/prudentm.m3u8', type: 'tv' },
-            { id: 'goanewshub', name: 'Goa 365', stream: 'https://satpros.tech/hls/goa365tv/live_tv_stream/index.m3u8', type: 'tv' },
-            { id: 'ingoa', name: 'Prime', stream: 'https://primetvgoa.rixcast.com/primegoa.m3u8', type: 'tv' },
-            { id: 'DD Goa', name: 'DD Goa', stream: 'https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/a556fd55-3d07-4069-9f3d-6cda1e3192f8/2.m3u8', type: 'tv' },
-            { id: 'rdxgoa', name: 'RDX GOA', stream: 'https://g5nl6xoalpq6-hls-live.5centscdn.com/rdxgoa/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks_dvr.m3u8', type: 'tv' }
-        ];
-
-        // ===== RADIO STATIONS =====
-        const radioStations = [
-            { id: 'radio1', name: 'Mhadei Radio', stream: 'https://d1cvqgmbcpg5yn.cloudfront.net/029a89eb18474dbd/029a89eb18474dbd.m3u8' },
-            { id: 'radio2', name: 'FM Rainbow Goa', stream: 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio004/hlspbaudio00464kbps.m3u8' }
-        ];
-
-        // ================================================================
-        // 2. RENDER TV CHANNELS
-        // ================================================================
-        const channelList = document.getElementById('channelList');
-
-        function renderChannels() {
-            channelList.innerHTML = channels.map(ch => `
-                <div class="channel-item" data-channel-id="${ch.id}">
-                    <span class="name"><i class="fas fa-tv" style="color:#e63946; margin-right:10px;"></i> ${ch.name}</span>
-                    <span class="live-badge">● LIVE</span>
-                </div>
-            `).join('');
-
-            document.querySelectorAll('.channel-item').forEach(item => {
-                item.addEventListener('click', function() {
-                    const id = this.dataset.channelId;
-                    const channel = channels.find(c => c.id === id);
-                    if (channel) playTVChannel(channel);
-                });
-            });
-        }
-
-        // ================================================================
-        // 3. RENDER RADIO (with music bar beats)
-        // ================================================================
-        const radioList = document.getElementById('radioList');
-
-        function renderRadio() {
-            radioList.innerHTML = radioStations.map(r => `
-                <div class="radio-item" data-radio-id="${r.id}">
-                    <span class="name"><i class="fas fa-radio"></i> ${r.name}</span>
-                    <div class="radio-controls">
-                        <button class="play-btn" data-radio-id="${r.id}">
-                            <i class="fas fa-play"></i>
-                        </button>
-                        <input type="range" class="seeker" min="0" max="100" value="0" step="0.1" />
-                        <span class="time-display">0:00</span>
-                        <div class="radio-dots">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <span class="radio-status">● Live</span>
-                    </div>
-                </div>
-            `).join('');
-
-            document.querySelectorAll('.play-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const id = this.dataset.radioId;
-                    const radio = radioStations.find(r => r.id === id);
-                    if (radio) toggleRadio(radio, this);
-                });
-            });
-
-            document.querySelectorAll('.radio-item').forEach(item => {
-                const seeker = item.querySelector('.seeker');
-                const timeDisplay = item.querySelector('.time-display');
-                const radioId = item.dataset.radioId;
-                const radio = radioStations.find(r => r.id === radioId);
-
-                seeker.addEventListener('input', function() {
-                    if (radio && radio.audio) {
-                        const duration = radio.audio.duration || 100;
-                        const seekTime = (this.value / 100) * duration;
-                        radio.audio.currentTime = seekTime;
-                    }
-                });
-            });
-        }
-
-        // ================================================================
-        // 4. RADIO PLAY/PAUSE (HLS.js with per-station elements)
-        // ================================================================
-        let activeRadioId = null;
-        let radioHlsInstances = {};
-
-        function toggleRadio(radio, btnElement) {
-            const radioItem = btnElement.closest('.radio-item');
-            const seeker = radioItem.querySelector('.seeker');
-            const timeDisplay = radioItem.querySelector('.time-display');
-            const statusSpan = radioItem.querySelector('.radio-status');
-            const dots = radioItem.querySelector('.radio-dots');
-
-            let audioEl = document.getElementById('radio_audio_' + radio.id);
-            if (!audioEl) {
-                audioEl = document.createElement('audio');
-                audioEl.id = 'radio_audio_' + radio.id;
-                audioEl.setAttribute('playsinline', '');
-                audioEl.style.display = 'none';
-                document.body.appendChild(audioEl);
-            }
-
-            if (activeRadioId === radio.id && radioHlsInstances[radio.id] && !audioEl.paused) {
-                audioEl.pause();
-                btnElement.innerHTML = '<i class="fas fa-play"></i>';
-                btnElement.classList.remove('playing');
-                radioItem.classList.remove('playing');
-                statusSpan.textContent = '● Paused';
-                statusSpan.classList.remove('playing');
-                dots.classList.remove('active');
-                return;
-            }
-
-            document.querySelectorAll('.radio-item').forEach(el => {
-                const playBtn = el.querySelector('.play-btn');
-                const status = el.querySelector('.radio-status');
-                const dotEl = el.querySelector('.radio-dots');
-                playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                playBtn.classList.remove('playing');
-                el.classList.remove('playing');
-                status.textContent = '● Live';
-                status.classList.remove('playing');
-                if (dotEl) dotEl.classList.remove('active');
-            });
-
-            Object.keys(radioHlsInstances).forEach(key => {
-                if (key !== radio.id) {
-                    try {
-                        radioHlsInstances[key].destroy();
-                        delete radioHlsInstances[key];
-                    } catch(e) {}
-                }
-            });
-
-            document.querySelectorAll('audio[id^="radio_audio_"]').forEach(el => {
-                if (el.id !== 'radio_audio_' + radio.id) {
-                    el.pause();
-                }
-            });
-
-            if (radioHlsInstances[radio.id]) {
-                radioHlsInstances[radio.id].destroy();
-                delete radioHlsInstances[radio.id];
-            }
-
-            audioEl.pause();
-            audioEl.src = '';
-
-            if (Hls.isSupported()) {
-                const hls = new Hls({
-                    enableWorker: true,
-                    lowLatencyMode: true,
-                    maxBufferLength: 60,
-                });
-                radioHlsInstances[radio.id] = hls;
-
-                hls.loadSource(radio.stream);
-                hls.attachMedia(audioEl);
-
-                hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                    audioEl.play().catch(e => console.log('Auto-play blocked:', e));
-                });
-
-                hls.on(Hls.Events.ERROR, (event, data) => {
-                    if (data.fatal) {
-                        console.error('HLS error:', data);
-                        statusSpan.textContent = '⚠️ Error';
-                        btnElement.innerHTML = '<i class="fas fa-play"></i>';
-                        btnElement.classList.remove('playing');
-                        radioItem.classList.remove('playing');
-                        dots.classList.remove('active');
-                        activeRadioId = null;
-                    }
-                });
-
-                audioEl.addEventListener('play', () => {
-                    btnElement.innerHTML = '<i class="fas fa-pause"></i>';
-                    btnElement.classList.add('playing');
-                    radioItem.classList.add('playing');
-                    statusSpan.textContent = '● Playing';
-                    statusSpan.classList.add('playing');
-                    dots.classList.add('active');
-                    activeRadioId = radio.id;
-                });
-
-                audioEl.addEventListener('pause', () => {
-                    btnElement.innerHTML = '<i class="fas fa-play"></i>';
-                    btnElement.classList.remove('playing');
-                    radioItem.classList.remove('playing');
-                    statusSpan.textContent = '● Paused';
-                    statusSpan.classList.remove('playing');
-                    dots.classList.remove('active');
-                });
-
-                audioEl.addEventListener('timeupdate', () => {
-                    if (!isNaN(audioEl.duration) && audioEl.duration > 0) {
-                        const progress = (audioEl.currentTime / audioEl.duration) * 100;
-                        seeker.value = progress;
-                        const mins = Math.floor(audioEl.currentTime / 60);
-                        const secs = Math.floor(audioEl.currentTime % 60);
-                        timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
-                    }
-                });
-
-                audioEl.addEventListener('ended', () => {
-                    if (activeRadioId === radio.id) {
-                        hls.loadSource(radio.stream);
-                        audioEl.play().catch(e => console.log(e));
-                    }
-                });
-
-            } else {
-                audioEl.src = radio.stream;
-                audioEl.play().catch(e => console.log(e));
-            }
-        }
-
-        // ================================================================
-        // 5. PLAY TV CHANNEL
-        // ================================================================
-        let hls = null;
-        const playerOverlay = document.getElementById('playerOverlay');
-        const playerVideo = document.getElementById('playerVideo');
-        const nowPlayingLabel = document.getElementById('nowPlayingLabel');
-        const playerTypeBadge = document.getElementById('playerTypeBadge');
-        const backToTvBtn = document.getElementById('backToTvBtn');
-        const closePlayerBtn = document.getElementById('closePlayerBtn');
-
-        function playTVChannel(channel) {
-            playerTypeBadge.textContent = '● TV';
-            playerTypeBadge.style.background = '#e63946';
-            nowPlayingLabel.textContent = channel.name;
-            if (hls) { hls.destroy(); hls = null; }
-            playerOverlay.classList.add('active');
-
-            if (Hls.isSupported()) {
-                hls = new Hls({ enableWorker: true, lowLatencyMode: true, maxBufferLength: 60 });
-                hls.loadSource(channel.stream);
-                hls.attachMedia(playerVideo);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                    playerVideo.play().catch(e => console.log('Auto-play blocked:', e));
-                });
-                hls.on(Hls.Events.ERROR, (event, data) => {
-                    if (data.fatal) {
-                        console.error('HLS fatal error:', data);
-                        nowPlayingLabel.textContent = '⚠️ Stream error - try another channel';
-                    }
-                });
-            } else if (playerVideo.canPlayType('application/vnd.apple.mpegurl')) {
-                playerVideo.src = channel.stream;
-                playerVideo.play().catch(e => console.log(e));
-            } else {
-                nowPlayingLabel.textContent = '❌ HLS not supported';
-            }
-        }
-
-        // ================================================================
-        // 6. CLOSE PLAYER
-        // ================================================================
-        function closePlayer() {
-            if (hls) { hls.destroy(); hls = null; }
-            playerVideo.pause();
-            playerVideo.src = '';
-            playerVideo.load();
-            playerOverlay.classList.remove('active');
-        }
-
-        backToTvBtn.addEventListener('click', closePlayer);
-        closePlayerBtn.addEventListener('click', closePlayer);
-        playerOverlay.addEventListener('click', (e) => { if (e.target === playerOverlay) closePlayer(); });
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlayer(); });
-
-        // ================================================================
-        // 7. YOUTUBE NEWS – WITH LOAD MORE
-        // ================================================================
-        const DATA_URL = 'data.json';
-        const newsContainer = document.getElementById('newsContainer');
-        const uploadsContainer = document.getElementById('uploadsContainer');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-
-        let allFilteredNews = [];
-        let displayCount = 20;
-        const STEP = 10;
-
-        function getVideoId(link) {
-            try { const url = new URL(link); return url.searchParams.get('v'); } catch { return null; }
-        }
-
-        function formatTime(iso) {
-            const d = new Date(iso);
-            return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-        }
-
-        const marathiHeadlines = [
-            'मांदवी नदी तेचेसी दुबोकेची बीर बिलन झाड़दू',
-            'मुख्यमंत्र्यांची महत्वाची घोषणा',
-            'पावसाचा झशरा आज आणि उदा',
-            'अपघातात 3 जण जखमी',
-            'शेतकऱ्यांना मोठा दिलासा',
-            'पर्यटन विभागाचा निर्णय',
-            'शाळांना सुट्टी जाहीर',
-            'महापालिका निवडणूक जाहीर'
-        ];
-
-        function renderNews(videos, reset = true) {
-            if (!videos || videos.length === 0) {
-                newsContainer.innerHTML = `<div class="loading-text">No news videos found.</div>`;
-                loadMoreBtn.classList.add('hidden');
-                return;
-            }
-
-            const filtered = videos.filter(v => {
-                const link = v.link || '';
-                const title = v.title || '';
-                return !(link.includes('/shorts/') || /#shorts/i.test(title));
-            });
-
-            if (filtered.length === 0) {
-                newsContainer.innerHTML = `<div class="loading-text">No news available.</div>`;
-                loadMoreBtn.classList.add('hidden');
-                return;
-            }
-
-            if (reset) {
-                allFilteredNews = filtered;
-                displayCount = Math.min(20, allFilteredNews.length);
-            }
-
-            const total = allFilteredNews.length;
-            const toShow = allFilteredNews.slice(0, displayCount);
-
-            let html = toShow.map((v, index) => {
-                const vid = getVideoId(v.link);
-                const thumb = vid ? `https://i.ytimg.com/vi/${vid}/mqdefault.jpg` : '';
-                const marathi = marathiHeadlines[index % marathiHeadlines.length];
-                const timeTag = `${Math.floor(Math.random() * 5 + 2)}:${String(Math.floor(Math.random() * 59 + 10)).padStart(2, '0')}`;
-                const views = `${Math.floor(Math.random() * 4 + 1)}.${Math.floor(Math.random() * 9 + 1)}K views`;
-                const timeAgo = `${Math.floor(Math.random() * 60 + 5)} minutes ago`;
-                return `
-                    <div class="news-block" data-video-id="${vid}" data-title="${v.title}">
-                        <div class="headline">${v.title}</div>
-                        <div class="sub-headline">${marathi}</div>
-                        <div class="time-tag">${timeTag}</div>
-                        <div class="news-detail">
-                            <div class="thumbnail">
-                                <img src="${thumb}" alt="thumbnail" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2268%22%3E%3Crect fill=%22%23e2e8f0%22 width=%22120%22 height=%2268%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2394a3b8%22 font-size=%2212%22%3ENo%20Image%3C/text%3E%3C/svg%3E'">
-                            </div>
-                            <div class="content">
-                                <div class="title">${v.title}</div>
-                                <div class="meta">
-                                    <span class="channel"><i class="fas fa-user" style="color:#e63946; margin-right:4px;"></i> ${v.channel}</span>
-                                    <span class="time-ago">${timeAgo}</span>
-                                    <span class="views"><i class="fas fa-eye" style="margin-right:3px;"></i> ${views}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-
-            newsContainer.innerHTML = html;
-
-            document.querySelectorAll('.news-block').forEach(block => {
-                block.addEventListener('click', function() {
-                    const vid = this.dataset.videoId;
-                    const title = this.dataset.title;
-                    if (vid) playYouTubeVideo(vid, title);
-                });
-            });
-
-            if (displayCount < total) {
-                loadMoreBtn.classList.remove('hidden');
-                loadMoreBtn.textContent = `Load More (${displayCount}/${total}) →`;
-            } else {
-                loadMoreBtn.classList.add('hidden');
-            }
-        }
-
-        loadMoreBtn.addEventListener('click', function() {
-            const total = allFilteredNews.length;
-            const newCount = Math.min(displayCount + STEP, total);
-            displayCount = newCount;
-            renderNews(allFilteredNews, false);
-        });
-
-        // ================================================================
-        // 8. PLAY YOUTUBE VIDEO
-        // ================================================================
-        function playYouTubeVideo(videoId, title) {
-            if (!videoId) return;
-            playerTypeBadge.textContent = '▶ YOUTUBE';
-            playerTypeBadge.style.background = '#e63946';
-            const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
-            const playerBody = document.querySelector('.player-body');
-            const oldIframe = playerBody.querySelector('iframe');
-            if (oldIframe) oldIframe.remove();
-
-            playerVideo.style.display = 'none';
-            const iframe = document.createElement('iframe');
-            iframe.src = embedUrl;
-            iframe.allow = 'autoplay; encrypted-media; fullscreen';
-            iframe.allowFullscreen = true;
-            iframe.style.position = 'absolute';
-            iframe.style.top = '0';
-            iframe.style.left = '0';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.border = 'none';
-            playerBody.appendChild(iframe);
-
-            nowPlayingLabel.textContent = title || 'YouTube Video';
-            playerOverlay.classList.add('active');
-        }
-
-        const originalClose = closePlayer;
-        closePlayer = function() {
-            const playerBody = document.querySelector('.player-body');
-            const iframe = playerBody.querySelector('iframe');
-            if (iframe) iframe.remove();
-            playerVideo.style.display = 'block';
-            originalClose();
-        };
-        backToTvBtn.onclick = closePlayer;
-        closePlayerBtn.onclick = closePlayer;
-        playerOverlay.onclick = (e) => { if (e.target === playerOverlay) closePlayer(); };
-        document.onkeydown = (e) => { if (e.key === 'Escape') closePlayer(); };
-
-        // ================================================================
-        // 9. TODAY'S UPLOADS
-        // ================================================================
-        function renderUploads(videos) {
-            if (!videos || videos.length === 0) {
-                uploadsContainer.innerHTML = `<div class="loading-text">No uploads today</div>`;
-                return;
-            }
-
-            const filtered = videos.filter(v => {
-                const link = v.link || '';
-                const title = v.title || '';
-                return !(link.includes('/shorts/') || /#shorts/i.test(title));
-            });
-
-            const latest = filtered.slice(0, 5);
-            if (latest.length === 0) {
-                uploadsContainer.innerHTML = `<div class="loading-text">No uploads today</div>`;
-                return;
-            }
-
-            uploadsContainer.innerHTML = latest.map(v => `
-                <div class="upload-item">
-                    <span class="title"><i class="fas fa-upload" style="color:#e63946; margin-right:8px;"></i> ${v.title}</span>
-                    <span class="time">${formatTime(v.published)}</span>
-                </div>
-            `).join('');
-        }
-
-        // ================================================================
-        // 10. LOAD DATA
-        // ================================================================
-        async function loadData() {
-            try {
-                const response = await fetch(DATA_URL + '?t=' + Date.now());
-                if (!response.ok) throw new Error('Network error');
-                const data = await response.json();
-                renderNews(data, true);
-                renderUploads(data);
-            } catch (e) {
-                newsContainer.innerHTML = `<div class="loading-text">⚠️ Could not load news. Please refresh.</div>`;
-                loadMoreBtn.classList.add('hidden');
-            }
-        }
-
-        // ================================================================
-        // 11. INIT
-        // ================================================================
-        renderChannels();
-        renderRadio();
-        loadData();
-        setInterval(loadData, 10 * 60 * 1000);
-    </script>
+<div class="container">
+<header class="header">
+<img src="goa-news-logo.png" alt="GOA TV" class="header-logo">
+<div class="header-right"><div id="currentDateTime"></div><div>Developed by Vikrant Naik</div></div>
+</header>
+
+<div class="breaking-banner-container">
+<a href="https://vikygoa.github.io/goa-news/" class="breaking-news-btn">
+<div class="breaking-left"><span class="breaking-pill"><span class="pulse-dot"></span>BREAKING</span><span class="breaking-title">Top 50 Goa News<br><small>Read Now →</small></span></div>
+<div class="breaking-arrow">›</div>
+</a>
+</div>
+
+<div class="section-title"><span><span class="red-dot">●</span> LIVE NOW</span><span class="view-all">View All →</span></div>
+<div class="channel-list" id="channelList"><div class="loading-text">Loading channels...</div></div>
+
+<div class="section-title" style="border-left-color:#22c55e"><span><i class="fas fa-radio" style="color:#22c55e;margin-right:8px"></i> RADIO</span><span class="view-all">Listen Live →</span></div>
+<div class="radio-section" id="radioList"><div class="loading-text">Loading radio...</div></div>
+
+<div class="section-title"><span><i class="fas fa-newspaper" style="margin-right:8px;color:#e63946"></i> Latest News From All Channels</span><span class="view-all">View All →</span></div>
+<div id="newsContainer" class="news-list"><div class="loading-text">Loading news...</div></div>
+<button id="loadMoreBtn" class="load-more-btn hidden">Load More Videos →</button>
+
+<div class="section-title"><span><i class="fas fa-clock" style="margin-right:8px;color:#e63946"></i> Today's Uploads</span><span class="view-all">View All →</span></div>
+<div id="uploadsContainer" class="uploads-list"><div class="loading-text">Loading...</div></div>
+</div>
+
+<footer style="border-top:1px solid #e2e8f0;padding:24px 0 10px;margin:0 auto;max-width:900px;font-size:13px;color:#94a3b8;text-align:center">
+<p style="margin-bottom:6px"><span style="font-weight:700;color:#0f172a">GOA TV</span> © 2026 – All Rights Reserved.</p>
+<p style="margin-bottom:6px;font-size:12px">All video content is sourced from publicly available platforms.<br>GOA TV does not host copyrighted content and acts only as a news aggregator.</p>
+<p><strong>📧 Report & Suggestions:</strong> <a href="mailto:codex002@yahoo.com" style="color:#e63946;text-decoration:none;font-weight:600">codex002@yahoo.com</a></p>
+</footer>
+
+<div id="playerOverlay" class="player-overlay">
+<div class="player-box">
+<div class="player-header"><div class="left"><span class="live-badge" id="playerTypeBadge">● LIVE</span><span class="now-playing" id="nowPlayingLabel">Select a channel</span></div>
+<div class="right"><button class="btn-back-tv" id="backToTvBtn">← BACK</button><button class="btn-close-player" id="closePlayerBtn">✕ CLOSE</button></div></div>
+<div class="player-body"><video id="playerVideo" playsinline controls></video></div>
+</div>
+</div>
+
+<script>
+const DATA_URL='data.json';
+const CHANNELS_URL='channels.json';
+
+function updateDateTime(){
+ const now=new Date();
+ document.getElementById('currentDateTime').textContent=now.toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',hour:'numeric',minute:'2-digit',hour12:true});
+}
+updateDateTime();setInterval(updateDateTime,60000);
+
+let channels=[];
+let radioStations=[];
+let hls=null;
+let radioHlsInstances={};
+let activeRadioId=null;
+
+const channelList=document.getElementById('channelList');
+const radioList=document.getElementById('radioList');
+const playerOverlay=document.getElementById('playerOverlay');
+const playerVideo=document.getElementById('playerVideo');
+const nowPlayingLabel=document.getElementById('nowPlayingLabel');
+const playerTypeBadge=document.getElementById('playerTypeBadge');
+
+async function loadChannels(){
+ try{
+   const response=await fetch(CHANNELS_URL+'?t='+Date.now(),{cache:'no-store'});
+   if(!response.ok) throw new Error('Channel config error');
+   const config=await response.json();
+   channels=Array.isArray(config.tv)?config.tv.filter(c=>c.enabled!==false):[];
+   radioStations=Array.isArray(config.radio)?config.radio.filter(r=>r.enabled!==false):[];
+   renderChannels();
+   renderRadio();
+ }catch(e){
+   console.error(e);
+   channelList.innerHTML='<div class="loading-text">⚠️ Could not load TV channels.</div>';
+   radioList.innerHTML='<div class="loading-text">⚠️ Could not load radio channels.</div>';
+ }
+}
+
+function renderChannels(){
+ if(!channels.length){channelList.innerHTML='<div class="loading-text">No TV channels available.</div>';return}
+ channelList.innerHTML=channels.map(ch=>`
+ <div class="channel-item" data-channel-id="${escapeHtml(ch.id)}">
+   <span class="name"><i class="fas fa-tv" style="color:#e63946;margin-right:10px"></i>${escapeHtml(ch.name)}</span>
+   <span class="live-badge">● LIVE</span>
+ </div>`).join('');
+ document.querySelectorAll('.channel-item').forEach(item=>item.onclick=()=>{
+   const ch=channels.find(c=>String(c.id)===String(item.dataset.channelId));
+   if(ch)playTVChannel(ch);
+ });
+}
+
+function renderRadio(){
+ if(!radioStations.length){radioList.innerHTML='<div class="loading-text">No radio stations available.</div>';return}
+ radioList.innerHTML=radioStations.map(r=>`
+ <div class="radio-item" data-radio-id="${escapeHtml(r.id)}">
+  <span class="name"><i class="fas fa-radio"></i>${escapeHtml(r.name)}</span>
+  <div class="radio-controls">
+   <button class="play-btn" data-radio-id="${escapeHtml(r.id)}"><i class="fas fa-play"></i></button>
+   <input type="range" class="seeker" min="0" max="100" value="0" step="0.1">
+   <span class="time-display">0:00</span>
+   <div class="radio-dots"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+   <span class="radio-status">● Live</span>
+  </div>
+ </div>`).join('');
+
+ document.querySelectorAll('.play-btn').forEach(btn=>btn.onclick=e=>{
+   e.stopPropagation();
+   const r=radioStations.find(x=>String(x.id)===String(btn.dataset.radioId));
+   if(r)toggleRadio(r,btn);
+ });
+ document.querySelectorAll('.radio-item').forEach(item=>{
+   const seeker=item.querySelector('.seeker');
+   seeker.oninput=()=>{
+     const r=radioStations.find(x=>String(x.id)===String(item.dataset.radioId));
+     if(r&&r.audio&&isFinite(r.audio.duration))r.audio.currentTime=(seeker.value/100)*r.audio.duration;
+   };
+ });
+}
+
+function stopOtherRadios(exceptId){
+ document.querySelectorAll('.radio-item').forEach(el=>{
+  if(String(el.dataset.radioId)!==String(exceptId)){
+   el.classList.remove('playing');
+   const b=el.querySelector('.play-btn'),s=el.querySelector('.radio-status');
+   if(b)b.innerHTML='<i class="fas fa-play"></i>';
+   if(s){s.textContent='● Live';s.classList.remove('playing')}
+  }
+ });
+ Object.keys(radioHlsInstances).forEach(key=>{
+  if(String(key)!==String(exceptId)){try{radioHlsInstances[key].destroy()}catch(e){}delete radioHlsInstances[key]}
+ });
+ document.querySelectorAll('audio[id^="radio_audio_"]').forEach(a=>{if(a.id!=='radio_audio_'+exceptId)a.pause()});
+}
+
+function toggleRadio(radio,btn){
+ const item=btn.closest('.radio-item');
+ const status=item.querySelector('.radio-status');
+ const seeker=item.querySelector('.seeker');
+ const timeDisplay=item.querySelector('.time-display');
+ let audio=document.getElementById('radio_audio_'+radio.id);
+
+ if(!audio){
+  audio=document.createElement('audio');
+  audio.id='radio_audio_'+radio.id;
+  audio.setAttribute('playsinline','');
+  audio.style.display='none';
+  document.body.appendChild(audio);
+  radio.audio=audio;
+ }
+
+ if(activeRadioId===radio.id&&!audio.paused){
+  audio.pause();activeRadioId=null;return;
+ }
+
+ stopOtherRadios(radio.id);
+ if(radioHlsInstances[radio.id]){try{radioHlsInstances[radio.id].destroy()}catch(e){}delete radioHlsInstances[radio.id]}
+ audio.pause();audio.src='';
+
+ const setPlaying=()=>{
+   btn.innerHTML='<i class="fas fa-pause"></i>';btn.classList.add('playing');
+   item.classList.add('playing');status.textContent='● Playing';status.classList.add('playing');activeRadioId=radio.id;
+ };
+ const setPaused=()=>{
+   btn.innerHTML='<i class="fas fa-play"></i>';btn.classList.remove('playing');
+   item.classList.remove('playing');status.textContent='● Paused';status.classList.remove('playing');
+ };
+
+ audio.onplay=setPlaying;audio.onpause=setPaused;
+ audio.ontimeupdate=()=>{
+  if(isFinite(audio.duration)&&audio.duration>0){
+   seeker.value=(audio.currentTime/audio.duration)*100;
+   timeDisplay.textContent=Math.floor(audio.currentTime/60)+':'+String(Math.floor(audio.currentTime%60)).padStart(2,'0');
+  }
+ };
+
+ if(Hls.isSupported()){
+  const rh=new Hls({enableWorker:true,lowLatencyMode:true,maxBufferLength:60});
+  radioHlsInstances[radio.id]=rh;
+  rh.loadSource(radio.stream);rh.attachMedia(audio);
+  rh.on(Hls.Events.MANIFEST_PARSED,()=>audio.play().catch(()=>{}));
+  rh.on(Hls.Events.ERROR,(ev,data)=>{
+   if(data.fatal){status.textContent='⚠️ Error';item.classList.remove('playing');btn.innerHTML='<i class="fas fa-play"></i>';activeRadioId=null}
+  });
+ }else{
+  audio.src=radio.stream;
+  audio.play().catch(()=>{});
+ }
+}
+
+function playTVChannel(channel){
+ playerTypeBadge.textContent='● TV';playerTypeBadge.style.background='#e63946';
+ nowPlayingLabel.textContent=channel.name;
+ playerOverlay.classList.add('active');
+ const iframe=playerVideo.parentElement.querySelector('iframe');if(iframe)iframe.remove();
+ playerVideo.style.display='block';
+ if(hls){hls.destroy();hls=null}
+ playerVideo.pause();playerVideo.src='';playerVideo.load();
+
+ if(Hls.isSupported()){
+  hls=new Hls({enableWorker:true,lowLatencyMode:true,maxBufferLength:60});
+  hls.loadSource(channel.stream);hls.attachMedia(playerVideo);
+  hls.on(Hls.Events.MANIFEST_PARSED,()=>playerVideo.play().catch(()=>{}));
+  hls.on(Hls.Events.ERROR,(ev,data)=>{if(data.fatal)nowPlayingLabel.textContent='⚠️ Stream error - try another channel'});
+ }else if(playerVideo.canPlayType('application/vnd.apple.mpegurl')){
+  playerVideo.src=channel.stream;playerVideo.play().catch(()=>{});
+ }else nowPlayingLabel.textContent='❌ HLS not supported';
+}
+
+function closePlayer(){
+ if(hls){hls.destroy();hls=null}
+ playerVideo.pause();playerVideo.src='';playerVideo.load();
+ const iframe=playerVideo.parentElement.querySelector('iframe');if(iframe)iframe.remove();
+ playerVideo.style.display='block';playerOverlay.classList.remove('active');
+}
+document.getElementById('backToTvBtn').onclick=closePlayer;
+document.getElementById('closePlayerBtn').onclick=closePlayer;
+playerOverlay.onclick=e=>{if(e.target===playerOverlay)closePlayer()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePlayer()});
+
+const newsContainer=document.getElementById('newsContainer');
+const uploadsContainer=document.getElementById('uploadsContainer');
+const loadMoreBtn=document.getElementById('loadMoreBtn');
+let allFilteredNews=[];let displayCount=20;const STEP=10;
+
+function getVideoId(link){
+ try{
+  const u=new URL(link);
+  if(u.hostname.includes('youtu.be'))return u.pathname.slice(1);
+  return u.searchParams.get('v')||((u.pathname.match(/\/shorts\/([^/]+)/)||[])[1])||null;
+ }catch{return null}
+}
+function formatTime(iso){
+ const d=new Date(iso);
+ return isNaN(d)?'':d.toLocaleDateString('en-IN',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+}
+const marathiHeadlines=['मुख्यमंत्र्यांची महत्वाची घोषणा','पावसाचा इशारा आज आणि उद्या','अपघातात 3 जण जखमी','शेतकऱ्यांना मोठा दिलासा','पर्यटन विभागाचा निर्णय','शाळांना सुट्टी जाहीर','महापालिका निवडणूक जाहीर'];
+
+function renderNews(videos,reset=true){
+ const filtered=(videos||[]).filter(v=>!((v.link||'').includes('/shorts/')||/#shorts/i.test(v.title||'')));
+ if(!filtered.length){newsContainer.innerHTML='<div class="loading-text">No news available.</div>';loadMoreBtn.classList.add('hidden');return}
+ if(reset){allFilteredNews=filtered;displayCount=Math.min(20,filtered.length)}
+ const toShow=allFilteredNews.slice(0,displayCount);
+ newsContainer.innerHTML=toShow.map((v,i)=>{
+  const vid=getVideoId(v.link);const thumb=vid?`https://i.ytimg.com/vi/${encodeURIComponent(vid)}/mqdefault.jpg`:'';
+  return `<div class="news-block" data-video-id="${escapeHtml(vid||'')}" data-title="${escapeHtml(v.title||'')}">
+   <div class="headline">${escapeHtml(v.title||'')}</div>
+   <div class="sub-headline">${marathiHeadlines[i%marathiHeadlines.length]}</div>
+   <div class="time-tag">${formatTime(v.published)}</div>
+   <div class="news-detail"><div class="thumbnail">${thumb?`<img src="${thumb}" alt="thumbnail" loading="lazy">`:''}</div>
+   <div class="content"><div class="title">${escapeHtml(v.title||'')}</div><div class="meta">
+   <span class="channel"><i class="fas fa-user" style="color:#e63946;margin-right:4px"></i>${escapeHtml(v.channel||'')}</span>
+   <span class="views"><i class="fas fa-eye" style="margin-right:3px"></i>News</span></div></div></div></div>`;
+ }).join('');
+ document.querySelectorAll('.news-block').forEach(block=>block.onclick=()=>{
+  if(block.dataset.videoId)playYouTubeVideo(block.dataset.videoId,block.dataset.title);
+ });
+ if(displayCount<allFilteredNews.length){loadMoreBtn.classList.remove('hidden');loadMoreBtn.textContent=`Load More (${displayCount}/${allFilteredNews.length}) →`}
+ else loadMoreBtn.classList.add('hidden');
+}
+
+loadMoreBtn.onclick=()=>{displayCount=Math.min(displayCount+STEP,allFilteredNews.length);renderNews(allFilteredNews,false)};
+
+function playYouTubeVideo(videoId,title){
+ const body=document.querySelector('.player-body');
+ const old=body.querySelector('iframe');if(old)old.remove();
+ playerVideo.style.display='none';
+ const iframe=document.createElement('iframe');
+ iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0`;
+ iframe.allow='autoplay; encrypted-media; fullscreen';iframe.allowFullscreen=true;
+ body.appendChild(iframe);
+ playerTypeBadge.textContent='▶ YOUTUBE';playerTypeBadge.style.background='#e63946';
+ nowPlayingLabel.textContent=title||'YouTube Video';playerOverlay.classList.add('active');
+}
+
+function renderUploads(videos){
+ const filtered=(videos||[]).filter(v=>!((v.link||'').includes('/shorts/')||/#shorts/i.test(v.title||''))).slice(0,5);
+ if(!filtered.length){uploadsContainer.innerHTML='<div class="loading-text">No uploads today</div>';return}
+ uploadsContainer.innerHTML=filtered.map(v=>`<div class="upload-item"><span class="title"><i class="fas fa-upload" style="color:#e63946;margin-right:8px"></i>${escapeHtml(v.title||'')}</span><span class="time">${formatTime(v.published)}</span></div>`).join('');
+}
+
+async function loadData(){
+ try{
+  const response=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error('Network error');
+  const data=await response.json();
+  renderNews(data,true);renderUploads(data);
+ }catch(e){
+  console.error(e);
+  newsContainer.innerHTML='<div class="loading-text">⚠️ Could not load news. Please refresh.</div>';
+  loadMoreBtn.classList.add('hidden');
+ }
+}
+
+function escapeHtml(value){
+ return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+
+loadChannels();
+loadData();
+setInterval(loadData,10*60*1000);
+setInterval(loadChannels,10*60*1000);
+</script>
 </body>
 </html>
