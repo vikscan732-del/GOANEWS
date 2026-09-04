@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Check latest editions
+      - name: Update newspaper editions
         run: python update.py
 
       - name: Commit updated newspaper data
@@ -48,7 +48,6 @@ jobs:
       - name: Prepare GitHub Pages files
         run: |
           mkdir -p _site
-
           cp index.html _site/index.html
           cp newspaper.html _site/newspaper.html
           cp data.json _site/data.json
@@ -60,6 +59,10 @@ jobs:
 
           if [ -f goa-news-logo.png ]; then
             cp goa-news-logo.png _site/goa-news-logo.png
+          fi
+
+          if [ -d assets ]; then
+            cp -r assets _site/assets
           fi
 
       - name: Upload Pages artifact
