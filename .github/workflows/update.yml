@@ -1,9 +1,7 @@
-
-name: Update Goa E-Papers
+name: Update Goan E-Papers
 
 on:
   schedule:
-    # Every day at 05:00 AM IST = 11:30 PM UTC (previous day)
     - cron: "30 23 * * *"
   workflow_dispatch:
 
@@ -12,9 +10,17 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -31,7 +37,7 @@ jobs:
       - name: Check latest editions
         run: python update.py
 
-      - name: Commit updated data
+      - name: Commit updated newspaper data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -42,7 +48,19 @@ jobs:
       - name: Prepare GitHub Pages files
         run: |
           mkdir -p _site
-          cp -r newspaper.html newspaper-data.json assets _site/
+
+          cp index.html _site/index.html
+          cp newspaper.html _site/newspaper.html
+          cp data.json _site/data.json
+          cp newspaper-data.json _site/newspaper-data.json
+
+          if [ -f channels.json ]; then
+            cp channels.json _site/channels.json
+          fi
+
+          if [ -f goa-news-logo.png ]; then
+            cp goa-news-logo.png _site/goa-news-logo.png
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -50,4 +68,5 @@ jobs:
           path: "_site"
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
