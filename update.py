@@ -206,7 +206,7 @@ def get_simple_latest(paper):
     }
 
 def load_old():
-    path = Path("data.json")
+    path = Path("newspaper-data.json")
     if not path.exists():
         return {}
     try:
@@ -277,7 +277,7 @@ def main():
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "papers": results,
     }
-    Path("data.json").write_text(
+    Path("newspaper-data.json").write_text(
         json.dumps(output, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
