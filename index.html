@@ -363,12 +363,11 @@ function renderNews(videos,reset=true){
   const vid=getVideoId(v.link);const thumb=vid?`https://i.ytimg.com/vi/${encodeURIComponent(vid)}/mqdefault.jpg`:'';
   return `<div class="news-block" data-video-id="${escapeHtml(vid||'')}" data-title="${escapeHtml(v.title||'')}">
    <div class="headline">${escapeHtml(v.title||'')}</div>
-   <div class="sub-headline">${marathiHeadlines[i%marathiHeadlines.length]}</div>
    <div class="time-tag">${formatTime(v.published)}</div>
    <div class="news-detail"><div class="thumbnail">${thumb?`<img src="${thumb}" alt="thumbnail" loading="lazy">`:''}</div>
-   <div class="content"><div class="title">${escapeHtml(v.title||'')}</div><div class="meta">
-   <span class="channel"><i class="fas fa-user" style="color:#e63946;margin-right:4px"></i>${escapeHtml(v.channel||'')}</span>
-   <span class="views"><i class="fas fa-eye" style="margin-right:3px"></i>News</span></div></div></div></div>`;
+   <div class="content"><div class="meta">
+   <span class="views"><i class="fas fa-eye" style="margin-right:3px"></i>News</span>
+   </div></div></div></div>`;
  }).join('');
  document.querySelectorAll('.news-block').forEach(block=>block.onclick=()=>{
   if(block.dataset.videoId)playYouTubeVideo(block.dataset.videoId,block.dataset.title);
