@@ -16,15 +16,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install feedparser
+      - name: Install dependencies
         run: pip install feedparser
 
-      - name: Fetch and combine RSS feeds
+      - name: Fetch and update RSS feeds
         run: |
           python << 'EOF'
           import feedparser
           import json
           import sys
+          import os
+          import re
+          from difflib import SequenceMatcher
 
           feeds = [
               "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
@@ -37,76 +40,316 @@ jobs:
               "https://www.youtube.com/feeds/videos.xml?channel_id=UCAYM7lIXVbOpCkXKSOBB44A"
           ]
 
-          all_videos = []
+          DATA_FILE = "data.json"
+          MAX_VIDEOS = 300
+
+          # ==================================================
+          # TITLE CLEANING
+          # ==================================================
+
+          def clean_title(title):
+              title = title.lower()
+
+              # Remove URLs
+              title = re.sub(r'https?://\S+', ' ', title)
+
+              # Remove common YouTube/live words
+              title = re.sub(
+                  r'\b(live|breaking|latest|update|updates|exclusive|'
+                  r'today|watch|full video|press conference|'
+                  r'goa news|goanews)\b',
+                  ' ',
+                  title
+              )
+
+              # Remove hashtags
+              title = re.sub(r'#\w+', ' ', title)
+
+              # Remove punctuation
+              title = re.sub(r'[^a-z0-9\u0900-\u097f\u0b00-\u0b7f\s]', ' ', title)
+
+              # Normalize spaces
+              title = re.sub(r'\s+', ' ', title).strip()
+
+              return title
+
+
+          # ==================================================
+          # SHORTS DETECTION
+          # ==================================================
+
+          def is_short(video):
+              title = video.get("title", "").lower()
+              link = video.get("link", "").lower()
+
+              # Direct Shorts URL
+              if "/shorts/" in link:
+                  return True
+
+              # Common Shorts indicators
+              short_words = [
+                  "#shorts",
+                  "#short",
+                  "shorts",
+                  "youtube shorts"
+              ]
+
+              for word in short_words:
+                  if word in title:
+                      return True
+
+              return False
+
+
+          # ==================================================
+          # NEWS DUPLICATE DETECTION
+          # ==================================================
+
+          def similar_news(title1, title2):
+
+              a = clean_title(title1)
+              b = clean_title(title2)
+
+              if not a or not b:
+                  return False
+
+              # Exact cleaned title
+              if a == b:
+                  return True
+
+              # Similarity ratio
+              ratio = SequenceMatcher(None, a, b).ratio()
+
+              # Strong similarity
+              if ratio >= 0.88:
+                  return True
+
+              # Compare important words
+              words_a = set(a.split())
+              words_b = set(b.split())
+
+              if len(words_a) >= 4 and len(words_b) >= 4:
+
+                  intersection = words_a & words_b
+                  union = words_a | words_b
+
+                  jaccard = len(intersection) / len(union)
+
+                  if jaccard >= 0.75:
+                      return True
+
+              return False
+
+
+          # ==================================================
+          # LOAD EXISTING DATA
+          # ==================================================
+
+          old_videos = []
+
+          if os.path.exists(DATA_FILE):
+
+              try:
+                  with open(DATA_FILE, "r", encoding="utf-8") as f:
+                      old_videos = json.load(f)
+
+                  if not isinstance(old_videos, list):
+                      old_videos = []
+
+              except Exception as e:
+                  print(f"⚠️ Error reading data.json: {e}")
+                  old_videos = []
+
+          print(f"Existing videos: {len(old_videos)}")
+
+
+          # ==================================================
+          # FETCH RSS
+          # ==================================================
+
+          new_videos = []
 
           for i, feed_url in enumerate(feeds, 1):
-              print(f"\nChecking feed {i}...")
-              
+
+              print("")
+              print(f"Checking feed {i}...")
+
               try:
+
                   feed = feedparser.parse(feed_url)
 
                   status = getattr(feed, "status", "unknown")
-                  entries = len(feed.entries)
 
                   print(f"HTTP status: {status}")
-                  print(f"Videos found: {entries}")
-
-                  if entries == 0:
-                      print("⚠️ No videos returned from this feed")
-                      continue
+                  print(f"Videos found: {len(feed.entries)}")
 
                   for entry in feed.entries:
+
+                      video_id = entry.get("yt_videoid", "")
+
+                      if not video_id:
+                          video_id = entry.get("id", "")
+
+                      title = entry.get("title", "").strip()
+
+                      published = entry.get("published", "")
+
                       channel = entry.get("author", "Unknown")
 
-                      all_videos.append({
-                          "id": entry.get("id", ""),
-                          "title": entry.get("title", ""),
-                          "published": entry.get("published", ""),
+                      link = entry.get("link", "")
+
+                      if not video_id or not title:
+                          continue
+
+                      video = {
+                          "id": video_id,
+                          "title": title,
+                          "published": published,
                           "channel": channel,
-                          "link": entry.get("link", "")
-                      })
+                          "link": link
+                      }
+
+                      # ======================================
+                      # REMOVE SHORTS
+                      # ======================================
+
+                      if is_short(video):
+                          print(f"❌ Shorts skipped: {title}")
+                          continue
+
+                      new_videos.append(video)
 
               except Exception as e:
+
                   print(f"❌ Feed error: {e}")
 
-          print("\n==============================")
-          print(f"Total videos fetched: {len(all_videos)}")
+
+          print("")
+          print("==============================")
+          print(f"New usable videos: {len(new_videos)}")
           print("==============================")
 
-          # IMPORTANT:
-          # Never replace working data.json with [].
-          if len(all_videos) == 0:
-              print("❌ No videos were fetched from any feed.")
-              print("Keeping existing data.json.")
-              sys.exit(1)
 
-          # Sort newest first
-          all_videos.sort(
-              key=lambda x: x["published"],
+          # ==================================================
+          # COMBINE OLD + NEW
+          # ==================================================
+
+          combined = old_videos + new_videos
+
+
+          # ==================================================
+          # SORT NEWEST FIRST
+          # ==================================================
+
+          combined.sort(
+              key=lambda x: x.get("published", ""),
               reverse=True
           )
 
-          # Remove duplicate videos
-          seen = set()
-          unique = []
 
-          for video in all_videos:
-              video_id = video["id"]
+          # ==================================================
+          # REMOVE DUPLICATE VIDEO IDs
+          # ==================================================
 
-              if video_id and video_id not in seen:
-                  seen.add(video_id)
-                  unique.append(video)
+          unique_videos = []
 
-          # Save only when valid data exists
-          with open("data.json", "w", encoding="utf-8") as f:
+          seen_ids = set()
+
+          for video in combined:
+
+              video_id = video.get("id", "")
+
+              if not video_id:
+                  continue
+
+              if video_id in seen_ids:
+                  continue
+
+              seen_ids.add(video_id)
+
+              unique_videos.append(video)
+
+
+          print(f"After video ID filtering: {len(unique_videos)}")
+
+
+          # ==================================================
+          # REMOVE DUPLICATE NEWS STORIES
+          # ==================================================
+
+          final_videos = []
+
+          for video in unique_videos:
+
+              title = video.get("title", "")
+
+              duplicate = False
+
+              for existing in final_videos:
+
+                  existing_title = existing.get("title", "")
+
+                  if similar_news(title, existing_title):
+
+                      print("")
+                      print("❌ Duplicate news skipped:")
+                      print(f"   {title}")
+                      print(f"   Similar to: {existing_title}")
+
+                      duplicate = True
+                      break
+
+              if not duplicate:
+                  final_videos.append(video)
+
+
+          print("")
+          print("==============================")
+          print(f"After news deduplication: {len(final_videos)}")
+          print("==============================")
+
+
+          # ==================================================
+          # KEEP 300 VIDEOS
+          # ==================================================
+
+          final_videos = final_videos[:MAX_VIDEOS]
+
+
+          # ==================================================
+          # SAFETY CHECK
+          # ==================================================
+
+          if len(final_videos) == 0:
+
+              print("")
+              print("❌ No usable videos.")
+              print("Keeping existing data.json.")
+
+              sys.exit(1)
+
+
+          # ==================================================
+          # SAVE
+          # ==================================================
+
+          with open(DATA_FILE, "w", encoding="utf-8") as f:
+
               json.dump(
-                  unique,
+                  final_videos,
                   f,
                   indent=2,
                   ensure_ascii=False
               )
 
-          print(f"✅ Successfully saved {len(unique)} videos")
+
+          print("")
+          print("==============================")
+          print(f"✅ FINAL VIDEOS: {len(final_videos)}")
+          print("✅ data.json updated")
+          print("==============================")
+
+
           EOF
 
       - name: Commit and push
