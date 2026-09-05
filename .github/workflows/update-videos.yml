@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install feedparser
         run: pip install feedparser
 
       - name: Fetch and update RSS feeds
@@ -28,6 +28,7 @@ jobs:
           import os
           import re
           from difflib import SequenceMatcher
+          from email.utils import parsedate_to_datetime
 
           feeds = [
               "https://www.youtube.com/feeds/videos.xml?channel_id=UCzipBcQBo9rFNV58nfP-KyQ",
@@ -43,112 +44,162 @@ jobs:
           DATA_FILE = "data.json"
           MAX_VIDEOS = 300
 
-          # ==================================================
-          # TITLE CLEANING
-          # ==================================================
+          # --------------------------------------------------
+          # Words that identify unwanted videos
+          # --------------------------------------------------
 
-          def clean_title(title):
-              title = title.lower()
+          UNWANTED_WORDS = [
+              "advt",
+              "advertisement",
+              "advertisement:",
+              "sponsored",
+              "sponsor",
+              "promo",
+              "promotion",
+              "commercial",
+              "publicity",
+              "trailer",
+              "teaser"
+          ]
+
+          LIVE_WORDS = [
+              "live",
+              "live:",
+              "| live",
+              "live |",
+              "livestream",
+              "live stream",
+              "live interaction",
+              "press conference live",
+              "happening now"
+          ]
+
+          SHORT_WORDS = [
+              "#shorts",
+              "#short",
+              "youtube shorts"
+          ]
+
+          # --------------------------------------------------
+          # Helpers
+          # --------------------------------------------------
+
+          def normalize_text(text):
+              text = (text or "").lower()
 
               # Remove URLs
-              title = re.sub(r'https?://\S+', ' ', title)
-
-              # Remove common YouTube/live words
-              title = re.sub(
-                  r'\b(live|breaking|latest|update|updates|exclusive|'
-                  r'today|watch|full video|press conference|'
-                  r'goa news|goanews)\b',
-                  ' ',
-                  title
-              )
+              text = re.sub(r"https?://\S+", " ", text)
 
               # Remove hashtags
-              title = re.sub(r'#\w+', ' ', title)
+              text = re.sub(r"#\S+", " ", text)
 
-              # Remove punctuation
-              title = re.sub(r'[^a-z0-9\u0900-\u097f\u0b00-\u0b7f\s]', ' ', title)
-
-              # Normalize spaces
-              title = re.sub(r'\s+', ' ', title).strip()
-
-              return title
-
-
-          # ==================================================
-          # SHORTS DETECTION
-          # ==================================================
-
-          def is_short(video):
-              title = video.get("title", "").lower()
-              link = video.get("link", "").lower()
-
-              # Direct Shorts URL
-              if "/shorts/" in link:
-                  return True
-
-              # Common Shorts indicators
-              short_words = [
-                  "#shorts",
-                  "#short",
-                  "shorts",
-                  "youtube shorts"
+              # Remove common filler words.
+              # Keep the actual news words for duplicate detection.
+              filler = [
+                  "breaking", "latest", "update", "updates",
+                  "exclusive", "watch", "today", "news",
+                  "goa news", "goanews", "goa"
               ]
 
-              for word in short_words:
-                  if word in title:
+              for word in filler:
+                  text = re.sub(
+                      r"(?<!\w)" + re.escape(word) + r"(?!\w)",
+                      " ",
+                      text
+                  )
+
+              # Keep Unicode letters/numbers and spaces.
+              text = re.sub(r"[^\w\s]", " ", text, flags=re.UNICODE)
+              text = re.sub(r"\s+", " ", text).strip()
+
+              return text
+
+
+          def contains_word(text, words):
+              value = (text or "").lower()
+
+              for word in words:
+                  word = word.lower()
+
+                  if word in value:
                       return True
 
               return False
 
 
-          # ==================================================
-          # NEWS DUPLICATE DETECTION
-          # ==================================================
+          def is_short(video):
+              title = video.get("title", "")
+              link = video.get("link", "")
 
-          def similar_news(title1, title2):
+              if "/shorts/" in link.lower():
+                  return True
 
-              a = clean_title(title1)
-              b = clean_title(title2)
+              if contains_word(title, SHORT_WORDS):
+                  return True
+
+              return False
+
+
+          def is_live(video):
+              title = video.get("title", "")
+              link = video.get("link", "")
+
+              if contains_word(title, LIVE_WORDS):
+                  return True
+
+              # YouTube RSS links are normally watch URLs.
+              # Do not classify a normal watch URL as live by itself.
+              return False
+
+
+          def is_advertisement(video):
+              title = video.get("title", "")
+
+              return contains_word(title, UNWANTED_WORDS)
+
+
+          def similarity(title1, title2):
+              a = normalize_text(title1)
+              b = normalize_text(title2)
 
               if not a or not b:
-                  return False
+                  return 0.0
 
-              # Exact cleaned title
               if a == b:
-                  return True
+                  return 1.0
 
-              # Similarity ratio
               ratio = SequenceMatcher(None, a, b).ratio()
 
-              # Strong similarity
-              if ratio >= 0.88:
-                  return True
-
-              # Compare important words
               words_a = set(a.split())
               words_b = set(b.split())
 
-              if len(words_a) >= 4 and len(words_b) >= 4:
-
-                  intersection = words_a & words_b
+              if words_a and words_b:
                   union = words_a | words_b
-
+                  intersection = words_a & words_b
                   jaccard = len(intersection) / len(union)
+              else:
+                  jaccard = 0.0
 
-                  if jaccard >= 0.75:
-                      return True
-
-              return False
+              return max(ratio, jaccard)
 
 
-          # ==================================================
-          # LOAD EXISTING DATA
-          # ==================================================
+          def published_timestamp(value):
+              if not value:
+                  return 0
+
+              try:
+                  return parsedate_to_datetime(value).timestamp()
+              except Exception:
+                  return 0
+
+
+          # --------------------------------------------------
+          # Load existing history
+          # --------------------------------------------------
 
           old_videos = []
 
           if os.path.exists(DATA_FILE):
-
               try:
                   with open(DATA_FILE, "r", encoding="utf-8") as f:
                       old_videos = json.load(f)
@@ -157,45 +208,34 @@ jobs:
                       old_videos = []
 
               except Exception as e:
-                  print(f"⚠️ Error reading data.json: {e}")
+                  print(f"WARNING: Could not read existing data.json: {e}")
                   old_videos = []
 
           print(f"Existing videos: {len(old_videos)}")
 
-
-          # ==================================================
-          # FETCH RSS
-          # ==================================================
+          # --------------------------------------------------
+          # Fetch RSS feeds
+          # --------------------------------------------------
 
           new_videos = []
 
           for i, feed_url in enumerate(feeds, 1):
-
               print("")
               print(f"Checking feed {i}...")
 
               try:
-
                   feed = feedparser.parse(feed_url)
 
-                  status = getattr(feed, "status", "unknown")
-
-                  print(f"HTTP status: {status}")
+                  print(f"HTTP status: {getattr(feed, 'status', 'unknown')}")
                   print(f"Videos found: {len(feed.entries)}")
 
                   for entry in feed.entries:
-
                       video_id = entry.get("yt_videoid", "")
-
                       if not video_id:
                           video_id = entry.get("id", "")
 
                       title = entry.get("title", "").strip()
-
                       published = entry.get("published", "")
-
-                      channel = entry.get("author", "Unknown")
-
                       link = entry.get("link", "")
 
                       if not video_id or not title:
@@ -205,58 +245,54 @@ jobs:
                           "id": video_id,
                           "title": title,
                           "published": published,
-                          "channel": channel,
+                          "channel": "Goa News 24",
                           "link": link
                       }
 
-                      # ======================================
-                      # REMOVE SHORTS
-                      # ======================================
-
+                      # Remove Shorts
                       if is_short(video):
-                          print(f"❌ Shorts skipped: {title}")
+                          print(f"SKIP SHORT: {title}")
+                          continue
+
+                      # Remove advertisements/promos
+                      if is_advertisement(video):
+                          print(f"SKIP AD: {title}")
+                          continue
+
+                      # Remove LIVE videos
+                      if is_live(video):
+                          print(f"SKIP LIVE: {title}")
                           continue
 
                       new_videos.append(video)
 
               except Exception as e:
-
-                  print(f"❌ Feed error: {e}")
-
+                  print(f"FEED ERROR: {e}")
 
           print("")
           print("==============================")
           print(f"New usable videos: {len(new_videos)}")
           print("==============================")
 
-
-          # ==================================================
-          # COMBINE OLD + NEW
-          # ==================================================
+          # --------------------------------------------------
+          # Combine old history + new RSS videos
+          # --------------------------------------------------
 
           combined = old_videos + new_videos
 
-
-          # ==================================================
-          # SORT NEWEST FIRST
-          # ==================================================
+          # --------------------------------------------------
+          # First remove exact duplicate YouTube video IDs
+          # --------------------------------------------------
 
           combined.sort(
-              key=lambda x: x.get("published", ""),
+              key=lambda x: published_timestamp(x.get("published", "")),
               reverse=True
           )
 
-
-          # ==================================================
-          # REMOVE DUPLICATE VIDEO IDs
-          # ==================================================
-
-          unique_videos = []
-
+          unique_by_id = []
           seen_ids = set()
 
           for video in combined:
-
               video_id = video.get("id", "")
 
               if not video_id:
@@ -267,74 +303,92 @@ jobs:
 
               seen_ids.add(video_id)
 
-              unique_videos.append(video)
+              # Always show the desired app label.
+              video["channel"] = "Goa News 24"
 
+              unique_by_id.append(video)
 
-          print(f"After video ID filtering: {len(unique_videos)}")
+          print(f"After video-ID deduplication: {len(unique_by_id)}")
 
-
-          # ==================================================
-          # REMOVE DUPLICATE NEWS STORIES
-          # ==================================================
+          # --------------------------------------------------
+          # Remove near-identical news stories
+          #
+          # 0.90 = very similar title
+          # 0.80 Jaccard = same important words
+          # --------------------------------------------------
 
           final_videos = []
 
-          for video in unique_videos:
-
+          for video in unique_by_id:
               title = video.get("title", "")
-
               duplicate = False
 
               for existing in final_videos:
-
                   existing_title = existing.get("title", "")
 
-                  if similar_news(title, existing_title):
+                  score = similarity(title, existing_title)
 
+                  if score >= 0.90:
                       print("")
-                      print("❌ Duplicate news skipped:")
-                      print(f"   {title}")
-                      print(f"   Similar to: {existing_title}")
-
+                      print("SKIP DUPLICATE NEWS:")
+                      print(f"  {title}")
+                      print(f"  Similar to: {existing_title}")
                       duplicate = True
                       break
+
+                  # For titles with enough words, use a slightly
+                  # stricter word-overlap test.
+                  a = set(normalize_text(title).split())
+                  b = set(normalize_text(existing_title).split())
+
+                  if len(a) >= 5 and len(b) >= 5:
+                      union = a | b
+                      intersection = a & b
+
+                      if union:
+                          jaccard = len(intersection) / len(union)
+
+                          if jaccard >= 0.80:
+                              print("")
+                              print("SKIP SAME NEWS:")
+                              print(f"  {title}")
+                              print(f"  Similar to: {existing_title}")
+                              duplicate = True
+                              break
 
               if not duplicate:
                   final_videos.append(video)
 
+          # --------------------------------------------------
+          # Keep newest 300 videos
+          # --------------------------------------------------
 
-          print("")
-          print("==============================")
-          print(f"After news deduplication: {len(final_videos)}")
-          print("==============================")
-
-
-          # ==================================================
-          # KEEP 300 VIDEOS
-          # ==================================================
+          final_videos.sort(
+              key=lambda x: published_timestamp(x.get("published", "")),
+              reverse=True
+          )
 
           final_videos = final_videos[:MAX_VIDEOS]
 
+          print("")
+          print("==============================")
+          print(f"FINAL VIDEOS STORED: {len(final_videos)}")
+          print("==============================")
 
-          # ==================================================
-          # SAFETY CHECK
-          # ==================================================
+          # --------------------------------------------------
+          # Safety: never erase valid history because RSS fails
+          # --------------------------------------------------
 
           if len(final_videos) == 0:
-
-              print("")
-              print("❌ No usable videos.")
+              print("ERROR: No usable videos.")
               print("Keeping existing data.json.")
-
               sys.exit(1)
 
-
-          # ==================================================
-          # SAVE
-          # ==================================================
+          # --------------------------------------------------
+          # Save
+          # --------------------------------------------------
 
           with open(DATA_FILE, "w", encoding="utf-8") as f:
-
               json.dump(
                   final_videos,
                   f,
@@ -342,13 +396,7 @@ jobs:
                   ensure_ascii=False
               )
 
-
-          print("")
-          print("==============================")
-          print(f"✅ FINAL VIDEOS: {len(final_videos)}")
-          print("✅ data.json updated")
-          print("==============================")
-
+          print("SUCCESS: data.json updated.")
 
           EOF
 
