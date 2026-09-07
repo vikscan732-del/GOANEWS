@@ -28,6 +28,7 @@ jobs:
           import re
           import sys
           from difflib import SequenceMatcher
+          from datetime import datetime, timezone
           from email.utils import parsedate_to_datetime
 
           feeds = [
@@ -87,7 +88,18 @@ jobs:
               )
 
           def is_live(video):
-              return has_phrase(video.get("title", ""), LIVE_PHRASES)
+              title = (video.get("title", "") or "").lower()
+
+              # Match LIVE as a separate word so words containing
+              # "live" are not accidentally treated as live streams.
+              return bool(
+                  re.search(r"\blive\b", title)
+                  or "livestream" in title
+                  or "live stream" in title
+                  or "live interaction" in title
+                  or "happening now" in title
+                  or "press conference live" in title
+              )
 
           def is_ad(video):
               return has_phrase(video.get("title", ""), AD_WORDS)
@@ -98,7 +110,6 @@ jobs:
               text = re.sub(r"https?://\S+", " ", text)
               text = re.sub(r"#\S+", " ", text)
 
-              # Remove common filler words but keep the actual story.
               for word in [
                   "breaking",
                   "latest",
@@ -145,10 +156,49 @@ jobs:
               return max(ratio, jaccard)
 
           def timestamp(value):
+              """
+              Correctly parse both:
+                2026-09-07T01:30:12+00:00
+              and normal RSS date strings.
+              """
+              if not value:
+                  return 0
+
+              text = str(value).strip()
+
               try:
-                  return parsedate_to_datetime(value).timestamp()
+                  # ISO 8601 / YouTube Atom format.
+                  iso = text.replace("Z", "+00:00")
+                  dt = datetime.fromisoformat(iso)
+
+                  if dt.tzinfo is None:
+                      dt = dt.replace(tzinfo=timezone.utc)
+
+                  return dt.timestamp()
+              except Exception:
+                  pass
+
+              try:
+                  # Fallback for RFC-style RSS dates.
+                  dt = parsedate_to_datetime(text)
+
+                  if dt.tzinfo is None:
+                      dt = dt.replace(tzinfo=timezone.utc)
+
+                  return dt.timestamp()
               except Exception:
                   return 0
+
+          def published_date(value):
+              ts = timestamp(value)
+
+              if not ts:
+                  return None
+
+              return datetime.fromtimestamp(
+                  ts,
+                  tz=timezone.utc
+              ).date()
 
           # --------------------------------------------------
           # Load old data.
@@ -186,6 +236,7 @@ jobs:
 
                   for entry in feed.entries:
                       video_id = entry.get("yt_videoid", "")
+
                       if not video_id:
                           video_id = entry.get("id", "")
 
@@ -211,9 +262,6 @@ jobs:
 
           # --------------------------------------------------
           # Combine old + new.
-          #
-          # IMPORTANT: Rebuild every item from only these fields.
-          # This removes old description/subtitle fields completely.
           # --------------------------------------------------
 
           combined = old_videos + new_videos
@@ -228,6 +276,7 @@ jobs:
                   continue
 
               title = str(item.get("title", "")).strip()
+
               video_id = str(
                   item.get("id", "") or item.get("videoId", "")
               ).strip()
@@ -238,8 +287,6 @@ jobs:
               if not title or not video_id:
                   continue
 
-              # Rebuild the object.
-              # NO description field is kept.
               video = {
                   "id": video_id,
                   "title": title,
@@ -267,7 +314,9 @@ jobs:
           print(f"Removed Live: {removed_live}")
 
           # --------------------------------------------------
-          # Newest first.
+          # IMPORTANT:
+          # Sort by the real YouTube publication timestamp.
+          # Newest videos MUST be first.
           # --------------------------------------------------
 
           cleaned.sort(
@@ -289,33 +338,56 @@ jobs:
               seen_ids.add(video["id"])
               unique.append(video)
 
-          print(f"After video deduplication: {len(unique)}")
+          print(f"After video-ID deduplication: {len(unique)}")
 
           # --------------------------------------------------
-          # Remove same / nearly same news.
+          # Remove duplicate news ONLY when appropriate.
+          #
+          # IMPORTANT:
+          # Daily news programmes often have almost identical
+          # titles on different days. Those MUST be kept.
+          #
+          # Therefore near-duplicate titles are compared only
+          # when they were published on the SAME calendar date.
+          # Exact same cleaned title is also removed only on the
+          # same date.
           # --------------------------------------------------
 
           final_videos = []
 
           for video in unique:
               duplicate = False
+              video_date = published_date(video["published"])
 
               for existing in final_videos:
+                  existing_date = published_date(
+                      existing["published"]
+                  )
+
+                  # Never remove a recurring daily bulletin just
+                  # because it has a similar title on another day.
+                  if video_date != existing_date:
+                      continue
+
                   score = similarity(
                       video["title"],
                       existing["title"]
                   )
 
-                  if score >= 0.90:
+                  if score >= 0.95:
                       print(
-                          "Duplicate news removed:",
+                          "Same-day duplicate removed:",
                           video["title"]
                       )
                       duplicate = True
                       break
 
-                  words_a = set(clean_title(video["title"]).split())
-                  words_b = set(clean_title(existing["title"]).split())
+                  words_a = set(
+                      clean_title(video["title"]).split()
+                  )
+                  words_b = set(
+                      clean_title(existing["title"]).split()
+                  )
 
                   if len(words_a) >= 5 and len(words_b) >= 5:
                       union = words_a | words_b
@@ -324,9 +396,9 @@ jobs:
                       if union:
                           jaccard = len(intersection) / len(union)
 
-                          if jaccard >= 0.80:
+                          if jaccard >= 0.90:
                               print(
-                                  "Same news removed:",
+                                  "Same-day duplicate removed:",
                                   video["title"]
                               )
                               duplicate = True
@@ -336,8 +408,13 @@ jobs:
                   final_videos.append(video)
 
           # --------------------------------------------------
-          # Keep up to 300.
+          # Keep the newest 300 videos.
           # --------------------------------------------------
+
+          final_videos.sort(
+              key=lambda x: timestamp(x["published"]),
+              reverse=True
+          )
 
           final_videos = final_videos[:MAX_VIDEOS]
 
@@ -350,7 +427,7 @@ jobs:
           # Save ONLY:
           # id, title, published, channel, link
           #
-          # No description/subtitle is stored.
+          # No description/subtitle fields.
           # --------------------------------------------------
 
           with open(DATA_FILE, "w", encoding="utf-8") as f:
@@ -363,6 +440,8 @@ jobs:
 
           print("\n==============================")
           print(f"FINAL VIDEOS: {len(final_videos)}")
+          print("Newest videos sorted first.")
+          print("Daily recurring bulletins preserved.")
           print("Description fields removed.")
           print(f"Channel label: {DISPLAY_CHANNEL}")
           print("==============================")
@@ -377,6 +456,6 @@ jobs:
           git add data.json
 
           git diff --cached --quiet || \
-            git commit -m "Clean video feed and remove duplicate descriptions"
+            git commit -m "Fix video feed sorting and daily duplicates"
 
           git push
