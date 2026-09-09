@@ -3,91 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>GOA TV – Goa News, Live TV, Breaking News & Latest Updates</title>
-<meta name="description" content="GOA TV brings the latest Goa news, breaking updates, live TV channels, radio and videos from across Goa. Stay updated with Panaji, Margao, Mapusa and Goa-wide news.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="author" content="GOA TV">
-<meta name="theme-color" content="#e63946">
-<meta name="language" content="English">
-<meta name="geo.region" content="IN-GA">
-<meta name="geo.placename" content="Goa, India">
-<link rel="canonical" href="https://vikygoa.github.io/goa-news/">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="GOA TV">
-<meta property="og:title" content="GOA TV – Goa News, Live TV, Breaking News & Latest Updates">
-<meta property="og:description" content="Latest Goa news, breaking updates, live TV channels, radio and videos from across Goa.">
-<meta property="og:url" content="https://vikygoa.github.io/goa-news/">
-<meta property="og:image" content="https://vikygoa.github.io/goa-news/goa-news-logo.png">
-<meta property="og:image:alt" content="GOA TV – Goa News and Live TV">
-
-<!-- X / Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GOA TV – Goa News, Live TV & Breaking Updates">
-<meta name="twitter:description" content="Latest Goa news, breaking updates, live TV, radio and videos.">
-<meta name="twitter:image" content="https://vikygoa.github.io/goa-news/goa-news-logo.png">
-
-<!-- Search engines can understand the site's main entity and purpose -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://vikygoa.github.io/goa-news/#website",
-      "url": "https://vikygoa.github.io/goa-news/",
-      "name": "GOA TV",
-      "description": "Goa news, live TV, radio and latest updates.",
-      "inLanguage": "en-IN",
-      "publisher": {
-        "@id": "https://vikygoa.github.io/goa-news/#organization"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://vikygoa.github.io/goa-news/#organization",
-      "name": "GOA TV",
-      "url": "https://vikygoa.github.io/goa-news/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://vikygoa.github.io/goa-news/goa-news-logo.png"
-      }
-    }
-  ]
-}
-</script>
+<title>GOA TV – Latest Goa News, Live TV & Updates</title>
+<meta name="description" content="Watch Goa news live and get the latest Goa updates in one place.">
 <link rel="icon" href="goa-news-logo.png" type="image/png">
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
-
-
 <style>
-/* Only the menu button */
-.tvgoa-menu-wrap{position:absolute;top:10px;right:10px;z-index:500}
+/* TVGoa menu button - added only */
+.tvgoa-menu-wrap{
+ position:absolute;
+ top:14px;
+ right:14px;
+ z-index:500;
+}
 .tvgoa-menu-btn{
- width:42px;height:42px;border:0;border-radius:12px;background:#fff;color:#0f172a;
- box-shadow:0 3px 12px rgba(0,0,0,.12);display:flex;align-items:center;
- justify-content:center;cursor:pointer;-webkit-tap-highlight-color:transparent
+ width:44px;
+ height:44px;
+ border:0;
+ border-radius:12px;
+ background:#fff;
+ color:#0f172a;
+ box-shadow:0 4px 14px rgba(0,0,0,.14);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ cursor:pointer;
 }
 .tvgoa-menu-btn:active{transform:scale(.96)}
 .tvgoa-menu-btn svg{width:23px;height:23px}
 .tvgoa-menu-panel{
- display:none;position:absolute;top:50px;right:0;width:220px;background:#fff;
- border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 12px 30px rgba(15,23,42,.18);
- overflow:hidden
+ display:none;
+ position:absolute;
+ top:52px;
+ right:0;
+ width:220px;
+ background:#fff;
+ border:1px solid #e2e8f0;
+ border-radius:14px;
+ box-shadow:0 12px 30px rgba(15,23,42,.18);
+ overflow:hidden;
 }
 .tvgoa-menu-panel.open{display:block}
 .tvgoa-menu-item{
- display:flex;align-items:center;gap:11px;padding:14px 16px;color:#0f172a;
- text-decoration:none;font-weight:600;font-size:14px
+ display:flex;
+ align-items:center;
+ gap:11px;
+ padding:14px 16px;
+ color:#0f172a;
+ text-decoration:none;
+ font-weight:600;
+ font-size:14px;
 }
 .tvgoa-menu-item:hover{background:#f8fafc}
 .tvgoa-menu-item i{color:#e63946;width:20px;text-align:center}
 </style>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#0f172a;padding:16px 14px 30px;min-height:100vh}
@@ -105,12 +77,41 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 .breaking-arrow{display:flex;align-items:center;background:rgba(255,255,255,.2);border-radius:50%;padding:5px}
 @keyframes flash{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
 @keyframes glow{0%,100%{box-shadow:0 4px 14px rgba(220,38,38,.35)}50%{box-shadow:0 6px 20px rgba(220,38,38,.65)}}
-.seo-intro{padding:4px 4px 8px;margin:0 0 8px}
-.seo-intro h1{font-size:25px;line-height:1.2;margin:4px 0 8px;color:#0f172a}
-.seo-intro p{font-size:15px;line-height:1.65;color:#475569;margin:0}
-.seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.seo-links a{color:#b91c1c;font-weight:700;text-decoration:none;background:#fff1f2;border:1px solid #fecdd3;border-radius:999px;padding:6px 10px;font-size:13px}
-.seo-links a:hover{text-decoration:underline}
+
+/* ===== GOA E-PAPERS ===== */
+.newspaper-banner-container{margin:0 0 22px}
+.newspaper-banner{
+ position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;
+ gap:12px;padding:14px 16px;border-radius:14px;text-decoration:none;color:#0f172a;
+ background:linear-gradient(135deg,#e0f4ff 0%,#c7ebff 50%,#eaf8ff 100%);
+ border:1px solid #a8dcf5;box-shadow:0 5px 18px rgba(56,189,248,.22);
+ transition:transform .2s ease,box-shadow .2s ease;animation:newspaperGlow 3s infinite ease-in-out;
+}
+.newspaper-banner::before{
+ content:"";position:absolute;top:0;left:-120%;width:70%;height:100%;
+ background:linear-gradient(100deg,transparent,rgba(255,255,255,.78),transparent);
+ transform:skewX(-20deg);animation:newspaperShine 3.5s infinite;
+}
+.newspaper-banner:active{transform:scale(.98)}
+.newspaper-left{position:relative;z-index:1;display:flex;align-items:center;gap:12px;min-width:0}
+.newspaper-icon{
+ width:43px;height:43px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+ border-radius:12px;background:#fff;color:#0284c7;font-size:21px;
+ box-shadow:0 3px 10px rgba(2,132,199,.15);animation:newspaperFloat 2s infinite ease-in-out;
+}
+.newspaper-text{min-width:0}
+.newspaper-title{display:block;font-size:17px;font-weight:800;line-height:1.2;color:#075985}
+.newspaper-subtitle{display:block;margin-top:3px;font-size:12px;font-weight:600;color:#0369a1}
+.newspaper-arrow{
+ position:relative;z-index:1;flex-shrink:0;width:38px;height:38px;display:flex;
+ align-items:center;justify-content:center;border-radius:50%;color:#fff;background:#0284c7;
+ font-size:21px;box-shadow:0 4px 12px rgba(2,132,199,.3);animation:newspaperArrow 1.8s infinite ease-in-out;
+}
+@keyframes newspaperGlow{0%,100%{box-shadow:0 5px 18px rgba(56,189,248,.20)}50%{box-shadow:0 7px 25px rgba(56,189,248,.42)}}
+@keyframes newspaperShine{0%{left:-120%}55%,100%{left:150%}}
+@keyframes newspaperFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes newspaperArrow{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+
 .section-title{font-size:20px;font-weight:700;margin:28px 0 14px;padding-left:12px;border-left:5px solid #e63946;display:flex;align-items:center;justify-content:space-between}
 .view-all{font-size:13px;font-weight:600;color:#e63946;cursor:pointer}.red-dot{color:#e63946;font-size:14px;margin-right:6px}
 .channel-list,.uploads-list,.news-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
@@ -138,7 +139,15 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 .player-header .live-badge{animation:pulse 1.5s infinite}@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
 .player-header .right{display:flex;gap:10px}.btn-close-player,.btn-back-tv{padding:6px 18px;border-radius:40px;font-weight:700;cursor:pointer;font-size:13px}.btn-close-player{background:#e63946;border:0;color:#fff}.btn-back-tv{background:#1e293b;border:1px solid #facc15;color:#facc15}
 .player-body{position:relative;padding-bottom:56.25%;height:0;background:#000}.player-body video,.player-body iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}.loading-text{text-align:center;padding:30px;color:#94a3b8}
-@media(max-width:600px){.news-block .headline{font-size:16px}.news-detail{flex-direction:column}.thumbnail{width:100%;height:140px}.radio-item{flex-wrap:wrap;gap:8px}.seeker{width:80px}}
+@media(max-width:600px){
+ .news-block .headline{font-size:16px}.news-detail{flex-direction:column}.thumbnail{width:100%;height:140px}
+ .radio-item{flex-wrap:wrap;gap:8px}.seeker{width:80px}
+ .newspaper-banner{padding:13px 14px;border-radius:14px}
+ .newspaper-icon{width:40px;height:40px;font-size:19px}
+ .newspaper-title{font-size:15px}
+ .newspaper-subtitle{font-size:11px}
+ .newspaper-arrow{width:36px;height:36px;font-size:20px}
+}
 </style>
 </head>
 
@@ -147,34 +156,28 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 <header class="header" style="position:relative">
 
 <div class="tvgoa-menu-wrap">
-<button class="tvgoa-menu-btn" id="tvgoaMenuBtn" aria-label="Menu" aria-expanded="false">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-<line x1="4" y1="6" x2="20" y2="6"></line>
-<line x1="4" y1="12" x2="20" y2="12"></line>
-<line x1="4" y1="18" x2="20" y2="18"></line>
-</svg>
-</button>
-<div class="tvgoa-menu-panel" id="tvgoaMenuPanel">
-<a class="tvgoa-menu-item" href="privacy-policy.html">
-<i class="fas fa-shield-alt"></i>
-<span>Privacy Policy</span>
-</a>
+ <button class="tvgoa-menu-btn" id="tvgoaMenuBtn" aria-label="Menu" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+   <line x1="4" y1="6" x2="20" y2="6"></line>
+   <line x1="4" y1="12" x2="20" y2="12"></line>
+   <line x1="4" y1="18" x2="20" y2="18"></line>
+  </svg>
+ </button>
+ <div class="tvgoa-menu-panel" id="tvgoaMenuPanel">
+  <a class="tvgoa-menu-item" href="privacy-policy.html">
+   <i class="fas fa-shield-alt"></i>
+   <span>Privacy Policy</span>
+  </a>
+  <a class="tvgoa-menu-item" href="mailto:codex002@yahoo.com">
+   <i class="fas fa-envelope"></i>
+   <span>Contact Me</span>
+  </a>
+ </div>
 </div>
-</div>
+
 <img src="goa-news-logo.png" alt="GOA TV" class="header-logo">
 <div class="header-right"><div id="currentDateTime"></div><div>Developed by Vikrant Naik</div></div>
 </header>
-
-<section class="seo-intro" aria-label="About GOA TV">
-<h1>Goa News, Live TV & Latest Goa Updates</h1>
-<p>GOA TV brings Goa news, breaking updates, live television channels, radio and the latest videos together in one place. Get updates from Panaji, Margao, Mapusa and across Goa.</p>
-<nav aria-label="Goa news topics" class="seo-links">
-<a href="#live-tv">Live TV</a>
-<a href="#radio">Goa Radio</a>
-<a href="#latest-news">Latest Goa News</a>
-<a href="#today-uploads">Today's Videos</a>
-</nav>
-</section>
 
 <div class="breaking-banner-container">
 <a href="https://vikygoa.github.io/goa-news/" class="breaking-news-btn">
@@ -183,17 +186,31 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 </a>
 </div>
 
-<div id="live-tv" class="section-title"><span><span class="red-dot">●</span> LIVE NOW</span><span class="view-all">View All →</span></div>
+<!-- GOA E-PAPERS -->
+<div class="newspaper-banner-container">
+<a href="newspaper.html" class="newspaper-banner">
+<div class="newspaper-left">
+<div class="newspaper-icon"><i class="fas fa-newspaper"></i></div>
+<div class="newspaper-text">
+<span class="newspaper-title">GOA E-PAPERS</span>
+<span class="newspaper-subtitle">Read Today's Goa Newspapers →</span>
+</div>
+</div>
+<div class="newspaper-arrow">›</div>
+</a>
+</div>
+
+<div class="section-title"><span><span class="red-dot">●</span> LIVE NOW</span><span class="view-all">View All →</span></div>
 <div class="channel-list" id="channelList"><div class="loading-text">Loading channels...</div></div>
 
-<div id="radio" class="section-title" style="border-left-color:#22c55e"><span><i class="fas fa-radio" style="color:#22c55e;margin-right:8px"></i> RADIO</span><span class="view-all">Listen Live →</span></div>
+<div class="section-title" style="border-left-color:#22c55e"><span><i class="fas fa-radio" style="color:#22c55e;margin-right:8px"></i> RADIO</span><span class="view-all">Listen Live →</span></div>
 <div class="radio-section" id="radioList"><div class="loading-text">Loading radio...</div></div>
 
-<div id="latest-news" class="section-title"><span><i class="fas fa-newspaper" style="margin-right:8px;color:#e63946"></i> Latest News From All Channels</span><span class="view-all">View All →</span></div>
+<div class="section-title"><span><i class="fas fa-newspaper" style="margin-right:8px;color:#e63946"></i> Latest News From All Channels</span><span class="view-all">View All →</span></div>
 <div id="newsContainer" class="news-list"><div class="loading-text">Loading news...</div></div>
 <button id="loadMoreBtn" class="load-more-btn hidden">Load More Videos →</button>
 
-<div id="today-uploads" class="section-title"><span><i class="fas fa-clock" style="margin-right:8px;color:#e63946"></i> Today's Uploads</span><span class="view-all">View All →</span></div>
+<div class="section-title"><span><i class="fas fa-clock" style="margin-right:8px;color:#e63946"></i> Today's Uploads</span><span class="view-all">View All →</span></div>
 <div id="uploadsContainer" class="uploads-list"><div class="loading-text">Loading...</div></div>
 </div>
 
@@ -216,19 +233,20 @@ const DATA_URL='data.json';
 const CHANNELS_URL='channels.json';
 
 
-// Menu button only
+// TVGoa menu - added only
 (function(){
  const btn=document.getElementById('tvgoaMenuBtn');
  const panel=document.getElementById('tvgoaMenuPanel');
- btn.onclick=function(e){
-   e.stopPropagation();
-   const open=panel.classList.toggle('open');
-   btn.setAttribute('aria-expanded',String(open));
- };
- panel.onclick=function(e){e.stopPropagation()};
+ if(!btn||!panel)return;
+ btn.addEventListener('click',function(e){
+  e.stopPropagation();
+  const open=panel.classList.toggle('open');
+  btn.setAttribute('aria-expanded',String(open));
+ });
+ panel.addEventListener('click',function(e){e.stopPropagation()});
  document.addEventListener('click',function(){
-   panel.classList.remove('open');
-   btn.setAttribute('aria-expanded','false');
+  panel.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
  });
 })();
 
@@ -491,12 +509,5 @@ loadData();
 setInterval(loadData,10*60*1000);
 setInterval(loadChannels,10*60*1000);
 </script>
-<noscript>
-<section style="max-width:900px;margin:20px auto;padding:16px;background:#fff;border:1px solid #e2e8f0;border-radius:16px">
-<h2>Goa News and Live TV</h2>
-<p>GOA TV provides Goa news, breaking news, live TV channels, radio and latest video updates from across Goa, including Panaji, Margao and Mapusa.</p>
-<p>Please enable JavaScript to load the latest live channels and video feed.</p>
-</section>
-</noscript>
 </body>
 </html>
