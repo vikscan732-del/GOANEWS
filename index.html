@@ -352,47 +352,144 @@ function toggleRadio(radio,btn){
   audio=document.createElement('audio');
   audio.id='radio_audio_'+radio.id;
   audio.setAttribute('playsinline','');
+  audio.preload='none';
   audio.style.display='none';
   document.body.appendChild(audio);
   radio.audio=audio;
  }
 
  if(activeRadioId===radio.id&&!audio.paused){
-  audio.pause();activeRadioId=null;return;
+  audio.pause();
+  activeRadioId=null;
+  return;
  }
 
  stopOtherRadios(radio.id);
- if(radioHlsInstances[radio.id]){try{radioHlsInstances[radio.id].destroy()}catch(e){}delete radioHlsInstances[radio.id]}
- audio.pause();audio.src='';
+
+ if(radioHlsInstances[radio.id]){
+  try{radioHlsInstances[radio.id].destroy()}catch(e){}
+  delete radioHlsInstances[radio.id];
+ }
+
+ audio.pause();
+ audio.removeAttribute('src');
+ audio.load();
 
  const setPlaying=()=>{
-   btn.innerHTML='<i class="fas fa-pause"></i>';btn.classList.add('playing');
-   item.classList.add('playing');status.textContent='● Playing';status.classList.add('playing');activeRadioId=radio.id;
- };
- const setPaused=()=>{
-   btn.innerHTML='<i class="fas fa-play"></i>';btn.classList.remove('playing');
-   item.classList.remove('playing');status.textContent='● Paused';status.classList.remove('playing');
+   btn.innerHTML='<i class="fas fa-pause"></i>';
+   btn.classList.add('playing');
+   item.classList.add('playing');
+   status.textContent='● Playing';
+   status.classList.add('playing');
+   activeRadioId=radio.id;
  };
 
- audio.onplay=setPlaying;audio.onpause=setPaused;
+ const setPaused=()=>{
+   btn.innerHTML='<i class="fas fa-play"></i>';
+   btn.classList.remove('playing');
+   item.classList.remove('playing');
+   status.textContent='● Paused';
+   status.classList.remove('playing');
+
+   if(activeRadioId===radio.id){
+    activeRadioId=null;
+   }
+ };
+
+ audio.onplay=setPlaying;
+ audio.onpause=setPaused;
+
+ audio.onerror=()=>{
+   btn.innerHTML='<i class="fas fa-play"></i>';
+   btn.classList.remove('playing');
+   item.classList.remove('playing');
+   status.textContent='⚠️ Error';
+   status.classList.remove('playing');
+
+   if(activeRadioId===radio.id){
+    activeRadioId=null;
+   }
+
+   console.error('Radio playback error:',radio.stream);
+ };
+
  audio.ontimeupdate=()=>{
   if(isFinite(audio.duration)&&audio.duration>0){
    seeker.value=(audio.currentTime/audio.duration)*100;
-   timeDisplay.textContent=Math.floor(audio.currentTime/60)+':'+String(Math.floor(audio.currentTime%60)).padStart(2,'0');
+   timeDisplay.textContent=
+    Math.floor(audio.currentTime/60)+':' +
+    String(Math.floor(audio.currentTime%60)).padStart(2,'0');
   }
  };
 
- if(Hls.isSupported()){
-  const rh=new Hls({enableWorker:true,lowLatencyMode:true,maxBufferLength:60});
-  radioHlsInstances[radio.id]=rh;
-  rh.loadSource(radio.stream);rh.attachMedia(audio);
-  rh.on(Hls.Events.MANIFEST_PARSED,()=>audio.play().catch(()=>{}));
-  rh.on(Hls.Events.ERROR,(ev,data)=>{
-   if(data.fatal){status.textContent='⚠️ Error';item.classList.remove('playing');btn.innerHTML='<i class="fas fa-play"></i>';activeRadioId=null}
-  });
+ const isHLS=/\.m3u8(?:$|[?#])/i.test(radio.stream);
+
+ /*
+  * HLS RADIO
+  */
+ if(isHLS){
+
+  if(Hls.isSupported()){
+   const rh=new Hls({
+    enableWorker:true,
+    lowLatencyMode:true,
+    maxBufferLength:60
+   });
+
+   radioHlsInstances[radio.id]=rh;
+
+   rh.loadSource(radio.stream);
+   rh.attachMedia(audio);
+
+   rh.on(Hls.Events.MANIFEST_PARSED,()=>{
+    audio.play().catch(err=>{
+     console.error('HLS play failed:',err);
+     status.textContent='⚠️ Tap Play';
+    });
+   });
+
+   rh.on(Hls.Events.ERROR,(ev,data)=>{
+    console.error('HLS error:',data);
+
+    if(data.fatal){
+     status.textContent='⚠️ Error';
+
+     try{rh.destroy()}catch(e){}
+     delete radioHlsInstances[radio.id];
+
+     if(activeRadioId===radio.id){
+      activeRadioId=null;
+     }
+
+     item.classList.remove('playing');
+     btn.classList.remove('playing');
+     btn.innerHTML='<i class="fas fa-play"></i>';
+    }
+   });
+
+  }else if(audio.canPlayType('application/vnd.apple.mpegurl')){
+   audio.src=radio.stream;
+   audio.play().catch(err=>{
+    console.error('Native HLS play failed:',err);
+    status.textContent='⚠️ Tap Play';
+   });
+
+  }else{
+   status.textContent='❌ HLS not supported';
+  }
+
+ /*
+  * MP3 / NORMAL AUDIO RADIO
+  */
  }else{
-  audio.src=radio.stream;
-  audio.play().catch(()=>{});
+
+   audio.src=radio.stream;
+   audio.load();
+
+   audio.play().catch(err=>{
+    console.error('MP3 radio play failed:',err);
+    status.textContent='⚠️ Tap Play';
+   });
  }
 }
 
