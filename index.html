@@ -3,9 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>GOA TV – Latest Goa News, Live TV & Updates</title>
-<meta name="description" content="Watch Goa news live and get the latest Goa updates in one place.">
+<title>TVGoa – Goa News, Live TV, Radio & E-Papers</title>
+<meta name="description" content="TVGoa brings the latest Goa news, live TV channels, Goa radio, e-papers and daily updates together in one place.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://tvgoa.online/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TVGoa – Goa News, Live TV, Radio & E-Papers">
+<meta property="og:description" content="Latest Goa news, live TV channels, radio, e-papers and daily updates in one place.">
+<meta property="og:url" content="https://tvgoa.online/">
+<meta property="og:image" content="https://tvgoa.online/goa-news-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TVGoa – Goa News, Live TV, Radio & E-Papers">
+<meta name="twitter:description" content="Latest Goa news, live TV channels, radio, e-papers and daily updates in one place.">
+<meta name="twitter:image" content="https://tvgoa.online/goa-news-logo.png">
 <link rel="icon" href="goa-news-logo.png" type="image/png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"TVGoa",
+  "alternateName":"GOA TV",
+  "url":"https://tvgoa.online/",
+  "description":"Latest Goa news, live TV channels, radio, e-papers and daily updates in one place."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"TVGoa",
+  "applicationCategory":"NewsApplication",
+  "operatingSystem":"Android",
+  "description":"TVGoa brings Goa news, live TV, radio and e-papers together in one Android app.",
+  "url":"https://tvgoa.online/",
+  "downloadUrl":"https://apkpure.com/tvgoa/com.tvgoa.news",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -58,6 +92,21 @@
 }
 .tvgoa-menu-item:hover{background:#f8fafc}
 .tvgoa-menu-item i{color:#e63946;width:20px;text-align:center}
+
+/* ===== TVGoa DOWNLOAD APP BUTTON ===== */
+.tvgoa-download-wrap{margin:0 0 20px}
+.tvgoa-download-btn{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:14px 16px;border-radius:18px;text-decoration:none;color:#fff;background:linear-gradient(135deg,#16c967,#0aa84f);box-shadow:0 6px 20px rgba(22,201,103,.35);overflow:hidden;transition:.2s ease;animation:tvgoaDownloadGlow 2.5s infinite ease-in-out}
+.tvgoa-download-btn:active{transform:scale(.98)}
+.tvgoa-download-left{display:flex;align-items:center;gap:12px;min-width:0}
+.tvgoa-download-icon{width:48px;height:48px;flex-shrink:0;border-radius:13px;background:#ffd91a;color:#111;display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 3px 10px rgba(0,0,0,.18)}
+.tvgoa-download-text{min-width:0}
+.tvgoa-download-title{display:block;font-size:18px;font-weight:800;line-height:1.15}
+.tvgoa-download-subtitle{display:block;margin-top:4px;font-size:12px;font-weight:600;opacity:.95}
+.tvgoa-download-arrow{width:48px;height:48px;flex-shrink:0;border-radius:50%;background:rgba(0,0,0,.20);display:flex;align-items:center;justify-content:center;font-size:25px;animation:tvgoaDownloadArrow 1.2s infinite ease-in-out}
+.tvgoa-download-shine{position:absolute;top:0;left:-100%;width:55%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:tvgoaDownloadShine 3s infinite}
+@keyframes tvgoaDownloadGlow{0%,100%{box-shadow:0 6px 20px rgba(22,201,103,.30)}50%{box-shadow:0 8px 28px rgba(22,201,103,.55)}}
+@keyframes tvgoaDownloadArrow{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@keyframes tvgoaDownloadShine{0%{left:-100%}55%,100%{left:150%}}
 </style>
 
 <style>
@@ -147,6 +196,14 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
  .newspaper-title{font-size:15px}
  .newspaper-subtitle{font-size:11px}
  .newspaper-arrow{width:36px;height:36px;font-size:20px}
+ /* Keep the menu button clear of the logo on mobile */
+ .header-logo{max-width:calc(100% - 70px)}
+ .tvgoa-menu-wrap{top:8px;right:8px}
+ .tvgoa-menu-btn{width:44px;height:44px}
+ .tvgoa-download-title{font-size:17px}
+ .tvgoa-download-subtitle{font-size:11px}
+ .tvgoa-download-icon{width:44px;height:44px;font-size:23px}
+ .tvgoa-download-arrow{width:44px;height:44px;font-size:23px}
 }
 </style>
 </head>
@@ -178,6 +235,21 @@ body{background:#f1f5f9;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
 <img src="goa-news-logo.png" alt="GOA TV" class="header-logo">
 <div class="header-right"><div id="currentDateTime"></div><div>Developed by Vikrant Naik</div></div>
 </header>
+
+<!-- TVGoa Download App -->
+<div class="tvgoa-download-wrap">
+<a href="https://apkpure.com/tvgoa/com.tvgoa.news" class="tvgoa-download-btn" target="_blank" rel="noopener" aria-label="Download TVGoa App from APKPure">
+ <div class="tvgoa-download-shine"></div>
+ <div class="tvgoa-download-left">
+  <div class="tvgoa-download-icon"><i class="fab fa-android"></i></div>
+  <div class="tvgoa-download-text">
+   <span class="tvgoa-download-title">Download TVGoa App</span>
+   <span class="tvgoa-download-subtitle">For Android Devices</span>
+  </div>
+ </div>
+ <div class="tvgoa-download-arrow" aria-hidden="true">↓</div>
+</a>
+</div>
 
 <div class="breaking-banner-container">
 <a href="https://vikygoa.github.io/goa-news/" class="breaking-news-btn">
