@@ -52,6 +52,13 @@
       "stream": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio004/hlspbaudio00464kbps.m3u8",
       "type": "radio",
       "enabled": true
-    }
+    },
+    {
+  "id": "konkani-radio",
+  "name": "Konkani Radio",
+  "stream": "https://radio.faleiro.uk/radio/8000/radio.mp3",
+  "type": "radio",
+  "enabled": true
+}
   ]
 }
