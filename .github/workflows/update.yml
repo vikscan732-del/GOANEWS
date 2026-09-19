@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,8 +44,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add newspaper-data.json
+          
+          # Prevent push conflicts if video data was pushed recently
+          git pull --rebase origin main || true
+
           git diff --cached --quiet || git commit -m "Update newspaper editions"
-          git push
+          git push origin HEAD
 
       - name: Prepare GitHub Pages files
         run: |
@@ -53,17 +59,13 @@ jobs:
           cp data.json _site/data.json
           cp newspaper-data.json _site/newspaper-data.json
 
-          if [ -f channels.json ]; then
-            cp channels.json _site/channels.json
-          fi
-
-          if [ -f goa-news-logo.png ]; then
-            cp goa-news-logo.png _site/goa-news-logo.png
-          fi
-
-          if [ -d assets ]; then
-            cp -r assets _site/assets
-          fi
+          # Copy critical SEO & Legal files so they don't 404
+          [ -f sitemap.xml ] && cp sitemap.xml _site/sitemap.xml
+          [ -f robots.txt ] && cp robots.txt _site/robots.txt
+          [ -f privacy-policy.html ] && cp privacy-policy.html _site/privacy-policy.html
+          [ -f channels.json ] && cp channels.json _site/channels.json
+          [ -f goa-news-logo.png ] && cp goa-news-logo.png _site/goa-news-logo.png
+          [ -d assets ] && cp -r assets _site/assets
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
