@@ -863,7 +863,42 @@ function playTVChannel(channel){
   hls=new Hls({enableWorker:true,lowLatencyMode:true,maxBufferLength:60});
   hls.loadSource(channel.stream);hls.attachMedia(playerVideo);
   hls.on(Hls.Events.MANIFEST_PARSED,()=>playerVideo.play().catch(()=>{}));
-  hls.on(Hls.Events.ERROR,(ev,data)=>{if(data.fatal)nowPlayingLabel.textContent='⚠️ Stream error - try another channel'});
+  hls.on(Hls.Events.ERROR, (ev, data) => {
+
+    console.error('PRUDENT HLS ERROR:', {
+        type: data.type,
+        details: data.details,
+        fatal: data.fatal,
+        url: data.url,
+        response: data.response,
+        reason: data.reason
+    });
+
+    if (data.fatal) {
+
+        nowPlayingLabel.textContent =
+            '⚠️ ' + (data.details || data.type);
+
+        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+            console.log('Network error - restarting HLS load');
+
+            try {
+                hls.startLoad();
+            } catch (e) {
+                console.error(e);
+            }
+
+        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+            console.log('Media error - recovering');
+
+            try {
+                hls.recoverMediaError();
+            } catch (e) {
+                console.error(e);
+            }
+        }
+    }
+});
  }else if(playerVideo.canPlayType('application/vnd.apple.mpegurl')){
   playerVideo.src=channel.stream;playerVideo.play().catch(()=>{});
  }else nowPlayingLabel.textContent='❌ HLS not supported';
