@@ -1,549 +1,1813 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Goa News Today – Latest Goa News & Updates | TVGoa</title>
-<meta name="description" content="Read the latest Goa news today, including politics, crime, civic updates, tourism, business, sports, weather and entertainment on TVGoa.">
-<meta name="robots" content="index,follow,max-image-preview:large">
+
+<meta
+    name="viewport"
+    content="width=device-width,
+    initial-scale=1.0"
+>
+
+<title>Goa News Today – Top 50 Goa News | TVGoa</title>
+
+<meta name="description" content="Latest Goa news today: Top 50 Goa news headlines covering politics, crime, tourism, sports, weather, business and civic updates.">
+<meta name="keywords" content="Goa news today, Goa latest news, Goa news, Goa breaking news, Goa Top 50 news, Goa news headlines, news in Goa">
 <link rel="canonical" href="https://tvgoa.online/goa-news-today.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Goa News Today – Latest Goa News & Updates | TVGoa">
-<meta property="og:description" content="Latest Goa news and daily updates from across Goa, with reports from local news channels.">
-<meta property="og:url" content="https://tvgoa.online/goa-news-today.html">
-<meta property="og:image" content="https://tvgoa.online/goa-news-logo.png">
-<link rel="icon" href="goa-news-logo.png" type="image/png">
+
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fc;color:#0f172a}a{color:inherit}.top{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:5}.nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;gap:14px}.logo{width:48px;height:48px;object-fit:contain;border-radius:12px}.brand{text-decoration:none;flex:1}.brand strong{font-size:24px;display:block}.brand span{font-size:12px;color:#64748b}.home{background:#1267e8;color:#fff;text-decoration:none;padding:10px 15px;border-radius:10px;font-weight:700}main{max-width:1100px;margin:auto;padding:24px 18px 50px}.hero{background:linear-gradient(135deg,#0b3d91,#1677ff);color:#fff;border-radius:20px;padding:28px;margin-bottom:20px}.hero h1{font-size:34px;margin:0 0 8px}.hero p{margin:0;opacity:.92;line-height:1.55}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}input,.filter{border:1px solid #d8e0ea;background:#fff;border-radius:10px;padding:11px 13px;font-size:14px}input{flex:1;min-width:220px}.filter.active{background:#1267e8;color:#fff;border-color:#1267e8}#newsList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.news-card{background:#fff;border:1px solid #e3eaf2;border-radius:16px;padding:12px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(15,23,42,.04)}.news-card img{width:135px;height:82px;object-fit:cover;border-radius:10px;background:#e8eef6;flex:none}.rank{font-weight:800;color:#1267e8;font-size:14px;width:24px;flex:none;padding-top:4px}.news-body{min-width:0}.tag{font-size:10px;font-weight:800;color:#e63946;margin-bottom:3px}h2{font-size:16px;line-height:1.3;margin:0 0 7px}.meta{font-size:11px;color:#64748b;display:flex;gap:8px;flex-wrap:wrap}.watch{display:inline-block;margin-top:7px;font-size:12px;color:#1267e8;text-decoration:none;font-weight:700}.count{color:#64748b;font-size:13px;margin:10px 0}footer{text-align:center;padding:25px;color:#64748b;font-size:12px}@media(max-width:700px){#newsList{grid-template-columns:1fr}.hero h1{font-size:27px}.news-card img{width:105px;height:70px}.brand strong{font-size:20px}}
+
+:root {
+
+    --bg: #f8fafc;
+
+    --card-bg: #ffffff;
+
+    --text: #0f172a;
+
+    --muted: #475569;
+
+    --border: #e2e8f0;
+
+    --shadow:
+        0 2px 6px rgba(0,0,0,0.04);
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+        --bg: #0b0f19;
+
+        --card-bg: #131b2e;
+
+        --text: #f8fafc;
+
+        --muted: #94a3b8;
+
+        --border: #1e293b;
+
+        --shadow:
+            0 2px 8px rgba(0,0,0,0.3);
+    }
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+
+    background-color: var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+    padding: 16px;
+
+    max-width: 680px;
+
+    margin: 0 auto;
+}
+
+
+header {
+
+    border-bottom:
+        2px solid var(--border);
+
+    padding-bottom: 12px;
+
+    margin-bottom: 16px;
+}
+
+
+h1 {
+
+    font-size: 1.7rem;
+
+    font-weight: 900;
+
+    letter-spacing: -0.5px;
+
+    color: var(--text);
+}
+
+
+.subtitle {
+
+    font-size: 0.88rem;
+
+    color: var(--muted);
+
+    font-weight: 500;
+}
+
+
+.filter-bar {
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 16px;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+}
+
+
+.filter-bar::-webkit-scrollbar {
+
+    display: none;
+}
+
+
+.pill {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    background:
+        var(--card-bg);
+
+    color:
+        var(--text);
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        7px 14px;
+
+    border-radius: 24px;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        all 0.2s ease;
+}
+
+
+.pill.active {
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-color: #2563eb;
+}
+
+
+.pill .cat-icon {
+
+    width: 14px;
+
+    height: 14px;
+}
+
+
+.card {
+
+    background:
+        var(--card-bg);
+
+    border-radius: 12px;
+
+    padding:
+        16px 18px;
+
+    margin-bottom: 14px;
+
+    border:
+        1px solid var(--border);
+
+    border-left:
+        5px solid #94a3b8;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform 0.15s ease;
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-2px);
+}
+
+
+.card.hidden {
+
+    display: none;
+}
+
+
+.card-sports {
+    border-left-color: #10b981;
+}
+
+.card-politics {
+    border-left-color: #ef4444;
+}
+
+.card-tourism {
+    border-left-color: #0ea5e9;
+}
+
+.card-weather {
+    border-left-color: #f59e0b;
+}
+
+.card-crime {
+    border-left-color: #8b5cf6;
+}
+
+.card-entertainment {
+    border-left-color: #ec4899;
+}
+
+.card-business {
+    border-left-color: #f97316;
+}
+
+.card-civic {
+    border-left-color: #64748b;
+}
+
+
+.card-header {
+
+    margin-bottom: 8px;
+}
+
+
+.tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    padding:
+        4px 9px;
+
+    border-radius: 6px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.5px;
+}
+
+
+.tag .cat-icon {
+
+    width: 12px;
+
+    height: 12px;
+}
+
+
+.tag-sports {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.tag-politics {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.tag-tourism {
+    background: #e0f2fe;
+    color: #075985;
+}
+
+.tag-weather {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.tag-crime {
+    background: #f3e8ff;
+    color: #5b21b6;
+}
+
+.tag-entertainment {
+    background: #fce7f3;
+    color: #9d174d;
+}
+
+.tag-business {
+    background: #ffedd5;
+    color: #9a3412;
+}
+
+.tag-civic {
+    background: #f1f5f9;
+    color: #334155;
+}
+
+
+.headline {
+
+    font-size: 1.12rem;
+
+    font-weight: 800;
+
+    line-height: 1.4;
+
+    margin-bottom: 8px;
+
+    color:
+        var(--text);
+}
+
+
+.summary {
+
+    font-size: 0.94rem;
+
+    color:
+        var(--muted);
+
+    line-height: 1.55;
+}
+
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CollectionPage","name":"Goa News Today","url":"https://tvgoa.online/goa-news-today.html","description":"Latest Goa news and daily updates from TVGoa.","isPartOf":{"@type":"WebSite","name":"TVGoa","url":"https://tvgoa.online/"}}
-</script>
+
 </head>
+
+
 <body>
-<header class="top"><nav class="nav"><a href="index.html"><img class="logo" src="goa-news-logo.png" alt="TVGoa"></a><a class="brand" href="index.html"><strong>TVGoa</strong><span>Goa News • Live TV • Radio • E-Papers</span></a><a class="home" href="index.html">Home</a></nav></header>
-<main>
-<section class="hero"><h1>Goa News Today</h1><p>Latest Goa news and daily updates covering politics, crime, civic issues, tourism, business, sports, weather and entertainment.</p></section>
-<div class="tools"><input id="search" type="search" placeholder="Search Goa news..." aria-label="Search Goa news"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="politics">Politics</button><button class="filter" data-filter="crime">Crime</button><button class="filter" data-filter="civic">Civic</button><button class="filter" data-filter="tourism">Tourism</button><button class="filter" data-filter="sports">Sports</button><button class="filter" data-filter="business">Business</button><button class="filter" data-filter="weather">Weather</button></div>
-<div class="count" id="count">Showing latest 50 Goa news reports</div>
-<section id="newsList" aria-label="Latest Goa news">
-<noscript><article class="news-card" data-category="all" data-title="goa 360° @12 pm | editor | prudent | 290926">
-      <div class="rank">01</div>
-      <img src="https://i.ytimg.com/vi/YyyMDdXpCYU/mqdefault.jpg" alt="Goa 360° @12 pm | Editor | Prudent | 290926" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goa 360° @12 pm | Editor | Prudent | 290926</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 07:02 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=YyyMDdXpCYU" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="delilah lobo inaugurates renovated badem crematorium at alto badem">
-      <div class="rank">02</div>
-      <img src="https://i.ytimg.com/vi/TQkdrfp5tIs/mqdefault.jpg" alt="Delilah Lobo Inaugurates Renovated Badem Crematorium at Alto Badem" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Delilah Lobo Inaugurates Renovated Badem Crematorium at Alto Badem</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 06:48 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=TQkdrfp5tIs" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="narcotic raid has conducted at ex councillor of mapusa  franky carvalho&#x27;s residence">
-      <div class="rank">03</div>
-      <img src="https://i.ytimg.com/vi/cF-ZckvllBk/mqdefault.jpg" alt="Narcotic raid has conducted at Ex Councillor of Mapusa  Franky Carvalho&#x27;s residence" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Narcotic raid has conducted at Ex Councillor of Mapusa  Franky Carvalho&#x27;s residence</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 04:56 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=cF-ZckvllBk" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="fugdi | where tradition dances to the rhythm of goa | 29/09/2026 | gnh">
-      <div class="rank">04</div>
-      <img src="https://i.ytimg.com/vi/r0Hr3GN0NxY/mqdefault.jpg" alt="FUGDI | WHERE TRADITION DANCES TO THE RHYTHM OF GOA | 29/09/2026 | GNH" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>FUGDI | WHERE TRADITION DANCES TO THE RHYTHM OF GOA | 29/09/2026 | GNH</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 04:30 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=r0Hr3GN0NxY" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="warren alemao seeks fair investigation into cavelossim trespass, theft case">
-      <div class="rank">05</div>
-      <img src="https://i.ytimg.com/vi/WJ-oBR097Uw/mqdefault.jpg" alt="Warren Alemao Seeks Fair Investigation into Cavelossim Trespass, Theft Case" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Warren Alemao Seeks Fair Investigation into Cavelossim Trespass, Theft Case</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 04:10 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=WJ-oBR097Uw" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="complains over blo conduct, questions re-inclusion of cleared voters">
-      <div class="rank">06</div>
-      <img src="https://i.ytimg.com/vi/etmgmK3pQtg/mqdefault.jpg" alt="Complains Over BLO Conduct, Questions Re-Inclusion of Cleared Voters" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Complains Over BLO Conduct, Questions Re-Inclusion of Cleared Voters</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 04:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=etmgmK3pQtg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa congress party coming soon? | evening bulletin | 29/09/2026 | gnh">
-      <div class="rank">07</div>
-      <img src="https://i.ytimg.com/vi/U3t7-iLDfeY/mqdefault.jpg" alt="GOA CONGRESS PARTY COMING SOON? | EVENING BULLETIN | 29/09/2026 | GNH" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>GOA CONGRESS PARTY COMING SOON? | EVENING BULLETIN | 29/09/2026 | GNH</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 04:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=U3t7-iLDfeY" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="dabolim flyover section to open by december 15, futsal ground and park planned">
-      <div class="rank">08</div>
-      <img src="https://i.ytimg.com/vi/-Q-tQea43hc/mqdefault.jpg" alt="Dabolim Flyover Section to Open by December 15, Futsal Ground and Park Planned" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Dabolim Flyover Section to Open by December 15, Futsal Ground and Park Planned</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:50 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=-Q-tQea43hc" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="gomantak today bulletin | 29-09-2026 | goa news | goa latest updates | gomantak tv">
-      <div class="rank">09</div>
-      <img src="https://i.ytimg.com/vi/svDtYbMYh3s/mqdefault.jpg" alt="GOMANTAK TODAY BULLETIN | 29-09-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>GOMANTAK TODAY BULLETIN | 29-09-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:45 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=svDtYbMYh3s" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="nazir khan complains against rude blos, questions non-restoration of sir-deleted names">
-      <div class="rank">10</div>
-      <img src="https://i.ytimg.com/vi/9tgsOLce6OE/mqdefault.jpg" alt="Nazir Khan Complains Against Rude BLOs, Questions Non-Restoration of SIR-Deleted Names" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Nazir Khan Complains Against Rude BLOs, Questions Non-Restoration of SIR-Deleted Names</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:42 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=9tgsOLce6OE" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="“i&#x27;m sorry” — can a police complaint end with an apology?">
-      <div class="rank">11</div>
-      <img src="https://i.ytimg.com/vi/4tNStb-qRTs/mqdefault.jpg" alt="“I&#x27;m Sorry” — Can a Police Complaint End With an Apology?" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>“I&#x27;m Sorry” — Can a Police Complaint End With an Apology?</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:30 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=4tNStb-qRTs" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="top25 bulletin | 29-09-2026 | goa news | goa latest updates | gomantak tv">
-      <div class="rank">12</div>
-      <img src="https://i.ytimg.com/vi/qrlZP-iA4Ro/mqdefault.jpg" alt="TOP25 BULLETIN | 29-09-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>TOP25 BULLETIN | 29-09-2026 | GOA NEWS | GOA LATEST UPDATES | GOMANTAK TV</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:30 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=qrlZP-iA4Ro" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="davorlim military training area inspected over illegal sewage and garbage dumping">
-      <div class="rank">13</div>
-      <img src="https://i.ytimg.com/vi/m0wTfW3LesI/mqdefault.jpg" alt="Davorlim Military Training Area Inspected Over Illegal Sewage and Garbage Dumping" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Davorlim Military Training Area Inspected Over Illegal Sewage and Garbage Dumping</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:27 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=m0wTfW3LesI" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="chicalim sarpanch kamlaprasad yadav inaugurates vasco legal aid clinic helpdesk at chicalim">
-      <div class="rank">14</div>
-      <img src="https://i.ytimg.com/vi/13Vrl0jBgTk/mqdefault.jpg" alt="Chicalim Sarpanch Kamlaprasad Yadav Inaugurates Vasco Legal Aid Clinic Helpdesk At Chicalim" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Chicalim Sarpanch Kamlaprasad Yadav Inaugurates Vasco Legal Aid Clinic Helpdesk At Chicalim</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:19 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=13Vrl0jBgTk" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="griha aadhar amount hike to be announced during diwali; cm | gomantak tv">
-      <div class="rank">15</div>
-      <img src="https://i.ytimg.com/vi/qnTOflA0AvI/mqdefault.jpg" alt="Griha Aadhar Amount Hike To Be Announced During Diwali; Cm | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Griha Aadhar Amount Hike To Be Announced During Diwali; Cm | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:11 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=qnTOflA0AvI" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="18 year old booked for sexual assault on minor in baina | gomantak tv">
-      <div class="rank">16</div>
-      <img src="https://i.ytimg.com/vi/GOrc95_CYjk/mqdefault.jpg" alt="18 year old Booked For Sexual Assault On Minor In Baina | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>18 year old Booked For Sexual Assault On Minor In Baina | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:09 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=GOrc95_CYjk" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="multiple theft attempts reported at junta house offices">
-      <div class="rank">17</div>
-      <img src="https://i.ytimg.com/vi/FeHwQ9lg2Vo/mqdefault.jpg" alt="Multiple Theft Attempts Reported At Junta House Offices" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Multiple Theft Attempts Reported At Junta House Offices</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:09 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=FeHwQ9lg2Vo" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="headlines at 08:00 pm">
-      <div class="rank">18</div>
-      <img src="https://i.ytimg.com/vi/O3-YUITSotM/mqdefault.jpg" alt="Headlines at 08:00 pm" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Headlines at 08:00 pm</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:05 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=O3-YUITSotM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="phytoplankton world: an immersive, glow-in-the-dark art installation | prudent | 290926">
-      <div class="rank">19</div>
-      <img src="https://i.ytimg.com/vi/uzTHFLwJzZU/mqdefault.jpg" alt="Phytoplankton World: An immersive, glow-in-the-dark art installation | Prudent | 290926" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Phytoplankton World: An immersive, glow-in-the-dark art installation | Prudent | 290926</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=uzTHFLwJzZU" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="pednecha raja: where art meets devotion | the story behind goa’s unique sarvajanik ganesh">
-      <div class="rank">20</div>
-      <img src="https://i.ytimg.com/vi/Pr1V0ahpW7o/mqdefault.jpg" alt="Pednecha Raja: Where Art Meets Devotion | The Story Behind Goa’s Unique Sarvajanik Ganesh" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Pednecha Raja: Where Art Meets Devotion | The Story Behind Goa’s Unique Sarvajanik Ganesh</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 03:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=Pr1V0ahpW7o" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="narayan zantye college students spread message of addiction-free society">
-      <div class="rank">21</div>
-      <img src="https://i.ytimg.com/vi/XfbDJzdeTkE/mqdefault.jpg" alt="Narayan Zantye College Students Spread Message of Addiction-Free Society" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Narayan Zantye College Students Spread Message of Addiction-Free Society</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:59 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=XfbDJzdeTkE" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="nazir khan complains over blo conduct, questions sir names not restored | gomantak tv">
-      <div class="rank">22</div>
-      <img src="https://i.ytimg.com/vi/ni2kph83-Gg/mqdefault.jpg" alt="Nazir Khan Complains Over BLO Conduct, Questions SIR Names Not Restored | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Nazir Khan Complains Over BLO Conduct, Questions SIR Names Not Restored | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:57 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=ni2kph83-Gg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="navelim sporting club reach curtorim panchayat cup semi finals after 4-2 win | gomantak tv">
-      <div class="rank">23</div>
-      <img src="https://i.ytimg.com/vi/SRQIiLr40kM/mqdefault.jpg" alt="Navelim Sporting Club Reach Curtorim Panchayat Cup Semi Finals After 4-2 Win | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Navelim Sporting Club Reach Curtorim Panchayat Cup Semi Finals After 4-2 Win | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:52 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=SRQIiLr40kM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa state cultural awards 2025-26 presented at lok bhavan">
-      <div class="rank">24</div>
-      <img src="https://i.ytimg.com/vi/2zqx57yiZHY/mqdefault.jpg" alt="Goa State Cultural Awards 2025-26 Presented At Lok Bhavan" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goa State Cultural Awards 2025-26 Presented At Lok Bhavan</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:49 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=2zqx57yiZHY" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="rahul faldessai apologises at curchorem police station over road-rage complaint">
-      <div class="rank">25</div>
-      <img src="https://i.ytimg.com/vi/CkN1UhkvOvQ/mqdefault.jpg" alt="Rahul Faldessai Apologises at Curchorem Police Station Over Road-Rage Complaint" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Rahul Faldessai Apologises at Curchorem Police Station Over Road-Rage Complaint</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:38 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=CkN1UhkvOvQ" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="anjuna tourism stakeholders raise crz, livelihood &amp; taxi issues before congress leaders">
-      <div class="rank">26</div>
-      <img src="https://i.ytimg.com/vi/fVVh7NB1QzQ/mqdefault.jpg" alt="Anjuna Tourism Stakeholders Raise CRZ, Livelihood &amp; Taxi Issues Before Congress Leaders" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Anjuna Tourism Stakeholders Raise CRZ, Livelihood &amp; Taxi Issues Before Congress Leaders</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:33 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=fVVh7NB1QzQ" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="hc directs eci to decide on &#x27;goa congress party&#x27; registration by nov 30 | gomantak tv">
-      <div class="rank">27</div>
-      <img src="https://i.ytimg.com/vi/89TTRS5T4qM/mqdefault.jpg" alt="Hc Directs Eci To Decide On &#x27;goa Congress Party&#x27; Registration By Nov 30 | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Hc Directs Eci To Decide On &#x27;goa Congress Party&#x27; Registration By Nov 30 | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:31 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=89TTRS5T4qM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa365 konkani khobro || 29th sept 2026">
-      <div class="rank">28</div>
-      <img src="https://i.ytimg.com/vi/2NDVatq90FQ/mqdefault.jpg" alt="GOA365 KONKANI KHOBRO || 29TH SEPT 2026" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>GOA365 KONKANI KHOBRO || 29TH SEPT 2026</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:30 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=2NDVatq90FQ" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="jack sukhija seeks stay on santa monica jetty tender | gomantak tv">
-      <div class="rank">29</div>
-      <img src="https://i.ytimg.com/vi/dGXKjVbb3wI/mqdefault.jpg" alt="Jack Sukhija Seeks Stay On Santa Monica Jetty Tender | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Jack Sukhija Seeks Stay On Santa Monica Jetty Tender | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:29 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=dGXKjVbb3wI" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="minister mauvin inspects dabolim flyover works | gomantak tv">
-      <div class="rank">30</div>
-      <img src="https://i.ytimg.com/vi/DpPaXaX0ZAg/mqdefault.jpg" alt="Minister Mauvin Inspects Dabolim Flyover Works | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Minister Mauvin Inspects Dabolim Flyover Works | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:27 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=DpPaXaX0ZAg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa to assess foundational learning of class i &amp; ii students | gomantak tv">
-      <div class="rank">31</div>
-      <img src="https://i.ytimg.com/vi/ezTeo5E5Nh0/mqdefault.jpg" alt="Goa To Assess Foundational Learning Of Class I &amp; II Students | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goa To Assess Foundational Learning Of Class I &amp; II Students | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:25 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=ezTeo5E5Nh0" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="cm pramod sawant honors goan artists with prestigious state cultural awards">
-      <div class="rank">32</div>
-      <img src="https://i.ytimg.com/vi/MDWvMRjbOJg/mqdefault.jpg" alt="CM Pramod Sawant Honors Goan Artists with Prestigious State Cultural Awards" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>CM Pramod Sawant Honors Goan Artists with Prestigious State Cultural Awards</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:25 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=MDWvMRjbOJg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="200 heart attacks a month put goa on cardiac alert | gomantak tv">
-      <div class="rank">33</div>
-      <img src="https://i.ytimg.com/vi/hqOgVSIvTZc/mqdefault.jpg" alt="200 Heart Attacks A Month Put Goa On Cardiac Alert | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>200 Heart Attacks A Month Put Goa On Cardiac Alert | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:24 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=hqOgVSIvTZc" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa sees steady growth in kokum cultivation and production | gomantak tv">
-      <div class="rank">34</div>
-      <img src="https://i.ytimg.com/vi/xBiitK8t34M/mqdefault.jpg" alt="Goa Sees Steady Growth In Kokum Cultivation And Production | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goa Sees Steady Growth In Kokum Cultivation And Production | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:20 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=xBiitK8t34M" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="cm sawant on librarians, tiatr &amp; state awards | gomantak tv">
-      <div class="rank">35</div>
-      <img src="https://i.ytimg.com/vi/DQ9y4rOSsXg/mqdefault.jpg" alt="Cm Sawant On Librarians, Tiatr &amp; State Awards | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Cm Sawant On Librarians, Tiatr &amp; State Awards | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:18 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=DQ9y4rOSsXg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="बोणबाग-बेतोडेचो निवासी प्रकल्प, थळावे आक्रमक">
-      <div class="rank">36</div>
-      <img src="https://i.ytimg.com/vi/u2FB3O3DpMc/mqdefault.jpg" alt="बोणबाग-बेतोडेचो निवासी प्रकल्प, थळावे आक्रमक" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>बोणबाग-बेतोडेचो निवासी प्रकल्प, थळावे आक्रमक</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:15 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=u2FB3O3DpMc" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="gfa suspends 14 in match fixing case | gomantak tv">
-      <div class="rank">37</div>
-      <img src="https://i.ytimg.com/vi/PiF-vUcGcMM/mqdefault.jpg" alt="Gfa Suspends 14 In Match fixing Case | Gomantak Tv" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Gfa Suspends 14 In Match fixing Case | Gomantak Tv</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:15 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=PiF-vUcGcMM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa 360° prime time | editor | prudent | 290926">
-      <div class="rank">38</div>
-      <img src="https://i.ytimg.com/vi/RdA9BQPtXtg/mqdefault.jpg" alt="Goa 360° Prime Time | Editor | Prudent | 290926" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goa 360° Prime Time | Editor | Prudent | 290926</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:02 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=RdA9BQPtXtg" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="talk from the heart || the brain matters understanding neurological health with dr. nirmal surya">
-      <div class="rank">39</div>
-      <img src="https://i.ytimg.com/vi/yNtXD6L34tY/mqdefault.jpg" alt="Talk from the Heart || The brain matters Understanding neurological health with Dr. Nirmal Surya" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Talk from the Heart || The brain matters Understanding neurological health with Dr. Nirmal Surya</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:02 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=yNtXD6L34tY" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="konkani prime news 290926">
-      <div class="rank">40</div>
-      <img src="https://i.ytimg.com/vi/cNavEFjKjVk/mqdefault.jpg" alt="Konkani Prime News 290926" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Konkani Prime News 290926</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:02 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=cNavEFjKjVk" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="the bamboo story | jungle book | epi 17 | prudent | 290926">
-      <div class="rank">41</div>
-      <img src="https://i.ytimg.com/vi/9joFXdsFvSM/mqdefault.jpg" alt="The Bamboo Story | Jungle Book | Epi 17 | Prudent | 290926" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>The Bamboo Story | Jungle Book | Epi 17 | Prudent | 290926</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=9joFXdsFvSM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="#justcasual with churchill alemao | “i don’t want to talk about other alemaos”">
-      <div class="rank">42</div>
-      <img src="https://i.ytimg.com/vi/tyYSmywuRf0/mqdefault.jpg" alt="#JustCasual With Churchill Alemao | “I Don’t Want to Talk About Other Alemaos”" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>#JustCasual With Churchill Alemao | “I Don’t Want to Talk About Other Alemaos”</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=tyYSmywuRf0" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goa365 new now || 29th sept 2026">
-      <div class="rank">43</div>
-      <img src="https://i.ytimg.com/vi/LVlMVna88T0/mqdefault.jpg" alt="GOA365 NEW NOW || 29TH SEPT 2026" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>GOA365 NEW NOW || 29TH SEPT 2026</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 02:00 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=LVlMVna88T0" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="aap&#x27;s sunil signapurkar questions mysterious ramp opposite porvorim accident site">
-      <div class="rank">44</div>
-      <img src="https://i.ytimg.com/vi/Fw5t80UR7sk/mqdefault.jpg" alt="AAP&#x27;s Sunil Signapurkar questions mysterious ramp opposite Porvorim accident site" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>AAP&#x27;s Sunil Signapurkar questions mysterious ramp opposite Porvorim accident site</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:47 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=Fw5t80UR7sk" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="goan students to represent india at first global challenge 2026 in south korea">
-      <div class="rank">45</div>
-      <img src="https://i.ytimg.com/vi/ltcVt95nI5o/mqdefault.jpg" alt="Goan Students To Represent India At First Global Challenge 2026 In South Korea" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Goan Students To Represent India At First Global Challenge 2026 In South Korea</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:46 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=ltcVt95nI5o" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="sir roll exclusion: ceo tells high court st cruz family to apply through form 6">
-      <div class="rank">46</div>
-      <img src="https://i.ytimg.com/vi/Dg8Sr37xq8M/mqdefault.jpg" alt="SIR Roll Exclusion: CEO Tells High Court St Cruz Family To Apply Through Form 6" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>SIR Roll Exclusion: CEO Tells High Court St Cruz Family To Apply Through Form 6</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:44 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=Dg8Sr37xq8M" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="warren alemao meets sp south goa, seeks fair probe into cavelossim case">
-      <div class="rank">47</div>
-      <img src="https://i.ytimg.com/vi/f2vy5z15jWM/mqdefault.jpg" alt="Warren Alemao Meets SP South Goa, Seeks Fair Probe into Cavelossim Case" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>Warren Alemao Meets SP South Goa, Seeks Fair Probe into Cavelossim Case</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:35 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=f2vy5z15jWM" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="from ‘notebandi’ to ‘votebandi’, congress takes aim at modi || goa365 tv">
-      <div class="rank">48</div>
-      <img src="https://i.ytimg.com/vi/J4rv3HefjsI/mqdefault.jpg" alt="From ‘Notebandi’ to ‘Votebandi’, Congress Takes Aim at Modi || GOA365 TV" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>From ‘Notebandi’ to ‘Votebandi’, Congress Takes Aim at Modi || GOA365 TV</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:35 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=J4rv3HefjsI" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="₹5 membership drive launched by revolutionary goans party">
-      <div class="rank">49</div>
-      <img src="https://i.ytimg.com/vi/0PqeL_HnhZ0/mqdefault.jpg" alt="₹5 Membership Drive Launched By Revolutionary Goans Party" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>₹5 Membership Drive Launched By Revolutionary Goans Party</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:33 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=0PqeL_HnhZ0" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article>
-<article class="news-card" data-category="all" data-title="cm’s apprenticeship programme trains over 21,000 youth">
-      <div class="rank">50</div>
-      <img src="https://i.ytimg.com/vi/srbN3q9_4EU/mqdefault.jpg" alt="CM’S APPRENTICESHIP PROGRAMME TRAINS OVER 21,000 YOUTH" loading="lazy" onerror="this.style.display='none'">
-      <div class="news-body">
-        <div class="tag">GOA NEWS</div>
-        <h2>CM’S APPRENTICESHIP PROGRAMME TRAINS OVER 21,000 YOUTH</h2>
-        <div class="meta"><span>Goa News 24</span><span>29 Sep 2026, 01:30 PM UTC</span></div>
-        <a class="watch" href="https://www.youtube.com/watch?v=srbN3q9_4EU" target="_blank" rel="noopener">Watch report →</a>
-      </div>
-    </article></noscript>
-</section>
+
+
+<header>
+
+<h1>Goa News Today – Top 50</h1>
+
+<p class="subtitle">
+Latest Goa News Headlines · Updated Daily
+</p>
+
+</header>
+
+
+<div class="filter-bar">
+
+<button class="pill active" onclick="filterNews('All')"><span>All</span></button><button class="pill " onclick="filterNews('Sports')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>Sports</span></button><button class="pill " onclick="filterNews('Politics')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg><span>Politics</span></button><button class="pill " onclick="filterNews('Tourism')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg><span>Tourism</span></button><button class="pill " onclick="filterNews('Weather')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79 a4.5 4.5 0 1 1 0 9Z"/></svg><span>Weather</span></button><button class="pill " onclick="filterNews('Crime')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg><span>Crime</span></button><button class="pill " onclick="filterNews('Civic')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg><span>Civic</span></button><button class="pill " onclick="filterNews('Entertainment')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6 3 20 12 6 21 6 3"/></svg><span>Entertainment</span></button><button class="pill " onclick="filterNews('Business')"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg><span>Business</span></button>
+
+</div>
+
+
+<main id="news-container">
+
+
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Bombay HC Slams EC Over Software
+            </h2>
+
+            <p class="summary">
+                The Bombay High Court criticized the Election Commission after software glitches deleted six members of a Santa Cruz family from voter rolls.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Voters Reapply After Deletion
+            </h2>
+
+            <p class="summary">
+                A total of 81 voters whose names were deleted from electoral rolls have submitted reapplication forms for inclusion.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                CM Hits Out at Congress
+            </h2>
+
+            <p class="summary">
+                Chief Minister Pramod Sawant accused the Congress party of spreading misinformation regarding voter roll deletions in Goa.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Probe Ordered in Road Rage Incident
+            </h2>
+
+            <p class="summary">
+                CM Pramod Sawant has ordered an investigation after a senior citizen accused a BJP MLA's son of road rage and intimidation.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Complaint Withdrawn After Apology
+            </h2>
+
+            <p class="summary">
+                The road rage case in Curchorem was resolved after the MLA's son issued an apology and the complainant withdrew the police complaint.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Road Rage Case Sparks Outrage
+            </h2>
+
+            <p class="summary">
+                Public fury erupted across Goa following allegations of road rage and threats involving a local legislator's son.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Goa Congress Holds Walkathon
+            </h2>
+
+            <p class="summary">
+                The Goa Congress embarked on a pre-poll walkathon to connect with voters and assess public sentiment ahead of upcoming elections.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                HC Sets Deadline for Party Registration
+            </h2>
+
+            <p class="summary">
+                The High Court directed the Election Commission to make a final decision regarding the registration of the Goa Congress party by November 30.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Voters Urge Opposition Unity
+            </h2>
+
+            <p class="summary">
+                Citizens participating in the Congress march in Goa delivered a clear message urging political parties to set aside egos and unite against the BJP.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Kind Encounter in Goa Goes Viral
+            </h2>
+
+            <p class="summary">
+                A woman visiting Goa met a stranger who had lost his job and business, stepping in to offer assistance in a heartwarming viral moment.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Stranger Shares Loss with Tourist
+            </h2>
+
+            <p class="summary">
+                A man from Maharashtra shared his tragic business losses with a visitor in Goa, prompting an emotional and supportive response.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Goa Trip Becomes Life-Changer
+            </h2>
+
+            <p class="summary">
+                A Bengaluru woman's vacation to Goa turned into a ray of hope for a destitute stranger who had lost everything.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-sports"
+            data-category="Sports"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-sports">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+
+                    Sports
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Footballers Banned for Match-Fixing
+            </h2>
+
+            <p class="summary">
+                Fourteen individuals, including a police constable, have been slapped with bans for involvement in match-fixing within Goan football.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-entertainment"
+            data-category="Entertainment"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-entertainment">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+
+                    Entertainment
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                R Lounge Opens in Goa
+            </h2>
+
+            <p class="summary">
+                A new venue named R Lounge has launched in Goa, introducing a unique cocktail laboratory concept to the local nightlife scene.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-business"
+            data-category="Business"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-business">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+
+                    Business
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Ex-TV Host Finds Success in Art
+            </h2>
+
+            <p class="summary">
+                Rob, formerly of the TV show MAD, relocated to Goa and is now earning more than ever through his artistic endeavors.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                National CVD Summit 2026 Concludes
+            </h2>
+
+            <p class="summary">
+                The National CVD Summit wrapped up in Goa with a strong call to align medical policies and implementation for scalable cardiac care.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-weather"
+            data-category="Weather"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-weather">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79 a4.5 4.5 0 1 1 0 9Z"/></svg>
+
+                    Weather
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                IMD Issues 7-Day Weather Forecast
+            </h2>
+
+            <p class="summary">
+                The Meteorological Department has released its weekly weather outlook for Goa covering late September through early October.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Lawyer Alleges Threats by MLA's Son
+            </h2>
+
+            <p class="summary">
+                A lawyer filed a formal complaint claiming that a Goa BJP MLA's son verbally abused and threatened him and his family.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Social Worker Moved by Jobless Man
+            </h2>
+
+            <p class="summary">
+                A Bengaluru social worker visiting Goa encountered a man who lost his livelihood, leaving both in tears after a compassionate gesture.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-business"
+            data-category="Business"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-business">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+
+                    Business
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Festive Travel Booms Despite Airfares
+            </h2>
+
+            <p class="summary">
+                Travel demand for Durga Puja and Diwali has surged toward Goa despite a 25 percent spike in flight ticket prices.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Panel Demands Better Mental Health Facilities
+            </h2>
+
+            <p class="summary">
+                A rights panel has recommended the deployment of psychiatric ambulances and halfway homes for Goa's Institute of Psychiatry and Human Behavior.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Sneha Ullal Shares Goa Experience
+            </h2>
+
+            <p class="summary">
+                Actor Sneha Ullal opened up about her time exploring Agonda beach, stating she hopes to discover more of the area during her next visit.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Ancient Brick Structure Draws Interest
+            </h2>
+
+            <p class="summary">
+                Archaeologists have turned their attention to an old brick structure in Akhada to uncover more about the island's historical past.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Panaji MLA Opposes Terminal Privatisation
+            </h2>
+
+            <p class="summary">
+                The local MLA has raised strong objections against the proposed privatisation of the Captain of Ports terminal facility.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-general"
+            data-category="General"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-general">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+
+                    General
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                School Welcomes New Batch
+            </h2>
+
+            <p class="summary">
+                An educational institution in Goa has officially welcomed its newest incoming student batch with special introductory events.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Porvorim Core Samples for Research
+            </h2>
+
+            <p class="summary">
+                The Public Works Department handed over 30 core material samples from a Porvorim project to aid in climate research.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-business"
+            data-category="Business"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-business">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+
+                    Business
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Long Weekend Airfares Outpace Peak Rates
+            </h2>
+
+            <p class="summary">
+                Flight ticket prices to Goa for the upcoming October long weekend have climbed higher than rates typically seen during late December.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Six Arrested for Cable Thefts
+            </h2>
+
+            <p class="summary">
+                Police have apprehended six suspects in connection with a series of BSNL telecommunication cable thefts in the region.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                PWD to Audit Pedestrian Movement
+            </h2>
+
+            <p class="summary">
+                Following unadopted road safety audit recommendations, the PWD has announced plans to conduct a dedicated pedestrian movement audit.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Stray Dogs on Beaches to Be Sheltered
+            </h2>
+
+            <p class="summary">
+                Chief Minister Pramod Sawant announced that stray dogs roaming Goa's beaches will be safely captured and rehabilitated.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Call for No-Shack Zones Near Beach Entrances
+            </h2>
+
+            <p class="summary">
+                The Calangute sarpanch has officially requested authorities to designate specific beach entry points as no-shack zones.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Elevated Corridors Planned for Black Spots
+            </h2>
+
+            <p class="summary">
+                Authorities have planned two new elevated corridors to address accident-prone black spots in Pernem and Navelim.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-general"
+            data-category="General"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-general">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+
+                    General
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                HC to Hear Section 39A Case
+            </h2>
+
+            <p class="summary">
+                The High Court is scheduled to commence final hearings on the contentious Section 39A legal matter starting Monday.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Congress and RG Discuss Seat-Sharing
+            </h2>
+
+            <p class="summary">
+                The Congress party and Revolutionary Goans have initiated formal discussions concerning a joint manifesto and electoral seat-sharing.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-tourism"
+            data-category="Tourism"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-tourism">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41M2 12h2M20 12h2 M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+
+                    Tourism
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Shivaji Digital Museum Slated for November
+            </h2>
+
+            <p class="summary">
+                The state tourism department is pushing to complete and open the new Chhatrapati Shivaji digital museum by November.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Demolition Stalled Due to Fund Crunch
+            </h2>
+
+            <p class="summary">
+                Plans to demolish a dilapidated building in Honda have been delayed indefinitely due to a severe shortage of funds.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                New STP Planned to Clean River Sal
+            </h2>
+
+            <p class="summary">
+                The Water Resources Department has proposed a new sewage treatment plant to curb untreated waste flow into the Sal river.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Councillor Demands Tender Cancellation
+            </h2>
+
+            <p class="summary">
+                A Corporation of the City of Panaji councillor has called for the immediate cancellation of a Captain of Ports jetty tender.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Man Arrested for Rape and Conversion Attempt
+            </h2>
+
+            <p class="summary">
+                Police have arrested a man accused of raping a minor and subsequently pressuring her to convert her religion.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-general"
+            data-category="General"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-general">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+
+                    General
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Goa Reports Zero Rabies Cases
+            </h2>
+
+            <p class="summary">
+                Goa has successfully maintained a record of zero animal rabies cases amidst reports of multiple outbreaks in neighboring states.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-crime"
+            data-category="Crime"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-crime">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7 c0 6 8 10 8 10z"/></svg>
+
+                    Crime
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Mormugao Police Arrest Rape Accused
+            </h2>
+
+            <p class="summary">
+                Local police in Mormugao have taken a suspect into custody following allegations of the rape of a 10-year-old girl.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Congress Alleges Massive Voter Discrepancies
+            </h2>
+
+            <p class="summary">
+                The Congress party has claimed that over 1.28 lakh voters were unlawfully left out of electoral lists through systematic deletions.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-business"
+            data-category="Business"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-business">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+
+                    Business
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Travel Gear Tested on Goa Trip
+            </h2>
+
+            <p class="summary">
+                A travel publication reviewed a new suitcase model by taking it on a trip to Goa to evaluate its durability and features.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-sports"
+            data-category="Sports"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-sports">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+
+                    Sports
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Goa Secures 28 Medals in Athletics
+            </h2>
+
+            <p class="summary">
+                Goa's junior athletes put up a strong performance, accumulating a total of 28 medals at the West Zone junior athletics meet.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Foundational Learning Assessment for Students
+            </h2>
+
+            <p class="summary">
+                The state government is set to evaluate the basic foundational learning levels of students enrolled in classes one and two.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Dabolim Flyover Section Opening Date Set
+            </h2>
+
+            <p class="summary">
+                A crucial section of the Dabolim flyover project has been assigned a strict opening deadline of December 15.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-weather"
+            data-category="Weather"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-weather">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79 a4.5 4.5 0 1 1 0 9Z"/></svg>
+
+                    Weather
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Crop Assessment Ordered Amid Dry Spell
+            </h2>
+
+            <p class="summary">
+                A prolonged dry spell has forced the state administration to officially order a comprehensive assessment of affected crops.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-politics"
+            data-category="Politics"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-politics">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M2 10h20M12 2l8 6H4z M6 10v9M10 10v9M14 10v9M18 10v9"/></svg>
+
+                    Politics
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                RGP Launches Membership and Financial Drive
+            </h2>
+
+            <p class="summary">
+                The Revolutionary Goans Party has initiated a statewide membership campaign while publicly disclosing its financial records.
+            </p>
+
+        </article>
+    
+        <article
+            class="card card-civic"
+            data-category="Civic"
+        >
+
+            <div class="card-header">
+
+                <span class="tag tag-civic">
+
+                    <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01 M12 10h.01M12 14h.01M16 10h.01M16 14h.01 M8 10h.01M8 14h.01"/></svg>
+
+                    Civic
+
+                </span>
+
+            </div>
+
+            <h2 class="headline">
+                Gram Sabha Seeks Exclusion from ESA
+            </h2>
+
+            <p class="summary">
+                The Dabhal gram sabha has passed a resolution demanding the removal of Mhaisal and Kamarkand from the Ecologically Sensitive Area list.
+            </p>
+
+        </article>
+    
+
 </main>
-<footer>© TVGoa • Goa News Today</footer>
+
+
 <script>
-const list=document.getElementById('newsList'), count=document.getElementById('count'), search=document.getElementById('search');
-let items=[]; let active='all';
-function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function dateFmt(s){const d=new Date(s);return isNaN(d)?'':d.toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'})}
-function vid(x){return x.id||''}
-function render(){
- const q=search.value.trim().toLowerCase();
- const filtered=items.filter(x=>{const t=(x.title||'').toLowerCase(); const c=(x.channel||'').toLowerCase(); const cat=t.includes('crime')?'crime':t.includes('weather')?'weather':t.includes('tourism')?'tourism':t.includes('sport')||t.includes('football')?'sports':t.includes('business')?'business':t.includes('congress')||t.includes('bjp')||t.includes('election')||t.includes('mla')||t.includes('minister')||t.includes('voter')?'politics':'civic'; return (active==='all'||cat===active)&&(!q||t.includes(q)||c.includes(q))}).slice(0,50);
- count.textContent=`Showing ${filtered.length} of ${items.length} latest Goa news reports`;
- list.innerHTML=filtered.map((x,i)=>{const id=vid(x); const image=id?`https://i.ytimg.com/vi/${encodeURIComponent(id)}/mqdefault.jpg`:''; return `<article class="news-card"><div class="rank">${String(i+1).padStart(2,'0')}</div>${image?`<img src="${image}" alt="${esc(x.title)}" loading="lazy">`:''}<div class="news-body"><div class="tag">GOA NEWS</div><h2>${esc(x.title)}</h2><div class="meta"><span>${esc(x.channel)}</span><span>${dateFmt(x.published)}</span></div>${x.link?`<a class="watch" href="${esc(x.link)}" target="_blank" rel="noopener">Watch report →</a>`:''}</div></article>`}).join('')||'<div class="news-card">No matching Goa news found.</div>';
+
+function filterNews(selectedCategory) {
+
+    const buttons =
+        document.querySelectorAll('.pill');
+
+
+    buttons.forEach(btn => {
+
+        const span =
+            btn.querySelector('span');
+
+        const btnText =
+            span
+            ? span.innerText
+            : btn.innerText;
+
+
+        if (
+            btnText.trim().toLowerCase()
+            ===
+            selectedCategory.toLowerCase()
+        ) {
+
+            btn.classList.add('active');
+
+        } else {
+
+            btn.classList.remove('active');
+
+        }
+
+    });
+
+
+    const items =
+        document.querySelectorAll('.card');
+
+
+    items.forEach(item => {
+
+        const itemCat =
+            item.getAttribute(
+                'data-category'
+            );
+
+
+        if (
+            selectedCategory === 'All'
+            ||
+            itemCat.toLowerCase()
+            ===
+            selectedCategory.toLowerCase()
+        ) {
+
+            item.classList.remove('hidden');
+
+        } else {
+
+            item.classList.add('hidden');
+
+        }
+
+    });
+
 }
-async function load(){try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'}); if(!r.ok)throw new Error(); const d=await r.json(); items=(d||[]).filter(x=>x.title&&!((x.link||'').includes('/shorts/'))).sort((a,b)=>new Date(b.published)-new Date(a.published)); render();}catch(e){/* Keep the crawlable noscript content if data.json is temporarily unavailable. */ count.textContent='Latest Goa news reports';}
-}
-search.addEventListener('input',render);document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.filter;render()}));load();
+
 </script>
-</body></html>
+
+
+</body>
+
+</html>
