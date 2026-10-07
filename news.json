@@ -1,62 +1,296 @@
 [
   {
     "rank": 1,
-    "category": "Civic",
-    "headline": "CM urges women to call 181 helpline in emergencies",
-    "summary": "Chief Minister Pramod Sawant has urged women facing domestic violence or trouble at home to contact the 181 helpline. He emphasized that the helpline is available for immediate contact."
+    "category": "Politics",
+    "headline": "Congress Focuses on Goan Identity and Builder Nexus for Polls",
+    "summary": "The Congress party has announced that protection of Goan identity and highlighting the builder nexus will be central to its upcoming election campaign."
   },
   {
     "rank": 2,
-    "category": "Business",
-    "headline": "Goa IDC to auction 50 industrial plots",
-    "summary": "The Goa Industrial Development Corporation is set to auction 50 industrial plots. The auction will include three plots designated for tech ventures at the Hello World park."
+    "category": "Politics",
+    "headline": "Goa Anti-BJP Alliance Faces Uncertainty",
+    "summary": "Goa's anti-BJP coalition is facing strain as an AAP ally makes a strong push for grand opposition unity."
   },
   {
     "rank": 3,
-    "category": "Civic",
-    "headline": "NH-566 stretch near Dabolim to close from October 1",
-    "summary": "A section of National Highway 566 near Dabolim is scheduled to be closed starting from October 1."
+    "category": "Politics",
+    "headline": "Congress-GFP Alliance Back in Play After Festive Pause",
+    "summary": "Following a temporary pause for Pitru Paksha and upcoming festivals, discussions for a Congress and Goa Forward Party alliance have resumed."
   },
   {
     "rank": 4,
-    "category": "Politics",
-    "headline": "Rohit Monserrate to lead North Goa planning authority",
-    "summary": "The Goa government has reconstituted the North Goa Planning and Development Authority with Panaji Mayor Rohit Monserrate as its chairman. The authority's board will also include several local MLAs and municipal councillors."
+    "category": "Tourism",
+    "headline": "Goa Adds 84 Weekly Domestic Flights for Winter",
+    "summary": "Goa has introduced 84 new weekly domestic flights for the winter season, expanding routes and airline options."
   },
   {
     "rank": 5,
     "category": "Tourism",
-    "headline": "Goa notifies new taxi and premium cab fares",
-    "summary": "The State Transport Authority has notified distance-based fares for self-employed tourist taxi operators at beach and star hotels. Fares start at ₹300 for the first 3 km in hatchbacks or sedans, and go up to ₹1,000 for premium cabs."
+    "headline": "Dabolim Airport on Alert Over Russian Charters",
+    "summary": "Dabolim Airport is on alert as international Russian charter flights arrive amidst rising concerns regarding plague outbreaks."
   },
   {
     "rank": 6,
-    "category": "Civic",
-    "headline": "WRD announces ₹741-crore plan for Salaulim Irrigation Project",
-    "summary": "The Goa Water Resources Department has initiated a modernisation plan for the Salaulim Irrigation Project. The department has invited proposals to select a consultancy firm to prepare the Detailed Project Report."
+    "category": "Tourism",
+    "headline": "Goa Allocates ₹2 Crore to Boost Winter Charters",
+    "summary": "The Goa government has set aside ₹2 crore to incentivize and boost international charter flights during the upcoming winter season."
   },
   {
     "rank": 7,
-    "category": "Crime",
-    "headline": "Cyber police warning over fake GSSC job advertisement",
-    "summary": "The Cyber Crime Police Station has registered a case regarding a fake GSSC Group C recruitment notice circulating on social media. Authorities have cautioned job aspirants about the fraudulent posting."
+    "category": "Politics",
+    "headline": "Lok Sabha Speaker Calls for 25-Year Roadmap for Goa",
+    "summary": "The Lok Sabha Speaker has urged leaders to formulate a 25-year roadmap to fulfill the long-term aspirations of the people of Goa."
   },
   {
     "rank": 8,
-    "category": "Business",
-    "headline": "Tender floated to operate Panaji Port Terminal and new marina",
-    "summary": "The Captain of Ports Department has invited a ₹27-crore PPP tender to operate and maintain the new terminal building in Panaji. The selected operator will also manage local jetties and build a new yacht marina."
+    "category": "Politics",
+    "headline": "Vijai Sardesai Skips Assembly Silver Jubilee Event",
+    "summary": "Goa Forward Party chief Vijai Sardesai refused to attend the Assembly Complex Silver Jubilee celebrations, calling the event a display of arrogance."
   },
   {
     "rank": 9,
-    "category": "Business",
-    "headline": "Uniform trade licence fees proposed for village panchayats",
-    "summary": "The Goa government has proposed a uniform trade licence and permission fee framework with different ceilings for Category A and Category B panchayat areas. The state has invited feedback on these draft rules within 15 days."
+    "category": "Politics",
+    "headline": "Sardesai Calls Assembly Silver Jubilee Event Arrogant",
+    "summary": "MLA Vijai Sardesai skipped the state assembly's silver jubilee celebrations, publicly criticizing the event as an act of arrogance."
   },
   {
     "rank": 10,
+    "category": "Crime",
+    "headline": "Family Demands Teachers' Suspension and Crime Branch Probe",
+    "summary": "The family of Rahul Bind has demanded the suspension of responsible teachers and an independent Crime Branch investigation into the matter."
+  },
+  {
+    "rank": 11,
+    "category": "Entertainment",
+    "headline": "Explore the Real-Life Goa Bungalow from Drishyam",
+    "summary": "Fans of the Drishyam franchise can now visit the iconic real-life Goa bungalow featured prominently in Ajay Devgn's thriller trilogy."
+  },
+  {
+    "rank": 12,
     "category": "Civic",
-    "headline": "Change of zone proposed under 39 A",
-    "summary": "A proposal has been made to change the zone under Section 39A."
+    "headline": "MLC Seeks Vande Bharat Routing via Mangaluru Central",
+    "summary": "A legislative council member wants the proposed Goa-Bengaluru-Goa Vande Bharat train to pass through Mangaluru Central instead of Mangaluru Junction."
+  },
+  {
+    "rank": 13,
+    "category": "Civic",
+    "headline": "Residents Oppose Nagarcem Zone Change",
+    "summary": "Local residents have formally raised objections against a proposed land zone change in Nagarcem."
+  },
+  {
+    "rank": 14,
+    "category": "Politics",
+    "headline": "Preserving What Politics Cannot Reclaim",
+    "summary": "An opinion piece emphasizes the urgent need to protect Goa's socio-cultural heritage from political exploitation."
+  },
+  {
+    "rank": 15,
+    "category": "Politics",
+    "headline": "Deleted Voters in Goa Asked to Submit Form 6",
+    "summary": "Following a media report highlighting 97 deleted voters in Goa, affected individuals have been asked to submit Form 6 to restore their voting rights."
+  },
+  {
+    "rank": 16,
+    "category": "Business",
+    "headline": "Goa Taxis to Get Costlier With New Fares",
+    "summary": "Commuters in Goa will soon face higher travel costs following the announcement of a revised taxi fare structure."
+  },
+  {
+    "rank": 17,
+    "category": "Business",
+    "headline": "FDA Bans and Recalls Substandard Ghee and Cumin Powder",
+    "summary": "The Food and Drugs Administration has ordered a strict ban and immediate market recall of substandard batches of ghee and cumin powder in Goa."
+  },
+  {
+    "rank": 18,
+    "category": "Politics",
+    "headline": "Bombay High Court Flags Catch-22 for Goa Voters",
+    "summary": "The Goa bench of the Bombay High Court has questioned the Election Commission over procedural contradictions trapping voters in a SIR and Form 6 dilemma."
+  },
+  {
+    "rank": 19,
+    "category": "Tourism",
+    "headline": "FLY91 Connects Navi Mumbai to Goa and Three Cities",
+    "summary": "Airline FLY91 has launched direct flights connecting the new Navi Mumbai Airport to Goa and three other destinations."
+  },
+  {
+    "rank": 20,
+    "category": "Politics",
+    "headline": "Goa CM Flags Off Seva Jyoti Yatra",
+    "summary": "Goa Chief Minister flagged off the Seva Jyoti Yatra to mark Prime Minister Narendra Modi's 25 years in public service."
+  },
+  {
+    "rank": 21,
+    "category": "Politics",
+    "headline": "GFP-AAP 'Goa First' Alliance on Verge of Collapse",
+    "summary": "The proposed 'Goa First' alliance between GFP and AAP is facing imminent collapse amid disagreements over seat-sharing and partners."
+  },
+  {
+    "rank": 22,
+    "category": "Politics",
+    "headline": "High Court Questions ECI Over Voter Deletions",
+    "summary": "The Bombay High Court's Goa bench slammed the Election Commission, asking about the fundamental purpose of the SIR if legitimate citizens are removed from electoral rolls."
+  },
+  {
+    "rank": 23,
+    "category": "Civic",
+    "headline": "Construction Near Casa de Polvora Irks Activists",
+    "summary": "Heritage activists have expressed severe displeasure over unauthorized construction work near the historic Casa de Polvora monument."
+  },
+  {
+    "rank": 24,
+    "category": "Politics",
+    "headline": "High Court Adjourns Voter Deletion Plea",
+    "summary": "The Goa Bench of the Bombay High Court adjourned the hearing on a petition challenging voter deletions after the ECI cited relevant Supreme Court cases."
+  },
+  {
+    "rank": 25,
+    "category": "Tourism",
+    "headline": "1960s Photographs Offer Window Into Goa's Heritage",
+    "summary": "Archival photographs from the 1960s taken by Mitterwallner provide a fascinating look into Goa's evolving architectural and cultural landscape."
+  },
+  {
+    "rank": 26,
+    "category": "Weather",
+    "headline": "Poor Monsoon Damages 20 Hectares of Paddy Fields",
+    "summary": "A deficient monsoon season has severely impacted agriculture in Goa, damaging approximately 20 hectares of paddy fields."
+  },
+  {
+    "rank": 27,
+    "category": "Tourism",
+    "headline": "Dudhsagar Falls Reopens With Safety Mandates",
+    "summary": "Tourist visits to the Dudhsagar waterfalls have resumed, with vehicle operators instructed to deploy dedicated personnel to ensure visitor safety."
+  },
+  {
+    "rank": 28,
+    "category": "Weather",
+    "headline": "Goa Has Sufficient Water Despite Weak Monsoon",
+    "summary": "State authorities have urged citizens to practice water conservation following a weak monsoon, though assuring that Goa currently has adequate water reserves."
+  },
+  {
+    "rank": 29,
+    "category": "Tourism",
+    "headline": "Five Off-Season Indian Destinations for Travelers",
+    "summary": "Goa is featured among five Indian tourist destinations recommended for off-season travel to avoid large crowds and secure better travel deals."
+  },
+  {
+    "rank": 30,
+    "category": "General",
+    "headline": "Goa Logs Over 10,000 Reptile Rescues in a Year",
+    "summary": "Wildlife rescue organizations in Goa recorded over 10,000 reptile rescues over the past year, averaging about 29 snake rescues per day."
+  },
+  {
+    "rank": 31,
+    "category": "Crime",
+    "headline": "Four Rescued After Fire Breaks Out in Calangute Flat",
+    "summary": "Firefighters and local authorities successfully rescued four individuals after a sudden fire broke out inside a residential flat in Calangute."
+  },
+  {
+    "rank": 32,
+    "category": "Politics",
+    "headline": "Vijai Sardesai Push for Grand Opposition Alliance",
+    "summary": "Emphasizing local cultural pride, leader Vijai Sardesai reiterated his push to forge a grand opposition alliance in Goa ahead of polls."
+  },
+  {
+    "rank": 33,
+    "category": "Sports",
+    "headline": "Coach Jamil Comments on Defensive Errors in Match",
+    "summary": "Football coach Jamil noted that playing against top-tier teams leaves no room for error, as opponents will capitalize on every mistake."
+  },
+  {
+    "rank": 34,
+    "category": "Sports",
+    "headline": "Football Administrator Botelho Passes Away",
+    "summary": "Goan football mourns the loss of Botelho, a dedicated sports administrator known for his immense contribution and vision for the local game."
+  },
+  {
+    "rank": 35,
+    "category": "Civic",
+    "headline": "SGPDA Market Waste-Gas Plant Set for Revival",
+    "summary": "Authorities are planning to revive and fully operationalise the waste-gas plant at the SGPDA market, which was never properly used."
+  },
+  {
+    "rank": 36,
+    "category": "Politics",
+    "headline": "Sawant Urges Karnataka Speaker to Improve Ties Over Mhadei",
+    "summary": "Goa Chief Minister Pramod Sawant has urged the Karnataka assembly speaker to foster better interstate relations concerning the contentious Mhadei river dispute."
+  },
+  {
+    "rank": 37,
+    "category": "Civic",
+    "headline": "GCZMA Seeks Removal of Carmona Land From CRZ",
+    "summary": "The Goa Coastal Zone Management Authority has requested the exclusion of certain land parcels in Carmona from CRZ classifications in the CZMP maps."
+  },
+  {
+    "rank": 38,
+    "category": "Civic",
+    "headline": "Three-Day Voter Enrolment Camps Begin Across Goa",
+    "summary": "A special three-day voter registration and enrolment drive has officially commenced across various locations in Goa."
+  },
+  {
+    "rank": 39,
+    "category": "Politics",
+    "headline": "Bombay High Court Questions EC on Voter Exclusions",
+    "summary": "The High Court pulled up the Election Commission over the legitimacy of intensive revision drives if they end up disenfranchising valid citizens."
+  },
+  {
+    "rank": 40,
+    "category": "Civic",
+    "headline": "Mandol Demolishes Illegal Shed on Port Land",
+    "summary": "The Murgaocha Raja Ganeshotsav mandal has voluntarily demolished an illegal shed constructed on Mormugao Port Authority land."
+  },
+  {
+    "rank": 41,
+    "category": "Business",
+    "headline": "Catholic Association Warns FCRA Bill Impact on Minorities",
+    "summary": "The Catholic Association of Goa has raised concerns that amendments via the FCRA Bill will disproportionately affect minority-run institutions."
+  },
+  {
+    "rank": 42,
+    "category": "Business",
+    "headline": "Travelers Face Higher Fares and Rescheduled Flights",
+    "summary": "Travelers heading to Goa for the festive season are encountering a surge in airfares, schedule changes, and heightened demand."
+  },
+  {
+    "rank": 43,
+    "category": "Civic",
+    "headline": "Encroachment on Panaji Ferry Wharf Footpath Flagged",
+    "summary": "Local authorities and citizens have raised flags over unauthorized commercial encroachments on the pedestrian footpath near the Panaji ferry wharf."
+  },
+  {
+    "rank": 44,
+    "category": "Politics",
+    "headline": "AAP Rules Out Congress from Alliance Talks",
+    "summary": "The Aam Aadmi Party has clarified that Congress will not be part of their proposed alliance framework, urging the GFP to clear its stance."
+  },
+  {
+    "rank": 45,
+    "category": "General",
+    "headline": "Goan Lad Sets World Record With Paats",
+    "summary": "A young man from Goa has etched his name in the record books by setting a new world record involving traditional paats."
+  },
+  {
+    "rank": 46,
+    "category": "Tourism",
+    "headline": "Drishyam House in Goa Becomes Popular Tourist Spot",
+    "summary": "The actual residential house featured in the popular Bollywood thriller Drishyam has turned into a major tourist attraction in Goa."
+  },
+  {
+    "rank": 47,
+    "category": "Tourism",
+    "headline": "Creators to Document Goa's Changing Landscape",
+    "summary": "Content creators under the 'Impact Drive' initiative will explore Goa to document environmental and developmental changes across the state."
+  },
+  {
+    "rank": 48,
+    "category": "Sports",
+    "headline": "Soham and Simran Win Big at GFA Awards",
+    "summary": "Soham and Simran emerged as the top awardees, clinching major honors at the annual Goa Football Association Awards Night."
+  },
+  {
+    "rank": 49,
+    "category": "Crime",
+    "headline": "Missing Calangute Girl Located in West Bengal",
+    "summary": "A teenage girl who was reported missing from Calangute has been successfully traced and found in West Bengal by police."
   }
 ]
