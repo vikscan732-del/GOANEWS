@@ -1,302 +1,62 @@
 [
   {
     "rank": 1,
-    "category": "Politics",
-    "headline": "HC Adjourns Plea on Voter Deletion",
-    "summary": "The Goa Bench of the Bombay High Court has adjourned the hearing on a petition challenging the deletion of names from the voters list. This decision came after the Election Commission of India pointed out relevant Supreme Court cases."
+    "category": "Civic",
+    "headline": "CM urges women to call 181 helpline in emergencies",
+    "summary": "Chief Minister Pramod Sawant has urged women facing domestic violence or trouble at home to contact the 181 helpline. He emphasized that the helpline is available for immediate contact."
   },
   {
     "rank": 2,
-    "category": "Politics",
-    "headline": "Deleted Goa Voters Asked to Resubmit Form 6",
-    "summary": "Following a media report, 97 voters whose names were deleted from the electoral roll in Goa have been asked to submit Form 6. This form will allow them to be re-enrolled in the voters list."
+    "category": "Business",
+    "headline": "Goa IDC to auction 50 industrial plots",
+    "summary": "The Goa Industrial Development Corporation is set to auction 50 industrial plots. The auction will include three plots designated for tech ventures at the Hello World park."
   },
   {
     "rank": 3,
-    "category": "Politics",
-    "headline": "HC Questions EC Over Voter Deletions",
-    "summary": "The Goa bench of the Bombay High Court criticized the Election Commission over the deletion of citizens from the voter list. The court questioned the utility of the State Information Register (SIR) if it leads to voter exclusion."
+    "category": "Civic",
+    "headline": "NH-566 stretch near Dabolim to close from October 1",
+    "summary": "A section of National Highway 566 near Dabolim is scheduled to be closed starting from October 1."
   },
   {
     "rank": 4,
-    "category": "Tourism",
-    "headline": "Goa Allocates ₹2 Crore for Winter Charter Flights",
-    "summary": "The Goa government has designated a fund of ₹2 crore to promote international charter flights during the upcoming winter season. This initiative aims to attract more international tourists to the state."
+    "category": "Politics",
+    "headline": "Rohit Monserrate to lead North Goa planning authority",
+    "summary": "The Goa government has reconstituted the North Goa Planning and Development Authority with Panaji Mayor Rohit Monserrate as its chairman. The authority's board will also include several local MLAs and municipal councillors."
   },
   {
     "rank": 5,
     "category": "Tourism",
-    "headline": "Goa to Receive 84 More Weekly Domestic Flights",
-    "summary": "Goa is set to boost its domestic connectivity with the addition of 84 weekly flights for the winter season. The expansion features new routes and services from several airlines."
+    "headline": "Goa notifies new taxi and premium cab fares",
+    "summary": "The State Transport Authority has notified distance-based fares for self-employed tourist taxi operators at beach and star hotels. Fares start at ₹300 for the first 3 km in hatchbacks or sedans, and go up to ₹1,000 for premium cabs."
   },
   {
     "rank": 6,
-    "category": "Tourism",
-    "headline": "Festive Season Brings More Flights and Higher Fares",
-    "summary": "Travelers heading to Goa this festive season will face higher airfares alongside increased flight options and rescheduled routes. Airlines are preparing for a massive surge in tourist demand."
+    "category": "Civic",
+    "headline": "WRD announces ₹741-crore plan for Salaulim Irrigation Project",
+    "summary": "The Goa Water Resources Department has initiated a modernisation plan for the Salaulim Irrigation Project. The department has invited proposals to select a consultancy firm to prepare the Detailed Project Report."
   },
   {
     "rank": 7,
-    "category": "Sports",
-    "headline": "Soham and Simran Win Big at GFA Awards",
-    "summary": "Soham and Simran emerged as the major winners at the Goa Football Association (GFA) Awards Night. The event celebrated outstanding achievements and contributions to Goan football."
+    "category": "Crime",
+    "headline": "Cyber police warning over fake GSSC job advertisement",
+    "summary": "The Cyber Crime Police Station has registered a case regarding a fake GSSC Group C recruitment notice circulating on social media. Authorities have cautioned job aspirants about the fraudulent posting."
   },
   {
     "rank": 8,
-    "category": "Sports",
-    "headline": "Sowell's Double Leads Ambelim SC to Victory",
-    "summary": "Ambelim SC secured a victory thanks to a double strike by Sowell. His brace proved decisive in guiding his team to a win."
+    "category": "Business",
+    "headline": "Tender floated to operate Panaji Port Terminal and new marina",
+    "summary": "The Captain of Ports Department has invited a ₹27-crore PPP tender to operate and maintain the new terminal building in Panaji. The selected operator will also manage local jetties and build a new yacht marina."
   },
   {
     "rank": 9,
-    "category": "Sports",
-    "headline": "GFA Celebrates Football Achievers at Awards Night",
-    "summary": "The Goa Football Association hosted its Awards Night to honor outstanding achievements in Goan football. The event recognized top players and key contributors to the sport."
+    "category": "Business",
+    "headline": "Uniform trade licence fees proposed for village panchayats",
+    "summary": "The Goa government has proposed a uniform trade licence and permission fee framework with different ceilings for Category A and Category B panchayat areas. The state has invited feedback on these draft rules within 15 days."
   },
   {
     "rank": 10,
-    "category": "General",
-    "headline": "Goa Teachers Told to Pass Eligibility Test",
-    "summary": "Teachers in Goa who have more than five years left in their service have been directed to clear the teacher eligibility test. This mandate aims to standardise teaching qualifications across the state."
-  },
-  {
-    "rank": 11,
-    "category": "Tourism",
-    "headline": "Dempo College Students Shine at Yuva Tourism Meet",
-    "summary": "Students from Dempo College delivered an outstanding performance at the Goa Yuva Tourism Meet. The event highlighted youth involvement and ideas in the state's tourism sector."
-  },
-  {
-    "rank": 12,
-    "category": "General",
-    "headline": "Nine Goa ITI Students Top National Exam",
-    "summary": "In a major achievement, nine students from a single Industrial Training Institute (ITI) in Goa have topped the all-India trade test. This success highlights the high standards of vocational training in the state."
-  },
-  {
-    "rank": 13,
     "category": "Civic",
-    "headline": "Goa Taxi Fares Set to Increase",
-    "summary": "Commuters and tourists in Goa will have to pay more as taxi fares are set to rise under a revised rate structure. The government is implementing a new pricing model for transport services."
-  },
-  {
-    "rank": 14,
-    "category": "Civic",
-    "headline": "Goa Faces Challenging Power Shortage Ahead",
-    "summary": "Officials have warned of difficult times ahead as the state manages a significant power shortfall. Efforts are underway to address the supply issues and minimise disruptions for residents."
-  },
-  {
-    "rank": 15,
-    "category": "Tourism",
-    "headline": "Content Creators to Document Goa Under 'Impact Drive'",
-    "summary": "A group of content creators will travel across Goa to document local changes and developments under the 'Impact Drive' initiative. The project aims to showcase the evolving landscape of the state."
-  },
-  {
-    "rank": 16,
-    "category": "General",
-    "headline": "Bengaluru-Goa Vande Bharat Train on the Horizon",
-    "summary": "A new Vande Bharat Express route connecting Bengaluru and Goa could soon become operational, featuring 14 key stops along the way. This high-speed train service is expected to significantly ease travel between the two locations."
-  },
-  {
-    "rank": 17,
-    "category": "Politics",
-    "headline": "Congress Leader Accuses Goa Govt of Governance Failures",
-    "summary": "Congress leader Pawan Khera has criticized the Goa government, accusing it of failing on multiple governance fronts. He further alleged that the administration has betrayed the aspirations of the local youth."
-  },
-  {
-    "rank": 18,
-    "category": "Politics",
-    "headline": "Man to Move HC Over Voter List Deletion",
-    "summary": "A 26-year-old man is planning to approach the High Court after finding his name deleted from the Goa voter list. Despite being mapped under the State Information Register, his voting rights were affected."
-  },
-  {
-    "rank": 19,
-    "category": "Politics",
-    "headline": "HC Notes Dilemma of Voters Excluded from SIR",
-    "summary": "The Bombay High Court has highlighted a catch-22 situation for Goa voters who have been left out of the State Information Register (SIR). The exclusion has led to administrative complications regarding their status."
-  },
-  {
-    "rank": 20,
-    "category": "Politics",
-    "headline": "AAP Alleges Plot to Break 'Goa First' Alliance",
-    "summary": "The Aam Aadmi Party (AAP) has claimed there is an ongoing attempt to destabilize the Goa First political alliance. In response, AAP has urged the Goa Forward Party (GFP) to clearly state its position."
-  },
-  {
-    "rank": 21,
-    "category": "Entertainment",
-    "headline": "A Look Inside Ajay Devgn and Kajol’s Goa Villa",
-    "summary": "An inside look reveals details of the luxurious Goa villa owned by Bollywood stars Ajay Devgn and Kajol. The property's price, premium location, and high-end amenities have been spotlighted."
-  },
-  {
-    "rank": 22,
-    "category": "Politics",
-    "headline": "Vijai Sardesai Opposes ₹5 Crore Assembly Event",
-    "summary": "Goa Forward Party leader Vijai Sardesai has opposed the planned silver jubilee celebrations of the Goa Assembly Complex. He questioned the justification behind spending ₹5 crore on the event."
-  },
-  {
-    "rank": 23,
-    "category": "Entertainment",
-    "headline": "The Real-Life Goa Bungalow from 'Drishyam'",
-    "summary": "The iconic real-life Goa bungalow featured in Ajay Devgn's 'Drishyam' film series has captured public interest. The property remains a key point of attraction due to its association with the hit film franchise."
-  },
-  {
-    "rank": 24,
-    "category": "Politics",
-    "headline": "Catholic Association Opposes FCRA Bill Impact",
-    "summary": "The Catholic Association of Goa has raised concerns that the proposed Foreign Contribution Regulation Act (FCRA) Bill will disproportionately impact minority-run institutions. They argue that the legislation will restrict essential funding for developmental work."
-  },
-  {
-    "rank": 25,
-    "category": "Civic",
-    "headline": "Footpath Encroachment Flagged Near Panaji Wharf",
-    "summary": "Residents and commuters have raised alarms over the growing encroachment on the footpath near the Panaji ferry wharf. The blocked walkway is causing safety concerns and disrupting pedestrian movement."
-  },
-  {
-    "rank": 26,
-    "category": "General",
-    "headline": "ICAR-CCARI to Revive Goa’s Bamboo Craft",
-    "summary": "Efforts are underway to revive Goa's fading traditional bamboo craft with the help of ICAR-CCARI. The initiative aims to support local artisans and introduce sustainable techniques to preserve the art."
-  },
-  {
-    "rank": 27,
-    "category": "Crime",
-    "headline": "KTC Staff Demand Action Over Assault Attempt",
-    "summary": "Employees of the Kadamba Transport Corporation (KTC) have demanded police intervention following an attempted physical assault at Valpoi. The staff expressed safety concerns and urged immediate action against the perpetrators."
-  },
-  {
-    "rank": 28,
-    "category": "Civic",
-    "headline": "Lack of Garbage Bins on Benaulim-Colva Beach Stretch",
-    "summary": "Visitors and locals have pointed out the complete absence of garbage bins along the popular Benaulim to Colva beach stretch. This lack of waste management infrastructure raises concerns about cleanliness and littering."
-  },
-  {
-    "rank": 29,
-    "category": "Civic",
-    "headline": "Reis Magos to Receive Increased Water Supply",
-    "summary": "The water supply in Reis Magos is expected to significantly improve once the newly constructed Pilerne water treatment plant becomes operational. This project aims to address long-standing water shortage issues in the region."
-  },
-  {
-    "rank": 30,
-    "category": "Politics",
-    "headline": "High Court Questions Purpose of State Information Register",
-    "summary": "The Bombay High Court has demanded answers from the Election Commission regarding voter list exclusions linked to the State Information Register (SIR). The court questioned the benefit of the system if it fails to protect citizens' voting rights."
-  },
-  {
-    "rank": 31,
-    "category": "Politics",
-    "headline": "AAP Rules Out Congress, Urges GFP to Clarify Position",
-    "summary": "The Aam Aadmi Party (AAP) has excluded the Congress party from the 'Goa First' alliance framework. AAP has now asked the Goa Forward Party (GFP) to officially clarify its stance on alliance dynamics."
-  },
-  {
-    "rank": 32,
-    "category": "Civic",
-    "headline": "Rights Commission Urges Action Against Illegal Rentals",
-    "summary": "The Human Rights Commission has requested a strict crackdown on unauthorized tourist rentals operating within a housing complex in Calangute. The panel highlighted safety and zoning violations affecting local residents."
-  },
-  {
-    "rank": 33,
-    "category": "General",
-    "headline": "Relaxed Rules Lead to Full Seats in Nursing Colleges",
-    "summary": "Nursing colleges in Goa have filled almost all of their available seats this academic year. This surge in enrollment follows the state government's decision to relax the admission criteria."
-  },
-  {
-    "rank": 34,
-    "category": "Civic",
-    "headline": "Concerns Raised Over Dangerous Mormugao Flyovers",
-    "summary": "Residents have raised safety alarms regarding the hazardous conditions of flyovers in Mormugao. Immediate maintenance and safety measures have been urged to prevent major accidents."
-  },
-  {
-    "rank": 35,
-    "category": "General",
-    "headline": "Valuable Narakya Shrub Cleared in Sattari",
-    "summary": "Environmentalists have expressed concern over the uprooting of the Narakya shrub in Sattari despite its high medicinal value. The destruction of this plant poses a threat to local biodiversity and traditional medicine resources."
-  },
-  {
-    "rank": 36,
-    "category": "Politics",
-    "headline": "Sardesai to Boycott Assembly Silver Jubilee",
-    "summary": "Goa Forward Party leader Vijai Sardesai has announced he will boycott the silver jubilee celebrations of the Goa Assembly Complex. He reiterated his opposition to the state spending ₹5 crore on the event."
-  },
-  {
-    "rank": 37,
-    "category": "Civic",
-    "headline": "Stop Work Order for Industrial Yard in Old Goa",
-    "summary": "The Old Goa panchayat has decided to issue a stop work order to an industrial yard operating inside a residential area. The decision follows protests from local residents concerning safety and zoning violations."
-  },
-  {
-    "rank": 38,
-    "category": "Civic",
-    "headline": "Streetlights Restored on Bicholim Walkway",
-    "summary": "Normalcy has returned to the popular Bicholim walkway after streetlights along the path were successfully restored. Pedestrians can now safely use the path during evening hours."
-  },
-  {
-    "rank": 39,
-    "category": "Business",
-    "headline": "SWR's Coal Freight Surge Puts Focus on Mormugao Port",
-    "summary": "A sharp rise in coal freight transported by the South Western Railway (SWR) has brought renewed focus onto Mormugao Port's handling capacity. The situation raises environmental and logistics management challenges."
-  },
-  {
-    "rank": 40,
-    "category": "General",
-    "headline": "Goa Promotes Inclusion via Assistive Technology",
-    "summary": "Goa is increasingly focusing on the use of assistive technology to foster better inclusivity for people with disabilities. Various initiatives aim to integrate these tools into daily educational and professional environments."
-  },
-  {
-    "rank": 41,
-    "category": "General",
-    "headline": "Khaunte Urges Students to Innovate Real-World Solutions",
-    "summary": "Goa Minister Rohan Khaunte has encouraged students to transform their academic concepts into practical solutions for society. He emphasized the role of innovation in driving regional development."
-  },
-  {
-    "rank": 42,
-    "category": "General",
-    "headline": "Exploring Connections Across Two Continents",
-    "summary": "An insightful piece explores the shared history, cultural parallels, and contrasts between two continents. The article sheds light on the connections linking people across different regions."
-  },
-  {
-    "rank": 43,
-    "category": "Tourism",
-    "headline": "Holiday Tourist Rush Congests Calangute Roads",
-    "summary": "A massive influx of holidaymakers caused heavy traffic congestion on major roads in Calangute over the long weekend. The local infrastructure struggled to cope with the sudden rise in vehicular traffic."
-  },
-  {
-    "rank": 44,
-    "category": "General",
-    "headline": "Rosary College Hosts 'Impressions '26'",
-    "summary": "Rosary College successfully organized its annual event, 'Impressions '26', showcasing student talents across various domains. The festival drew enthusiastic participation from across the institution."
-  },
-  {
-    "rank": 45,
-    "category": "Politics",
-    "headline": "Analyzing the Rise and Fall of RGP",
-    "summary": "A political analysis details the growth trajectory and subsequent challenges faced by the Revolutionary Goans Party (RGP). The study highlights crucial lessons for regional political outfits in Goa."
-  },
-  {
-    "rank": 46,
-    "category": "General",
-    "headline": "Tourist Killed in Mapusa Road Accident",
-    "summary": "A tourist lost their life in Mapusa after a car collided with a two-wheeler. Local authorities are investigating the tragic incident to determine the cause of the crash."
-  },
-  {
-    "rank": 47,
-    "category": "Politics",
-    "headline": "AAP Criticizes Competitors Over Defections",
-    "summary": "The Aam Aadmi Party (AAP) has launched a sharp attack against both the BJP and Congress over political defections in Goa. AAP leaders also questioned the quiet stance of the Goa Forward Party (GFP) chief on this issue."
-  },
-  {
-    "rank": 48,
-    "category": "Politics",
-    "headline": "GFP Chief Hints at New Political Banner",
-    "summary": "Following the disappearance of joint GFP-AAP campaign hoardings, the Goa Forward Party (GFP) chief has hinted at moving under a new political banner. The development indicates a shifting political alliance in the state."
-  },
-  {
-    "rank": 49,
-    "category": "General",
-    "headline": "Lecture Highlights Sattari's Sacred Groves",
-    "summary": "A Government Higher Secondary School recently hosted an educational lecture focusing on the ecological importance of Sattari's sacred groves. The session aimed to educate students on traditional conservation practices and environmental heritage."
-  },
-  {
-    "rank": 50,
-    "category": "Tourism",
-    "headline": "Dudhsagar Falls Reopens with Strict Safety Measures",
-    "summary": "The popular Dudhsagar waterfall has reopened for tourists, with authorities issuing strict guidelines for visitor safety. Vehicle operators have also been directed to deploy personnel to ensure the safety of all travelers."
+    "headline": "Change of zone proposed under 39 A",
+    "summary": "A proposal has been made to change the zone under Section 39A."
   }
 ]
