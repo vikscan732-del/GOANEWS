@@ -1,302 +1,74 @@
 [
   {
     "rank": 1,
-    "category": "Entertainment",
-    "headline": "Veteran Actor Nana Patekar Passes Away at 75",
-    "summary": "Renowned actor Nana Patekar has passed away at the age of 75 in Goa. He was celebrated across Indian cinema for his intense and iconic performances."
+    "category": "Crime",
+    "headline": "Man Arrested in Rs 27 Lakh Job Scam",
+    "summary": "A man who paid Rs 27 lakh in a gamble for a government job has ended up in a Goa jail following a scam investigation."
   },
   {
     "rank": 2,
     "category": "Crime",
-    "headline": "Goa Police Register Unnatural Death Case for Nana Patekar",
-    "summary": "Goa Police have registered an unnatural death case following the passing of actor Nana Patekar. An official inquest is underway to complete standard legal procedures."
+    "headline": "Goa CM Promises Strict Action in Fake Job Case",
+    "summary": "Chief Minister Pramod Sawant has assured that strict legal action will be taken in connection with the fake excise department job racket."
   },
   {
     "rank": 3,
-    "category": "Politics",
-    "headline": "Goa CM Pramod Sawant Mourns Nana Patekar's Demise",
-    "summary": "Chief Minister Pramod Sawant expressed deep grief over Nana Patekar's death, describing it as a major loss for the country. He paid rich tributes to the late actor's legacy."
+    "category": "Crime",
+    "headline": "Two FIRs Filed Against Taleigao Man",
+    "summary": "Goa Police have registered two separate FIRs against a resident of Taleigao in relation to an ongoing job recruitment scam."
   },
   {
     "rank": 4,
     "category": "Politics",
-    "headline": "Arvind Kejriwal Announces Six Guarantees for Goa",
-    "summary": "AAP leader Arvind Kejriwal unveiled six guarantees for Goa ahead of state elections, including free electricity. The promises also include monthly financial support for women."
+    "headline": "Kejriwal Unveils Six Guarantees for Goa",
+    "summary": "AAP leader Arvind Kejriwal announced six promises for Goa, including free electricity and a monthly financial aid of Rs 3,000 for women."
   },
   {
     "rank": 5,
-    "category": "Politics",
-    "headline": "AAP Promises Free Power and Monthly Aid in Goa",
-    "summary": "Arvind Kejriwal announced six key promises for Goa residents, featuring a free electricity scheme. He also pledged 3,000 rupees in monthly financial aid to adult women."
+    "category": "Entertainment",
+    "headline": "Veteran Actor Nana Patekar Passes Away at 75",
+    "summary": "Renowned actor Nana Patekar has died at the age of 75 after suffering a cardiac arrest at his residence in Goa."
   },
   {
     "rank": 6,
-    "category": "Politics",
-    "headline": "Kejriwal Outlines Vision for AAP Governance in Goa",
-    "summary": "Arvind Kejriwal shared six key electoral promises to offer voters a preview of AAP administration in Goa. The campaign focuses on citizen-centric welfare policies."
+    "category": "Crime",
+    "headline": "Goa Police Register Unnatural Death Case for Nana Patekar",
+    "summary": "Authorities have filed an unnatural death case and launched an inquest following the sudden passing of actor Nana Patekar in Goa."
   },
   {
     "rank": 7,
-    "category": "Crime",
-    "headline": "Man Arrested in Goa Over Rs 27 Lakh Job Scam",
-    "summary": "A man ended up in a Goa jail after paying 27 lakh rupees for a promised government job. Police initiated legal action following the discovery of the fraudulent scheme."
+    "category": "Business",
+    "headline": "Special PMLA Court Orders Charges in Yudivo Scam",
+    "summary": "A special PMLA court in Goa has ordered the framing of charges in connection with the Rs 3-crore Yudivo multi-level marketing scam."
   },
   {
     "rank": 8,
-    "category": "Crime",
-    "headline": "Two FIRs Filed Against Taleigao Resident in Job Fraud",
-    "summary": "Police have registered two separate FIRs against a man from Taleigao involved in job scams. The suspect allegedly duped multiple victims with false government job promises."
+    "category": "Civic",
+    "headline": "Green Tribunal Stays Port Channel-Deepening Project",
+    "summary": "The National Green Tribunal has granted a stay on environmental clearance for the Mormugao Port Authority's channel-deepening project."
   },
   {
     "rank": 9,
-    "category": "Crime",
-    "headline": "Multi-Lakh Job and Property Scam Uncovered in Goa",
-    "summary": "Authorities revealed a fraud totaling 1.27 crore rupees related to fake job offers and property deals. Promises included positions such as Excise Chief and education department roles."
+    "category": "Politics",
+    "headline": "CM Sawant Comments on Goa 2027 Leadership",
+    "summary": "Goa Chief Minister Pramod Sawant stated that his party will decide on leadership for 2027, while his current focus is on winning elections."
   },
   {
     "rank": 10,
-    "category": "Entertainment",
-    "headline": "Details Emerge on Nana Patekar's Final Hours",
-    "summary": "Reports revealed that Nana Patekar messaged a friend late at night complaining of left-side pain. Doctors later shared details regarding the medical timeline leading to his death."
+    "category": "Tourism",
+    "headline": "Goa Cabinet Clears Key Decisions",
+    "summary": "The Goa cabinet has approved several important policy decisions affecting the tourism, agriculture, and urban development sectors."
   },
   {
     "rank": 11,
-    "category": "General",
-    "headline": "Autopsy Confirms Heart Attack in Nana Patekar's Death",
-    "summary": "An autopsy conducted in Goa confirmed that actor Nana Patekar died from a heart attack. Authorities stated that no foul play is suspected in his demise."
+    "category": "Sports",
+    "headline": "FC Goa and Chennaiyin Renew ISL Rivalry",
+    "summary": "FC Goa and Chennaiyin FC are set to face each other once again, renewing their fierce rivalry in the Indian Super League."
   },
   {
     "rank": 12,
-    "category": "Weather",
-    "headline": "WMO Warns of Extreme Heat as El Niño Strengthens",
-    "summary": "The World Meteorological Organization warned of record-breaking global heat due to a strengthening El Niño pattern. Severe temperature trends are anticipated across regions."
-  },
-  {
-    "rank": 13,
-    "category": "Entertainment",
-    "headline": "Actor Nana Patekar Dies Following Cardiac Arrest",
-    "summary": "Veteran Bollywood actor Nana Patekar passed away at age 75 in Goa after suffering a cardiac arrest. The news sparked widespread tributes across the film industry."
-  },
-  {
-    "rank": 14,
-    "category": "Crime",
-    "headline": "Investigation Opened into Nana Patekar's Passing in Goa",
-    "summary": "Goa Police initiated an inquiry after registering an unnatural death case regarding Nana Patekar. The procedural investigation aims to confirm the exact circumstances."
-  },
-  {
-    "rank": 15,
-    "category": "Politics",
-    "headline": "Goa Forward Party Reaches Out to Congress for 2027",
-    "summary": "The Goa Forward Party has signaled openness toward Congress, despite recently allying with AAP for 2027. Political realignments are taking shape ahead of assembly polls."
-  },
-  {
-    "rank": 16,
-    "category": "General",
-    "headline": "Indian Coast Guard Commissions Indigenously Built ICGS Ajit",
-    "summary": "The Indian Coast Guard commissioned ICGS Ajit, an indigenously built vessel constructed in Goa. The ship will be stationed in Okha to enhance maritime defense operations."
-  },
-  {
-    "rank": 17,
-    "category": "Entertainment",
-    "headline": "Final Video Shows Nana Patekar Dancing at Goa Event",
-    "summary": "Footage surfaced showing Nana Patekar dancing and playing the traditional shamel instrument at a Goa event. The video marks one of his last public appearances before his passing."
-  },
-  {
-    "rank": 18,
-    "category": "General",
-    "headline": "Nana Patekar's Body Arrives in Pune for State Funeral",
-    "summary": "The mortal remains of actor Nana Patekar arrived in Pune where he will receive a state funeral. Maharashtra leaders, including Devendra Fadnavis, offered floral tributes."
-  },
-  {
-    "rank": 19,
-    "category": "General",
-    "headline": "Nana Patekar's Son Reaches Hospital in Goa",
-    "summary": "Following the news of the actor's sudden death, Nana Patekar's son arrived at the hospital in Goa. Family members gathered to complete necessary legal and medical formalities."
-  },
-  {
-    "rank": 20,
-    "category": "Business",
-    "headline": "Mumbai Woman Builds Rs 87 Lakh Saree Business in Goa",
-    "summary": "A woman left her corporate job in Mumbai to start a specialized saree business in Goa. Her venture generated 87 lakh rupees over a five-year period."
-  },
-  {
-    "rank": 21,
-    "category": "Politics",
-    "headline": "Goa CM Tributes Nana Patekar's Cinematic Legacy",
-    "summary": "Chief Minister Pramod Sawant paid rich tributes to Nana Patekar, highlighting his impactful contribution to cinema. He extended heartfelt condolences to the actor's family."
-  },
-  {
-    "rank": 22,
-    "category": "General",
-    "headline": "Hospital Confirms Cardiac Arrest as Cause of Patekar's Demise",
-    "summary": "Doctors at Manipal Hospital in Goa confirmed that Nana Patekar suffered a fatal cardiac arrest. Medical staff stated that resuscitative efforts could not revive him."
-  },
-  {
-    "rank": 23,
-    "category": "Entertainment",
-    "headline": "Nana Patekar's Last Public Appearance Recalled",
-    "summary": "Actor Nana Patekar's last public event took place in Goa four days before his death. His most recent screen appearance was in the film 'O'Romeo'."
-  },
-  {
-    "rank": 24,
-    "category": "Crime",
-    "headline": "Formal Procedure Undertaken in Nana Patekar Death Inquiry",
-    "summary": "Goa Police filed an unnatural death report to carry out mandatory legal processes following the actor's demise. Authorities clarified it is standard procedure for sudden deaths."
-  },
-  {
-    "rank": 25,
-    "category": "Entertainment",
-    "headline": "Legendary Actor Nana Patekar Dies at Age 75",
-    "summary": "Cinema veteran Nana Patekar passed away in Goa at age 75 after a sudden cardiac arrest. Tributes poured in from across the nation mourning his loss."
-  },
-  {
-    "rank": 26,
-    "category": "Crime",
-    "headline": "Goa Police Explain Unnatural Death Case Registration",
-    "summary": "Authorities explained that registering an unnatural death case for Nana Patekar is legally mandatory for hospital deaths lacking prior local medical records."
-  },
-  {
-    "rank": 27,
-    "category": "Entertainment",
-    "headline": "Actor Nana Patekar Passes Away in Goa",
-    "summary": "Acclaimed actor Nana Patekar died in Goa at 75 years of age. His demise marks the end of an iconic career spanning decades in Indian cinema."
-  },
-  {
-    "rank": 28,
-    "category": "Crime",
-    "headline": "Goa Police Initiate Enquiry Into Nana Patekar's Death",
-    "summary": "Goa Police registered an unnatural death case and commenced procedural inquiries into the actor's passing. Statements from attending doctors and relatives are being recorded."
-  },
-  {
-    "rank": 29,
-    "category": "Crime",
-    "headline": "Section 194 Invoked in Legal Process Following Patekar's Death",
-    "summary": "Goa Police invoked Section 194 BNSS to conduct an inquest into Nana Patekar's unexpected death. The provision allows authorities to rule out foul play systematically."
-  },
-  {
-    "rank": 30,
-    "category": "General",
-    "headline": "Post-Mortem Conducted at GMC Following Actor's Death",
-    "summary": "A post-mortem examination for Nana Patekar was conducted at Goa Medical College. Police registered an unnatural death case to fulfill standard legal formalities."
-  },
-  {
-    "rank": 31,
-    "category": "Entertainment",
-    "headline": "Nana Patekar Sent Text Message Before Sudden Collapse",
-    "summary": "Reports revealed that Nana Patekar texted a friend at 3:30 am stating he was feeling unwell. He suffered a cardiac arrest shortly thereafter in Goa."
-  },
-  {
-    "rank": 32,
-    "category": "Entertainment",
-    "headline": "Nana Patekar's Remarks on Mortality Resurface",
-    "summary": "Four days prior to his death, Nana Patekar spoke about mortality during a public gathering in Goa. His philosophical remarks resurfaced online following his sudden demise."
-  },
-  {
-    "rank": 33,
-    "category": "Entertainment",
-    "headline": "Video of Nana Patekar's Last Public Speech Shared",
-    "summary": "A video capturing Nana Patekar's final public speech in Goa circulated online following his death. The actor spoke about life and art during the event."
-  },
-  {
-    "rank": 34,
-    "category": "Entertainment",
-    "headline": "Events Cancelled and Tributes Paid Following Patekar's Demise",
-    "summary": "Industry figures responded to Nana Patekar's death, with actor Salman Khan cancelling a public event as a mark of respect. Patekar was scheduled to appear on Marathi KBC."
-  },
-  {
-    "rank": 35,
-    "category": "Crime",
-    "headline": "Statements Being Recorded in Nana Patekar Death Inquiry",
-    "summary": "Goa Police are recording statements from family members and hospital staff regarding Nana Patekar's demise. The step forms part of the standard unnatural death investigation."
-  },
-  {
-    "rank": 36,
-    "category": "Civic",
-    "headline": "Women Police Station Proposed for South Goa",
-    "summary": "Goa Police have submitted a proposal to establish an all-women police station in South Goa. The initiative aims to strengthen law enforcement support for women."
-  },
-  {
-    "rank": 37,
-    "category": "Sports",
-    "headline": "FC Goa Prepare to Face Chennaiyin FC in ISL",
-    "summary": "FC Goa renewed their intense rivalry with Chennaiyin FC in the ongoing Indian Super League season. Both teams are geared up for a high-stakes match."
-  },
-  {
-    "rank": 38,
-    "category": "General",
-    "headline": "Prudent Media Releases Konkani Prime News Bulletin",
-    "summary": "Prudent Media Goa broadcasted its daily Konkani Prime News bulletin covering top local developments. The broadcast highlighted key regional headlines."
-  },
-  {
-    "rank": 39,
-    "category": "Politics",
-    "headline": "Rahul Gandhi's Visit to Goa Postponed",
-    "summary": "Congress leader Rahul Gandhi's planned visit to Goa was postponed amid ongoing protests by the INDIA alliance. Revised dates for his tour will be announced later."
-  },
-  {
-    "rank": 40,
-    "category": "Politics",
-    "headline": "CM Pramod Sawant Remembers Personal Bond with Patekar",
-    "summary": "Goa Chief Minister Pramod Sawant mourned Nana Patekar, describing him as a close personal friend. Sawant praised his humility and creative brilliance."
-  },
-  {
-    "rank": 41,
-    "category": "Politics",
-    "headline": "BJP Workers Protest Mhadei River Diversion at Goa Airport",
-    "summary": "BJP workers staged a demonstration near Goa airport protesting Karnataka's Mhadei river diversion plans. The protest coincided with the arrival of Karnataka's Chief Minister."
-  },
-  {
-    "rank": 42,
-    "category": "Business",
-    "headline": "Robotic Technology Introduced for Coconut Harvesting in Goa",
-    "summary": "High-tech robotic harvesting tools are being introduced to streamline Goa's coconut farming sector. The technology seeks to address farm labor shortages in the state."
-  },
-  {
-    "rank": 43,
-    "category": "Business",
-    "headline": "Free AI Training Launched for Goa Small Businesses",
-    "summary": "The Goa Chamber of Commerce and Industry partnered with the state government and tech firms to offer free AI training. The program aims to digitize small business operations."
-  },
-  {
-    "rank": 44,
-    "category": "Civic",
-    "headline": "'Enough is Enough' Movement Backs CJP Protest",
-    "summary": "Retired Justice Rebello announced that the civic group 'Enough is Enough' will extend support to CJP protests. The movement demands transparency and accountability from local authorities."
-  },
-  {
-    "rank": 45,
-    "category": "Entertainment",
-    "headline": "Veteran Actress Helen Recalls Working with Nana Patekar",
-    "summary": "Legendary actress Helen shared fond memories of working with Nana Patekar on 'Khamoshi: The Musical'. She praised his respectful conduct and dedication to his craft."
-  },
-  {
-    "rank": 46,
-    "category": "Civic",
-    "headline": "ICGS Ajit Commissioned to Strengthen West Coast Security",
-    "summary": "The Indian Coast Guard ship ICGS Ajit was commissioned to reinforce security along India's western coast. Built in Goa, the vessel will boost maritime patrolling capabilities."
-  },
-  {
-    "rank": 47,
-    "category": "Politics",
-    "headline": "Kejriwal Promises 6 Key Welfare Initiatives in Goa",
-    "summary": "AAP Chief Arvind Kejriwal rolled out six electoral guarantees aimed at Goa's voters. The assurances cover free basic utilities, financial aid, and job creation."
-  },
-  {
-    "rank": 48,
-    "category": "Civic",
-    "headline": "Second Kadamba Bus Resumes Service on Vasco-Bogmalo Route",
-    "summary": "The Kadamba Transport Corporation resumed a second bus service connecting Vasco and Bogmalo. The restored route will ease daily commutes for local residents."
-  },
-  {
-    "rank": 49,
-    "category": "Politics",
-    "headline": "Kejriwal Guarantees Free Power and Financial Aid in Goa",
-    "summary": "Arvind Kejriwal unveiled AAP's election roadmap for Goa featuring six primary guarantees. Key highlights include free electricity units and financial support to women."
-  },
-  {
-    "rank": 50,
-    "category": "Entertainment",
-    "headline": "Video Shows Nana Patekar Performing Traditional Goa Folk Arts",
-    "summary": "A video recorded three days before his passing showed Nana Patekar dancing dekni and playing shamel with a Konkani group. The clip highlighted his deep love for Goan culture."
+    "category": "Technology",
+    "headline": "Robots to Transform Goa Coconut Harvesting",
+    "summary": "Goa's traditional coconut harvesting sector is set to adopt high-tech automation with the introduction of specialized agricultural robots."
   }
 ]
