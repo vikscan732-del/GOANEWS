@@ -1,134 +1,182 @@
 [
   {
     "rank": 1,
-    "category": "Crime",
-    "headline": "Crore-plus Job Fraud Uncovered",
-    "summary": "A massive job and property scam amounting to Rs 1.27 crore has surfaced in Goa involving fake employment promises."
+    "category": "Politics",
+    "headline": "CJP Protest Blocked in Goa",
+    "summary": "Police detained several demonstrators and blocked entry to Azad Maidan during a CJP protest against CEC Gyanesh Kumar."
   },
   {
     "rank": 2,
-    "category": "Crime",
-    "headline": "Job Scam Lands Man in Jail",
-    "summary": "A man who gambled Rs 27 lakh in hopes of securing a government job has been arrested and jailed in Goa."
+    "category": "Politics",
+    "headline": "CJP Denied Protest Permission",
+    "summary": "Authorities denied permission to the CJP to hold a planned protest in Panaji."
   },
   {
     "rank": 3,
-    "category": "Politics",
-    "headline": "Probe into Fake Excise Letter",
-    "summary": "Goa Chief Minister stated that police are investigating a forged signature found on a fake Excise Commissioner appointment letter."
+    "category": "Crime",
+    "headline": "Two Booked for IIT-Goa Exam Cheating",
+    "summary": "Two individuals were booked and caught at the airport with Bluetooth earpieces and SIM cards while allegedly cheating in the IIT-Goa recruitment exam."
   },
   {
     "rank": 4,
     "category": "Politics",
-    "headline": "Kejriwal Unveils Six Guarantees",
-    "summary": "AAP leader Arvind Kejriwal announced six poll guarantees for Goa, promising free electricity and monthly financial aid for women."
+    "headline": "Rahul Gandhi's Goa Visit Postponed",
+    "summary": "Rahul Gandhi's visit to Goa for the Goy Rakhonn Yatra has been called off amid ongoing protests."
   },
   {
     "rank": 5,
-    "category": "Sports",
-    "headline": "Mongia to Mentor Goa Talent",
-    "summary": "Mongia has returned to focus on nurturing next-generation cricket talent in Goa."
+    "category": "Politics",
+    "headline": "Congress Vows to Defy Rally Ban",
+    "summary": "Despite denial of permissions, the Congress party stated it will move forward with its planned Cuncolim rally."
   },
   {
     "rank": 6,
-    "category": "Sports",
-    "headline": "Tendulkar Misses Ranji Squad",
-    "summary": "Arjun Tendulkar's name was notably missing as Goa announced its squad for the upcoming Ranji Trophy."
+    "category": "Crime",
+    "headline": "Rs 1.27 Crore Job and Property Scam",
+    "summary": "Goa police are investigating a multi-crore scam involving fake job promises, including an excise chief position, and property deals."
   },
   {
     "rank": 7,
     "category": "Crime",
-    "headline": "Actor Nana Patekar Passes Away",
-    "summary": "Veteran actor Nana Patekar passed away at the age of 75 in Goa after suffering a cardiac arrest."
+    "headline": "Probe into Forged Excise Appointment Letter",
+    "summary": "The Goa Chief Minister assured strict action as police investigate a forged signature on a fake Excise Commissioner appointment letter."
   },
   {
     "rank": 8,
     "category": "Politics",
-    "headline": "ST Reservation Assured",
-    "summary": "MLA Govind Gaude assured that the political reservation for the Scheduled Tribes will be finalized before November."
+    "headline": "Kejriwal Announces Six Guarantees for Goa",
+    "summary": "AAP leader Arvind Kejriwal announced six electoral promises for Goa, highlighting free power and financial aid for women."
   },
   {
     "rank": 9,
     "category": "Politics",
-    "headline": "Cabinet Hails Modi's Tenure",
-    "summary": "The Goa Cabinet passed a resolution praising Prime Minister Narendra Modi for completing 25 years in public service."
+    "headline": "Telangana CM to Join Goa Yatra",
+    "summary": "Telangana Chief Minister Revanth Reddy is set to participate in the Congress party's ongoing yatra in Goa."
   },
   {
     "rank": 10,
-    "category": "Politics",
-    "headline": "Rahul Gandhi Postpones Visit",
-    "summary": "Congress leader Rahul Gandhi is likely to postpone his scheduled visit to Goa amidst ongoing protests."
+    "category": "Crime",
+    "headline": "Drug Supplier Apprehended in Goa",
+    "summary": "EAGLE Force, with assistance from Goa Police, successfully apprehended a suspected drug supplier in the state."
   },
   {
     "rank": 11,
-    "category": "Politics",
-    "headline": "CM Defends Electoral Roll",
-    "summary": "Goa Chief Minister Pramod Sawant defended the electoral roll revision, stating it is fair and devoid of manipulation."
+    "category": "Civic",
+    "headline": "Mirabag Water Pumping Station Shifted",
+    "summary": "The Goa Cabinet approved shifting the Mirabag water pumping station and barrage project to Panchwadi."
   },
   {
     "rank": 12,
-    "category": "Civic",
-    "headline": "Locals Seek Pollution Cameras",
-    "summary": "Residents in Bicholim have requested the installation of CCTV cameras to effectively monitor and curb river pollution."
+    "category": "Sports",
+    "headline": "Arjun Tendulkar Missing from Ranji Squad",
+    "summary": "All-rounder Arjun Tendulkar's name was notably absent as the Goa Cricket Association unveiled its Ranji Trophy squad."
   },
   {
     "rank": 13,
-    "category": "Civic",
-    "headline": "Smart City Transitions to SPV",
-    "summary": "Following prodding from the central government, Goa has transitioned its smart city project into a state-level special purpose vehicle."
+    "category": "Crime",
+    "headline": "Unnatural Death Case Filed for Nana Patekar",
+    "summary": "Goa Police registered an unnatural death case and conducted an autopsy after veteran actor Nana Patekar passed away at 75 due to a heart attack."
   },
   {
     "rank": 14,
-    "category": "Civic",
-    "headline": "NGT Stays Port Channel Project",
-    "summary": "The National Green Tribunal has maintained its stay order on the Mormugao port’s channel deepening project."
+    "category": "Business",
+    "headline": "Mumbai Woman Builds Saree Business in Goa",
+    "summary": "A former Mumbai corporate employee successfully transitioned to running a saree business in Goa, generating Rs 87 lakh over five years."
   },
   {
     "rank": 15,
     "category": "Civic",
-    "headline": "Water Project Shifted to Panchwadi",
-    "summary": "The Goa government has officially shifted the Rs 228 crore Mirabag barrage water project to Panchwadi."
+    "headline": "Bicholim Locals Demand CCTV for Rivers",
+    "summary": "Residents in Bicholim have requested the installation of CCTV cameras along water bodies to curb ongoing river pollution."
   },
   {
     "rank": 16,
-    "category": "Crime",
-    "headline": "Charges Ordered in MLM Scam",
-    "summary": "A special PMLA court in Goa has ordered the framing of charges in the multi-crore Yudivo multi-level marketing scam."
+    "category": "Civic",
+    "headline": "Smart City Transitions to State SPV",
+    "summary": "Following directives from the Centre, Goa has transitioned its smart city framework into a state-level Special Purpose Vehicle."
   },
   {
     "rank": 17,
     "category": "Civic",
-    "headline": "HC Quashes Delimitation Notice",
-    "summary": "The High Court quashed Goa's municipal delimitation notification, citing a lack of meaningful consultation."
+    "headline": "Goa Cabinet Clears Key Sector Approvals",
+    "summary": "The Goa Cabinet gave the green light to multiple policy decisions impacting tourism, agriculture, and urban development."
   },
   {
     "rank": 18,
-    "category": "Tourism",
-    "headline": "Focus on Creative Industries",
-    "summary": "Minister Khaunte stated that focusing on the creative industry can boost the local tech ecosystem and promote long-stay tourism."
+    "category": "Sports",
+    "headline": "FC Goa Secures Draw in ISL Clash",
+    "summary": "FC Goa managed to salvage a crucial point in their Indian Super League encounter thanks to a late rescue."
   },
   {
     "rank": 19,
-    "category": "Civic",
-    "headline": "Opa Barrage Gates Shut",
-    "summary": "The gates of the Opa barrage were shut as water levels began to dip significantly."
+    "category": "Politics",
+    "headline": "ST Political Reservation Assured Soon",
+    "summary": "MLA Govind Gaude assured that the Scheduled Tribe political reservation in Goa will be finalized before November."
   },
   {
     "rank": 20,
-    "category": "Tourism",
-    "headline": "KPMG Contract Extended",
-    "summary": "Goa has extended its tourism master plan contract with KPMG at a cost of Rs 8 lakh per month."
+    "category": "Politics",
+    "headline": "GFP Tilt Revives 'Mahagathbandhan' Talk",
+    "summary": "The Goa Forward Party's inclination toward the Congress block has sparked renewed discussions about a grand opposition alliance."
   },
   {
     "rank": 21,
     "category": "Civic",
-    "headline": "Students Trek in Canacona",
-    "summary": "Students in Canacona had to trek 3.5 kilometers, highlighting geographical isolation issues faced by the community."
+    "headline": "Opa Barrage Gates Shut Amid Low Water",
+    "summary": "Authorities shut the gates of the Opa barrage as water levels in the region continued to dip significantly."
   },
   {
     "rank": 22,
     "category": "Civic",
-    "headline": "Proposed Women Police Station",
-    "summary": "Goa police have put forward a proposal to establish a dedicated women's police station in South Goa."
+    "headline": "GEC Students Continue Saturday Class Boycott",
+    "summary": "Over a thousand Goa Engineering College students are maintaining their boycott in strong opposition to mandatory Saturday classes."
+  },
+  {
+    "rank": 23,
+    "category": "General",
+    "headline": "Goa and Mizoram Youth Exchange Program",
+    "summary": "Youth delegations from Goa and Mizoram participated in a cultural and structural exchange program."
+  },
+  {
+    "rank": 24,
+    "category": "Tourism",
+    "headline": "Goa Extends KPMG Tourism Plan Contract",
+    "summary": "The state government renewed its contract with KPMG for the state tourism master plan at a monthly cost of Rs 8 lakh."
+  },
+  {
+    "rank": 25,
+    "category": "Civic",
+    "headline": "Canacona Students Trek 3.5km for School",
+    "summary": "Students in Canacona walked a 3.5km rugged trail, highlighting geographic isolation and infrastructure gaps in their community."
+  },
+  {
+    "rank": 26,
+    "category": "Sports",
+    "headline": "Clubs Take Charge as ISL Returns",
+    "summary": "The Indian Super League returns for a fresh season with clubs taking more control and renewed competitive optimism."
+  },
+  {
+    "rank": 27,
+    "category": "Civic",
+    "headline": "HC Quashes Municipal Delimitation Order",
+    "summary": "The High Court struck down the Goa municipal delimitation notification, citing a lack of meaningful consultation."
+  },
+  {
+    "rank": 28,
+    "category": "Civic",
+    "headline": "NGT Stays Mormugao Port Project",
+    "summary": "The National Green Tribunal has extended its stay on the Mormugao port’s channel deepening project."
+  },
+  {
+    "rank": 29,
+    "category": "Civic",
+    "headline": "New Women's Police Station Proposed",
+    "summary": "Goa Police have put forward a formal proposal to establish a dedicated women's police station in South Goa."
+  },
+  {
+    "rank": 30,
+    "category": "Sports",
+    "headline": "FC Goa and Chennaiyin Renew ISL Rivalry",
+    "summary": "FC Goa and Chennaiyin FC are set to face off, renewing one of the most explosive rivalries in the Indian Super League."
   }
 ]
