@@ -1,188 +1,302 @@
 [
   {
     "rank": 1,
-    "category": "Politics",
-    "headline": "Goa Unveils AI Policy 2026 and Hackathon",
-    "summary": "Chief Minister Pramod Sawant launched the Goa AI Policy 2026 alongside a state-level hackathon and a Konkani language AI model. The initiative aims to drive technological innovation and turn the state's digital growth vision into action."
+    "category": "Business",
+    "headline": "Goa Introduces AI Policy 2026 and State Hackathon",
+    "summary": "The Goa government has launched its AI Policy 2026 alongside a state-level hackathon. The initiative aims to nurture tech innovation and establish the state as an artificial intelligence hub."
   },
   {
     "rank": 2,
-    "category": "General",
-    "headline": "Indian Navy Begins Rafale-Marine Trials in Goa",
-    "summary": "The Indian Navy has initiated take-off and landing trials for Rafale-Marine fighter jets at naval facilities in Goa. These tests evaluate the aircraft's operational readiness for deployment on aircraft carrier INS Vikrant."
+    "category": "Business",
+    "headline": "Goa Targets Global AI Investments and Job Growth",
+    "summary": "IT Minister Rohan Khaunte is encouraging international tech investments to build an artificial intelligence ecosystem in Goa. The strategy focuses on generating modern tech jobs and driving digital economic growth."
   },
   {
     "rank": 3,
     "category": "Politics",
-    "headline": "Goa Govt Defends Sada Shivaji Maharaj Statue Location",
-    "summary": "The Goa government informed the High Court that it wants the Shivaji Maharaj statue to remain at its existing site in Sada. State officials justified acquiring the land from the Mormugao Port Authority, highlighting the icon's cultural significance to Goans."
+    "headline": "Chief Minister Hails Unveiling of Goa AI Policy 2026",
+    "summary": "Goa's Chief Minister praised the new AI Policy 2026, marking it as a transition from vision to concrete action. The policy outlines steps to expand technology-driven public services and economic sectors."
   },
   {
     "rank": 4,
     "category": "Politics",
-    "headline": "Tribal Groups Demand Political Reservation Before 2027",
-    "summary": "Scheduled Tribe organizations in Goa, including UTAA, have issued an ultimatum to the state government regarding political reservation. They warned of a state-wide campaign if the quota process is not completed prior to the 2027 assembly elections."
+    "headline": "State Favors Keeping Shivaji Statue at Sada Site",
+    "summary": "The Goa government expressed its firm stance that the Shivaji Maharaj statue in Sada should remain at its present location amid local disputes."
   },
   {
     "rank": 5,
-    "category": "Crime",
-    "headline": "Chennai-Goa Flight Delayed Following Hoax Bomb Threat",
-    "summary": "Passengers on a Goa-bound IndiGo flight from Chennai were deboarded following a bomb threat on board. The aircraft was thoroughly inspected and cleared for departure after a five-hour delay when the threat proved to be a hoax."
+    "category": "Politics",
+    "headline": "Government Defends Purchase of Statue Site in High Court",
+    "summary": "State officials informed the High Court that buying the land holding the Shivaji statue was justified due to its deep cultural significance to Goans."
   },
   {
     "rank": 6,
-    "category": "General",
-    "headline": "Goan-Origin Priest Appointed to Vatican Theological Body",
-    "summary": "Pope Francis has named a priest of Goan heritage to an international papal theological commission. The appointment marks significant recognition for the Goan Catholic community within global church leadership."
+    "category": "Politics",
+    "headline": "High Court Informed of Stand on Shivaji Maharaj Statue",
+    "summary": "The Goa government formally submitted its position to the High Court, supporting keeping the Shivaji Maharaj statue at its current venue."
   },
   {
     "rank": 7,
-    "category": "Civic",
-    "headline": "Study Flags High Faecal Coliform Levels in Mandovi River",
-    "summary": "A recent study warned that Goa's Mandovi River contains alarmingly high levels of faecal coliform bacteria. Environmental researchers expressed serious concerns over water quality and potential public health risks."
+    "category": "General",
+    "headline": "Navy Starts Rafale Marine Jet Trials off Goa Coast",
+    "summary": "The Indian Navy has commenced flight tests for Rafale Marine fighter jets in Goa. The trials aim to certify the aircraft for regular operations aboard aircraft carrier INS Vikrant."
   },
   {
     "rank": 8,
-    "category": "Tourism",
-    "headline": "Post-Diwali Tourism Spike Drives Up Goa Hotel Rates",
-    "summary": "Goa is experiencing a surge in post-festive holiday bookings, with luxury hotel room rates exceeding Rs 45,000 per night and private villas renting for up to Rs 5 lakh. The high demand highlights strong tourist interest despite steep accommodation costs."
+    "category": "General",
+    "headline": "Operational Testing Underway for Rafale Marine Aircraft",
+    "summary": "Flight evaluations for Rafale Marine fighters are taking place in Goa to test integration with the INS Vikrant carrier."
   },
   {
     "rank": 9,
-    "category": "Civic",
-    "headline": "Goa to Commission 40 New Ambulances Within a Month",
-    "summary": "Health Minister Vishwajit Rane announced that 40 new ambulances will be added to Goa's healthcare fleet within 30 days. The expansion aims to improve emergency response times and critical care access across the state."
+    "category": "General",
+    "headline": "Rafale Marine Flight Evaluations Begin for INS Vikrant",
+    "summary": "Indian Navy pilots have started testing Rafale Marine jets in Goa to assess operational readiness for deployment on INS Vikrant."
   },
   {
     "rank": 10,
     "category": "Crime",
-    "headline": "Goa Police Register FIR Against 300 Protesters in Panaji",
-    "summary": "Police in Goa have booked around 300 protesters following a rally organized by the Centre for Justice and Peace in Panaji. The FIR was registered over alleged controversial slogans raised during the demonstration."
+    "headline": "Goa-Bound Flight Delayed Five Hours Over Bomb Threat",
+    "summary": "An IndiGo flight from Chennai to Goa was grounded for five hours following a bomb threat. Security officials inspected the plane before clearing it for takeoff."
   },
   {
     "rank": 11,
-    "category": "Sports",
-    "headline": "Transplant Athlete Umesh Wins Four Gold Medals in HK",
-    "summary": "Organ transplant athlete Umesh secured four gold medals at an international sporting event held in Hong Kong. His achievement brings honor to the state and celebrates personal resilience and athletic excellence."
+    "category": "Civic",
+    "headline": "Goa Airports Review Preparedness Following Hoax Threats",
+    "summary": "Multiple recent false bomb threats have prompted an evaluation of emergency response protocols at Goa's airports. Officials are working to enhance safety checks without disrupting passenger traffic."
   },
   {
     "rank": 12,
-    "category": "Entertainment",
-    "headline": "Actress Sameera Reddy Showcases Eco-Friendly Goa Residence",
-    "summary": "Former actor Sameera Reddy highlighted her three-storey Goa home featuring lush gardens, coconut palms, and a farm-to-table lifestyle. Her residence offers architectural inspiration focused on sustainable living."
+    "category": "Crime",
+    "headline": "Hoax Bomb Threat Delays Flight Heading to Goa",
+    "summary": "A flight traveling to Goa experienced significant operational delays while security personnel conducted safety searches following a hoax bomb call."
   },
   {
     "rank": 13,
-    "category": "Civic",
-    "headline": "Centre Approves Comba ROB and Key Road Projects",
-    "summary": "The Central government has cleared the construction of the Comba Railway Overbridge alongside two major roadwork projects in Goa. The infrastructure approvals are expected to ease traffic bottlenecks and improve connectivity."
+    "category": "General",
+    "headline": "Road Route Update Issued for Drive from Goa to Bangalore",
+    "summary": "A comprehensive route update highlights current highway conditions and traffic diversions for drivers traveling between Goa and Bangalore."
   },
   {
     "rank": 14,
-    "category": "General",
-    "headline": "Goa Villages Celebrate Dussehra with Taranga Worship",
-    "summary": "Temples across Goa celebrated Dussehra with traditional harvest rituals and sacred tree ceremonies. Insignias of local deities, known as Tarangas, were reverently brought out during community festivities."
+    "category": "Civic",
+    "headline": "Traffic Diversions Announced on NH-66 at Bambolim",
+    "summary": "Traffic on NH-66 near Bambolim will be diverted on October 25 to accommodate foot overbridge construction work. Authorities advise commuters to plan travel around the schedule."
   },
   {
     "rank": 15,
-    "category": "Tourism",
-    "headline": "Warm Overseas Weather Delays Goa Charter Tourist Arrivals",
-    "summary": "Unseasonably warm weather in Europe has led to delayed charter flight bookings for Goa's winter tourism season. Travel operators report that foreign tourists are booking late, slowing early charter arrivals."
+    "category": "Civic",
+    "headline": "Study Finds High Bacteria Levels in Mandovi River",
+    "summary": "A environmental study warns that Goa's Mandovi River contains elevated levels of faecal coliform bacteria. The findings raise concerns regarding local water quality and pollution management."
   },
   {
     "rank": 16,
-    "category": "Civic",
-    "headline": "GSUDA to Appoint Agency to Audit Property Tax Survey",
-    "summary": "The Goa State Urban Development Agency will hire an external agency to audit property tax surveys conducted across local municipalities. The initiative aims to verify assessment data and ensure accurate municipal tax collection."
+    "category": "Tourism",
+    "headline": "Travel Report Highlights Budget Alternatives to Goa",
+    "summary": "A comparative tourism report identifies affordable domestic and international getaways for holidaymakers looking beyond traditional destinations like Goa and Manali."
   },
   {
     "rank": 17,
-    "category": "Civic",
-    "headline": "Pedestrian Deaths Drop in Goa While Cyclist Fatalities Rise",
-    "summary": "Recent traffic safety statistics reveal a 33 percent decline in pedestrian fatalities across Goa, even as cyclist deaths recorded an increase. Authorities are evaluating measures to enhance safety for vulnerable road users."
+    "category": "General",
+    "headline": "Feature Explores Dating Dynamics and Life in Goa",
+    "summary": "A social feature examines modern dating patterns and relationship challenges experienced by locals living in Goa."
   },
   {
     "rank": 18,
-    "category": "Politics",
-    "headline": "Congress Issues 10-Day Ultimatum Over Electoral Roll",
-    "summary": "The Congress party has demanded that Goa's Chief Electoral Officer scrap the SIR electoral roll within ten days. Party leaders threatened legal action in court if the electoral authority fails to meet the deadline."
+    "category": "Entertainment",
+    "headline": "Sameera Reddy Shares Experience Living in Goa",
+    "summary": "Former actress Sameera Reddy spoke about moving to Goa, explaining how a nature-centric lifestyle offers her balance and personal stability."
   },
   {
     "rank": 19,
-    "category": "Sports",
-    "headline": "FC Goa Keep Asian Campaign Alive with First Victory",
-    "summary": "FC Goa registered their first win in the Asian Champions League tournament to keep their advancement hopes alive. The victory provided a crucial boost to the club's standing in continental competition."
+    "category": "Crime",
+    "headline": "Police State Sudden Dispute Led to Mashem Homicide",
+    "summary": "Investigators reported that a sudden provocation led to a fatal killing in Mashem, ruling out advance planning in the incident."
   },
   {
     "rank": 20,
-    "category": "Business",
-    "headline": "Goa Marigold Farmers Suffer Sales Slump Despite High Yield",
-    "summary": "Local marigold growers in Goa experienced poor sales during the festive period despite recording higher flower yields. Farmers faced steep market competition from low-priced flower imports originating from neighboring states."
+    "category": "Sports",
+    "headline": "FC Goa Prepares for Crucial Match Against Qadsia",
+    "summary": "FC Goa faces a decisive clash against Qadsia as they seek a vital victory to advance in tournament competition."
   },
   {
     "rank": 21,
-    "category": "Business",
-    "headline": "Only 0.69 Percent of Goa Farmland Insured Over Past Decade",
-    "summary": "Official data reveals that less than one percent of agricultural land in Goa was covered under crop insurance over the last ten years. Limited awareness and procedural hurdles are cited as key reasons for the low adoption."
+    "category": "General",
+    "headline": "Updated Driving Notes Released for Bangalore to Goa Route",
+    "summary": "A detailed travel log provides insights into road surface conditions, diversions, and transit times between Bangalore and Goa."
   },
   {
     "rank": 22,
-    "category": "Entertainment",
-    "headline": "Foundation Stone Laid for Rs 113 Crore Ravindra Bhavan",
-    "summary": "State leaders laid the foundation stone for a modern Ravindra Bhavan cultural complex in Tuem, costing Rs 113 crore. The venue will host performing arts and community events in North Goa."
+    "category": "Business",
+    "headline": "Goa Unveils Konkani AI Model and State Tech Strategy",
+    "summary": "Goa expanded its tech push by launching an AI framework, hosting a statewide hackathon, and unveiling a local Konkani language AI model."
   },
   {
     "rank": 23,
-    "category": "Business",
-    "headline": "Goa Agriculture Dept Advises Shift to Short-Duration Crops",
-    "summary": "Anticipating potential water shortages in the coming season, the Agriculture Department plans to issue guidelines urging farmers to plant short-duration crops. The move aims to conserve water resources while protecting yields."
+    "category": "Civic",
+    "headline": "State Requests Federal Funds for Porvorim Flyover Ramps",
+    "summary": "The Goa government is seeking central funding to add entry and exit ramps to the newly opened Porvorim elevated corridor."
   },
   {
     "rank": 24,
-    "category": "Civic",
-    "headline": "Tillari Canal Shutdown to Delay Calangute Water Projects",
-    "summary": "Scheduled maintenance work on the Tillari canal system will temporarily delay water distribution projects intended for Calangute. Authorities are working on alternative supply arrangements to lessen the impact on residents."
+    "category": "Business",
+    "headline": "Goa Maintains Lower Inflation Than National Average",
+    "summary": "Economic analysis shows Goa resisting sharp national inflationary trends, keeping price hikes lower than many other Indian states."
   },
   {
     "rank": 25,
     "category": "Civic",
-    "headline": "Traffic Diversions Announced at Bambolim for Foot Overbridge",
-    "summary": "Traffic authorities announced route diversions along the Bambolim highway stretch on October 25 for foot overbridge installation. Commuters are advised to plan alternate routes and expect minor delays."
+    "headline": "South Goa Announces Land Mutation Camp on October 24",
+    "summary": "The South Goa district administration will hold a dedicated public camp on October 24 to speed up land mutation processing."
   },
   {
     "rank": 26,
-    "category": "Civic",
-    "headline": "Canacona to Build New Bandharas to Fight Water Scarcity",
-    "summary": "The Water Resources Department plans to construct new bandharas across rivers in Canacona to store rainwater. The check dams aim to recharge groundwater and relieve summer drinking water shortages."
+    "category": "Tourism",
+    "headline": "Heritage Spotlight Explores Historic Figueiredo Mansion",
+    "summary": "A historical feature highlights Loutolim's Figueiredo Mansion, showcasing its preserved colonial architecture and rich Goan heritage."
   },
   {
     "rank": 27,
     "category": "Crime",
-    "headline": "Tension Escalates in Canacona Following Man's Murder",
-    "summary": "Tensions flared in Canacona after a local resident was murdered despite having previously reported receiving threats. Police have launched a murder investigation and deployed forces to maintain order."
+    "headline": "Fatal Iron Rod Attack Claims Life in Goa",
+    "summary": "A 37-year-old man died after being assaulted with iron rods, prompting police to register a murder case and begin investigation."
   },
   {
     "rank": 28,
-    "category": "Tourism",
-    "headline": "Travel Creators Highlight Budget Alternatives to Goa",
-    "summary": "Travel creators and industry reports are highlighting domestic and foreign alternatives like Thailand and lesser-known Indian beaches over peak-season Goa. Rising hotel expenses in Goa are driving cost-conscious travelers toward cheaper options."
+    "category": "Entertainment",
+    "headline": "Inside Sameera Reddy's Sustainable Goa Home Garden",
+    "summary": "Actress Sameera Reddy showcased her eco-friendly Goan residence featuring organic vegetable farming, fruit trees, and sustainable living practices."
   },
   {
     "rank": 29,
-    "category": "General",
-    "headline": "Speaker Tawadkar Urges Schools to Visit Goa Tribal Fair",
-    "summary": "Goa Assembly Speaker Ramesh Tawadkar urged educational institutions to organize student trips to the state's annual tribal fair. He emphasized that exposure to indigenous traditions builds cultural awareness among students."
+    "category": "Civic",
+    "headline": "Goa Prepares Early Warning System for Forest Fires",
+    "summary": "In response to heightened seasonal risks, Goa is developing an early warning monitoring system to detect and prevent forest fires."
   },
   {
     "rank": 30,
-    "category": "General",
-    "headline": "Figueiredo Mansion Preserves Goa's Architectural Heritage",
-    "summary": "The historic Figueiredo mansion stands as a striking symbol of Goa's colonial heritage and ancestral history. The estate continues to draw heritage enthusiasts interested in regional architecture and legacy."
+    "category": "Crime",
+    "headline": "Murder in Canacona Triggers Local Tension",
+    "summary": "A man was murdered in Canacona despite previously reporting threats to the police, creating a tense situation in the locality."
   },
   {
     "rank": 31,
-    "category": "Entertainment",
-    "headline": "New Cinema Project Brings 1990s Goa to the Screen",
-    "summary": "Filmmakers are recreating Goa's vintage 1990s era for an upcoming cinematic release capturing coastal life from that period. The project highlights local culture, retro style, and traditional Goan living."
+    "category": "General",
+    "headline": "Traditional Taranga Insignias Worshipped During Dussehra",
+    "summary": "Villages across Goa observed Dussehra traditions by honoring sacred Tarangas, physical symbols representing local deities."
+  },
+  {
+    "rank": 32,
+    "category": "General",
+    "headline": "Temples Mark Dussehra with Harvest Rituals",
+    "summary": "Goan temples celebrated Dussehra with sacred tree customs and traditional harvest ceremonies."
+  },
+  {
+    "rank": 33,
+    "category": "Civic",
+    "headline": "Center Approves Funding for Comba Railway Overbridge",
+    "summary": "The central government has sanctioned the long-pending Comba Railway Overbridge project alongside two additional road improvement schemes."
+  },
+  {
+    "rank": 34,
+    "category": "Tourism",
+    "headline": "Warm European Autumn Delays Goa Charter Tourist Season",
+    "summary": "Unseasonably warm weather across Europe has led tourists to delay booking holidays, resulting in a slower start for Goa's charter flight arrivals."
+  },
+  {
+    "rank": 35,
+    "category": "General",
+    "headline": "Daily Konkani News Broadcast Covers State Developments",
+    "summary": "The latest Konkani news broadcast delivered comprehensive updates on local administration news, civic issues, and cultural events."
+  },
+  {
+    "rank": 36,
+    "category": "Civic",
+    "headline": "Benaulim Residents Suffer Outages Despite Power Upgrades",
+    "summary": "Power supply interruptions continue to affect Benaulim, despite recent investments into local grid infrastructure."
+  },
+  {
+    "rank": 37,
+    "category": "Politics",
+    "headline": "Tribal Alliance Demands Quick Action on ST Reservation",
+    "summary": "The United Tribal Associations Alliance issued a five-day deadline for the government to execute political reservation guarantees for Scheduled Tribes."
+  },
+  {
+    "rank": 38,
+    "category": "Civic",
+    "headline": "Speaker Encourages School Visits to State Tribal Fair",
+    "summary": "Assembly Speaker Ramesh Tawadkar suggested that schools across Goa send students to the annual state tribal fair to learn about indigenous heritage."
+  },
+  {
+    "rank": 39,
+    "category": "Civic",
+    "headline": "GSUDA to Hire Agency for Property Tax Survey Audit",
+    "summary": "The Goa Urban Development Agency plans to engage an independent auditing firm to verify urban property tax survey data."
+  },
+  {
+    "rank": 40,
+    "category": "Crime",
+    "headline": "Six Teachers Charged with Assaulting Student in Pernem",
+    "summary": "Police filed charges against six Pernem school teachers for physically assaulting a student and unlawfully confining the child's mother."
+  },
+  {
+    "rank": 41,
+    "category": "Civic",
+    "headline": "Missing Signs Cause Confusion on DB Marg No-Parking Zone",
+    "summary": "A no-parking rule active on DB Marg since 2014 remains widely ignored or misunderstood due to missing street signage."
+  },
+  {
+    "rank": 42,
+    "category": "Tourism",
+    "headline": "Travel Vloggers Compare Holiday Costs in Thailand and Goa",
+    "summary": "Content creators published budget breakdowns illustrating how international trips to Thailand can sometimes match or undercut domestic holiday costs in Goa."
+  },
+  {
+    "rank": 43,
+    "category": "Crime",
+    "headline": "Cyber Cell Requests Faster Bank Action to Lock Fraud Funds",
+    "summary": "Goa Cyber Police requested financial institutions accelerate their procedures for freezing accounts involved in digital fraud."
+  },
+  {
+    "rank": 44,
+    "category": "Civic",
+    "headline": "Bambolim Footbridge Erection Causes Five-Hour Diversion",
+    "summary": "Highways near Bambolim will undergo a temporary five-hour diversion on October 25 to allow installation of a pedestrian footbridge."
+  },
+  {
+    "rank": 45,
+    "category": "Civic",
+    "headline": "Calangute Trench Incident Prompts Safety Scrutiny",
+    "summary": "A road mishap involving an open construction trench in Calangute has drawn criticism regarding safety measures taken during public work projects."
+  },
+  {
+    "rank": 46,
+    "category": "Business",
+    "headline": "High Marigold Harvest Meets Weak Market Demand",
+    "summary": "Despite generating bumper marigold yields this season, Goa flower farmers report struggling with low market demand and reduced profit margins."
+  },
+  {
+    "rank": 47,
+    "category": "Civic",
+    "headline": "Goa Pedestrian Deaths Decrease While Cyclist Fatalities Rise",
+    "summary": "Traffic safety statistics indicate a 33% decline in pedestrian fatalities across Goa, though fatal crashes involving cyclists showed an upward trend."
+  },
+  {
+    "rank": 48,
+    "category": "General",
+    "headline": "Young Goans Launch Initiative to Document Heritage Wisdom",
+    "summary": "Youth groups in Goa have started recording local traditions, oral histories, and community knowledge from elder residents to preserve cultural heritage."
+  },
+  {
+    "rank": 49,
+    "category": "Business",
+    "headline": "Under One Percent of Goa Farmland Insured in Last Decade",
+    "summary": "Official figures show that only 0.69% of agricultural land in Goa was enrolled in crop insurance programs over the past ten years."
+  },
+  {
+    "rank": 50,
+    "category": "General",
+    "headline": "Pope Appoints Goan-Origin Priest to Theological Commission",
+    "summary": "Pope Francis has appointed a Catholic priest of Goan descent as a member of the Vatican's prestigious International Theological Commission."
   }
 ]
