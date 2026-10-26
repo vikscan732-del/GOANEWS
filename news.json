@@ -1,248 +1,302 @@
 [
   {
     "rank": 1,
-    "category": "Crime",
-    "headline": "Bengaluru Couple Killed in Crash",
-    "summary": "A Bengaluru couple died following a car-truck collision at Dharbandora. They were reportedly on a trip to drop their sister-in-law to Goa when the fatal accident occurred."
+    "category": "General",
+    "headline": "Goa Acquires 16th-Century Kalbhairav Sculpture",
+    "summary": "Goa has acquired a 16th-century Kalbhairav sculpture originating from Mandrem. The artifact holds significant historical value for the region."
   },
   {
     "rank": 2,
-    "category": "Civic",
-    "headline": "Goa Acquires Ancient Sculpture",
-    "summary": "Goa has acquired a 16th-century Kalbhairav sculpture from Mandrem. The historic artifact was successfully secured for the state."
+    "category": "Sports",
+    "headline": "Yash Fadte Wins Copenhagen Open 2026",
+    "summary": "Goa's squash player Yash Fadte has clinched the Copenhagen Open 2026 title. He delivered a stellar performance throughout the tournament."
   },
   {
     "rank": 3,
-    "category": "Politics",
-    "headline": "AAP Promotes Guarantees",
-    "summary": "The Aam Aadmi Party has taken its six key guarantees to households across Goa. Women across the state have also expressed support for AAP's monthly financial assistance promise during meetings."
+    "category": "Crime",
+    "headline": "Bengaluru Couple Dies in Dharbandora Crash",
+    "summary": "A Bengaluru couple lost their lives following a collision between a car and a truck at Dharbandora. Local authorities are investigating the tragic incident."
   },
   {
     "rank": 4,
-    "category": "Civic",
-    "headline": "Fisheries Policy Guidance",
-    "summary": "GRE representatives stated that Matanhy's legacy must guide Goa's fisheries policy. They emphasized honoring past principles for sustainable development in the sector."
+    "category": "Crime",
+    "headline": "Naval Officer's Son Drowns in Resort Pool",
+    "summary": "A five-year-old son of a naval officer tragically drowned in a swimming pool at a South Goa resort. Police have initiated inquiries into the accident."
   },
   {
     "rank": 5,
-    "category": "Business",
-    "headline": "Domestic Flight Departures to Drop",
-    "summary": "Goa's daily domestic flight departures are set to drop by 12% in November. This comes amid a broader reported nosedive in air traffic across Goa airports."
+    "category": "Politics",
+    "headline": "Goa BJP Slams Kharge's Remark Against Modi",
+    "summary": "The Goa BJP unit stated that Mallikarjun Kharge's remarks against Prime Minister Narendra Modi reflect the frustration of the Congress party. Leaders condemned the opposition's statements."
   },
   {
     "rank": 6,
     "category": "Crime",
-    "headline": "Fatal Trip for Bengaluru Pair",
-    "summary": "A trip to drop a relative off in Goa turned fatal for a Bengaluru man and his wife following a severe collision. Both succumbed to their injuries after the accident."
+    "headline": "Three Dead in Road Accidents Near Goa",
+    "summary": "Multiple accidents along the Khanapur and Goa road sections resulted in three fatalities and five injuries. Emergency services rushed to assist the victims."
   },
   {
     "rank": 7,
-    "category": "Civic",
-    "headline": "S Goa Collector Issues Mutation SOP",
-    "summary": "The South Goa collector has issued a standard operating procedure (SOP) for mutation cases. Meanwhile, advocates have flagged missing officials and files at mutation camps."
+    "category": "Politics",
+    "headline": "AAP Introduces Six Guarantees in Goa",
+    "summary": "The Aam Aadmi Party has launched its campaign to bring six key guarantees directly to the doorsteps of Goan residents. Party representatives outlined their promises for the state."
   },
   {
     "rank": 8,
-    "category": "Business",
-    "headline": "GCCI Seeks GST Reforms",
-    "summary": "The Goa Chamber of Commerce and Industry has called for simpler GST compliance and reforms to support state MSMEs. They also pledged industry support to help build a knowledge economy under the new AI policy."
+    "category": "Civic",
+    "headline": "Goa Notifies Rehabilitation Scheme for Acid Attack Survivors",
+    "summary": "The Goa government has officially notified a rehabilitation scheme aimed at supporting acid attack survivors. The policy includes provisions for medical care and financial assistance."
   },
   {
     "rank": 9,
-    "category": "Business",
-    "headline": "Goa Eyes Mud Crab Farming Model",
-    "summary": "Goa is looking at the Andhra Pradesh model to boost local mud crab farming. The initiative aims to enhance aquaculture practices in the region."
+    "category": "Entertainment",
+    "headline": "Speaker Urges Revival of Rural Tiatr",
+    "summary": "The Goa Legislative Assembly Speaker has called for efforts to revive the traditional Goan art form of tiatr in rural areas. He emphasized preserving local cultural heritage."
   },
   {
     "rank": 10,
-    "category": "Sports",
-    "headline": "Ethan Vaz Becomes Grandmaster",
-    "summary": "Goa's Ethan Vaz has achieved the milestone of becoming India's 96th Grandmaster. He earned widespread praise for his exceptional performance in chess."
+    "category": "Tourism",
+    "headline": "Domestic Flight Departures to Drop in November",
+    "summary": "Goa's daily domestic flight departures are projected to experience a 12% decline in November. The shift comes as air traffic patterns adjust for the upcoming period."
   },
   {
     "rank": 11,
-    "category": "Business",
-    "headline": "Air Traffic Nosedives in Goa",
-    "summary": "Air traffic across Goa airports has experienced a sharp decline. This downward trend coincides with a projected drop in domestic flight departures for the upcoming month."
+    "category": "Sports",
+    "headline": "Ethan Vaz Becomes India's 96th Grandmaster",
+    "summary": "Goa chess player Ethan Vaz has officially achieved the title of India's 96th Grandmaster. His milestone achievement has brought pride to the state's sporting community."
   },
   {
     "rank": 12,
-    "category": "Crime",
-    "headline": "Mother and Son Found Dead",
-    "summary": "A mother and her son were found dead in the Terekhol River. Local authorities launched an investigation into the tragic incident."
+    "category": "Civic",
+    "headline": "Goa Motor Vehicles Amendment Rules Updated",
+    "summary": "The Goa Motor Vehicles Amendment Rules have been updated, with Rule 310(A) officially omitted. The notification brings changes to the existing transport regulations."
   },
   {
     "rank": 13,
-    "category": "Politics",
-    "headline": "Sardesai Flags Voter Rules Confusion",
-    "summary": "Goa Forward Party leader Sardesai has highlighted booth-level officers' lack of clarity regarding voter enrolment rules. He urged authorities to address the administrative confusion promptly."
+    "category": "Business",
+    "headline": "Goa Delegates VAT Powers to Tax Commissioners",
+    "summary": "The Goa government has delegated powers under Section 25 of the Goa VAT Act to Additional Commissioners of State Tax. The move is designed to streamline administrative tax processes."
   },
   {
     "rank": 14,
-    "category": "Crime",
-    "headline": "Two Arrested in Investment Fraud",
-    "summary": "The Goa Cyber Crime Cell arrested two Maharashtra men in connection with a Rs 39 lakh online investment scam. Police hailed it as a major breakthrough against digital fraudsters."
+    "category": "Business",
+    "headline": "Lupin Receives USFDA Observation for Goa Plant",
+    "summary": "Pharmaceutical major Lupin has received one observation from the USFDA following an inspection of its Goa facility. The company is expected to address the regulatory feedback."
   },
   {
     "rank": 15,
-    "category": "Politics",
-    "headline": "Kamat Focuses on Margao Development",
-    "summary": "Politician Digambar Kamat has shifted focus toward local development initiatives as he prepares for upcoming polls to retain Margao. He emphasized continued civic progress."
+    "category": "Tourism",
+    "headline": "First Kazakhstan Charter Flight Arrives at Mopa",
+    "summary": "The first charter flight of the season from Kazakhstan landed at Mopa airport, carrying 177 tourists. The arrival marks the official kickoff for winter tourism in Goa."
   },
   {
     "rank": 16,
-    "category": "Crime",
-    "headline": "Child Drowns in Resort Pool",
-    "summary": "A naval officer's five-year-old son tragically drowned in a South Goa resort pool. Police are investigating the circumstances surrounding the drowning."
+    "category": "Sports",
+    "headline": "IPL 2027 Mini-Auction Set for Goa on Dec 16",
+    "summary": "The IPL 2027 mini-auction is officially scheduled to take place in Goa on December 16. Franchises are preparing for squad adjustments ahead of the event."
   },
   {
     "rank": 17,
     "category": "Business",
-    "headline": "GCCI Hails Goa AI Policy",
-    "summary": "The GCCI praised the Goa AI Policy 2026, stating it will drive economic growth and foster a knowledge economy. The government also launched related tech initiatives and hackathons."
+    "headline": "Goa Fisheries Launches Asian Sea Bass Sale",
+    "summary": "The Goa Fisheries Department has initiated direct sales of fresh Asian Sea Bass to local consumers. The program aims to make locally farmed fish readily accessible."
   },
   {
     "rank": 18,
-    "category": "Weather",
-    "headline": "Sattari Turmeric Yield to Drop",
-    "summary": "Sattari's turmeric production is expected to fall by up to 40% due to poor rainfall. Farmers anticipate a challenging season following inadequate monsoon showers."
+    "category": "Sports",
+    "headline": "IPL 2027 Auction Date and Retention Deadline Fixed",
+    "summary": "The IPL 2027 auction will be held in Goa on December 16, with player retentions due by November 15. Teams must finalize their core squads before the deadline."
   },
   {
     "rank": 19,
-    "category": "Civic",
-    "headline": "Candolim Residents Demand Safety",
-    "summary": "Villagers in Candolim have raised safety concerns regarding ongoing GSIDC work sites in their area. They have urged authorities to take immediate precautionary measures."
+    "category": "Politics",
+    "headline": "Congress Alleges Major Dona Paula Land Scam",
+    "summary": "The Congress party has raised allegations regarding an alleged multi-crore land scam in Dona Paula. Opposition leaders are demanding a thorough probe into the matter."
   },
   {
     "rank": 20,
-    "category": "Crime",
-    "headline": "House Gutted in Cylinder Blast",
-    "summary": "A house in Bhoma was completely gutted following an LPG cylinder blast. Fire and emergency services responded to the incident."
+    "category": "Tourism",
+    "headline": "First Kazakhstan Flight Welcomes Winter Tourism",
+    "summary": "Mopa airport welcomed 177 passengers on the season's inaugural charter flight from Kazakhstan. The arrival signifies a positive start to Goa's winter tourism season."
   },
   {
     "rank": 21,
-    "category": "Civic",
-    "headline": "Archives Department Seeks Translators",
-    "summary": "Goa's archives department is planning to rope in Portuguese translators. The initiative aims to help process and study historical documents more effectively."
+    "category": "Sports",
+    "headline": "IPL 2027 Mini-Auction Date Announced for Goa",
+    "summary": "Goa has been locked in as the host destination for the upcoming IPL 2027 mini-auction on December 16. Cricket boards and franchises have marked their calendars for the event."
   },
   {
     "rank": 22,
-    "category": "Civic",
-    "headline": "GSPCB Flags Eateries Loophole",
-    "summary": "The Goa State Pollution Control Board has pointed out a regulatory loophole that leaves most local eateries outside its direct oversight. Officials are reviewing steps to address the gap."
+    "category": "Crime",
+    "headline": "Toll Plaza Brawl Erupts on Mumbai-Goa Highway",
+    "summary": "A violent altercation broke out at a toll plaza along the Mumbai-Goa highway following a FASTag scanning failure. Video footage of chairs flying during the brawl has gone viral."
   },
   {
     "rank": 23,
-    "category": "Civic",
-    "headline": "Natural Farming Push in Villages",
-    "summary": "The Khet Bachao Abhiyan has launched a natural farming outreach campaign for rural villagers. The initiative promotes chemical-free agricultural practices across local communities."
+    "category": "Business",
+    "headline": "GCCI Seeks Simplified GST for MSMEs",
+    "summary": "The Goa Chamber of Commerce and Industry has requested simpler GST compliance norms and reforms for local MSMEs. Business leaders hope for reduced regulatory burdens."
   },
   {
     "rank": 24,
-    "category": "Sports",
-    "headline": "Punjab Defeats Churchill Brothers",
-    "summary": "Punjab secured a late victory to upset Churchill Brothers in a competitive football fixture. The Goan side conceded crucial goals in the closing stages of the match."
+    "category": "Civic",
+    "headline": "CM Directs Respectful Treatment of Citizens",
+    "summary": "Goa's Chief Minister has instructed government departments to ensure citizens are treated with respect when visiting offices. The directive emphasizes improving public service delivery."
   },
   {
     "rank": 25,
-    "category": "Crime",
-    "headline": "Road Accidents Claim Three Lives",
-    "summary": "Three people died and five others were injured in multiple accidents along the Khanapur and Goa road sections. Emergency responders rushed the injured to nearby hospitals."
+    "category": "Politics",
+    "headline": "Borkar Threatens Legal Action Over Corruption Claims",
+    "summary": "Politician Borkar has announced plans to sue Kholkar and others following corruption allegations made against him. Legal notices are expected to be filed soon."
   },
   {
     "rank": 26,
-    "category": "General",
-    "headline": "Health Minister Inspects Home Care",
-    "summary": "Goa's health minister visited patients to personally assess the delivery of home-based healthcare support services. The initiative aims to ensure effective medical care for residents at home."
+    "category": "Civic",
+    "headline": "Rane Expands Healthcare Infrastructure in Goa",
+    "summary": "Health Minister Vishwajit Rane has rolled out new ambulances and critical care units to bolster Goa's healthcare network. The additions are meant to improve emergency response times."
   },
   {
     "rank": 27,
-    "category": "Business",
-    "headline": "Lupin Goa Facility Gets US FDA Note",
-    "summary": "Pharmaceutical major Lupin received a single observation following a US FDA inspection at its Goa manufacturing facility. The company is addressing the regulatory feedback."
+    "category": "Politics",
+    "headline": "Amit Palekar Questions EVM Calibration Discrepancies",
+    "summary": "AAP leader Amit Palekar has demanded clarification from the Election Commission of India regarding alleged EVM calibration discrepancies in Goa. He raised concerns over electoral transparency."
   },
   {
     "rank": 28,
     "category": "Crime",
-    "headline": "Woman Dies After Scooter Crash",
-    "summary": "A woman succumbed to her injuries days after being involved in a scooter accident in Mandrem. Local authorities registered the case as an accident death."
+    "headline": "Fatal Accident Claims Lives of Bengaluru Couple",
+    "summary": "A trip to drop off a relative in Goa ended in tragedy when a Bengaluru man and his wife died in a road accident. Their vehicle was involved in a severe collision."
   },
   {
     "rank": 29,
-    "category": "Civic",
-    "headline": "Goa Launches AI Policy 2026",
-    "summary": "The Goa government officially unveiled its AI Policy 2026 alongside a state hackathon and an AI Centre of Excellence. Officials emphasized turning tech vision into actionable growth."
+    "category": "Politics",
+    "headline": "Damu Naik Criticizes Congress Amid Kharge Remarks",
+    "summary": "BJP leader Damu Naik accused the Congress party of being jealous of Prime Minister Modi's work ethic while reacting to recent statements. He defended the ruling government's track record."
   },
   {
     "rank": 30,
-    "category": "Business",
-    "headline": "Goa Targets Innovation Ecosystem",
-    "summary": "Goa aims to build a robust, innovation-driven AI ecosystem and announced the return of its tech conclave next year. Leaders highlighted the state's readiness for digital transformation."
+    "category": "Sports",
+    "headline": "Goa Fights Back on Day 1 of Ranji Trophy",
+    "summary": "Goa put up a resilient fight against Vidarbha on Day 1 of the Ranji Trophy 2026-27 match, led by notable batting efforts from Misal and Kasvankar despite Bhute's four-wicket haul."
   },
   {
     "rank": 31,
-    "category": "Civic",
-    "headline": "New Tender for CoP Terminal",
-    "summary": "A fresh tender is currently in the works for the Mormugao Port's ship-shaped terminal project. Authorities are working to expedite the pending infrastructure development."
+    "category": "Sports",
+    "headline": "IPL 2027 Auction Details Confirmed by Reports",
+    "summary": "Media reports confirm the IPL 2027 auction will take place in Goa on December 16, with player retentions closing on November 15. Franchises are gearing up for strategic squad building."
   },
   {
     "rank": 32,
-    "category": "Politics",
-    "headline": "Uncertainty Over ST Political Quota",
-    "summary": "Political reservation quotas for scheduled tribes in Goa remain shrouded in uncertainty. Community leaders continue to seek clarity from authorities."
+    "category": "Sports",
+    "headline": "Valanka Alemao Urges Reforms in Goa Football",
+    "summary": "Valanka Alemao has called for structural reforms within the Goa Football Association to better support young footballers. The appeal highlights the need for grassroots development."
   },
   {
     "rank": 33,
     "category": "Sports",
-    "headline": "Davorlim FC Wins Football Tourney",
-    "summary": "Davorlim FC clinched the championship title in the inaugural All Goa Football Tournament. They triumphed over rival teams to lift the trophy."
+    "headline": "Goa to Host IPL 2027 Auction in December",
+    "summary": "Goa has been officially confirmed as the host location for the upcoming IPL 2027 auction scheduled for December 16. The high-profile event is expected to draw major cricket figures."
   },
   {
     "rank": 34,
-    "category": "Civic",
-    "headline": "Harvalem Project Faces Land Dispute",
-    "summary": "A temple land controversy has created obstacles for the Harvalem development project. Local stakeholders are attempting to resolve the ownership and usage issues."
+    "category": "Crime",
+    "headline": "Mother and Son Found Dead in Terekhol River",
+    "summary": "A mother and her son were found dead in the waters of the Terekhol River. Local authorities have recovered the bodies and launched a probe."
   },
   {
     "rank": 35,
-    "category": "Politics",
-    "headline": "Govt Ready to Acquire Chimbel Site",
-    "summary": "Chief Minister Pramod Sawant announced that the Goa government is ready to acquire the historic 1928 Shuddhikaran site at Chimbel. The move aims to preserve an important piece of local heritage."
+    "category": "Tourism",
+    "headline": "Traditional Goan Christmas Sweets Highlighted",
+    "summary": "A selection of eleven traditional Goan Christmas sweets has been spotlighted as the festive season approaches. These regional delicacies remain central to local holiday celebrations."
   },
   {
     "rank": 36,
-    "category": "Business",
-    "headline": "Virat Kohli's Investment Portfolio",
-    "summary": "Cricketer Virat Kohli's diverse business portfolio includes investments in gym chains, FC Goa, and apparel brands. His business ventures continue to expand across multiple sectors."
+    "category": "Sports",
+    "headline": "IPL Mini-Auction in Goa Clashes with ODI Match",
+    "summary": "The IPL 2027 mini-auction set for December 16 in Goa will clash with the India vs Sri Lanka Bengaluru ODI match. Cricket fans face a scheduling overlap between the two events."
   },
   {
     "rank": 37,
-    "category": "Civic",
-    "headline": "Curchorem Citizens Raise Grievances",
-    "summary": "Residents at a Curchorem public meeting flagged persistent civic issues and pending land matters. They urged local representatives to take swift corrective action."
+    "category": "Sports",
+    "headline": "IPL 2027 Auction Set for December 16",
+    "summary": "The Board of Control for Cricket in India has slated the IPL 2027 auction for December 16 in Goa. Retention lists must be submitted by November 15."
   },
   {
     "rank": 38,
-    "category": "Civic",
-    "headline": "Board Plans Quarry Restoration",
-    "summary": "The Goa Biodiversity Board has formulated plans to restore 20 abandoned laterite quarries across the state. The ecological project aims to rehabilitate damaged landscapes."
+    "category": "Crime",
+    "headline": "Goa-Thrissur Bus Plunges into Kerala Ravine",
+    "summary": "A long-distance bus traveling from Goa to Thrissur plunged into a low-lying area in Kerala, leaving about 30 passengers with minor injuries. Rescue teams swiftly evacuated the area."
   },
   {
     "rank": 39,
-    "category": "General",
-    "headline": "Goa Notifies Acid Attack Rehab",
-    "summary": "The Goa government has officially notified a comprehensive rehabilitation scheme for acid attack survivors. The program provides financial aid, medical care, and support services."
+    "category": "Sports",
+    "headline": "Goa Confirmed as Venue for IPL 2027 Mini-Auction",
+    "summary": "Goa is set to host the IPL 2027 mini-auction on December 16. Franchise representatives will gather in the state to finalize their team rosters."
   },
   {
     "rank": 40,
-    "category": "Crime",
-    "headline": "Cyberfrauds Persist in South Goa",
-    "summary": "Despite growing public awareness campaigns, cyber frauds continue to thrive in South Goa. Police have urged citizens to remain vigilant against online scams."
+    "category": "Politics",
+    "headline": "Goa CEO Dismisses Amit Palekar's EVM Claims",
+    "summary": "The Chief Electoral Officer of Goa has rejected Amit Palekar's allegations regarding EVM testing anomalies, calling the claims baseless. Officials defended the integrity of the voting machines."
   },
   {
     "rank": 41,
+    "category": "Civic",
+    "headline": "Smart Meter Installation Put on Hold for Consumers",
+    "summary": "The rollout of smart electricity meters for domestic consumers in Goa has been temporarily put on hold. The decision follows growing public feedback and administrative review."
+  },
+  {
+    "rank": 42,
+    "category": "Sports",
+    "headline": "Goa Selected to Host IPL 2027 Mini-Auction",
+    "summary": "The upcoming IPL 2027 mini-auction has been officially assigned to Goa, with proceedings scheduled for December 16. Preparations are underway to host the cricketing extravaganza."
+  },
+  {
+    "rank": 43,
     "category": "General",
-    "headline": "Book Wisdom Inspires Society",
-    "summary": "Dr. Madgaonkar noted that the wisdom found in 'Bhaktigeet Sagar' continues to guide the human mind and society. The literary work was praised for its moral teachings."
+    "headline": "Pilar Priests Celebrate Ordination Jubilees",
+    "summary": "Seventeen Pilar Priests celebrated the golden and silver jubilees of their ordination in a special religious ceremony. Members of the community gathered to honor their long-standing service."
+  },
+  {
+    "rank": 44,
+    "category": "Business",
+    "headline": "Goa Explores Andhra Model for Mud Crabs",
+    "summary": "Goa's fisheries sector is looking at the Andhra Pradesh model to boost commercial mud crab farming in the state. Officials hope to expand aquaculture output using proven techniques."
+  },
+  {
+    "rank": 45,
+    "category": "Crime",
+    "headline": "Mandrem Woman Dies Following Scooter Crash",
+    "summary": "A woman has succumbed to her injuries days after meeting with a scooter accident in Mandrem. Police are maintaining records of the fatal mishap."
+  },
+  {
+    "rank": 46,
+    "category": "Civic",
+    "headline": "South Goa Advocates Flag Missing Mutation Files",
+    "summary": "Advocates in South Goa have raised concerns over missing officials and pending files during a local mutation camp. Legal professionals urged authorities to resolve the administrative delays."
+  },
+  {
+    "rank": 47,
+    "category": "General",
+    "headline": "Aboard the Duronto Express First AC Journey",
+    "summary": "A scenic rail journey from Goa to Mumbai aboard the Duronto Express First AC offers passengers unique landscapes and onboard meals for a four-thousand-rupee fare."
+  },
+  {
+    "rank": 48,
+    "category": "Crime",
+    "headline": "Human Rights Commission Flags Colvale Jail Issues",
+    "summary": "The Goa Human Rights Commission has highlighted severe overcrowding, medical lapses, and hygiene issues at Colvale Central Jail. The panel called for immediate corrective measures."
+  },
+  {
+    "rank": 49,
+    "category": "Civic",
+    "headline": "New Tender Planned for Ship-Shaped Terminal",
+    "summary": "Authorities are preparing a fresh tender for the construction of the Corporation of the City of Panaji's ship-shaped terminal. The project aims to enhance local municipal infrastructure."
+  },
+  {
+    "rank": 50,
+    "category": "Business",
+    "headline": "Goa Airports Face Air Traffic Nosedive",
+    "summary": "Air traffic across Goa airports has experienced a sharp decline recently. Aviation stakeholders are monitoring the downturn as tourism and flight schedules fluctuate."
   }
 ]
