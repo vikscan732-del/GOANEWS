@@ -1,302 +1,62 @@
 [
   {
     "rank": 1,
-    "category": "Civic",
-    "headline": "Major Fire Destroys Over 150 Shops in Vasco Market",
-    "summary": "A massive fire broke out at Vasco’s Sunday Market ahead of Diwali, damaging around 150 shops. Firefighters responded to control the blaze and prevent further damage."
+    "category": "Crime",
+    "headline": "Watch Out for Fake E-Challan Links",
+    "summary": "The Directorate of Transport has advised citizens to avoid fraudulent payment links and use only authorized portals to pay traffic challans due to a rise in cyber frauds."
   },
   {
     "rank": 2,
     "category": "Civic",
-    "headline": "Massive Blaze Guts 150 Shops at Vasco Market",
-    "summary": "More than 150 shops were destroyed following a major fire incident at Vasco Market in Goa. Emergency response teams were dispatched to tackle the inferno."
+    "headline": "Goa Notifies Veterinary Upgrade Plan",
+    "summary": "The Goa government has introduced a 24-month infrastructure upgrade plan for veterinary institutions, naming the Tonca Veterinary Hospital as the state's apex super-speciality facility."
   },
   {
     "rank": 3,
-    "category": "Civic",
-    "headline": "Over 100 Shops Destroyed in Vasco Fire Incident",
-    "summary": "A major fire erupted in Goa's Vasco market area, burning down over 100 commercial shops. Firefighters worked to control the blaze and secure the vicinity."
+    "category": "Entertainment",
+    "headline": "How Goa Became the Soul of IFFI",
+    "summary": "After moving across multiple Indian cities for decades, the International Film Festival of India finally found a permanent and defining home in Goa starting November 2004."
   },
   {
     "rank": 4,
-    "category": "Civic",
-    "headline": "Vasco Sunday Market Fire Prompts CM Support Assurance",
-    "summary": "A fire originating from a car accessories shop caused extensive damage to Vasco's Sunday Market. Chief Minister Pramod Sawant assured government assistance to the affected shopkeepers."
+    "category": "Entertainment",
+    "headline": "Registration Open for 57th IFFI",
+    "summary": "Delegate registrations are currently underway for the 57th International Film Festival of India, scheduled to take place in Goa from November 20 to 28, 2026."
   },
   {
     "rank": 5,
-    "category": "Civic",
-    "headline": "CM Pledges Support After Major Fire in Vasco Market",
-    "summary": "Chief Minister Pramod Sawant pledged government support to local shopkeepers after a destructive fire ruined multiple shops in Vasco."
+    "category": "Politics",
+    "headline": "Questions Raised Over Panaji Smart City Scam",
+    "summary": "Public and opposition outcry over the alleged Panaji Smart City scam faded away after roadworks were completed, leaving lingering questions about accountability."
   },
   {
     "rank": 6,
     "category": "Civic",
-    "headline": "Colva Fishermen Demand Action Against Karwar Boats",
-    "summary": "Local fishermen in Colva have demanded action from authorities after noticing fishing boats from Karwar off the Goa coast."
+    "headline": "Portal Switch Disrupts Vital Certificates",
+    "summary": "The transition to a new government portal has temporarily taken essential services like birth and death certificate access offline without a clear restoration timeline."
   },
   {
     "rank": 7,
-    "category": "Civic",
-    "headline": "Traffic Restrictions in Goa on Nov 1 for Ironman Event",
-    "summary": "Authorities have announced traffic diversions and restrictions across key routes in Goa on November 1 to accommodate the upcoming Ironman competition."
+    "category": "Politics",
+    "headline": "High Court Stays Census ST Notification",
+    "summary": "The High Court has granted an interim stay on the Census Commissioner's notification regarding Goa's estimated Scheduled Tribe population following a constitutional challenge."
   },
   {
     "rank": 8,
-    "category": "Sports",
-    "headline": "FC Goa Snatch Draw Thanks to Vallejo's Goal",
-    "summary": "FC Goa secured a point after Borja Vallejo delivered a crucial goal to save the team from defeat."
+    "category": "Civic",
+    "headline": "Mandatory Certification for Poultry",
+    "summary": "The Goa government has issued an immediate notification requiring all live poultry entering the state to carry official health and source certificates."
   },
   {
     "rank": 9,
-    "category": "Business",
-    "headline": "Goa's AI Push Excites Industry, Concerns Educationists",
-    "summary": "The state government's push for Artificial Intelligence has drawn enthusiasm from industry leaders, while educationists express concerns over implementation."
+    "category": "Civic",
+    "headline": "New Type 1 Diabetes Programme Launched",
+    "summary": "Goa's new comprehensive care programme will offer free insulin, monitoring supplies, and weekly clinics at select district and sub-district hospitals for Type 1 diabetes patients."
   },
   {
     "rank": 10,
-    "category": "Business",
-    "headline": "Siemens Energy Launches Tech Centre for Youth Skilling in Goa",
-    "summary": "Siemens Energy India has established a new technology centre designed to offer skill development and training programs for Goan youth."
-  },
-  {
-    "rank": 11,
-    "category": "Politics",
-    "headline": "High Court Halts ST Population Estimate in Goa",
-    "summary": "The Bombay High Court has put a stay on the official estimation process of the Scheduled Tribe population in Goa intended for Assembly seat reservation."
-  },
-  {
-    "rank": 12,
-    "category": "Tourism",
-    "headline": "Traveller Shares Route Guide for Bengaluru-Goa Drive",
-    "summary": "A motorist shared detailed route feedback and road condition insights following a round trip drive between Bengaluru and Goa."
-  },
-  {
-    "rank": 13,
-    "category": "Business",
-    "headline": "Goa StCB Joins 'Khet Bachao Abhiyan' for Farmer Welfare",
-    "summary": "The Goa State Cooperative Bank has joined hands with the 'Khet Bachao Abhiyan' initiative aimed at promoting the welfare of local farmers."
-  },
-  {
-    "rank": 14,
-    "category": "Business",
-    "headline": "CM Aims for Rs 20,000 Crore Investment in Goa",
-    "summary": "Chief Minister Pramod Sawant announced plans to make Goa the easiest place to do business, targeting Rs 20,000 crore in fresh investments for the state."
-  },
-  {
-    "rank": 15,
     "category": "Crime",
-    "headline": "12 Busted Running Multi-Crore Scam From Goa Luxury Villa",
-    "summary": "Police uncovered a multi-crore scam operated by twelve young men functioning out of a rented luxury villa in Goa."
-  },
-  {
-    "rank": 16,
-    "category": "Civic",
-    "headline": "CM Assures Compensation for Vasco Fire Victims",
-    "summary": "Goa Chief Minister Pramod Sawant announced that financial relief and compensation will be provided to shopkeepers impacted by the Vasco market blaze."
-  },
-  {
-    "rank": 17,
-    "category": "Civic",
-    "headline": "Goa Government Tightens Poultry Transport Regulations",
-    "summary": "The state government has officially notified stricter guidelines and rules governing the transport of poultry into and within Goa."
-  },
-  {
-    "rank": 18,
-    "category": "Civic",
-    "headline": "Goa Govt Announces Festive Bonus for Staff Ahead of Diwali",
-    "summary": "The Goa government announced an ad-hoc festive bonus for its employees ahead of Diwali."
-  },
-  {
-    "rank": 19,
-    "category": "Civic",
-    "headline": "Phase 2 of Population Census in Goa Begins Dec 1",
-    "summary": "The second phase of the population census exercise in Goa is set to commence on December 1."
-  },
-  {
-    "rank": 20,
-    "category": "Tourism",
-    "headline": "Tree of Life Amoravida Launches Resort in North Goa",
-    "summary": "Boutique hospitality brand Tree of Life has opened its new resort, Amoravida, in North Goa."
-  },
-  {
-    "rank": 21,
-    "category": "Crime",
-    "headline": "Court Grants Bail to Six Accused in Morjim Advocate Assault",
-    "summary": "The Mapusa Sessions Court granted regular bail to three accused and interim anticipatory bail to three others involved in the assault of an advocate in Morjim."
-  },
-  {
-    "rank": 22,
-    "category": "Civic",
-    "headline": "Devastating Inferno Guts Over 100 Shops in Vasco",
-    "summary": "Over 100 commercial establishments were reduced to ashes following a massive midnight fire in Vasco market."
-  },
-  {
-    "rank": 23,
-    "category": "General",
-    "headline": "Archaeology Student Uncovers Megalith Site Near Arambol",
-    "summary": "An archaeology student discovered a historic megalithic site near Arambol, offering new insights into ancient human activity in Goa."
-  },
-  {
-    "rank": 24,
-    "category": "Politics",
-    "headline": "Sardesai Slams Government Over Delay in ST Reservation",
-    "summary": "GFP leader Vijai Sardesai questioned the government's intent on Scheduled Tribe reservations, asserting tribal communities should not be held hostage to political convenience."
-  },
-  {
-    "rank": 25,
-    "category": "Business",
-    "headline": "Goa Shipyard to Build Warships Under Rs 40,000-Crore Deal",
-    "summary": "The Cabinet cleared a Rs 40,000-crore defense project to manufacture eight next-generation corvettes, with orders split between GRSE and Goa Shipyard Limited."
-  },
-  {
-    "rank": 26,
-    "category": "Politics",
-    "headline": "Congress and RG Initiate Seat-Sharing Talks for 2027",
-    "summary": "The Congress party and Revolutionary Goans have commenced preliminary discussions for the 2027 Assembly polls, with RG requesting 16 seats."
-  },
-  {
-    "rank": 27,
-    "category": "General",
-    "headline": "Archaeology Dept Acquires 17th-Century Sculpture in Honda",
-    "summary": "Goa's Directorate of Archives and Archaeology acquired a rare stone sculpture dating back to the 17th-18th century from Honda in Sattari."
-  },
-  {
-    "rank": 28,
-    "category": "Sports",
-    "headline": "Goan Football Legend Bobby Fernandes Passes Away at 90",
-    "summary": "Legendary Goan footballer Bobby Fernandes, a three-time Santosh Trophy winner, passed away at the age of 90."
-  },
-  {
-    "rank": 29,
-    "category": "Civic",
-    "headline": "Major Fire Spreads in Vasco; CM Sawant Promises Victims Support",
-    "summary": "A major fire starting from a car accessories store gutted several shops in Vasco, prompting CM Pramod Sawant to inspect the site and promise financial relief."
-  },
-  {
-    "rank": 30,
-    "category": "Entertainment",
-    "headline": "Arijit Singh & Karan Aujla to Headline Goa Music Festival",
-    "summary": "Singers Arijit Singh and Karan Aujla are set to headline the upcoming HOME music festival scheduled to take place in Goa."
-  },
-  {
-    "rank": 31,
-    "category": "Sports",
-    "headline": "Vidarbha Defeat Goa by an Innings and 27 Runs",
-    "summary": "Vidarbha registered a comprehensive victory over Goa by an innings and 27 runs in their Ranji Trophy cricket match."
-  },
-  {
-    "rank": 32,
-    "category": "Civic",
-    "headline": "Goa to Roll Out 24/7 Veterinary Response & Animal Ambulances",
-    "summary": "The state government plans to establish a four-tier veterinary healthcare network equipped with 24/7 emergency response services and animal ambulances."
-  },
-  {
-    "rank": 33,
-    "category": "General",
-    "headline": "Prudent Media Offers 24/7 Online Live News Streaming",
-    "summary": "Goa's regional news channel Prudent Media provides round-the-clock live online news streaming coverage across the state."
-  },
-  {
-    "rank": 34,
-    "category": "Business",
-    "headline": "Cabinet Clears Rs 40,000 Cr Warship Order for Goa Shipyard",
-    "summary": "The Cabinet Committee on Security approved a Rs 40,000 crore project to build next-generation corvettes for the Indian Navy, benefiting Goa Shipyard."
-  },
-  {
-    "rank": 35,
-    "category": "Business",
-    "headline": "Goa Organics Expands International Footprint to UK Market",
-    "summary": "Organic beauty brand Goa Organics announced its official expansion into the United Kingdom market with its range of haircare products."
-  },
-  {
-    "rank": 36,
-    "category": "Business",
-    "headline": "Goa Policy Revised to Attract Big-Ticket Investors",
-    "summary": "The Goa government has introduced revised investment guidelines aimed at attracting major industrial investors and boosting economic growth."
-  },
-  {
-    "rank": 37,
-    "category": "General",
-    "headline": "Indian Navy Conducts Rafale M Operational Trials in Goa",
-    "summary": "The Indian Navy successfully conducted operational and flight trials for the Rafale Marine fighter jets at its facility in Goa."
-  },
-  {
-    "rank": 38,
-    "category": "Civic",
-    "headline": "Vasco Market Fire Highlights Glaring Safety Neglect",
-    "summary": "The recent devastating fire in Vasco market exposed major lapses in fire safety readiness and preventive infrastructure."
-  },
-  {
-    "rank": 39,
-    "category": "Business",
-    "headline": "Sanjivani Sugar Factory Restart Boosts Sugarcane Farming",
-    "summary": "Sugarcane farming in Goa is set for a revival as plans move forward to restart operations at the state's Sanjivani Sugar Factory."
-  },
-  {
-    "rank": 40,
-    "category": "Civic",
-    "headline": "Non-Functional Fire Hydrants Impede Vasco Firefighting",
-    "summary": "Emergency response efforts during the Vasco market fire were hampered by non-functional fire hydrants, sparking criticism over urban infrastructure safety."
-  },
-  {
-    "rank": 41,
-    "category": "Civic",
-    "headline": "Residential House Destroyed in Sattari Fire Incident",
-    "summary": "A residential house was completely destroyed in a fire outbreak in Sattari, leaving the affected family with significant property loss."
-  },
-  {
-    "rank": 42,
-    "category": "Civic",
-    "headline": "Woman Succumbs to Injuries After Mandrem Scooter Crash",
-    "summary": "A woman succumbed to her injuries at the hospital days after suffering a severe road accident while riding a scooter in Mandrem."
-  },
-  {
-    "rank": 43,
-    "category": "Politics",
-    "headline": "Minister Rane Assures Vasco Traders of Urban Ministry Support",
-    "summary": "Urban Development Minister Vishwajit Rane confirmed that his ministry is actively liaising with Vasco market traders following the fire to offer relief measures."
-  },
-  {
-    "rank": 44,
-    "category": "Politics",
-    "headline": "CM Sawant Guarantees Relief Fund for Vasco Market Fire Victims",
-    "summary": "Chief Minister Pramod Sawant assured affected merchants in Vasco market that financial assistance and relief packages will be sanctioned promptly."
-  },
-  {
-    "rank": 45,
-    "category": "Politics",
-    "headline": "High Court Stays ST Population Notification in Goa",
-    "summary": "The High Court issued an interim stay on the notification regarding the estimated Scheduled Tribe population issued by the Census Commissioner."
-  },
-  {
-    "rank": 46,
-    "category": "Politics",
-    "headline": "BJP Launches Early Ground Campaign for 2027 Goa Polls",
-    "summary": "The ruling Bharatiya Janata Party has initiated ground-level organizational activities and constituency outreach ahead of the 2027 Goa Assembly elections."
-  },
-  {
-    "rank": 47,
-    "category": "Politics",
-    "headline": "ST Reservation Discussion Triggers Political Scramble for 2027",
-    "summary": "Prospective political candidates across Goa are re-evaluating assembly constituencies as discussions around Scheduled Tribe seat reservations gather momentum."
-  },
-  {
-    "rank": 48,
-    "category": "Civic",
-    "headline": "Massive Fire Sweeps Through Vasco Sunday Market",
-    "summary": "A fierce inferno swept through Vasco's Sunday market overnight, gutting scores of commercial stalls and causing extensive property destruction."
-  },
-  {
-    "rank": 49,
-    "category": "Politics",
-    "headline": "BJP Accelerates Preparations for 2027 Assembly Elections",
-    "summary": "The BJP in Goa has intensified its strategic and cadre-level preparations to consolidate its political standing for the 2027 elections."
-  },
-  {
-    "rank": 50,
-    "category": "Sports",
-    "headline": "Valanka Alemao Wins High-Stakes GFA Election",
-    "summary": "Valanka Alemao secured a major electoral victory in the Goa Football Association elections following a closely contested vote."
+    "headline": "Machinery Seized in Illegal Quarry Raid",
+    "summary": "The Mines and Geology Department raided an alleged illegal laterite stone quarry at Naquerim, Quepem, seizing machinery and illegally extracted stones belonging to the Comunidade."
   }
 ]
