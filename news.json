@@ -1,302 +1,152 @@
 [
   {
     "rank": 1,
-    "category": "Tourism",
-    "headline": "Bengaluru Couple Shares Goa Relocation Costs",
-    "summary": "A couple from Bengaluru has broken down their expenses after quitting city life to start fresh in Goa. Their viral account highlights the financial realities of transitioning to a coastal lifestyle."
+    "category": "Civic",
+    "headline": "Bengaluru-Goa Vande Bharat to be India's slowest",
+    "summary": "The upcoming Bengaluru-Mangaluru-Goa Vande Bharat service is set to become the slowest and longest-duration chair car train in the country. It will maintain an average speed of 54 kmph, trailing behind standard superfast trains."
   },
   {
     "rank": 2,
-    "category": "Sports",
-    "headline": "Goa Faces Bihar in Ranji Trophy Elite Match",
-    "summary": "Goa is scheduled to play against Bihar in Match 50 of the Ranji Trophy Elite 2026/27 season. The fixture is part of the ongoing premier domestic cricket tournament."
+    "category": "Tourism",
+    "headline": "First UK charter flight brings 300 tourists to Goa",
+    "summary": "Goa welcomed its first UK charter flight of the season, carrying around 300 tourists. This marks a significant boost for the state's international tourism sector."
   },
   {
     "rank": 3,
-    "category": "Civic",
-    "headline": "New Vande Bharat Set to Be India's Slowest",
-    "summary": "The upcoming Bengaluru-Mangaluru-Goa Vande Bharat train is set to become the slowest and longest-duration chair car service in the country. Despite the sluggish pace, passengers will be treated to scenic views of the Western Ghats."
+    "category": "General",
+    "headline": "Goa college introduces 'marriage readiness' course",
+    "summary": "A college in Goa has launched a specialized course aimed at preparing young adults for healthy and lasting marriages. The program focuses on helping couples better understand their partners."
   },
   {
     "rank": 4,
-    "category": "Civic",
-    "headline": "New Vande Bharat Connects Bengaluru and Goa",
-    "summary": "A new Vande Bharat service will connect Bengaluru to Goa in approximately 13 hours. The route offers travelers picturesque journeys through the Western Ghats."
+    "category": "Sports",
+    "headline": "Retired pilot and judge conquer Goa Ironman 70.3",
+    "summary": "A retired pilot and a Kerala High Court judge successfully completed the gruelling Goa Ironman 70.3 challenge. Participants from across regions tested their endurance in the demanding athletic event."
   },
   {
     "rank": 5,
     "category": "Civic",
-    "headline": "Bengaluru-Goa Vande Bharat Records Longest Duration",
-    "summary": "The Yeshwantpur-Goa Vande Bharat service has been officially noted as India's slowest and longest-duration chair car train. The route spans across difficult terrain connecting the two regions."
+    "headline": "Goa seeks Rs 1,000 crore for dam upgrades",
+    "summary": "The Goa government has requested Rs 1,000 crore for crucial infrastructure upgrades at the Anjunem and Selaulim dams. The funds will be utilized to improve water management and safety."
   },
   {
     "rank": 6,
-    "category": "Sports",
-    "headline": "Judge and Retired Pilot Finish Goa Ironman 70.3",
-    "summary": "A Kerala High Court judge and a retired pilot successfully completed the grueling Goa Ironman 70.3 challenge. Both participants demonstrated remarkable endurance to cross the finish line."
+    "category": "Business",
+    "headline": "CM intervenes in Sanvordem mining dispute",
+    "summary": "Goa's Chief Minister stepped in to resolve a transportation dispute regarding mining operations in Sanvordem. The intervention aims to balance industry demands and local concerns."
   },
   {
     "rank": 7,
     "category": "Business",
-    "headline": "Goa Dairy Holds Prices Despite Karnataka Hike",
-    "summary": "Goa Dairy has decided to maintain its current milk prices following a price hike approved in neighboring Karnataka. The move brings relief to local consumers amidst rising commodity costs."
+    "headline": "Goa to showcase mining potential at meet",
+    "summary": "The state government is set to highlight its mining potential and upcoming block auctions at an upcoming investment meet. Authorities plan to revise transportation and land right rates to encourage participation."
   },
   {
     "rank": 8,
     "category": "Politics",
-    "headline": "Questions Raised Over Voter Deletions in Goa",
-    "summary": "Concerns have been raised regarding the specific breakdown of Hindu, Christian, and Muslim voters whose names were recently deleted from electoral rolls in Goa. Authorities face scrutiny over the demographic impact of the deletions."
+    "headline": "Goa to move Supreme Court over ST reservation",
+    "summary": "The Goa government has decided to approach the Supreme Court after a High Court order stalled the ST seat reservation process. Officials aim to clear legal hurdles before the 2027 polls."
   },
   {
     "rank": 9,
-    "category": "Sports",
-    "headline": "K Annamalai Finishes Ironman 70.3 in Goa",
-    "summary": "Political leader K Annamalai successfully completed the grueling Ironman 70.3 challenge in Goa. He later shared his challenging and rewarding experience with the public."
+    "category": "Politics",
+    "headline": "Data reveals status of deleted voters in Goa",
+    "summary": "Recent inquiries shed light on the voter deletion numbers across different communities in Goa. Election authorities reported that the majority of removed voters are either shifted, untraceable, or disqualified."
   },
   {
     "rank": 10,
-    "category": "Tourism",
-    "headline": "Goa Aims for Faster Marriage Registrations",
-    "summary": "The Goa government is introducing measures to ensure faster marriage registrations to boost the state's destination wedding sector. This initiative seeks to simplify paperwork for couples tying the knot in the state."
+    "category": "Civic",
+    "headline": "Goa adopts AI governance for public schemes",
+    "summary": "The Goa government has signed an MoU with an American firm to integrate artificial intelligence into governance. The initiative aims to streamline the disbursement of public benefits and services."
   },
   {
     "rank": 11,
-    "category": "Sports",
-    "headline": "Army's Biten Singh Wins Ironman 70.3 Goa",
-    "summary": "Biten Singh of the Indian Army clinched victory at the Ironman 70.3 Goa 2026. He successfully established a brand new course record in the process."
+    "category": "Crime",
+    "headline": "Court grants bail to Ugandan arrested with heroin",
+    "summary": "A court in Goa has granted bail to a Ugandan national who was earlier arrested in connection with a drug seizure involving heroin. Legal proceedings in the case remain ongoing."
   },
   {
     "rank": 12,
-    "category": "Politics",
-    "headline": "Most Deleted Voters Shifted or Untraceable",
-    "summary": "Election officials report that roughly 80% of deleted voters in Goa are either individuals who have shifted residences, remain untraceable, or are officially disqualified. The clarification comes amid ongoing debate over electoral list revisions."
+    "category": "Sports",
+    "headline": "Churchill aims to end losing run in football league",
+    "summary": "Churchill Brothers are looking to break their recent losing streak as they prepare to face an in-form NorthEast side. The team aims for a tactical turnaround to secure vital points."
   },
   {
     "rank": 13,
     "category": "Civic",
-    "headline": "Goa College Introduces Marriage Preparation Course",
-    "summary": "A college in Goa has launched a specialized course aimed at helping young adults prepare for healthy and lasting marriages. The curriculum focuses on relationship management and conflict resolution."
+    "headline": "Historic Panaji home blends heritage with spirituality",
+    "summary": "A traditional residence in the heart of Goa's capital has caught attention for its unique architecture where every corner reflects deep cultural roots. The property stands out as a historic architectural gem."
   },
   {
     "rank": 14,
     "category": "Civic",
-    "headline": "New College Course Focuses on Marital Success",
-    "summary": "A newly introduced educational program in Goa seeks to equip students with tools to build stable marriages before tying the knot. The course addresses modern relationship challenges through structured learning."
+    "headline": "High Court scraps Bodgeshwar temple panel polls",
+    "summary": "The High Court has intervened and cancelled the scheduled elections for the Bodgeshwar temple committee panel. The ruling addresses procedural grievances raised regarding the electoral process."
   },
   {
     "rank": 15,
-    "category": "Weather",
-    "headline": "Low Rainfall Marginally Impacts Goa Paddy Crops",
-    "summary": "Recent low rainfall has had only a limited impact on paddy cultivation across Goa, according to agricultural assessments. Farmers continue to manage crops as seasonal weather patterns fluctuate."
+    "category": "Civic",
+    "headline": "Panchayats told to ban plastic in Narkasur effigies",
+    "summary": "Local panchayats have been directed to strictly enforce a ban on the use of burning plastic in Narkasur effigies during celebrations. The measure is aimed at curbing environmental pollution and fire hazards."
   },
   {
     "rank": 16,
-    "category": "Entertainment",
-    "headline": "Two Stories Win Film Awards for Goa",
-    "summary": "Two regional storytelling projects have brought accolades to Goa by winning prestigious film awards. The achievement highlights the growing creative footprint of the state's cinematic community."
+    "category": "Crime",
+    "headline": "Crime branch police inspector held for sexual assault",
+    "summary": "A suspended crime branch police inspector and a co-accused have been arrested for the alleged sexual assault of a 16-year-old minor. The case is being handled by the cyber crime division."
   },
   {
     "rank": 17,
-    "category": "Sports",
-    "headline": "Goa to Play Pondicherry in Ranji Trophy",
-    "summary": "Goa is slated to face Pondicherry in Match 68 of the Ranji Trophy Elite 2026/27 season. The fixture will take place in January 2027 as part of the league stage."
+    "category": "Civic",
+    "headline": "CCTV catches crow causing major Salcete blackout",
+    "summary": "A five-hour power blackout across Salcete and Kushavati districts was traced back to a crow, as captured by CCTV footage. The unusual incident caused significant disruption to local power grids."
   },
   {
     "rank": 18,
-    "category": "Crime",
-    "headline": "Massive Fire Destroys Shops in Vasco Market",
-    "summary": "A major fire broke out in Vasco’s Sunday Market right before Diwali, destroying approximately 150 shops. Local authorities and emergency services responded to bring the blaze under control."
+    "category": "Business",
+    "headline": "Rivar Group signs Rs 3,000 crore MoU with Goa",
+    "summary": "The Rivar Group has signed an MoU worth Rs 3,000 crore with the Goa government to establish an International Sports & Performance City. The project is expected to boost sports infrastructure in the state."
   },
   {
     "rank": 19,
-    "category": "Politics",
-    "headline": "Goa to Approach Supreme Court on ST Seats",
-    "summary": "The Goa government has decided to move the Supreme Court to challenge a High Court order that stalled the ST seat reservation process. The state aims to resolve the political reservation issue ahead of upcoming polls."
+    "category": "Entertainment",
+    "headline": "Goan filmmaker Aditya Jambhale to be felicitated at IFFI",
+    "summary": "Three-time National Award-winning Goan filmmaker Aditya Jambhale will be honored at the upcoming International Film Festival of India (IFFI). He is being recognized for his notable contributions to cinema."
   },
   {
     "rank": 20,
-    "category": "Civic",
-    "headline": "Inactive Smart City Control Centre Criticized",
-    "summary": "Goa's Smart City control centre faced heavy criticism following severe traffic chaos in urban areas. Residents and experts questioned the operational readiness of the smart infrastructure."
+    "category": "Business",
+    "headline": "Goa to auction more mining blocks by December",
+    "summary": "The state government announced plans to auction 8 to 9 additional mining blocks by December. Show-cause notices have also been issued to non-operational leaseholders."
   },
   {
     "rank": 21,
-    "category": "Crime",
-    "headline": "Punjab Sailor Dies in Polem Accident",
-    "summary": "A sailor from Punjab tragically lost his life in an accident reported in Polem, Goa. Local police have initiated an inquiry to determine the circumstances of the incident."
+    "category": "Tourism",
+    "headline": "Goa strengthens UK tourism push at WTM London",
+    "summary": "Goa actively promoted its tourism sector and cultural offerings at the World Travel Market (WTM) in London. State representatives highlighted sustainable travel and new visitor attractions."
   },
   {
     "rank": 22,
-    "category": "Politics",
-    "headline": "AAP to Launch 'Mhargai Mukti Yatra' in Goa",
-    "summary": "The Aam Aadmi Party has announced plans to launch a statewide 'Mhargai Mukti Yatra' starting November 26. The protest march will target rising prices and alleged corruption."
+    "category": "Business",
+    "headline": "Goa's GST collections jump 37%",
+    "summary": "Goa recorded a robust 37% jump in its Goods and Services Tax (GST) collections, outpacing the national average. Officials attribute the surge to improved compliance and economic activity."
   },
   {
     "rank": 23,
-    "category": "Civic",
-    "headline": "Goa Bans Plastic in Narkasur Effigies",
-    "summary": "The Goa government has issued a strict warning against the use of plastic and toxic materials in Narkasur effigies ahead of local celebrations. Authorities are enforcing eco-friendly guidelines for the festival."
+    "category": "Crime",
+    "headline": "Decomposed body of unidentified man found in Neura",
+    "summary": "The decomposed body of an unidentified man was discovered in the backwaters of Neura. Local authorities have launched an investigation to determine the identity and cause of death."
   },
   {
     "rank": 24,
-    "category": "Civic",
-    "headline": "Cancelled Comba Wells Inspection Triggers Fear",
-    "summary": "The sudden cancellation of a planned inspection of Comba wells has sparked health concerns among local residents. Community members fear potential contamination issues remain unaddressed."
+    "category": "Crime",
+    "headline": "Twelve men run multi-crore scam from Goa villa",
+    "summary": "Police uncovered a financial scam operated by twelve young men from a luxury villa in Goa. The elaborate fraud operation involved transactions worth crores before law enforcement stepped in."
   },
   {
     "rank": 25,
-    "category": "Crime",
-    "headline": "Goa Cop Accused of Assaulting Minor at Office",
-    "summary": "A Goa police officer has been accused of sexually assaulting a minor girl multiple times at a Crime Branch office. The serious allegations have triggered outrage and swift departmental action."
-  },
-  {
-    "rank": 26,
-    "category": "Tourism",
-    "headline": "GTDC Seeks Deferment of Ghat Aarti Proposal",
-    "summary": "The Goa Tourism Development Corporation has requested a postponement of its proposed Ghat Aarti initiative. Officials are reviewing logistics and local feedback regarding the cultural tourism plan."
-  },
-  {
-    "rank": 27,
-    "category": "Entertainment",
-    "headline": "Goa Joins Konkani Music Guinness Attempt",
-    "summary": "Goa has partnered with a historic Guinness World Record attempt as a massive Konkani music convention kicks off in Mangaluru. Musicians and cultural delegates from the state are participating in the event."
-  },
-  {
-    "rank": 28,
-    "category": "Politics",
-    "headline": "Shirodkar Deepak Declares Intent for 2027",
-    "summary": "Political figure Shirodkar Deepak has announced his candidacy to contest from the Shirodha constituency in the 2027 elections. Preparations for his grassroots campaign are already underway."
-  },
-  {
-    "rank": 29,
-    "category": "Crime",
-    "headline": "Bombay HC Orders Relief for Goa Fire Victims",
-    "summary": "The Bombay High Court has ordered compensation of Rs 20 lakh to be paid to the family of each victim affected by a tragic Goa fire incident. The judicial directive aims to provide urgent financial relief."
-  },
-  {
-    "rank": 30,
-    "category": "Sports",
-    "headline": "Belagavi Runners Complete Goa Ironman",
-    "summary": "A group of endurance runners hailing from Belagavi successfully completed the challenging Ironman event in Goa. Their performance added to the regional representation at the international sporting competition."
-  },
-  {
-    "rank": 31,
-    "category": "Crime",
-    "headline": "Supreme Court Adjourns Tarun Tejpal Plea",
-    "summary": "The Goa government strongly opposed the release of Tarun Tejpal ahead of Diwali. The Supreme Court has consequently adjourned the hearing on the matter to November 5."
-  },
-  {
-    "rank": 32,
-    "category": "Tourism",
-    "headline": "Goa Plans AI Integration for Tourism Sector",
-    "summary": "The Goa government is exploring artificial intelligence to enhance communication and revamp the state's tourism economy. The technological integration aims to provide a localized and seamless experience for global visitors."
-  },
-  {
-    "rank": 33,
-    "category": "Entertainment",
-    "headline": "Goa Minister Proposes Vidarbha Mahotsav",
-    "summary": "Goa's PWD Minister has announced plans to organize a Vidarbha Mahotsav to strengthen cultural ties between Goa and the Vidarbha region. The festival aims to showcase shared traditions and artistic heritage."
-  },
-  {
-    "rank": 34,
-    "category": "Crime",
-    "headline": "Luxury Goa Villa Used for Multi-Crore Scam",
-    "summary": "Investigations revealed how a group of young men operated a multi-crore financial scam from inside a luxury villa in Goa. Law enforcement unraveled the sophisticated setup following coordinated raids."
-  },
-  {
-    "rank": 35,
-    "category": "Crime",
-    "headline": "Woman Succumbs to Injuries After Scooter Crash",
-    "summary": "A woman passed away days after suffering severe injuries in a scooter accident in Mandrem, Goa. Local authorities registered the case and are reviewing road safety in the area."
-  },
-  {
-    "rank": 36,
-    "category": "Entertainment",
-    "headline": "Nonstop Konkani Singing Marathon in Mangaluru",
-    "summary": "A unique cultural event featuring 12 straight days of nonstop Konkani singing has officially commenced in Mangaluru. Artists from various regions are contributing to the record-breaking musical showcase."
-  },
-  {
-    "rank": 37,
-    "category": "Entertainment",
-    "headline": "Five Teams Represent Konkani Music Globally",
-    "summary": "Five dedicated teams from Goa and Mangaluru have embarked on a mission to promote Konkani music on the global stage. Their performances are part of ongoing efforts to celebrate regional art forms."
-  },
-  {
-    "rank": 38,
-    "category": "Politics",
-    "headline": "Goa Delegation to Meet Solicitor General",
-    "summary": "A political delegation from Goa is scheduled to meet Solicitor General Tushar Mehta to discuss the contentious ST seat reservation issue. The team aims to find a legal path forward before upcoming polls."
-  },
-  {
-    "rank": 39,
-    "category": "Politics",
-    "headline": "AAP Initiates Statewide Protest in Goa",
-    "summary": "The Aam Aadmi Party has officially launched its 'Mhargay Mukti Yatra' across Goa to protest rising inflation and governance failures. Party leaders addressed supporters during the statewide kickoff."
-  },
-  {
-    "rank": 40,
-    "category": "Politics",
-    "headline": "Kejriwal Targets BJP During Goa Yatra Launch",
-    "summary": "AAP leader Arvind Kejriwal announced the 'Mhargai Mukti Yatra' running from November 26 to December 19, aggressively targeting the ruling BJP over inflation and corruption. The campaign aims to rally voters ahead of future political contests."
-  },
-  {
-    "rank": 41,
-    "category": "Tourism",
-    "headline": "Goa Expands Tourism via International Events",
-    "summary": "Tourism Minister Rohan Khaunte stated that Goa is successfully expanding its global tourism footprint by hosting major international sporting events. These initiatives aim to attract diverse travelers year-round."
-  },
-  {
-    "rank": 42,
     "category": "Civic",
-    "headline": "Crackdown on Plastics for Narkasur Festivities",
-    "summary": "Goa authorities have intensified enforcement against single-use plastics during the preparation of Narkasur effigies. The environmental drive seeks to curb pollution during festive celebrations."
-  },
-  {
-    "rank": 43,
-    "category": "Entertainment",
-    "headline": "CM Inaugurates World Konkani Music Convention",
-    "summary": "Goa's Chief Minister officially inaugurated the World Konkani Music Mega Convention, praising the community's cultural vibrancy. The event brings together artists, scholars, and enthusiasts from across regions."
-  },
-  {
-    "rank": 44,
-    "category": "Politics",
-    "headline": "AAP Kicks Off 'Mhargai Mukti Yatra' Campaign",
-    "summary": "The Aam Aadmi Party has rolled out its 'Mhargai Mukti Yatra' campaign across Goa starting November 26. The political rally focuses on economic hardships faced by common citizens."
-  },
-  {
-    "rank": 45,
-    "category": "Civic",
-    "headline": "Port Town Rallies Behind Fire-Hit Traders",
-    "summary": "Residents and local organizations in the port town of Vasco have extended widespread support to traders affected by the recent market fire. Community relief efforts are currently underway to help merchants rebuild."
-  },
-  {
-    "rank": 46,
-    "category": "Civic",
-    "headline": "Margao Municipal Garden Slated for Revamp",
-    "summary": "The municipal garden in Margao is set to undergo a major infrastructure and landscaping renovation. Local civic bodies plan to modernize the recreational space for residents."
-  },
-  {
-    "rank": 47,
-    "category": "Politics",
-    "headline": "Goa Moves Supreme Court on ST Reservations",
-    "summary": "The Goa government is pressing ahead with its legal strategy to approach the Supreme Court regarding ST seat reservations before the 2027 polls. The administration seeks clarity to ensure fair representation."
-  },
-  {
-    "rank": 48,
-    "category": "Sports",
-    "headline": "Goa Trio Secures Third Place in Relay",
-    "summary": "A trio of athletes from Goa secured a notable third-place finish in the team relay category at the recent Ironman 70.3 event. Their podium finish highlights local athletic talent."
-  },
-  {
-    "rank": 49,
-    "category": "Civic",
-    "headline": "Safety Concerns Raised Following Recent Fires",
-    "summary": "Following tragic incidents like the Birch tragedy and the recent Vasco market fire, questions are being raised regarding disaster preparedness in Goa. Experts are urging stricter fire safety audits across commercial zones."
-  },
-  {
-    "rank": 50,
-    "category": "Crime",
-    "headline": "Major Fire Destroys Kundaim Scrap Yard",
-    "summary": "A massive fire broke out at the Saba Scrap Traders yard in Kundaim, completely gutting the facility. Fire tenders rushed to the spot to contain the blaze and prevent it from spreading."
+    "headline": "Goa adds five new polling booths in North district",
+    "summary": "The number of polling stations in North Goa has increased with the addition of five new booths, bringing the district total to 1,735. The update aims to facilitate smoother voting access for residents."
   }
 ]
