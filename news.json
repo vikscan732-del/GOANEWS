@@ -2,145 +2,301 @@
   {
     "rank": 1,
     "category": "Business",
-    "headline": "Bengaluru-Goa Vande Bharat to be Slowest",
-    "summary": "The upcoming Bengaluru-Mangaluru-Goa Vande Bharat service is set to become the slowest chair car service in the country. Passengers can expect a journey duration of around 13 hours while enjoying views of the Western Ghats."
+    "headline": "Bengaluru-Goa Vande Bharat to Be India's Slowest",
+    "summary": "The upcoming Bengaluru-Mangaluru-Goa Vande Bharat Express is set to be the slowest Vande Bharat train service in India."
   },
   {
     "rank": 2,
-    "category": "Tourism",
-    "headline": "First UK Charter Brings 300 Tourists",
-    "summary": "Goa welcomed its first UK charter flight of the season, carrying 300 tourists from Manchester. Authorities expect around 20,000 visitors from the UK over the coming period."
+    "category": "Politics",
+    "headline": "High Court Orders ECI to Restore Deleted Goa Voters",
+    "summary": "The High Court has instructed the Election Commission of India to restore the names of a Goa family to the electoral rolls."
   },
   {
     "rank": 3,
-    "category": "General",
-    "headline": "Goa College Launches Marriage Course",
-    "summary": "A college in Goa has introduced a 15-day course aimed at preparing young adults for healthy and lasting marriages. The curriculum focuses on building relationship readiness among students."
+    "category": "Tourism",
+    "headline": "First UK Charter Flight Arrives in Goa with 300 Tourists",
+    "summary": "The first UK charter flight of the season has landed in Goa, bringing 300 international tourists to the state."
   },
   {
     "rank": 4,
     "category": "Sports",
-    "headline": "Ironman 70.3 Goa Conquered by Judge and Pilot",
-    "summary": "A retired pilot and a Kerala High Court judge successfully completed the gruelling Ironman 70.3 race in Goa. Meanwhile, Indian Army's Biten Singh won the event and set a new course record."
+    "headline": "Retired Pilot and Judge Complete Goa Ironman 70.3",
+    "summary": "A retired pilot and a Kerala High Court judge successfully finished the challenging Goa Ironman 70.3 triathlon."
   },
   {
     "rank": 5,
     "category": "Civic",
-    "headline": "Goa Seeks Rs 1,000 Cr for Dam Upgrades",
-    "summary": "The Goa government has sought Rs 1,000 crore for upgrading the Anjunem and Selaulim dams. The funds will be utilized to strengthen critical water infrastructure in the state."
+    "headline": "Goa to Use AI Governance for Welfare Scheme Distribution",
+    "summary": "The Goa government plans to integrate artificial intelligence into governance to efficiently disburse public benefits and welfare schemes."
   },
   {
     "rank": 6,
-    "category": "Business",
-    "headline": "Mining Revival Faces Truck Demand Hurdles",
-    "summary": "The revival of mining in South Goa is facing uncertainty due to local truck demand and transportation disputes. Chief Minister Pramod Sawant stepped in to help resolve the Sanvordem mining transport issues."
+    "category": "Politics",
+    "headline": "Most Deleted Voters in Goa Shifted, Untraceable, or Disqualified",
+    "summary": "Official data reveals that 80 percent of the voters deleted from Goa's voter rolls had either relocated, could not be traced, or were disqualified."
   },
   {
     "rank": 7,
-    "category": "Business",
-    "headline": "Man Wins Refund Over Cancelled Flight",
-    "summary": "A consumer won a Rs 18,000 settlement after being denied a full refund for a Goa-Delhi flight cancelled during Covid-19. The ruling penalised the airline for withholding the complete ticket amount."
+    "category": "Politics",
+    "headline": "HC Orders Re-Inclusion of Six Goa Voters",
+    "summary": "The Bombay High Court directed the Election Commission to restore the names of six family members deleted during the Special Summary Revision process."
   },
   {
     "rank": 8,
-    "category": "Crime",
-    "headline": "Bombay HC Orders ₹20 Lakh for Fire Victims",
-    "summary": "The Bombay High Court has ordered the owners of a Goa nightclub to pay ₹20 lakh as compensation to the family of each victim following a fatal fire incident."
+    "category": "Civic",
+    "headline": "Goa Requests ₹1,000 Crore for Dam Upgrades",
+    "summary": "The Goa government is seeking ₹1,000 crore in funding to modernize and upgrade the Anjunem and Selaulim dams."
   },
   {
     "rank": 9,
-    "category": "Business",
-    "headline": "Goa Supplies RDF to Cement Plants",
-    "summary": "Goa has successfully supplied 7.6 lakh tonnes of Refuse-Derived Fuel (RDF) to cement plants to be used as an alternative energy source. This initiative supports the state's waste management and industrial fuel goals."
+    "category": "General",
+    "headline": "Goa College Launches Course on Healthy Marriages",
+    "summary": "A college in Goa has introduced a new educational course designed to help individuals prepare for healthy and long-lasting marriages."
   },
   {
     "rank": 10,
-    "category": "Politics",
-    "headline": "Goa Adopts AI for Public Services",
-    "summary": "The Goa government has signed an MoU with a US firm to adopt AI governance for disbursing welfare benefits and public schemes. Officials believe accurate data will improve evidence-based policymaking."
+    "category": "Civic",
+    "headline": "South Goa Road Accidents Rise, Fatalities Drop",
+    "summary": "Road accidents in South Goa increased by 12 percent, but fatal crashes saw a significant 30 percent decline."
   },
   {
     "rank": 11,
-    "category": "Politics",
-    "headline": "Goa to Move SC Over ST Seat Order",
-    "summary": "Goa is planning to approach the Supreme Court against a High Court order that stalled the ST seat reservation process. The state aims to clear legal hurdles surrounding the reservation framework."
+    "category": "Crime",
+    "headline": "Police Verification for Tenants Mandatory in South Goa",
+    "summary": "Authorities have made tenant police verification compulsory across all areas of South Goa to enhance security."
   },
   {
     "rank": 12,
-    "category": "Civic",
-    "headline": "NHRACACB Invites CM to Awards",
-    "summary": "A delegation from NHRACACB called on Chief Minister Pramod Sawant to invite him as a guest to their upcoming awards event."
+    "category": "Business",
+    "headline": "New Bengaluru-Goa Route to Be Slowest Vande Bharat",
+    "summary": "The new Vande Bharat train running between Bengaluru and Goa will operate at the lowest average speed among all Vande Bharat trains in the country."
   },
   {
     "rank": 13,
-    "category": "Civic",
-    "headline": "Human Rights Body Takes Cognizance of Water Crisis",
-    "summary": "The Goa Human Rights Commission has taken suo motu cognisance of the severe drinking water crisis affecting residents in Barcem-Kaddem. Authorities have been pressed to address the civic grievance promptly."
+    "category": "Business",
+    "headline": "Rivar Group Signs ₹3,000-Crore Sports MoU with Goa",
+    "summary": "Rivar Group has signed a ₹3,000-crore memorandum of understanding with the Goa government for a major proposed sports project."
   },
   {
     "rank": 14,
     "category": "Crime",
-    "headline": "Ugandan National Granted Bail in Drug Case",
-    "summary": "A local court has granted bail to a Ugandan national who was previously arrested for the alleged possession of heroin. Legal proceedings in the narcotics case will continue as per court directions."
+    "headline": "High Court Orders ₹20 Lakh Relief for Nightclub Fire Victims",
+    "summary": "The Bombay High Court has directed nightclub owners to pay ₹20 lakh in compensation to the family of each victim of the Goa nightclub fire."
   },
   {
     "rank": 15,
     "category": "Sports",
-    "headline": "Churchill Brothers Face NorthEast",
-    "summary": "Churchill Brothers are aiming to end their losing streak as they prepare to face an in-form NorthEast side. The team is looking to turn around their recent form on the football pitch."
+    "headline": "FC Goa Target First Home Win Against Bengaluru FC",
+    "summary": "FC Goa aims to gain stability and secure their first home victory of the season as they face an in-form Bengaluru FC."
   },
   {
     "rank": 16,
-    "category": "General",
-    "headline": "Exploring Architectural Heritage in Panaji",
-    "summary": "A historic home in the heart of Goa’s capital showcases unique cultural aesthetics where traditional architecture meets local heritage."
+    "category": "Politics",
+    "headline": "Goa Government to Challenge ST Reservation Order in Supreme Court",
+    "summary": "The Goa government will approach the Supreme Court after a High Court ruling stalled the process of Scheduled Tribe seat reservations."
   },
   {
     "rank": 17,
     "category": "Politics",
-    "headline": "HC Scraps Bodgeshwar Temple Elections",
-    "summary": "The High Court has scrapped the ongoing election process for the Bodgeshwar temple panel. The ruling sets aside the previous committee formation steps."
+    "headline": "HC Restores Six Voters Deleted by ECI",
+    "summary": "The High Court ordered the Election Commission of India to put six deleted voters back on Goa's electoral rolls."
   },
   {
     "rank": 18,
-    "category": "Crime",
-    "headline": "Police Inspector Arrested for Minor's Assault",
-    "summary": "A suspended crime branch police inspector and a co-accused have been arrested following allegations of sexually assaulting a 16-year-old minor. The case is being handled by the cyber crime division."
+    "category": "Politics",
+    "headline": "Congress Accuses Goa BJP of Land and Voter Fraud",
+    "summary": "The Congress party in Goa has leveled allegations against the ruling BJP, accusing them of land, job, and electoral voter fraud."
   },
   {
     "rank": 19,
-    "category": "Civic",
-    "headline": "Panchayats Told to Ban Plastic in Effigies",
-    "summary": "Local panchayats have been directed to strictly enforce a ban on burning plastic materials inside Narkasur effigies during Diwali celebrations. The move aims to curb environmental pollution and hazards."
+    "category": "Crime",
+    "headline": "Five Foreigners Found Overstaying in Querim Face Deportation",
+    "summary": "The Foreigners Regional Registration Office detected five foreign nationals living in Querim with expired visas and initiated their deportation process."
   },
   {
     "rank": 20,
     "category": "Business",
-    "headline": "Goa to Auction More Mining Blocks",
-    "summary": "The Goa government announced plans to auction 8 to 9 additional mining blocks by December while issuing show-cause notices to non-operational leaseholders. The state aims to boost its mining potential and economic output."
+    "headline": "Goa IT Department Announces Incentives for Women and Students",
+    "summary": "Goa's IT Department has notified special incentives aimed at supporting women and student entrepreneurs under its startup policy."
   },
   {
     "rank": 21,
-    "category": "Weather",
-    "headline": "Low Rainfall Has Minor Impact on Crops",
-    "summary": "Recent low rainfall levels have had a limited impact on the paddy crop across Goa, according to agricultural assessments. Farmers continue to manage irrigation alongside seasonal patterns."
+    "category": "Sports",
+    "headline": "Gouramangi Cleared to Play Against Bengaluru FC",
+    "summary": "Player Gouramangi Singh has received the green light to participate in the upcoming match against Bengaluru FC."
   },
   {
     "rank": 22,
-    "category": "Business",
-    "headline": "Rivar Group Signs Rs 3,000 Cr MoU",
-    "summary": "The Rivar Group has signed a ₹3,000 crore MoU with the Goa government to establish an International Sports & Performance City. The project is expected to significantly boost sports infrastructure and tourism."
+    "category": "Sports",
+    "headline": "Churchill Brothers Suffer Loss After Costly Errors",
+    "summary": "Churchill Brothers FC faced defeat after crucial mistakes cost them heavily during their recent football match."
   },
   {
     "rank": 23,
-    "category": "Crime",
-    "headline": "Police Intercept Overcrowded Bus",
-    "summary": "Goa police intercepted a bus that was dangerously crammed with 140 passengers despite having a permitted capacity of only 48. Action was taken against the vehicle for severe safety violations."
+    "category": "Business",
+    "headline": "CREDAI Urges Goa Government to Fast-Track Project Approvals",
+    "summary": "Real estate body CREDAI has called on the Goa state government to expedite approvals for ongoing and new real estate projects."
   },
   {
     "rank": 24,
+    "category": "Business",
+    "headline": "Bengaluru-Goa Vande Bharat to Affect 13 Coastal Trains",
+    "summary": "The introduction of the Bengaluru-Goa Vande Bharat Express is expected to impact the schedules of 13 existing trains along the coastal route."
+  },
+  {
+    "rank": 25,
     "category": "Civic",
-    "headline": "Old Hurdles Cloud Sonsodo Kabrastan",
-    "summary": "Fresh hopes for the Sonsodo kabrastan project continue to be clouded by long-standing bureaucratic and logistical hurdles. Local bodies are attempting to resolve land and clearance issues."
+    "headline": "Revenue Department Establishes Common Cadre for District Staff",
+    "summary": "The Revenue Department has created a common cadre for Group C district employees in Goa to streamline administrative operations."
+  },
+  {
+    "rank": 26,
+    "category": "Politics",
+    "headline": "HC Gives EC 10 Days to Restore Deleted Voters",
+    "summary": "Striking down SIR voter deletions, the High Court gave the Election Commission 10 days to restore a Goa family's voting rights."
+  },
+  {
+    "rank": 27,
+    "category": "Sports",
+    "headline": "Bhat's Brace Secures Indian Victory Over Pakistan",
+    "summary": "A double strike by Bhat powered India to a win against Pakistan despite a late comeback attempt by the opposition."
+  },
+  {
+    "rank": 28,
+    "category": "Politics",
+    "headline": "ST Groups Launch Torchlight Protest Against Goa BJP",
+    "summary": "Scheduled Tribe organizations in Goa launched a statewide torchlight rally and warned the ruling BJP of political consequences in the 2027 elections."
+  },
+  {
+    "rank": 29,
+    "category": "Politics",
+    "headline": "High Court Orders ECI to Restore Salgaonkar Family's Votes",
+    "summary": "The Goa High Court directed the Election Commission of India to re-include Paresh Salgaonkar and five family members removed from the voter list."
+  },
+  {
+    "rank": 30,
+    "category": "Crime",
+    "headline": "Nightclub Owners Ordered to Pay ₹20 Lakh to Fire Victims",
+    "summary": "The Bombay High Court directed Goa club owners to compensate families of the 2025 fire tragedy with ₹20 lakh per victim."
+  },
+  {
+    "rank": 31,
+    "category": "Business",
+    "headline": "Highness to Set Up Manufacturing Plant in Goa",
+    "summary": "Highness plans to establish a manufacturing plant in Goa capable of producing up to 8,000 displays per day."
+  },
+  {
+    "rank": 32,
+    "category": "Tourism",
+    "headline": "Goa Shack Owners Face Low Footfall as Tourists Stay Away",
+    "summary": "Beach shack operators in Goa are anticipating a tough season due to a lower-than-expected influx of tourists."
+  },
+  {
+    "rank": 33,
+    "category": "Politics",
+    "headline": "Bombay HC Orders Restoration of Six Voters",
+    "summary": "The Bombay High Court ordered the Election Commission to re-add six members of a Goa family whose names were deleted during the voter revision drive."
+  },
+  {
+    "rank": 34,
+    "category": "General",
+    "headline": "Woman Passes Away Days After Mandrem Scooter Crash",
+    "summary": "A woman succumbed to her injuries several days after being involved in a scooter accident in Mandrem."
+  },
+  {
+    "rank": 35,
+    "category": "Politics",
+    "headline": "HC Mandates Re-Entry of Six Goa Family Members on Electoral Roll",
+    "summary": "Six members of a Goa family deleted during the SIR drive will be placed back on the voter rolls following a Bombay High Court order."
+  },
+  {
+    "rank": 36,
+    "category": "Business",
+    "headline": "Goa Transitions from Tourism to AI Technology",
+    "summary": "Goa is charting a new developmental path by expanding beyond traditional tourism to focus on artificial intelligence and technology sectors."
+  },
+  {
+    "rank": 37,
+    "category": "Politics",
+    "headline": "Court Directs ECI to Re-Add Six Voters to Final Roll",
+    "summary": "The Bombay High Court instructed the Election Commission of India to restore the names of six voters improperly deleted from Goa's final electoral roll."
+  },
+  {
+    "rank": 38,
+    "category": "Civic",
+    "headline": "Fire Hydrants at South Goa Collectorate in Disrepair",
+    "summary": "An inspection revealed that the fire hydrants at the South Goa Collectorate building are in poor, dilapidated condition."
+  },
+  {
+    "rank": 39,
+    "category": "Business",
+    "headline": "Goa Carbon Reports ₹184.78 Crore Cash Outflow",
+    "summary": "Goa Carbon experienced a financial cash outflow of ₹184.78 crore primarily driven by an inventory build-up."
+  },
+  {
+    "rank": 40,
+    "category": "Crime",
+    "headline": "Suspended Police Inspector to Be Arrested Soon, Says CM",
+    "summary": "Goa Chief Minister announced that suspended Police Inspector Vikas Deykar will be taken into custody shortly."
+  },
+  {
+    "rank": 41,
+    "category": "Crime",
+    "headline": "High Court Grants ₹20 Lakh Relief for Fire Victims' Kin",
+    "summary": "The Bombay High Court has ordered ₹20 lakh compensation per victim family affected by the Goa nightclub fire."
+  },
+  {
+    "rank": 42,
+    "category": "Crime",
+    "headline": "Multi-Crore Scam Busted in Luxury Goa Villa",
+    "summary": "Authorities uncovered a multi-crore financial fraud operated by 12 young men running out of a rented luxury villa in Goa."
+  },
+  {
+    "rank": 43,
+    "category": "Politics",
+    "headline": "Conflict Escalates in RGP as Leaders Trade Accusations",
+    "summary": "Internal disputes within the Revolutionary Goans Party deepened as leaders Ajay Kholkar and Viresh Borkar publicly exchanged accusations."
+  },
+  {
+    "rank": 44,
+    "category": "Civic",
+    "headline": "NCC and Goa Police Conduct Drug Awareness Event",
+    "summary": "The National Cadet Corps teamed up with Goa Police to organize a joint drug awareness programme for local youth."
+  },
+  {
+    "rank": 45,
+    "category": "Politics",
+    "headline": "Political Rallies and Yatras Gain Momentum in Goa",
+    "summary": "Political activity in Goa has intensified with multiple parties launching marches and yatras across the state."
+  },
+  {
+    "rank": 46,
+    "category": "Sports",
+    "headline": "FC Goa vs Bengaluru FC Rivalry Heats Up in ISL",
+    "summary": "The intense Indian Super League rivalry between FC Goa and Bengaluru FC stems from years of competitive matches and historical friction."
+  },
+  {
+    "rank": 47,
+    "category": "Crime",
+    "headline": "Court Acquits Accused in Rape Case, Cites Failed Marriage",
+    "summary": "A local court acquitted a man in a rape case, holding that a failed marriage promise does not automatically constitute intentional deception."
+  },
+  {
+    "rank": 48,
+    "category": "Entertainment",
+    "headline": "Goan Music Groups Perform at Konkani Mega Convention",
+    "summary": "Three teams from Goa showcased original music, tradition, and faith at the ongoing Konkani Music Mega Convention."
+  },
+  {
+    "rank": 49,
+    "category": "Politics",
+    "headline": "High Court Orders ECI to Reinstate 6 Voters",
+    "summary": "The Bombay High Court ordered the Election Commission of India to restore six voter names removed during the SIR process in Goa."
+  },
+  {
+    "rank": 50,
+    "category": "Civic",
+    "headline": "Goa Begins Digitization of School Textbooks for Grades 1 to 8",
+    "summary": "The process of digitizing textbooks for students from Grades I to VIII has commenced, with instructional videos set to be uploaded on the Diksha platform."
   }
 ]
