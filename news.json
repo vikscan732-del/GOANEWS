@@ -1,302 +1,128 @@
 [
   {
     "rank": 1,
-    "category": "Tourism",
-    "headline": "Senior Citizens Praise New Bengaluru-Goa Vande Bharat Train",
-    "summary": "Elderly passengers have expressed appreciation for the newly launched Bengaluru-Goa Vande Bharat Express. The service offers comfortable travel and modern amenities suited for older travelers."
+    "category": "Sports",
+    "headline": "CM Trophy 2.0 Registrations Now Open",
+    "summary": "Registrations have officially opened for CM Trophy 2.0. The upcoming event is set to feature 12 distinct sports and cultural competitions."
   },
   {
     "rank": 2,
-    "category": "General",
-    "headline": "Forest Department Proposes 24 Beaches as Turtle Nesting Sites",
-    "summary": "Goa's forest department has identified 24 beaches across the state for designation as protected turtle nesting grounds. The move aims to strengthen conservation efforts along the coastal belt."
+    "category": "Sports",
+    "headline": "Goa to Face Maharashtra in Ranji Trophy",
+    "summary": "Goa's cricket team is scheduled to play a Ranji Trophy fixture against Maharashtra in Pune from January 22 to 25, 2026."
   },
   {
     "rank": 3,
-    "category": "Civic",
-    "headline": "Stalled 8-km Stretch Delays Mumbai-Goa Highway Completion",
-    "summary": "A crucial eight-kilometer section of the Mumbai-Goa highway project remains incomplete due to various administrative and clearance delays. Multiple factors and authorities have contributed to stalling the roadwork."
+    "category": "Sports",
+    "headline": "Goa U-19s Set to Play Pondicherry U-19s",
+    "summary": "The Goa Under-19 squad will take on Pondicherry Under-19s in Chandigarh as part of the Vinoo Mankad Trophy Elite tournament."
   },
   {
     "rank": 4,
-    "category": "Politics",
-    "headline": "Congress and GFP Initiate Alliance Talks for 2027 Goa Polls",
-    "summary": "The Congress party and Goa Forward Party have started preliminary negotiations to form an electoral alliance. Both parties aim to jointly contest the upcoming 2027 Goa Assembly elections."
+    "category": "Sports",
+    "headline": "1919 Sportz Cricket Stadium Details Released",
+    "summary": "Venue statistics, match profiles, and historical details for the 1919 Sportz Cricket Stadium in Goa have been featured on Cricbuzz."
   },
   {
     "rank": 5,
-    "category": "Civic",
-    "headline": "Eased Address Proof Rules for Commercial Vehicles Placed on Hold",
-    "summary": "Authorities have paused the implementation of relaxed address verification guidelines for commercial vehicle registration in Goa. Applicants must continue following existing documentation requirements for now."
+    "category": "Sports",
+    "headline": "Arjun Tendulkar Seeks Move to Goa",
+    "summary": "All-rounder Arjun Tendulkar is planning to shift his domestic cricket base from Mumbai to represent the Goa state team."
   },
   {
     "rank": 6,
-    "category": "Politics",
-    "headline": "Chief Minister Praises Goa Police for Earning Presidential Colours",
-    "summary": "Chief Minister Pramod Sawant commended the Goa Police force after they received the prestigious Presidential Colours honour. He described the recognition as a moment of great pride for the entire state."
+    "category": "Sports",
+    "headline": "Goa Cricket Team Updates and Stats",
+    "summary": "Complete scorecards, match schedules, player statistics, and news updates for the Goa state cricket team are now available."
   },
   {
     "rank": 7,
-    "category": "Politics",
-    "headline": "Scheduled Tribe Community Urged to Unite for Electoral Representation",
-    "summary": "Leaders have called upon Goa's Scheduled Tribe community to stand united in political contests. The appeal encourages members to back their own candidates to ensure proper political representation."
+    "category": "Sports",
+    "headline": "Goa Domestic Cricket Squad Profile Hub",
+    "summary": "ESPN India provides comprehensive coverage of the Goa cricket team, including upcoming match schedules, player profiles, and recent results."
   },
   {
     "rank": 8,
-    "category": "Tourism",
-    "headline": "Calangute Parking Controversy: Tourism Dept Charges Rs 1,000 Fee",
-    "summary": "Visitors and locals in Calangute have raised concerns over steep parking fees levied by the tourism department. Reports indicate charges reached Rs 1,000 despite standard official rates being significantly lower."
+    "category": "Sports",
+    "headline": "Vidarbha Defeats Goa by Seven Wickets",
+    "summary": "Vidarbha secured a comfortable seven-wicket victory over Goa in Match 12 of the ongoing domestic tournament."
   },
   {
     "rank": 9,
-    "category": "Business",
-    "headline": "Cavelossim Taxi Operators Threaten Protest Over Resort Vehicles",
-    "summary": "Local taxi drivers in Cavelossim have warned of family-led demonstrations against resort vehicles operating in their area. They allege that commercial transport by hotel management is harming local livelihoods."
+    "category": "Sports",
+    "headline": "Dubey's Four-Wicket Haul Powers Vidarbha Past Goa",
+    "summary": "A strong four-wicket bowling performance by Dubey led Vidarbha to a win over Goa in their Syed Mushtaq Ali Trophy encounter."
   },
   {
     "rank": 10,
-    "category": "Business",
-    "headline": "Dry Spell Drops Sattari Marigold Yield by 40 Percent",
-    "summary": "Flower farmers in Sattari have suffered a 40 percent drop in marigold production this season. The decline is attributed to prolonged dry weather and erratic rainfall across the region."
+    "category": "Sports",
+    "headline": "Vidarbha vs Goa Live Streaming Details Announced",
+    "summary": "Broadcasters have released live telecast schedules and streaming options for the SMAT T20 clash between Vidarbha and Goa."
   },
   {
     "rank": 11,
-    "category": "Politics",
-    "headline": "Supreme Court Lawyer Urges Kannadigas in Goa to Support State on Mhadei",
-    "summary": "A Supreme Court advocate stated that Karnataka natives residing in Goa should support Goa's position on the Mhadei river dispute. The dispute remains a critical issue concerning water sharing and regional interest."
+    "category": "Sports",
+    "headline": "Preview Out for Vidarbha vs Goa T20 Clash",
+    "summary": "Match previews, venue details, and squad news have been compiled ahead of the T20 fixture between Vidarbha and Goa."
   },
   {
     "rank": 12,
-    "category": "Entertainment",
-    "headline": "57th International Film Festival of India Set for November 20 Start in Goa",
-    "summary": "Goa is scheduled to host the 57th edition of the International Film Festival of India beginning November 20. The event will showcase global cinema and host international filmmakers."
+    "category": "Politics",
+    "headline": "Dayanand Mandrekar Resigns, Alleges BJP Harassment",
+    "summary": "Senior BJP leader Dayanand Mandrekar resigned as Chairman of the SC/OBC Finance Corporation, accusing the party of harassment and taking down his festive posters."
   },
   {
     "rank": 13,
-    "category": "Entertainment",
-    "headline": "Actor Ishita Dutta Enjoys Family Vacation in Goa",
-    "summary": "'Drishyam' actress Ishita Dutta recently spent a leisure vacation in Goa alongside her husband and children. Images from their trip showed the family enjoying various scenic locations across the state."
+    "category": "Politics",
+    "headline": "Congress and Goa Forward Party Open Seat-Sharing Talks",
+    "summary": "Leaders from Congress and the Goa Forward Party held initial discussions on Sunday to map out a seat-sharing formula for the 2027 Goa Assembly elections."
   },
   {
     "rank": 14,
-    "category": "Tourism",
-    "headline": "Tourist Regrets Spending Rs 3 Lakh on Five-Day Goa Trip",
-    "summary": "A traveler expressed disappointment after incurring expenses of Rs 3 lakh during a five-day vacation in Goa with friends. He attributed the high costs and poor experience to choosing an incompatible travel group."
+    "category": "Crime",
+    "headline": "Two Booked for ₹4.30 Lakh Theft in Pernem",
+    "summary": "Pernem Police filed a case against two Kerala residents for allegedly stealing cash, gold, and belongings worth ₹4.30 lakh from their employer."
   },
   {
     "rank": 15,
-    "category": "Crime",
-    "headline": "Two Passengers Booked for Drinking Personal Alcohol on Goa-Bound Flight",
-    "summary": "Authorities registered cases against two passengers from Delhi for consuming personal alcohol during a flight to Goa. The incident occurred on an IndiGo flight, violating airline safety guidelines."
+    "category": "Politics",
+    "headline": "RGP Submits 2027 Poll Seat Demands to Congress",
+    "summary": "Revolutionary Goans Party MLA Viresh Borkar announced that seat-sharing talks with Congress are near completion after submitting their preferred list of seats."
   },
   {
     "rank": 16,
-    "category": "Tourism",
-    "headline": "Proposed Turtle Nesting Sites May Impact Popular Goa Beaches",
-    "summary": "Concerns have arisen that designating 24 beaches, including Baga, Calangute, and Palolem, as turtle nesting grounds could lead to tourism restrictions. Authorities are weighing conservation needs against commercial beach activities."
+    "category": "Crime",
+    "headline": "Kerala Man Booked for Scooter Theft at Palolem",
+    "summary": "Canacona Police charged a Thalassery native for stealing a scooter containing laptops, foreign currency, and a passport from a hostel in Palolem."
   },
   {
     "rank": 17,
-    "category": "Tourism",
-    "headline": "Highlights of New Bengaluru-Goa Vande Bharat Express Detailed",
-    "summary": "The newly launched Bengaluru-Goa Vande Bharat train introduces unique features, including eco-friendly food waste management and special souvenir mugs. Passengers have highlighted these operational touches alongside improved train comfort."
+    "category": "Politics",
+    "headline": "ST Leaders Warn Govt of 2027 Election Backlash",
+    "summary": "Scheduled Tribe community leaders warned of opposition at the ballot box in 2027 if political reservation is not granted, criticizing the state's legal defense."
   },
   {
     "rank": 18,
-    "category": "Tourism",
-    "headline": "New Bengaluru-Goa Vande Bharat Features Rotating Seats and Scenic Views",
-    "summary": "The Bengaluru-Goa Vande Bharat Express offers passengers rotating seats designed to maximize views of the Western Ghats. The route provides scenic landscapes throughout the journey."
+    "category": "Crime",
+    "headline": "Decomposed Body Found at Raia",
+    "summary": "Maina-Curtorim Police have registered an unnatural death case after discovering the decomposed body of 35-year-old local resident Bony Fernandes near Raia."
   },
   {
     "rank": 19,
     "category": "Crime",
-    "headline": "Police Uncover Multiple Motives Behind Porvorim Casino Firing Incident",
-    "summary": "Goa Police investigating the shootout near a Porvorim casino have revealed that multiple motives led to the crime. Investigators continue to gather evidence regarding those involved."
+    "headline": "Goa Police Arrest 24 in Interstate Cyber Crackdown",
+    "summary": "In an interstate operation titled 'Cyber Vigil 2.0', Goa Police arrested 24 individuals across 16 states, detecting cyber frauds amounting to ₹8.22 crore."
   },
   {
     "rank": 20,
-    "category": "General",
-    "headline": "Wild Animals Cause Damage to Canacona Farms, Farmers Demand Relief",
-    "summary": "Farmers in Canacona report severe crop damage caused by intruding wild animals on agricultural lands. Affected agriculturalists have requested urgent assistance and compensation from government authorities."
+    "category": "Civic",
+    "headline": "Bengaluru–Madgaon Vande Bharat Express Launched",
+    "summary": "Prime Minister Narendra Modi launched the new Vande Bharat service connecting Bengaluru and Madgaon, offering a 13-hour rail link across 850 km."
   },
   {
     "rank": 21,
-    "category": "Civic",
-    "headline": "Demands Rise for Rehabilitation of Evacuated Borda Building Residents",
-    "summary": "Pressure is increasing on local authorities to provide proper rehabilitation for families displaced from an unsafe building in Borda. Evacuated residents are seeking immediate alternative housing support."
-  },
-  {
-    "rank": 22,
-    "category": "Crime",
-    "headline": "Canacona Police Conduct Cybercrime Awareness Campaign",
-    "summary": "Canacona Police organized an educational awareness drive to inform local residents about cyber frauds and online scams. Officers shared preventive tips to help citizens safeguard their digital transactions."
-  },
-  {
-    "rank": 23,
-    "category": "Civic",
-    "headline": "Sewage Overflow Raises Health Concerns Among Calangute Residents",
-    "summary": "Local residents in Calangute have voiced alarm over overflowing sewage water on roads, warning of severe public health risks. They urged municipal authorities to immediately resolve the sanitation failure."
-  },
-  {
-    "rank": 24,
-    "category": "Business",
-    "headline": "New Labour Regulations Require Internal Grievance Committees",
-    "summary": "Updated labor directives mandate that commercial establishments establish internal grievance redressal committees. The initiative aims to provide workers with structured mechanisms to report workplace issues."
-  },
-  {
-    "rank": 25,
-    "category": "Crime",
-    "headline": "Maharashtra Woman Arrested for Rs 22 Lakh Ritual Fraud in Ponda",
-    "summary": "Goa Police arrested a woman from Maharashtra for allegedly cheating a Ponda resident out of Rs 22 lakh under the guise of performing religious rituals. Investigation into the fraud is ongoing."
-  },
-  {
-    "rank": 26,
-    "category": "Tourism",
-    "headline": "Picturesque Views from Mumbai-Goa Vande Bharat Go Viral Online",
-    "summary": "Social media users have widely shared captivating videos of the Mumbai-Goa Vande Bharat train route through lush hills, tunnels, and bridges. The visual appeal has drawn widespread interest from travelers."
-  },
-  {
-    "rank": 27,
-    "category": "Business",
-    "headline": "Karekhazan Farmers to Cultivate Cowpeas Across 15 Hectares",
-    "summary": "Agriculturalists in Karekhazan are preparing to start cowpea farming across 15 hectares of land this season. The initiative aims to boost pulse crop yield in the locality."
-  },
-  {
-    "rank": 28,
-    "category": "Civic",
-    "headline": "Railway Forum Seeks Tamil Nadu Governor's Help to Resume Vasco-Chennai Train",
-    "summary": "A passengers' rail association has requested the intervention of the Tamil Nadu Governor to restart the suspended Vasco-Chennai Express service. The group emphasized the train's importance for direct connectivity."
-  },
-  {
-    "rank": 29,
-    "category": "Tourism",
-    "headline": "India's New Vande Bharat Highlights Scenic Journey to Goa",
-    "summary": "The newly operational Vande Bharat route connecting Bengaluru to Goa passes through the scenic Western Ghats. The journey offers picturesque landscape vistas to rail commuters."
-  },
-  {
-    "rank": 30,
-    "category": "Crime",
-    "headline": "Passengers Apprehended for Drinking In-Flight to Goa",
-    "summary": "Airline authorities reported two passengers caught drinking unauthorized alcohol during a flight heading to Goa. The individuals face legal action for violating flight conduct regulations."
-  },
-  {
-    "rank": 31,
-    "category": "Civic",
-    "headline": "Goa Explores Rail Connectivity to Mopa Airport",
-    "summary": "The state government is evaluating plans to establish direct railway links to Mopa Airport, featuring a proposed rapid shuttle train. The project aims to improve transport accessibility for passengers."
-  },
-  {
-    "rank": 32,
-    "category": "Tourism",
-    "headline": "Food Vlog Explores On-Board Menu of Bengaluru-Goa Vande Bharat",
-    "summary": "A popular travel vlogger reviewed the culinary offerings served on the new Bengaluru-Goa Vande Bharat train. The review highlighted regional delicacies provided to passengers during the trip."
-  },
-  {
-    "rank": 33,
-    "category": "Sports",
-    "headline": "Head Coach Viadero Arrives in Goa to Lead FC Goa",
-    "summary": "Newly appointed coach Viadero has landed in Goa to officially take control of FC Goa's football team operations. He will supervise training sessions ahead of upcoming matches."
-  },
-  {
-    "rank": 34,
-    "category": "Crime",
-    "headline": "Civil Contractor Defrauded of Rs 2 Crore in Goa Casino Investment Scheme",
-    "summary": "A contractor filed a police complaint after being duped out of Rs 2 crore by scammers offering fake investment stakes in a Goa casino project. Police are currently investigating the financial fraud."
-  },
-  {
-    "rank": 35,
-    "category": "Politics",
-    "headline": "Tribal Groups Meet in Sanguem Over ST Quota Reservation Delays",
-    "summary": "Tribal community members in Goa expressed dissatisfaction over ongoing delays in implementing political reservations for STs. Leaders gathered in Sanguem to plan future agitation strategies."
-  },
-  {
-    "rank": 36,
-    "category": "Civic",
-    "headline": "Goa Police Conduct Cyber Safety Workshop for 800 Naval Officers",
-    "summary": "Cyber cell personnel from Goa Police conducted a digital safety training session for 800 naval officers stationed in Karwar. The session focused on identifying and mitigating modern cyber threats."
-  },
-  {
-    "rank": 37,
-    "category": "Weather",
-    "headline": "Temperature Drops 4°C Below Normal in Goa, Offering Relief from Heat",
-    "summary": "Weather conditions across Goa turned pleasant as maximum temperatures fell 4 degrees Celsius below normal levels. The sudden drop brought significant respite to residents after recent warm days."
-  },
-  {
-    "rank": 38,
-    "category": "Civic",
-    "headline": "Critical Connections to Ports and Airport Delayed Along Mumbai-Goa Highway",
-    "summary": "Key feeder roads along the Mumbai-Goa highway intended to connect major seaports and airports remain incomplete. Officials emphasized that resolving these bottlenecks is crucial for regional economic growth."
-  },
-  {
-    "rank": 39,
-    "category": "Crime",
-    "headline": "Inadequate Night Patrolling Raises Security Concerns in Goa",
-    "summary": "Local residents have voiced concerns regarding sparse police presence and ineffective night patrolling in several Goa towns. The security gaps have fueled anxieties over potential criminal activity after dark."
-  },
-  {
-    "rank": 40,
-    "category": "Civic",
-    "headline": "Dilapidated Abandoned Buildings Pose Risks in Goa Towns",
-    "summary": "Unmaintained and vacant structures across Goa are emerging as safety hazards for nearby residents. Local communities have asked administrative bodies to clear or secure these hazardous abandoned buildings."
-  },
-  {
-    "rank": 41,
-    "category": "General",
-    "headline": "Ocean Safety Drive Reaches 3,000 Participants Over 50 Days",
-    "summary": "An ongoing coastal safety awareness campaign successfully engaged over 3,000 individuals during a 50-day period. The program aimed to educate beachgoers on water safety protocols and rescue techniques."
-  },
-  {
-    "rank": 42,
-    "category": "Civic",
-    "headline": "Staffing and Transport Shortages Hinder Goa Police Operations",
-    "summary": "Severe shortages in manpower and operational vehicles are hampering effective policing and rapid response times in Goa. Community members called for immediate resource allocation to strengthen public safety."
-  },
-  {
-    "rank": 43,
-    "category": "Business",
-    "headline": "PM Modi Flags Off Bengaluru-Goa Vande Bharat Express",
-    "summary": "Prime Minister Narendra Modi officially flagged off the Bengaluru-Goa Vande Bharat Express train service. Regular commercial trips on the newly introduced railway route have now formally commenced."
-  },
-  {
-    "rank": 44,
     "category": "Entertainment",
-    "headline": "Konkani Musical Performance Enters Guinness World Records",
-    "summary": "A massive group musical performance featuring Konkani songs achieved a landmark spot in the Guinness World Records. Organizers praised the event for celebrating Goa's rich linguistic heritage."
-  },
-  {
-    "rank": 45,
-    "category": "Tourism",
-    "headline": "Government Notifies Designated Water Sports Zones in North Goa",
-    "summary": "Authorities have designated official zones for water sports activities across North Goa beaches, enforcing strict safety rules. Commercial operators must comply with mandatory safety guidelines to continue operations."
-  },
-  {
-    "rank": 46,
-    "category": "Crime",
-    "headline": "Mumbai Resident Arrested in Goa with Narcotics Worth Rs 2.5 Lakh",
-    "summary": "Goa Police apprehended an individual from Mumbai after seizing illegal drugs valued at Rs 2.5 lakh from his possession. A case has been registered under relevant narcotics prevention laws."
-  },
-  {
-    "rank": 47,
-    "category": "Politics",
-    "headline": "GFP Chief Accuses BJP Competitor of Halting Fatorda Culvert Construction",
-    "summary": "Goa Forward Party chief Vijai Sardesai accused a BJP rival of deliberately halting ongoing culvert construction work in Fatorda. He claimed the obstruction was politically motivated to inconvenience local residents."
-  },
-  {
-    "rank": 48,
-    "category": "Crime",
-    "headline": "Four Arrested for Smuggling Goa Alcohol in School Bags",
-    "summary": "Law enforcement officials intercepted four individuals attempting to smuggle illicit Goa liquor concealed inside school bags aboard a state transport bus. The suspects were taken into custody."
-  },
-  {
-    "rank": 49,
-    "category": "Politics",
-    "headline": "Congress Faces Tough Electoral Battle in Salcete for 2027",
-    "summary": "Political analysts suggest that Congress faces significant challenges in securing a total victory across Salcete in the upcoming 2027 Assembly polls. Changing political dynamics have reshaped voter preferences in the region."
-  },
-  {
-    "rank": 50,
-    "category": "Crime",
-    "headline": "Police Mandate Background Verification for Beach Shack Workers",
-    "summary": "Goa Police reiterated the mandatory requirement for beach shack owners to complete background verification for all hired staff. The directive aims to bolster safety standards along popular tourist beaches."
+    "headline": "IFFI 2026 Lineup to Feature 235 Films",
+    "summary": "The 57th International Film Festival of India in Goa will showcase 159 international films and 76 Indian films under the theme 'Stories Without Borders'."
   }
 ]
