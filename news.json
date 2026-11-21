@@ -3,90 +3,300 @@
     "rank": 1,
     "category": "Entertainment",
     "headline": "57th IFFI Opens in Goa",
-    "summary": "The 57th International Film Festival of India has officially opened in Goa to celebrate diverse global cinema and storytelling traditions."
+    "summary": "The 57th International Film Festival of India has officially opened in Goa, showcasing diverse cinema and storytelling traditions from around the globe."
   },
   {
     "rank": 2,
     "category": "Entertainment",
-    "headline": "Goa Aims to Become Film Hub",
-    "summary": "Chief Minister Sawant stated at IFFI that Goa aims to transition from merely being a shooting location to a complete film production hub."
+    "headline": "Goa Aims to Become Complete Film Hub",
+    "summary": "Chief Minister Pramod Sawant announced at IFFI that Goa aims to transition from being just a shooting location to a full-fledged film production hub."
   },
   {
     "rank": 3,
     "category": "Entertainment",
-    "headline": "IFFI Opens with 'Stories without Borders'",
-    "summary": "The festival commenced with the 'Stories without Borders' theme, featuring a musical tribute to world cinema led by Ricky Kej."
+    "headline": "IFFI Day 2 Highlights Silver Screen Classics",
+    "summary": "The second day of IFFI in Goa featured a mix of cinema classics and open-air screenings for film enthusiasts."
   },
   {
     "rank": 4,
-    "category": "Crime",
-    "headline": "Calangute Fire Destroys Shacks",
-    "summary": "A fire in Calangute gutted four beach shacks completely, though no injuries were reported. Authorities have announced financial compensation for the affected operators."
+    "category": "Civic",
+    "headline": "300 Citizens Benefit from Anywhere Registration",
+    "summary": "Chief Minister Pramod Sawant shared that over 300 citizens have already benefited from the newly implemented Anywhere Registration System."
   },
   {
     "rank": 5,
-    "category": "General",
-    "headline": "Anywhere Registration System Gains Traction",
-    "summary": "Goa Chief Minister highlighted that over 300 citizens have benefited from the newly implemented Anywhere Registration System."
+    "category": "Civic",
+    "headline": "Anywhere Registration Gains Traction in Goa",
+    "summary": "Goa's Anywhere Registration System is seeing growing adoption, with more than 300 people taking advantage of the service so far."
   },
   {
     "rank": 6,
     "category": "Civic",
-    "headline": "Mapusa Sub Registrar Office Renovated",
-    "summary": "Goa's Chief Minister inaugurated the newly renovated and modernized Sub Registrar's Office in Mapusa city."
+    "headline": "Renovated Sub Registrar Office Opens in Mapusa",
+    "summary": "Goa Chief Minister Pramod Sawant has officially inaugurated the newly renovated Sub Registrar's Office located in Mapusa."
   },
   {
     "rank": 7,
-    "category": "Business",
-    "headline": "Goa Approves AI Policy 2026",
-    "summary": "The Goa cabinet has approved the AI Policy 2026, earmarking Rs 50 crore toward skilling graduates and rolling out technology labs across educational institutions."
+    "category": "Politics",
+    "headline": "Cabinet Approves Goa AI Policy 2026",
+    "summary": "The Goa Cabinet has approved the state's AI Policy 2026 along with five key flagship development schemes."
   },
   {
     "rank": 8,
-    "category": "Tourism",
-    "headline": "Mandrem and Galgibaga Gain Blue Flag Status",
-    "summary": "Mandrem and Galgibaga have become Goa's first beaches to receive the prestigious Blue Flag certification, joining 22 other beaches across India."
+    "category": "Business",
+    "headline": "Goa Targets AI Training for 50,000 Graduates",
+    "summary": "Under its new tech initiatives, the Goa government aims to train 50,000 graduates in artificial intelligence skills."
   },
   {
     "rank": 9,
-    "category": "Crime",
-    "headline": "Tiger Survey Cameras Stolen",
-    "summary": "Two tiger survey cameras were reported stolen from a wildlife sanctuary in Goa."
+    "category": "Business",
+    "headline": "Goa Approves AI Policy for Skill Development",
+    "summary": "With the approval of the AI Policy 2026, Goa plans to build digital talent by training 50,000 graduates in AI technology."
   },
   {
     "rank": 10,
-    "category": "Civic",
-    "headline": "Curchorem STP Challenged in PIL",
-    "summary": "A Public Interest Litigation has been filed challenging the Curchorem Sewage Treatment Plant, alleging that mangroves were destroyed during the process."
+    "category": "General",
+    "headline": "Four Beach Shacks Gutted in Goa Fire",
+    "summary": "A fire broke out destroying four beach shacks in Goa. No injuries were reported in the incident."
   },
   {
     "rank": 11,
-    "category": "Crime",
-    "headline": "ACB Raids Suspended Constable's Bungalow",
-    "summary": "The Anti-Corruption Bureau and Directorate of Vigilance conducted searches at the residence of a suspended police constable in Valpoi."
+    "category": "General",
+    "headline": "Fire Destroys Calangute Shacks; Relief Announced",
+    "summary": "A blaze gutted four beach shacks in Calangute, leading authorities to announce financial assistance for affected owners."
   },
   {
     "rank": 12,
-    "category": "Environment",
-    "headline": "Tiger Sighting Renews Sanctuary Calls",
-    "summary": "A recent tiger sighting in the Mhadei basin, the first in two years, has renewed local calls for establishing a tiger reserve."
+    "category": "General",
+    "headline": "Blaze Rips Through Four Calangute Shacks",
+    "summary": "A massive fire completely destroyed four shacks along Calangute beach, causing severe operational loss."
   },
   {
     "rank": 13,
-    "category": "Crime",
-    "headline": "Worker Dies in Assagao Shop Fire",
-    "summary": "A 19-year-old worker succumbed to 90% burn injuries following a fire at a shop in Assagao."
+    "category": "Tourism",
+    "headline": "LaRiSa Resorts Opens Riverside Property in Quepem",
+    "summary": "LaRiSa Resorts has launched its first riverside resort address in Quepem, expanding luxury stay options in South Goa."
   },
   {
     "rank": 14,
-    "category": "Weather",
-    "headline": "Monsoon Deficit Causes Crop Loss",
-    "summary": "A monsoon deficit in Goa resulted in Rs 18.7 lakh worth of crop losses, with Sanquelim being the hardest hit area."
+    "category": "Entertainment",
+    "headline": "Stars Light Up 57th IFFI Opening",
+    "summary": "Celebrities including Sai Pallavi, Ravi Kishan, and Ricky Kej attended the star-studded opening ceremony of IFFI in Goa."
   },
   {
     "rank": 15,
+    "category": "Crime",
+    "headline": "Tiger Survey Cameras Stolen in Wildlife Sanctuary",
+    "summary": "Two cameras installed to monitor wildlife for a tiger survey have been stolen from a Goa sanctuary."
+  },
+  {
+    "rank": 16,
+    "category": "General",
+    "headline": "Josephine Estate Restored in Goa",
+    "summary": "The heritage property Josephine Estate in Goa has been restored, giving the historic site a fresh lease of life."
+  },
+  {
+    "rank": 17,
+    "category": "Tourism",
+    "headline": "Mandrem and Galgibaga Get Blue Flag Status",
+    "summary": "Mandrem and Galgibaga have officially become Goa's first beaches to receive the prestigious international Blue Flag certification."
+  },
+  {
+    "rank": 18,
+    "category": "Tourism",
+    "headline": "Tourist Raises Concerns Over Goa Taxi Issues",
+    "summary": "A visitor's online post regarding taxi troubles in Goa has sparked a wider debate about the state's tourist-friendly reputation."
+  },
+  {
+    "rank": 19,
+    "category": "Entertainment",
+    "headline": "J&K DIPR Participates in 57th IFFI",
+    "summary": "The Department of Information and Public Relations of Jammu & Kashmir is representing the region at the 57th IFFI event in Goa."
+  },
+  {
+    "rank": 20,
+    "category": "Entertainment",
+    "headline": "Goa Unveils Film City Plan at IFFI",
+    "summary": "To boost local film production infrastructure, Goa unveiled plans during IFFI to develop a dedicated film city."
+  },
+  {
+    "rank": 21,
+    "category": "Crime",
+    "headline": "Bail Granted in North Goa Land Grab Case",
+    "summary": "A North Goa PMLA court has granted bail to accused Siddique in an ongoing illegal land grab money laundering case."
+  },
+  {
+    "rank": 22,
+    "category": "Entertainment",
+    "headline": "Actor Rakesh Bedi Attends 57th IFFI",
+    "summary": "Actor Rakesh Bedi spoke warmly about the Dhurandhar film franchise while attending the 57th IFFI in Goa."
+  },
+  {
+    "rank": 23,
+    "category": "Tourism",
+    "headline": "State Announces ₹8 Lakh Relief for Fire-Hit Shacks",
+    "summary": "The Goa government announced ₹8 lakh in total financial relief for four operators whose shacks burned down in Calangute."
+  },
+  {
+    "rank": 24,
     "category": "Civic",
-    "headline": "Zuari Bridge Twin Towers Work to Begin",
-    "summary": "Construction on the twin towers of the Zuari bridge is scheduled to begin this month and is expected to be completed in 2.5 years."
+    "headline": "GSCPCR Moves to Activate Child Protection Bodies",
+    "summary": "The Goa State Commission for Protection of Child Rights has initiated steps to make local child protection committees operational."
+  },
+  {
+    "rank": 25,
+    "category": "Sports",
+    "headline": "Churchill Brothers Seek End to Winless Streak",
+    "summary": "Churchill Brothers FC are focusing on securing a victory to end their current winless streak in the league."
+  },
+  {
+    "rank": 26,
+    "category": "General",
+    "headline": "Forest Department Confirms Tiger Presence",
+    "summary": "The Goa Forest Department confirmed a tiger's presence in the state, noting that the animal migrated over from Belagavi."
+  },
+  {
+    "rank": 27,
+    "category": "Entertainment",
+    "headline": "57th IFFI Begins with Grand Ceremony",
+    "summary": "The 57th International Film Festival of India commenced in Goa with a celebrated opening ceremony showcasing global talent."
+  },
+  {
+    "rank": 28,
+    "category": "Entertainment",
+    "headline": "57th IFFI Opens with 260 Global Films",
+    "summary": "Dubbed the 'Mahakumbh of films', the 57th IFFI opened in Goa featuring a lineup of 260 movies from around the world."
+  },
+  {
+    "rank": 29,
+    "category": "Sports",
+    "headline": "FC Goa Coach Focuses on Positives for Upcoming Match",
+    "summary": "Coach Manolo Viadero stressed focusing on key strengths ahead of FC Goa's fixture against NorthEast United."
+  },
+  {
+    "rank": 30,
+    "category": "Civic",
+    "headline": "PIL Challenges Curchorem Sewage Treatment Plant",
+    "summary": "A Public Interest Litigation filed in Goa challenges the Curchorem sewage plant, alleging destruction of local mangroves."
+  },
+  {
+    "rank": 31,
+    "category": "General",
+    "headline": "Historic 500-Year-Old Goa Palace Faces Neglect",
+    "summary": "A 500-year-old palace in Goa that witnessed multiple historical eras is suffering from severe physical neglect."
+  },
+  {
+    "rank": 32,
+    "category": "Entertainment",
+    "headline": "IFFI Connects Global Filmmakers and Audiences",
+    "summary": "Beyond movie screenings, the 57th IFFI in Goa serves as a vibrant platform connecting storytellers and audiences."
+  },
+  {
+    "rank": 33,
+    "category": "General",
+    "headline": "Carmelites Honour First Martyrs in Old Goa",
+    "summary": "Members of the Carmelite order gathered at a historic site in Old Goa to pay homage to their first martyrs."
+  },
+  {
+    "rank": 34,
+    "category": "General",
+    "headline": "Sattari Prepares for Tulsi Vivah Celebrations",
+    "summary": "Preparations are underway across Sattari as residents gear up to observe traditional Tulsi Vivah ceremonies."
+  },
+  {
+    "rank": 35,
+    "category": "General",
+    "headline": "Goa Celebrates Vhadli Diwali Festival",
+    "summary": "Festivities for Vhadli Diwali have begun across Goa, marking the ceremonial union during Tulsi Vivah."
+  },
+  {
+    "rank": 36,
+    "category": "Entertainment",
+    "headline": "J&K Delegation Represents State at IFFI Goa",
+    "summary": "Delegates from Jammu and Kashmir's DIPR are attending the 57th International Film Festival of India hosted in Goa."
+  },
+  {
+    "rank": 37,
+    "category": "Crime",
+    "headline": "Driver Held for Dumping Sewage Illegally",
+    "summary": "Authorities in Goa seized a vehicle and arrested the driver for unlawfully dumping untreated sewage."
+  },
+  {
+    "rank": 38,
+    "category": "Crime",
+    "headline": "Vigilance Raids Suspended Constable's Residence",
+    "summary": "The Directorate of Vigilance conducted a search at the home of a suspended police constable in Valpoi."
+  },
+  {
+    "rank": 39,
+    "category": "Business",
+    "headline": "Goan Restaurant Wins Top Honor in Australia",
+    "summary": "A Goan restaurant secured a gold award at Australia's national restaurant and catering industry awards."
+  },
+  {
+    "rank": 40,
+    "category": "Weather",
+    "headline": "Monsoon Deficit Causes ₹18.7 Lakh Crop Damage",
+    "summary": "Insufficient rainfall has led to an estimated ₹18.7 lakh loss in crops in Goa, with Sanquelim suffering the worst damage."
+  },
+  {
+    "rank": 41,
+    "category": "Politics",
+    "headline": "Mob Disrupts AAP Meeting in Moti Dongor",
+    "summary": "Chaos broke out at an Aam Aadmi Party meeting in Moti Dongor after an unruly mob disrupted the gathering."
+  },
+  {
+    "rank": 42,
+    "category": "Sports",
+    "headline": "Viadero Believes FC Goa's Potential Is Underrated",
+    "summary": "FC Goa coach Viadero remarked that the full potential of his team remains underappreciated by most observers."
+  },
+  {
+    "rank": 43,
+    "category": "General",
+    "headline": "Exhibition Highlights Goa's Tribal Heritage",
+    "summary": "A special exhibition in Goa documents the unique cultural heritage and living traditions of three local tribal communities."
+  },
+  {
+    "rank": 44,
+    "category": "Civic",
+    "headline": "Clean-Up Drive Planned for Goa Heritage Sites",
+    "summary": "Authorities are set to launch a major cleanliness campaign across heritage sites in Goa starting mid-December."
+  },
+  {
+    "rank": 45,
+    "category": "Politics",
+    "headline": "Govt Criticised Over ₹13-Crore Pool Project",
+    "summary": "The Goa government faces opposition criticism regarding public spending of ₹13 crore on a swimming pool in Mormugao."
+  },
+  {
+    "rank": 46,
+    "category": "General",
+    "headline": "CJP to Host Youth Event on November 22",
+    "summary": "Leaders from CJP are organizing a state-level youth conference scheduled for November 22."
+  },
+  {
+    "rank": 47,
+    "category": "Crime",
+    "headline": "Man Arrested for Stabbing at Margao Station",
+    "summary": "Police have taken a suspect into custody following a stabbing attack on a passenger at the Margao railway station."
+  },
+  {
+    "rank": 48,
+    "category": "Politics",
+    "headline": "Survey Warns Troubled Ground for Goa Ministers",
+    "summary": "A political survey indicates declining popularity and shaky prospects for three ministers and several party defectors in Goa."
+  },
+  {
+    "rank": 49,
+    "category": "Civic",
+    "headline": "Activists Report Overcharging at Margao Toilets",
+    "summary": "Civic activists have raised complaints regarding operators overcharging users at public toilet facilities in Margao."
+  },
+  {
+    "rank": 50,
+    "category": "Crime",
+    "headline": "Police Probe Incident of Woman Taken in Varca",
+    "summary": "Authorities are investigating a suspicious incident where a woman was reportedly taken away in a vehicle at Varca."
   }
 ]
