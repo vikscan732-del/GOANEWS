@@ -1,62 +1,230 @@
 [
   {
     "rank": 1,
-    "category": "Entertainment",
-    "headline": "Book on Filmmaker Awtar Kaul Presented at IFFI",
-    "summary": "A new book documenting the life and legacy of filmmaker Awtar Kaul was featured at IFFI. Authored by Vinod Kaul, the book revisits the cinematic contributions of the late director known for '27 Down'."
+    "category": "Business",
+    "headline": "Bisleri Clarifies FSSAI Scrutiny Limited to Single Goa Batch",
+    "summary": "Bisleri stated that FSSAI scrutiny was restricted to a single batch in Goa, which has already been withdrawn from circulation. Re-tests confirmed that bromate levels in the product remain within permissible safety limits."
   },
   {
     "rank": 2,
-    "category": "Civic",
-    "headline": "PWD Issues Fresh Traffic Advisory for Guirim Corridor",
-    "summary": "The Public Works Department has issued a new traffic advisory for the Guirim elevated corridor. The notice clearly outlines the designated entry and exit points for commuters."
+    "category": "Business",
+    "headline": "Royal Enfield Launches Flying Flea C6 in Goa",
+    "summary": "Royal Enfield has expanded its retail presence in Goa by launching the Flying Flea C6 electric model. Sales have commenced across three newly opened stores in the state."
   },
   {
     "rank": 3,
-    "category": "Entertainment",
-    "headline": "Prasar Bharati Announces Script Pitching Lab Winners at IFFI",
-    "summary": "Avishesh Jha won the top prize of ₹5 lakh for his script 'Mirchi Cake' at Prasar Bharati's 'Page Se Pitch Tak' pitching lab during IFFI in Panaji. Satya Vyas secured the second spot in the competition."
+    "category": "Crime",
+    "headline": "Excise Officials Seize Illicit Goa Liquor Worth Lakhs",
+    "summary": "Authorities intercepted major liquor smuggling attempts, seizing illicit Goa alcohol worth over ₹32 lakh at the Patradevi checkpoint and ₹20 lakh in Dakshina Kannada. Transport vehicles used in the operations were also impounded."
   },
   {
     "rank": 4,
-    "category": "Entertainment",
-    "headline": "Filmmakers Discuss Mythology and Superheroes at IFFI",
-    "summary": "Directors Ayan Mukerji and Basil Joseph participated in an interactive session at the 57th IFFI in Goa. They explored ways to blend Indian mythology and folklore with superhero cinema and fantasy storytelling."
+    "category": "Crime",
+    "headline": "Gujarat Man Arrested with ₹1.05 Cr Hydroponic Weed in Porvorim",
+    "summary": "The Goa Anti-Narcotics Task Force arrested a resident of Gujarat in Porvorim after recovering high-grade hydroponic weed valued at ₹1.05 crore. Further investigation into the drug network is currently underway."
   },
   {
     "rank": 5,
-    "category": "Crime",
-    "headline": "Court Grants Bail to Accused in Karapur-Sarvan Clash",
-    "summary": "The JMFC court in Bicholim has granted conditional bail to Sarvesh Dhawaskar following his arrest in connection with the Karapur-Sarvan clash. He was released on a personal bond of ₹15,000."
+    "category": "Entertainment",
+    "headline": "'Creative Minds of Tomorrow' Concludes at IFFI Goa",
+    "summary": "The 6th edition of the 'Creative Minds of Tomorrow' initiative successfully concluded at the International Film Festival of India in Goa. The platform recognized emerging talent across various filmmaking disciplines."
   },
   {
     "rank": 6,
-    "category": "Politics",
-    "headline": "Goa Opposition Alliance Talks at Advanced Stage, Says Yuri Alemao",
-    "summary": "Leader of Opposition Yuri Alemao confirmed that discussions for an opposition alliance ahead of the 2027 Goa Assembly elections are progressing well. He expressed confidence that the coalition strategy will be finalized soon."
+    "category": "Tourism",
+    "headline": "Visiting British Couple Shares Emotional Farewell to Goa",
+    "summary": "A visiting British couple expressed deep affection for Goa as their trip came to an end, describing the coastal state as a truly special destination. Their viral reaction highlighted Goa's enduring appeal to international tourists."
   },
   {
     "rank": 7,
-    "category": "Tourism",
-    "headline": "Polish Tourist Dies After Collapsing on Arossim Beach",
-    "summary": "A 66-year-old Polish tourist passed away after collapsing while walking on Arossim beach with his wife. He was rushed to the Cansaulim Primary Health Centre, where doctors declared him brought dead."
+    "category": "Civic",
+    "headline": "Goa Medical College to Introduce AI Chatbot for Patients",
+    "summary": "Goa Medical College is adopting an AI-powered chatbot to assist healthcare staff with faster patient history assessments. The digital tool aims to streamline preliminary evaluations and reduce patient waiting times."
   },
   {
     "rank": 8,
-    "category": "Crime",
-    "headline": "Prime Accused in Excise Job Scam Surrenders to Panaji Police",
-    "summary": "Ajit Shankhwalkar, the main accused in Goa's Excise Department cash-for-jobs scam, has surrendered after being evading police for over a month. He was taken into custody following a lookout notice issued earlier this month."
+    "category": "Sports",
+    "headline": "Eight Goa Cyclists Complete 1,200 KM Endurance Challenge",
+    "summary": "A group of eight cyclists from Goa successfully conquered a demanding 1,200-kilometer endurance ride within a 90-hour deadline. The achievement marks a significant milestone for the state's long-distance cycling community."
   },
   {
     "rank": 9,
-    "category": "General",
-    "headline": "Viral Tiger Video From Karnataka, Not Goa, Says Forest Minister",
-    "summary": "Forest Minister Vishwajeet Rane clarified that a viral video showing a tiger was filmed in Karnataka and not Goa. The Forest Department confirmed the location after verifying the footage."
+    "category": "Entertainment",
+    "headline": "West Bengal Promotes Film Subsidies at Goa Event",
+    "summary": "West Bengal showcased its new film policy and financial incentives to industry delegates at the WAVES Film Bazaar in Goa. The initiative aims to attract regional and national filmmakers to shoot in the state."
   },
   {
     "rank": 10,
+    "category": "Tourism",
+    "headline": "Travel Guide Spotlights 5 Scenic Goa Destinations",
+    "summary": "A new travel guide highlights five scenic places across Goa, spanning from Mandrem to Chorao Island, for year-end visitors. The curated list focuses on serene landscapes away from typical crowded tourist hubs."
+  },
+  {
+    "rank": 11,
+    "category": "Civic",
+    "headline": "Goa Records Sharp Rise in Road Accidents and Fatalities",
+    "summary": "Official traffic data shows a 26.5% surge in road accidents across Goa, alongside a 28% increase in fatalities. Authorities are reviewing traffic enforcement protocols to address the growing safety concerns."
+  },
+  {
+    "rank": 12,
+    "category": "Civic",
+    "headline": "Goa Government to Sell Subsidized Local Fish Varieties",
+    "summary": "The Goa government announced plans to supply cultured kalundar and shevto fish to local consumers at subsidized rates. The initiative aims to ensure affordable access to popular native fish species."
+  },
+  {
+    "rank": 13,
+    "category": "Business",
+    "headline": "Marksans Pharma Shares Dip Following US FDA Inspection",
+    "summary": "Shares of Marksans Pharma declined after the U.S. FDA issued six inspection observations for its Goa manufacturing facility. The company is working on addressing the regulatory feedback."
+  },
+  {
+    "rank": 14,
+    "category": "Crime",
+    "headline": "Suspect Arrested in ₹52 Lakh Goa Job Scam",
+    "summary": "Police arrested Ajit Shankhwalkar for his alleged involvement in a ₹52 lakh job scam in the excise department. Investigations revealed the accused evaded capture for days by avoiding hotels and eating street food."
+  },
+  {
+    "rank": 15,
+    "category": "Civic",
+    "headline": "Driving Licence Suspensions Drop 91% Despite Rising Deaths",
+    "summary": "Data reveals driver's licence suspensions in Goa plummeted by over 91% in the third quarter, even as road fatalities continued to climb. Safety advocates have raised concerns over lax enforcement."
+  },
+  {
+    "rank": 16,
+    "category": "Civic",
+    "headline": "Road Cave-In Near Aguada Monument Sparks Concern",
+    "summary": "A sudden road cave-in near a protected heritage site at Fort Aguada created panic among locals and tourists. Authorities have cordoned off the area to assess structural risks and initiate repairs."
+  },
+  {
+    "rank": 17,
+    "category": "General",
+    "headline": "Sadguru Brahmeshanand Acharya Honoured in the US",
+    "summary": "Spiritual leader Sadguru Brahmeshanand Acharya was felicitated with an honor during a recent event in the United States. The recognition celebrated his contributions to spiritual peace and social harmony."
+  },
+  {
+    "rank": 18,
+    "category": "Politics",
+    "headline": "Congress-GFP Pre-Election Alliance Talks Stall",
+    "summary": "Alliance discussions between the Congress and Goa Forward Party have hit a roadblock over seat-sharing arrangements. GFP chief Vijai Sardesai reiterated that his party will only contest seats where it has a clear winning chance."
+  },
+  {
+    "rank": 19,
+    "category": "General",
+    "headline": "Devotees Gather in Old Goa as Goencho Saib Novenas Begin",
+    "summary": "Thousands of pilgrims arrived in Old Goa to attend the opening novena prayers dedicated to St. Francis Xavier. Authorities have arranged transport, security, and medical facilities to manage the annual feast crowds."
+  },
+  {
+    "rank": 20,
+    "category": "Politics",
+    "headline": "AAP Demands Action Against BJP Workers in Goa",
+    "summary": "The Aam Aadmi Party has publicly demanded strict legal action against ruling BJP workers over alleged illegal conduct in the state. AAP leaders urged law enforcement to remain impartial."
+  },
+  {
+    "rank": 21,
+    "category": "Civic",
+    "headline": "Margao Heritage Building Revamp Starts Without Local Experts",
+    "summary": "Restoration work on the historic Margao Municipal Council building has commenced without the guidance of local heritage specialists. Preservationists have voiced concern over the potential loss of architectural authenticity."
+  },
+  {
+    "rank": 22,
+    "category": "Politics",
+    "headline": "Non-Members Collecting Congress Ticket Forms Raises Debate",
+    "summary": "Internal friction has emerged within the Goa Congress after non-party members were seen collecting application forms for upcoming elections. Senior party leaders have questioned the eligibility of non-enrolled applicants."
+  },
+  {
+    "rank": 23,
+    "category": "General",
+    "headline": "Tripurari Purnima Festival Begins in Sanquelim",
+    "summary": "The annual Tripurari Purnima festival commenced with traditional fervor along the Valvanti river in Sanquelim. The event features boat-making competitions and cultural performances."
+  },
+  {
+    "rank": 24,
+    "category": "General",
+    "headline": "Truck Plunges Off Anmod Ghat Following Brake Failure",
+    "summary": "A driver suffered injuries after a 14-wheeler truck plunged onto a lower section of the road in Anmod Ghat. Preliminary investigations suggest the crash was caused by a mechanical brake failure."
+  },
+  {
+    "rank": 25,
+    "category": "Politics",
+    "headline": "Pagi Samaj Questions OBC Officer Transfers in Canacona",
+    "summary": "The Pagi Samaj community has raised objections regarding the frequent transfers of key OBC officers stationed in Canacona. Community representatives called on the government to ensure administrative stability."
+  },
+  {
+    "rank": 26,
+    "category": "Business",
+    "headline": "Goa Taxi Operators Demand Scrapping of Rent-a-Cab Scheme",
+    "summary": "Local taxi operators have formally petitioned the transport department to scrap a proposed expansion of the rent-a-cab scheme. Operators expressed fear that the move will adversely impact their traditional earnings."
+  },
+  {
+    "rank": 27,
+    "category": "Civic",
+    "headline": "Galgibaga Residents Oppose Blue Flag Beach Certification",
+    "summary": "Locals in Galgibaga have raised strong objections to securing Blue Flag certification for their beach. Residents fear commercialization will damage the sensitive olive ridley turtle nesting habitats."
+  },
+  {
+    "rank": 28,
+    "category": "Politics",
+    "headline": "Election Commission Reviews Media Monitoring in Goa",
+    "summary": "Officials from the Election Commission conducted a detailed review of media monitoring mechanisms across Goa. The assessment aims to enforce strict compliance with election coverage rules ahead of upcoming polls."
+  },
+  {
+    "rank": 29,
     "category": "Entertainment",
-    "headline": "Nitesh Tiwari’s 'Ramayana' Opens BRICS Film Section at IFFI",
-    "summary": "Filmmaker Nitesh Tiwari's 'Ramayana: Rise of a Legend (Part 1)' was selected as the official opening film for the 'Films from BRICS' segment at the 57th IFFI in Goa."
+    "headline": "Women Filmmakers Discuss Representation at IFFI Goa",
+    "summary": "A panel of prominent women filmmakers gathered at IFFI to debate identity, gender representation, and creative freedom in cinema. The sessions highlighted systemic challenges and opportunities for female storytellers."
+  },
+  {
+    "rank": 30,
+    "category": "General",
+    "headline": "Environmentalist Disputes Minister's Tiger Video Claim",
+    "summary": "Environmentalist Rajendra Kerkar challenged Minister Vishwajit Rane's claim that a recent tiger video originated from Karnataka. Kerkar requested urgent camera-trap surveys within the Mhadei Wildlife Sanctuary to confirm local tiger presence."
+  },
+  {
+    "rank": 31,
+    "category": "Sports",
+    "headline": "Khare's Century Outshines Goa's Strong Batting Display",
+    "summary": "Despite an impressive batting effort by the Goa cricket team, Amandeep Khare's brilliant century led his team to victory. The match saw high-scoring performances from both sides."
+  },
+  {
+    "rank": 32,
+    "category": "Entertainment",
+    "headline": "IFFI Visitors Share Mixed Reviews Beyond Film Screenings",
+    "summary": "Delegates attending IFFI in Goa offered mixed feedback on venue management, side attractions, and logistical arrangements. While movie screenings received praise, visitors noted areas needing improvement."
+  },
+  {
+    "rank": 33,
+    "category": "Politics",
+    "headline": "Internal Rift Deepens in RGP Over Manoj Parab's Return",
+    "summary": "Internal friction within the Revolutionary Goans Party has intensified amid debates over the potential re-entry of leader Manoj Parab. Party members remain divided on organizational leadership decisions."
+  },
+  {
+    "rank": 34,
+    "category": "Civic",
+    "headline": "Nanus Fort Conservation Work Stalled in Sattari",
+    "summary": "Restoration work at the historical Nanus Fort in Sattari has come to a standstill following local administrative delays. A resident committee has demanded immediate government action to protect the historic structure."
+  },
+  {
+    "rank": 35,
+    "category": "Business",
+    "headline": "Goa Drafts FPO Policy 2026 to Support Local Farmers",
+    "summary": "Goa's upcoming FPO Policy 2026 sets a target to integrate 80% of state farmers into Farmer Producer Organisations by 2031. The initiative aims to boost agricultural yield and market accessibility."
+  },
+  {
+    "rank": 36,
+    "category": "Sports",
+    "headline": "Two Goa Shuttlers Selected for Badminton Mini Nationals",
+    "summary": "Young badminton players Saachi and Yashika have been selected to represent Goa at the national mini badminton championship. The state association extended best wishes for their upcoming matches."
+  },
+  {
+    "rank": 37,
+    "category": "Business",
+    "headline": "Curtorim Farmers Urged to Preserve Indigenous Seed Varieties",
+    "summary": "Agricultural experts urged farmers in Curtorim to conserve native seed stocks to protect biodiversity and ensure food security. The community drive focuses on preserving traditional crop resilience."
+  },
+  {
+    "rank": 38,
+    "category": "Civic",
+    "headline": "Election Code Likely to Delay Bainguinim Waste Plant",
+    "summary": "The implementation of the upcoming election model code of conduct is expected to postpone decisions regarding the Bainguinim waste management plant. The project will likely be pushed to the next state administration."
   }
 ]
