@@ -1,224 +1,302 @@
 [
   {
     "rank": 1,
-    "category": "Politics",
-    "headline": "ABVP Sweeps Goa University Student Council Elections",
-    "summary": "The Akhil Bharatiya Vidyarthi Parishad (ABVP) won all nine seats in the Goa University Students' Council elections. The rival NSUI failed to win any posts."
+    "category": "Entertainment",
+    "headline": "57th IFFI Concludes in Goa",
+    "summary": "The 57th International Film Festival of India concludes today in Goa. The nine-day event featured cinematic celebrations from around the world."
   },
   {
     "rank": 2,
-    "category": "Entertainment",
-    "headline": "9-Day IFFI Concludes in Goa",
-    "summary": "The 55th International Film Festival of India (IFFI) came to a close in Goa following nine days of film screenings and cultural events."
+    "category": "Business",
+    "headline": "Goa FSSAI Finds Bacteria in Bisleri Sample",
+    "summary": "Packaged water brand Bisleri is facing scrutiny after Goa's FSSAI detected bacteria in a water sample originating from West Bengal."
   },
   {
     "rank": 3,
-    "category": "Entertainment",
-    "headline": "Academy Official Highlights High Cost of Oscar Submissions",
-    "summary": "Speaking at IFFI in Goa, an Academy official noted that submission and promotional fees for the Oscars can be prohibitively expensive for filmmakers."
+    "category": "General",
+    "headline": "Second Volume of 'Churches of Goa' Released",
+    "summary": "The Auxiliary Bishop has officially released the second volume of the book titled 'Churches of Goa'."
   },
   {
     "rank": 4,
-    "category": "Entertainment",
-    "headline": "Film 'Skylark' Premieres at IFFI Focusing on Border Divisions",
-    "summary": "The feature film 'Skylark' was showcased at IFFI in Goa, bringing attention to the emotional and human cost of divided international borders."
+    "category": "Politics",
+    "headline": "Gen Z and Millennials Form Nearly Half of Goa's Voters",
+    "summary": "Younger demographics now dominate Goa's electorate. Gen Z and Millennials currently account for nearly half of all registered voters in the state."
   },
   {
     "rank": 5,
     "category": "Civic",
-    "headline": "Supreme Court Halts HoABL's Karapur Township Project",
-    "summary": "The Supreme Court has issued a temporary stay on construction, technical clearances, and permissions for HoABL's proposed township project in Karapur."
+    "headline": "Goa Launches 'Majhe App' for Public Transport",
+    "summary": "The newly launched 'Majhe App' aims to integrate Goa's public transport and mobility services onto a unified digital platform."
   },
   {
     "rank": 6,
     "category": "Civic",
-    "headline": "Goa Government Notifies Rules for Increased FAR and Building Heights",
-    "summary": "The Goa government has introduced a new framework allowing floor area ratio (FAR) up to 300 and building heights up to 40 metres. The policy also offers regularization for previously approved FAR."
+    "headline": "Goa Permits Buildings Up to 40 Metres and FAR 300",
+    "summary": "The Goa government has opened doors for Floor Area Ratio (FAR) up to 300 and building heights up to 40 metres. Provisions have also been introduced to regularise previously granted FAR."
   },
   {
     "rank": 7,
-    "category": "Civic",
-    "headline": "NGO Prepares to Challenge 1,639 Approved Building Clearances",
-    "summary": "A local NGO in Goa has announced plans to legally challenge 1,639 floor area ratio (FAR) clearances issued by authorities."
+    "category": "Tourism",
+    "headline": "Goa Beaches Expect Quieter Winter Season",
+    "summary": "Popular tourism hotspot Goa may experience a slower winter season with quieter beach turnouts expected across the state."
   },
   {
     "rank": 8,
-    "category": "Tourism",
-    "headline": "Goa Tourism Sector Prepares for Slower Winter Season",
-    "summary": "Hoteliers and local businesses across Goa are anticipating lower tourist footfall and quieter beaches during the upcoming winter season."
+    "category": "Civic",
+    "headline": "Goa to Supply Tablets to Primary Schools and AI Labs to Colleges",
+    "summary": "Chief Minister Pramod Sawant announced that primary schools in Goa will receive tablets, while professional colleges will be equipped with AI labs."
   },
   {
     "rank": 9,
-    "category": "Entertainment",
-    "headline": "Spain Finalizes India Co-Production Deal at IFFI",
-    "summary": "Spain is close to signing a film co-production pact with India as it concludes its stint as the 'Country of Honor' at IFFI and the WAVES Film Bazaar."
+    "category": "Sports",
+    "headline": "FC Goa Coach Viadero Aims to Build Winning Squad",
+    "summary": "Head coach Viadero is focusing on transforming FC Goa into a highly competitive and winning team for upcoming matches."
   },
   {
     "rank": 10,
-    "category": "General",
-    "headline": "Second Volume of 'Churches of Goa' Book Released",
-    "summary": "The Auxiliary Bishop has officially released the second volume of 'Churches of Goa', which documents the state's historical and architectural religious heritage."
+    "category": "Politics",
+    "headline": "ABVP Sweeps Goa University Student Council Elections",
+    "summary": "The Akhil Bharatiya Vidyarthi Parishad (ABVP) secured a victory by winning all nine seats in the Goa University elections."
   },
   {
     "rank": 11,
-    "category": "Entertainment",
-    "headline": "Anil Ravipudi Announces Animated 'Ramayana' Film at IFFI",
-    "summary": "Filmmaker Anil Ravipudi announced his upcoming animated feature film based on the Ramayana during an event at IFFI in Goa, calling it his dream project."
+    "category": "Civic",
+    "headline": "Goa Government Announces Digital Push for Education",
+    "summary": "The Goa government plans to distribute tablets to primary school students and set up modern AI labs in professional colleges."
   },
   {
     "rank": 12,
-    "category": "Tourism",
-    "headline": "British Tourists Share Emotional Farewell to Goa",
-    "summary": "A visiting British couple expressed sadness at concluding their week-long trip, calling Goa a unique and memorable holiday destination."
+    "category": "Entertainment",
+    "headline": "57th IFFI Closing Film Explores Meaning of Belonging",
+    "summary": "The closing film of the 57th International Film Festival of India focused on family dynamics and the essence of belonging."
   },
   {
     "rank": 13,
-    "category": "Tourism",
-    "headline": "Goa Ranked Among India's Top Christmas Destinations",
-    "summary": "Goa has been listed among the top eight locations in India to celebrate Christmas, highlighting its festive traditions and events."
+    "category": "Entertainment",
+    "headline": "IFFI Evenings Blend Cinema and Cultural Exchange in Goa",
+    "summary": "Evening events at IFFI brought together filmmakers, artists, and audiences for creative exchanges and cultural celebrations in Goa."
   },
   {
     "rank": 14,
-    "category": "Business",
-    "headline": "Flying Flea C6 Electric Bike Enters Goa Market",
-    "summary": "The Flying Flea C6 electric motorcycle has officially expanded its commercial presence into Goa."
+    "category": "General",
+    "headline": "Woman Passes Away Following Mandrem Scooter Accident",
+    "summary": "A woman succumbed to her injuries several days after being involved in a scooter accident in Mandrem."
   },
   {
     "rank": 15,
-    "category": "Politics",
-    "headline": "MLA Reginaldo Urges Help for Goans Detained in US",
-    "summary": "Curtorim MLA Aleixo Reginaldo Lourenco has requested central government intervention to expedite travel documents for Goan citizens currently detained in the United States."
+    "category": "Tourism",
+    "headline": "Shifts Observed in Goa's Tourism Landscape",
+    "summary": "Changing travel patterns and visitor flows are continuing to impact Goa's local tourism industry."
   },
   {
     "rank": 16,
-    "category": "Crime",
-    "headline": "Goa Resident Duped of ₹2.4 Lakh in Mobile Home Fraud",
-    "summary": "A Goa resident recovering from surgery paid ₹2.4 lakh for a mobile home to house caregivers, only to discover the provider failed to deliver the unit."
+    "category": "General",
+    "headline": "Motorcyclist Completes Bangalore to Goa Ride on Transalp 750",
+    "summary": "A biker completed a long-distance road trip from Bangalore to Goa organized with Honda Bigwing using a Transalp 750 motorcycle."
   },
   {
     "rank": 17,
-    "category": "Civic",
-    "headline": "Illegal Quarrying Causes Environmental Damage in Sattari",
-    "summary": "Unrestricted illegal laterite quarrying has damaged landscapes and stripped green cover in parts of Sattari."
+    "category": "General",
+    "headline": "Auxiliary Bishop Unveils Volume Two of 'Churches of Goa'",
+    "summary": "Goa's Auxiliary Bishop launched the second volume of the book series documenting the heritage and history of local churches."
   },
   {
     "rank": 18,
-    "category": "General",
-    "headline": "Goa to Digitise Portuguese-Era Administrative Records",
-    "summary": "Historical manuscripts documenting Goa's administrative and legal history during the Portuguese era are set to be digitized for preservation."
+    "category": "Politics",
+    "headline": "AAP Raises Price Rise Concerns in Cuncolim Outreach",
+    "summary": "The Aam Aadmi Party addressed rising commodity prices and public concerns during its outreach program in Cuncolim."
   },
   {
     "rank": 19,
     "category": "Civic",
-    "headline": "High Court Orders Compensation for Birch Fire Victims",
-    "summary": "The High Court has directed authorities to release the first installment of financial compensation to families affected by the Birch fire incident."
+    "headline": "Primary Schools to Get Tablets, AI Labs for Professional Colleges",
+    "summary": "CM Pramod Sawant confirmed plans to issue tablets to primary school students and set up AI labs in professional institutes."
   },
   {
     "rank": 20,
-    "category": "Tourism",
-    "headline": "Goan Tour Operator Honoured in Israel on 100th Trip",
-    "summary": "A tour organizer from Goa was recognized in Israel upon completing his 100th group pilgrimage tour to the Holy Land."
+    "category": "Sports",
+    "headline": "Goa Cricket Team Aiming for 10 Wickets to Secure Win",
+    "summary": "The Goa cricket team needs to pick up 10 remaining wickets to seal a victory in their ongoing match."
   },
   {
     "rank": 21,
-    "category": "General",
-    "headline": "NCC Cadets Flag Off 220-km Maritime Expedition",
-    "summary": "National Cadet Corps (NCC) cadets have started a 220-kilometer coastal sailing expedition covering the stretch between Karwar and Goa."
+    "category": "Business",
+    "headline": "Taj Fort Aguada Adopts Solar Energy System",
+    "summary": "IHCL has expanded its renewable energy initiatives by establishing a new solar power project at Taj Fort Aguada in Goa."
   },
   {
     "rank": 22,
-    "category": "Politics",
-    "headline": "Goa Govt to Introduce Bill Regulating Comunidade Staff",
-    "summary": "The state government plans to table a new bill aimed at regulating the service conditions and rules for employees working in local comunidades."
+    "category": "Civic",
+    "headline": "Sewage Discharge into Colva Creek Sparks Health Concerns",
+    "summary": "Unchecked sewage dumping into Colva Creek has raised serious public health warnings and worried local tourism operators."
   },
   {
     "rank": 23,
-    "category": "Civic",
-    "headline": "Salcete Farmers Warn New Auction Rules Threaten Khazans",
-    "summary": "Agricultural tenants in Salcete expressed concern that new auction guidelines could harm traditional khazan farming systems."
+    "category": "Sports",
+    "headline": "Goan Basketballer Kim D'Souza Selected for India U-15 Trials",
+    "summary": "Goan athlete Kim D'Souza has earned a call-up to participate in the selection trials for the Indian U-15 basketball team."
   },
   {
     "rank": 24,
-    "category": "Politics",
-    "headline": "AAP Launches Anti-Inflation Campaign in Goa",
-    "summary": "The Aam Aadmi Party has launched its 'Mhargai Mukti Yatra' in Goa, promising financial relief packages worth ₹15,000 per family if voted to power."
+    "category": "Civic",
+    "headline": "Supreme Court Stays Construction on Karapur Project",
+    "summary": "The Supreme Court issued a stay order on HoABL's Karapur project, halting its technical clearances and building permits."
   },
   {
     "rank": 25,
-    "category": "Politics",
-    "headline": "Centre Defends Goa ST Reservation Law in High Court",
-    "summary": "The Central government informed the High Court that Goa's Scheduled Tribe reservation law is constitutional and legally valid."
+    "category": "Entertainment",
+    "headline": "'Aquí' Wins Golden Peacock as 57th IFFI Concludes",
+    "summary": "The 57th edition of IFFI ended on a high note, with the film 'Aquí' bagging the prestigious Golden Peacock award for Best Film."
   },
   {
     "rank": 26,
-    "category": "General",
-    "headline": "Relocated Goa Elephant 'Omkar' Joins Wild Herd in Maharashtra",
-    "summary": "An elephant named Omkar, relocated from Goa, has successfully integrated into a female-led wild elephant herd in Maharashtra."
+    "category": "Entertainment",
+    "headline": "Rishab Shetty Speaks at IFFI Closing Ceremony",
+    "summary": "Actor-director Rishab Shetty noted at the IFFI closing ceremony that deeply regional stories hold universal appeal across world cinema."
   },
   {
     "rank": 27,
-    "category": "Civic",
-    "headline": "CM Urges Strict Implementation of POSH Committees at Workplaces",
-    "summary": "Goa Chief Minister has called on all organizations to strictly establish Prevention of Sexual Harassment (POSH) committees to ensure workplace safety."
+    "category": "Crime",
+    "headline": "Foreign Tourist Filmed Without Consent at Goa Cafe",
+    "summary": "An incident at a local Goa cafe involved a man approaching and filming a foreign female tourist who was sitting alone."
   },
   {
     "rank": 28,
-    "category": "Weather",
-    "headline": "Spring Tide Inundates Low-Lying Areas in Mala",
-    "summary": "High water levels caused by a spring tide led to coastal overflow and waterlogging in several parts of Mala."
+    "category": "Entertainment",
+    "headline": "'Aquí' Bags Best Film Golden Peacock Award at IFFI",
+    "summary": "The Portugal-France co-production 'Aquí' was awarded the Golden Peacock for Best Film at the 57th International Film Festival of India."
   },
   {
     "rank": 29,
-    "category": "Business",
-    "headline": "GHRDC Announces Housing Loan Scheme for Employees",
-    "summary": "The Goa Human Resource Development Corporation (GHRDC) has launched a specialized home building loan scheme for its staff."
+    "category": "Politics",
+    "headline": "Goa CM Hands Over Apprenticeship Contracts to 500 Candidates",
+    "summary": "Chief Minister Pramod Sawant distributed official apprenticeship contracts to 500 young candidates across the state."
   },
   {
     "rank": 30,
     "category": "Civic",
-    "headline": "Porvorim Flyover Ramps Set to Open Within 15 Days",
-    "summary": "All entry and exit ramps connected to the Porvorim flyover will be opened for public traffic within the next two weeks."
+    "headline": "Illegal Laterite Quarrying Causes Environmental Damage in Sattari",
+    "summary": "Unregulated extraction of laterite stone has degraded green landscapes and damaged areas within Sattari village."
   },
   {
     "rank": 31,
-    "category": "General",
-    "headline": "Goan Prelate Steps Down as Bishop of Daltonganj",
-    "summary": "A senior Goan clergyman has officially resigned from his post as the Bishop of the Daltonganj diocese."
+    "category": "Politics",
+    "headline": "South Goa Completes First-Level EVM Inspections",
+    "summary": "Election officials in South Goa have finished the initial level of checking electronic voting machines ahead of upcoming elections."
   },
   {
     "rank": 32,
-    "category": "Civic",
-    "headline": "Unsafe Vasco Structure Marked for Demolition",
-    "summary": "Authorities in Vasco have slated a dilapidated, structurally unsafe building for complete demolition and reconstruction."
+    "category": "Politics",
+    "headline": "ABVP Secures Clean Sweep in Goa University Council Polls",
+    "summary": "ABVP candidates won all nine contested seats in the Goa University Students' Council elections."
   },
   {
     "rank": 33,
-    "category": "Weather",
-    "headline": "Unseasonal Rains Damage Arecanut Harvest in Sattari",
-    "summary": "Unexpected heavy rainfall in Sattari soaked harvested arecanuts laid out to dry, leaving local farmers facing crop losses."
+    "category": "Civic",
+    "headline": "Supreme Court Halts Lodha Project Buildings in Karapur",
+    "summary": "Construction work on four buildings under the Lodha project in Karapur has been stayed following an order by the Supreme Court."
   },
   {
     "rank": 34,
-    "category": "General",
-    "headline": "Debate Held on Data Collection and Constitutional Protections",
-    "summary": "Legal experts and analysts in Goa held discussions regarding the intersection of government statistics and constitutional safeguards."
+    "category": "Entertainment",
+    "headline": "Spain Nears India Co-Production Deal Following IFFI Focus",
+    "summary": "Spain concluded its Country of Honor run at IFFI Goa by advancing talks toward a new film co-production agreement with India."
   },
   {
     "rank": 35,
-    "category": "General",
-    "headline": "Goan Community in Aberdeen Celebrates Diwali",
-    "summary": "Members of the Goan diaspora living in Aberdeen, Scotland, gathered to celebrate Diwali with traditional festivities."
+    "category": "Politics",
+    "headline": "Bill to Regulate Comunidad Employees to Be Introduced",
+    "summary": "The Goa government plans to table a new bill aimed at regulating the employment conditions of comunidad staff."
   },
   {
     "rank": 36,
-    "category": "Politics",
-    "headline": "Congress Warns of Potential Outsider Voter Influx",
-    "summary": "The Goa Congress party has cautioned election officials against the illegal inclusion of non-resident voters in the state electoral rolls."
+    "category": "General",
+    "headline": "Goa to Digitise Historical Portuguese-Era Manuscripts",
+    "summary": "Archival manuscripts detailing administrative history during the Portuguese era in Goa are set to be digitised for long-term preservation."
   },
   {
     "rank": 37,
+    "category": "Entertainment",
+    "headline": "WAVES Film Bazaar at IFFI Draws Over 2,200 Global Delegates",
+    "summary": "The WAVES Film Bazaar at IFFI Goa welcomed 2,288 delegates hailing from 54 countries for film industry trade and networking."
+  },
+  {
+    "rank": 38,
+    "category": "Politics",
+    "headline": "Congress High Command Urges Goa Unit to Finalise Regional Alliances",
+    "summary": "Congress leadership instructed Goa party officials to quickly finalize alliance talks with the Goa Forward Party and Revolutionary Goans Party."
+  },
+  {
+    "rank": 39,
+    "category": "General",
+    "headline": "Wild Elephant Omkar Joins Female-Led Herd in Maharashtra",
+    "summary": "A solitary elephant named Omkar has successfully integrated into a female-led wild herd in neighbouring Maharashtra."
+  },
+  {
+    "rank": 40,
+    "category": "Entertainment",
+    "headline": "Director Anil Ravipudi Announces Animated 'Ramayana' Project at IFFI",
+    "summary": "Director Anil Ravipudi unveiled his dream project, an animated feature film on the 'Ramayana', during the IFFI festival in Goa."
+  },
+  {
+    "rank": 41,
+    "category": "Entertainment",
+    "headline": "'Hanuman Ansh' Screened at IFFI Explores Neem Karoli Baba's Life",
+    "summary": "The documentary film 'Hanuman Ansh', screened at IFFI, captures the spiritual journey and legacy of Neem Karoli Baba."
+  },
+  {
+    "rank": 42,
+    "category": "Entertainment",
+    "headline": "OTT Platforms Boost Diverse Storytelling, Say IFFI Jury",
+    "summary": "Jury members at IFFI highlighted that digital OTT platforms have significantly expanded opportunities for unique and diverse cinematic narratives."
+  },
+  {
+    "rank": 43,
+    "category": "Entertainment",
+    "headline": "Bharatbala's 'The India Experience' Debuts at IFFI",
+    "summary": "Filmmaker Bharatbala premiered 'The India Experience: Season One' in India during the International Film Festival of India."
+  },
+  {
+    "rank": 44,
     "category": "Civic",
-    "headline": "South Goa Earns 'Saksham District' Status for HIV Prevention",
-    "summary": "South Goa has been awarded 'Saksham District' status after meeting key performance targets in HIV control and awareness programs."
+    "headline": "Goa Classrooms to Get Voice-Assisted AI Labs for Divyang Students",
+    "summary": "Goa plans to launch voice-assisted artificial intelligence labs to assist divyang (specially-abled) students in classroom learning."
+  },
+  {
+    "rank": 45,
+    "category": "Politics",
+    "headline": "AAP Launches 'Mhargai Mukti Yatra' in Goa",
+    "summary": "The Aam Aadmi Party launched a state-wide campaign against inflation in Goa, promising financial relief worth Rs 15,000 per family."
+  },
+  {
+    "rank": 46,
+    "category": "Civic",
+    "headline": "Backlash Over Goa's Retirement-Day Police Promotion Policy",
+    "summary": "The Goa government is facing criticism over a policy that grants official promotions to police personnel on the day of their retirement."
+  },
+  {
+    "rank": 47,
+    "category": "Sports",
+    "headline": "Salgaocar FC Win Under-12 Championship Unbeaten",
+    "summary": "Salgaocar FC secured the Under-12 football title after maintaining an undefeated streak throughout the tournament."
+  },
+  {
+    "rank": 48,
+    "category": "Civic",
+    "headline": "High Court Orders First Relief Compensation for Birch Fire Victims",
+    "summary": "The High Court has directed authorities to release the initial instalment of compensation to families affected by the Birch fire incident."
+  },
+  {
+    "rank": 49,
+    "category": "Weather",
+    "headline": "Unseasonal Rain Hits Parts of Goa",
+    "summary": "Unexpected rainfall affected several areas of Goa, while minimum temperatures continued to stay higher than normal."
+  },
+  {
+    "rank": 50,
+    "category": "Politics",
+    "headline": "Goa Govt to Submit Affidavit Supporting ST Reservation",
+    "summary": "The Goa government is set to file an official affidavit in court supporting political reservation for the Scheduled Tribes community."
   }
 ]
